@@ -10,6 +10,7 @@ interface ProjectCardProps {
   ctaText: string;
   color: string;
   onCTAClick?: () => void;
+  content?: React.ReactNode;
 }
 export const ProjectCard: React.FC<ProjectCardProps> = ({
   project,
@@ -18,6 +19,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
   ctaText,
   color,
   onCTAClick,
+  content,
 }) => {
   const theme = useTheme();
   return (
@@ -38,7 +40,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
         <Typography
           variant="h2"
           fontFamily="PP Eiko"
-          fontWeight={500}
+          fontWeight={600}
           color={theme.palette.primary.main}
         >
           {project} -{" "}
@@ -47,7 +49,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
             fontSize="1em"
             fontFamily="PP Eiko"
             component="span"
-            fontWeight={100}
+            fontWeight={500}
             color={theme.palette.primary.main}
           >
             {subtext}
@@ -67,6 +69,27 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
             {ctaText}{" "}
           </Typography>
           {onCTAClick && <East fontSize="small" color="primary" />}
+        </Box>
+      </Box>
+      <Box pb={50} position="relative">
+        <Box
+          sx={{
+            position: "absolute",
+            top: 32,
+            left: 96,
+            width: "100%",
+          }}
+          pb={58}
+        >
+          <Box
+            sx={{
+              position: "absolute",
+              width: "100%",
+              height: "100%",
+            }}
+          >
+            {content}
+          </Box>
         </Box>
       </Box>
     </Card>
