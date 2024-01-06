@@ -13,10 +13,6 @@ import {
   Typography,
 } from "@mui/material";
 import { CssBaseline } from "@mui/material";
-import { palette } from "@/theme";
-import { Typewriter } from "@/components/typewriter/typeWriter";
-import { ImageAutoScrollBlock } from "@/components/imageAutoScrollBlock/imageAutoScrollBlock";
-import Image from "next/image";
 import { Footer } from "@/components/footer/footer";
 import { raleway } from "@/fonts";
 import Link from "next/link";
