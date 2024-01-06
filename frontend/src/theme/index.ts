@@ -104,6 +104,15 @@ export const baseTheme = createTheme({
         },
       },
     },
+    MuiAccordion: {
+      styleOverrides: {
+        root: {
+          boxShadow: "none",
+          borderRadius: "24px !important",
+        },
+      },
+    },
+
     MuiCssBaseline: {
       styleOverrides: `
         @font-face {

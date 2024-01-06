@@ -28,6 +28,10 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
         background: color,
         flex: 1,
         boxShadow: "0px 6px 12px 0px rgba(0, 0, 0, 0.10)",
+        transition: "all 0.5s",
+        [`&:hover`]: {
+          transform: "translateY(-8px)",
+        },
       }}
     >
       <Box
@@ -58,7 +62,16 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
         <Typography variant="body1" fontWeight={400}>
           {description}
         </Typography>
-        <Box display="flex" alignItems="center">
+        <Box
+          display="flex"
+          alignItems="center"
+          sx={{
+            cursor: onCTAClick ? "pointer" : "inherit",
+            [`&:hover`]: {
+              textDecoration: onCTAClick ? "underline" : "none",
+            },
+          }}
+        >
           <Typography
             variant="body1"
             fontFamily="PP Eiko"

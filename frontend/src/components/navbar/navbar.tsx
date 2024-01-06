@@ -9,6 +9,7 @@ import {
   useTheme,
 } from "@mui/material";
 import WbSunnyOutlinedIcon from "@mui/icons-material/WbSunnyOutlined";
+import Link from "next/link";
 
 export const Navbar: React.FC = () => {
   const theme = useTheme();
@@ -121,7 +122,14 @@ export const Navbar: React.FC = () => {
           <IconButton>
             <WbSunnyOutlinedIcon />
           </IconButton>
-          <Button variant="contained">Download Resume</Button>
+          <Button
+            variant="contained"
+            LinkComponent={Link}
+            href="/resume_2024.pdf"
+            target="_blank"
+          >
+            Download Resume
+          </Button>
         </Box>
       </BannerContainer>
     </Container>

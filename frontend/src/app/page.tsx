@@ -2,14 +2,7 @@
 
 import { Banner, Navbar, ProjectCard } from "@/components";
 import { baseTheme } from "@/theme";
-import {
-  Box,
-  Container,
-  Grid,
-  ThemeProvider,
-  Typography,
-  useTheme,
-} from "@mui/material";
+import { Box, Container, Grid, ThemeProvider, Typography } from "@mui/material";
 import { CssBaseline } from "@mui/material";
 import { palette } from "@/theme";
 import { Typewriter } from "@/components/typewriter/typeWriter";
@@ -18,7 +11,6 @@ import Image from "next/image";
 import { Footer } from "@/components/footer/footer";
 
 export default function Home() {
-  const theme = useTheme();
   return (
     <ThemeProvider theme={baseTheme}>
       <CssBaseline />

@@ -15,7 +15,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <AppRouterCacheProvider>
-        <body className={[open_sans.className, raleway.className].join(" ")}>
+        <body
+          className={[open_sans.className, raleway.className].join(" ")}
+          style={{ backgroundColor: "#f7f7f7" }}
+        >
           {children}
         </body>
       </AppRouterCacheProvider>
