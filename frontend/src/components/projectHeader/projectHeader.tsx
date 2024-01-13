@@ -23,7 +23,7 @@ export const ProjectHeader: React.FC<ProjectHeaderProps> = ({
     <HeaderContainer>
       <BackdropImage
         sx={{
-          background: `linear-gradient(0deg, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.35) 100%), url(${imageURL}), lightgray 0px -349.295px / 100% 225% no-repeat`,
+          backgroundImage: `url(${imageURL})`,
         }}
       />
       <Box
@@ -75,4 +75,19 @@ const BackdropImage = styled("div")`
   left: 0px;
   z-index: 0;
   background-position-y: -349px !important;
+  background-size: cover;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.35) 0%,
+      rgba(0, 0, 0, 0.35) 100%
+    );
+  }
 `;

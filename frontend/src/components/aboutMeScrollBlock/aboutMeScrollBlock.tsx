@@ -177,7 +177,7 @@ const ScrollContainer = styled("div")`
   overflow: hidden;
   height: 100%;
   white-space: nowrap;
-  animation: ${scrollText} 30s infinite linear;
+  animation: ${scrollText} 45s infinite linear;
   margin: 0;
   font-size: 0;
   display: flex;

@@ -81,6 +81,20 @@ export const baseTheme = createTheme({
       color: palette.neutral[700],
     },
   },
+  breakpoints: {
+    values: {
+      // extra-small
+      xs: 0,
+      // small
+      sm: 600,
+      // medium
+      md: 960,
+      // large
+      lg: 1200,
+      // extra-large
+      xl: 1536,
+    },
+  },
   components: {
     MuiButton: {
       styleOverrides: {
@@ -112,7 +126,6 @@ export const baseTheme = createTheme({
         },
       },
     },
-
     MuiCssBaseline: {
       styleOverrides: `
         @font-face {
