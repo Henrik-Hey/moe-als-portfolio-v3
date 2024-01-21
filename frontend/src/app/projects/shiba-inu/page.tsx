@@ -1,8 +1,16 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
 
-import { baseTheme, palette } from "@/theme";
-import { Box, Container, ThemeProvider, Typography } from "@mui/material";
+import { baseTheme, darkTheme, palette } from "@/theme";
+import {
+  Box,
+  Container,
+  Divider,
+  Grid,
+  ScopedCssBaseline,
+  ThemeProvider,
+  Typography,
+} from "@mui/material";
 import { CssBaseline } from "@mui/material";
 import { Footer } from "@/components/footer/footer";
 import { ProjectHeader } from "@/components/projectHeader/projectHeader";
@@ -326,6 +334,431 @@ export default function ShibaInu() {
         </Box>
       </Container>
       <PinScrollImages
+        bottomCaption={<>Journey mapping & problem statements</>}
+        containerHeight="200vh"
+        centeredContainerHeight="100vh"
+        centerWidth={1440}
+        items={[
+          <Box
+            key={0}
+            minWidth="calc(100vw - 128px)"
+            width="fit-content"
+            display="flex"
+            justifyContent="center"
+            alignItems="center"
+          >
+            <Box width="1440px" display="flex">
+              <Box
+                display="flex"
+                flexDirection="column"
+                gap={13}
+                pt={18}
+                pr={2}
+              >
+                <Typography variant="h6" textAlign="center" fontWeight={600}>
+                  Happy
+                </Typography>
+                <Typography
+                  variant="h6"
+                  textAlign="center"
+                  fontWeight={600}
+                  mt={-4.5}
+                >
+                  Neutral
+                </Typography>
+                <Typography
+                  variant="h6"
+                  textAlign="center"
+                  fontWeight={600}
+                  mt={-4.5}
+                >
+                  Unhappy
+                </Typography>
+                <Typography
+                  variant="h6"
+                  textAlign="center"
+                  fontWeight={600}
+                  my={2.25}
+                >
+                  Experience
+                </Typography>
+                <Typography variant="h6" textAlign="center" fontWeight={600}>
+                  Imrpovement
+                </Typography>
+              </Box>
+              <Box flex={1} flexDirection="column" width="1244px">
+                <Box width="1244px" display="flex">
+                  <Box pb={1} borderBottom="14px solid #2A9D8F" flex={1}>
+                    <Typography
+                      variant="h6"
+                      textAlign="center"
+                      fontWeight={600}
+                    >
+                      Find
+                    </Typography>
+                  </Box>
+                  <Box pb={1} borderBottom="14px solid #E9C46A" flex={1}>
+                    <Typography
+                      variant="h6"
+                      textAlign="center"
+                      fontWeight={600}
+                    >
+                      Create
+                    </Typography>
+                  </Box>
+                  <Box pb={1} borderBottom="14px solid #2A9D8F" flex={1}>
+                    <Typography
+                      variant="h6"
+                      textAlign="center"
+                      fontWeight={600}
+                    >
+                      Browse
+                    </Typography>
+                  </Box>
+                  <Box pb={1} borderBottom="14px solid #E76F51" flex={1}>
+                    <Typography
+                      variant="h6"
+                      textAlign="center"
+                      fontWeight={600}
+                    >
+                      Payment
+                    </Typography>
+                  </Box>
+                  <Box pb={1} borderBottom="14px solid #2A9D8F" flex={1}>
+                    <Typography
+                      variant="h6"
+                      textAlign="center"
+                      fontWeight={600}
+                    >
+                      Delivery
+                    </Typography>
+                  </Box>
+                </Box>
+                <Box width="1244px" mt={4}>
+                  <img
+                    alt=""
+                    width="1204px"
+                    height="304px"
+                    src="/project_page_res/shiba/chart/chart.png"
+                  />
+                </Box>
+                <Box flex={1} display="flex" flexDirection="column" pr={8}>
+                  <Box flex={1} display="flex">
+                    <Box flex={1} component="ul">
+                      <Typography
+                        component="li"
+                        variant="caption"
+                        fontWeight={400}
+                        mb={2}
+                      >
+                        Discover the app through online search or
+                        recommendations.
+                      </Typography>
+                      <Typography
+                        component="li"
+                        variant="caption"
+                        fontWeight={400}
+                        mb={2}
+                      >
+                        Download the app from the appropriate platform (e.g.,
+                        App Store, Google Play).
+                      </Typography>
+                      <Typography
+                        component="li"
+                        variant="caption"
+                        fontWeight={400}
+                      >
+                        Launch the app on the device to begin the user
+                        experience.
+                      </Typography>
+                    </Box>
+                    <Box flex={1} component="ul">
+                      <Typography
+                        component="li"
+                        variant="caption"
+                        fontWeight={400}
+                        mb={2}
+                      >
+                        Explore sign-in options provided by the app (e.g.,
+                        email, social media).
+                      </Typography>
+                      <Typography
+                        component="li"
+                        variant="caption"
+                        fontWeight={400}
+                        mb={2}
+                      >
+                        Choose and complete the account creation process,
+                        including verifying personal information.
+                      </Typography>
+                      <Typography
+                        component="li"
+                        variant="caption"
+                        fontWeight={400}
+                      >
+                        Confirm the email address associated with the account.
+                      </Typography>
+                    </Box>
+                    <Box flex={1} component="ul">
+                      <Typography
+                        component="li"
+                        variant="caption"
+                        fontWeight={400}
+                        mb={2}
+                      >
+                        Browse available restaurants.
+                      </Typography>
+                      <Typography
+                        component="li"
+                        variant="caption"
+                        fontWeight={400}
+                        mb={2}
+                      >
+                        Choose a specific restaurant and explore its menu.
+                      </Typography>
+                      <Typography
+                        component="li"
+                        variant="caption"
+                        fontWeight={400}
+                        mb={2}
+                      >
+                        Add desired items to the cart.
+                      </Typography>
+                      <Typography
+                        component="li"
+                        variant="caption"
+                        fontWeight={400}
+                      >
+                        Proceed to the checkout process to finalize the order.
+                      </Typography>
+                    </Box>
+                    <Box flex={1} component="ul">
+                      <Typography
+                        component="li"
+                        variant="caption"
+                        fontWeight={400}
+                        mb={2}
+                      >
+                        Explore available payment options.
+                      </Typography>
+                      <Typography
+                        component="li"
+                        variant="caption"
+                        fontWeight={400}
+                        mb={2}
+                      >
+                        Select preferred payment method.
+                      </Typography>
+                      <Typography
+                        component="li"
+                        variant="caption"
+                        fontWeight={400}
+                        mb={2}
+                      >
+                        Review subscription options and associated perks.
+                      </Typography>
+                      <Typography
+                        component="li"
+                        variant="caption"
+                        fontWeight={400}
+                      >
+                        Proceed to make payment and provide a tip.
+                      </Typography>
+                    </Box>
+                    <Box flex={1} component="ul">
+                      <Typography
+                        component="li"
+                        variant="caption"
+                        fontWeight={400}
+                        mb={2}
+                      >
+                        Receive confirmation email.
+                      </Typography>
+                      <Typography
+                        component="li"
+                        variant="caption"
+                        fontWeight={400}
+                        mb={2}
+                      >
+                        Monitor tracking map and wait for order.
+                      </Typography>
+                      <Typography
+                        component="li"
+                        variant="caption"
+                        fontWeight={400}
+                        mb={2}
+                      >
+                        Receive the order.
+                      </Typography>
+                      <Typography
+                        component="li"
+                        variant="caption"
+                        fontWeight={400}
+                      >
+                        Provide a rating or feedback.
+                      </Typography>
+                    </Box>
+                  </Box>
+                  <Divider />
+                  <Box flex={1} display="flex">
+                    <Box flex={1} component="ul">
+                      <Typography
+                        component="li"
+                        variant="caption"
+                        fontWeight={400}
+                        mb={2}
+                      >
+                        More screenshots and visual elements that showcase the
+                        product.
+                      </Typography>
+                      <Typography
+                        component="li"
+                        variant="caption"
+                        fontWeight={400}
+                      >
+                        Utilize user reviews and feedback as a selling point
+                      </Typography>
+                    </Box>
+                    <Box flex={1} component="ul">
+                      <Typography
+                        component="li"
+                        variant="caption"
+                        fontWeight={400}
+                        mb={2}
+                      >
+                        Include the option for users to continue as a guest for
+                        a seamless experience.
+                      </Typography>
+                      <Typography
+                        component="li"
+                        variant="caption"
+                        fontWeight={400}
+                      >
+                        Collaborate with sign-in partners to enhance
+                        accessibility and user convenience.
+                      </Typography>
+                    </Box>
+                    <Box flex={1} component="ul">
+                      <Typography
+                        component="li"
+                        variant="caption"
+                        fontWeight={400}
+                        mb={2}
+                      >
+                        Implement category buttons at the top of the screen for
+                        easy navigation.
+                      </Typography>
+                      <Typography
+                        component="li"
+                        variant="caption"
+                        fontWeight={400}
+                      >
+                        Enhance the visual appeal of food items by incorporating
+                        pictures and videos.
+                      </Typography>
+                    </Box>
+                    <Box flex={1} component="ul">
+                      <Typography
+                        component="li"
+                        variant="caption"
+                        fontWeight={400}
+                        mb={2}
+                      >
+                        Provide a diverse range of payment options to cater to
+                        different user preferences.
+                      </Typography>
+                      <Typography
+                        component="li"
+                        variant="caption"
+                        fontWeight={400}
+                      >
+                        Introduce a subscription and save system to offer
+                        discounts and incentives for frequent users.
+                      </Typography>
+                    </Box>
+                    <Box flex={1} component="ul">
+                      <Typography
+                        component="li"
+                        variant="caption"
+                        fontWeight={400}
+                        mb={2}
+                      >
+                        Provide the option for users to enable push alerts,
+                        allowing them to receive notifications without it being
+                        mandatory.
+                      </Typography>
+                      <Typography
+                        component="li"
+                        variant="caption"
+                        fontWeight={400}
+                      >
+                        Offer the ability for users to leave reviews.
+                      </Typography>
+                    </Box>
+                  </Box>
+                </Box>
+              </Box>
+            </Box>
+          </Box>,
+        ]}
+      />
+      <ThemeProvider theme={darkTheme}>
+        <ScopedCssBaseline>
+          <Container maxWidth="md">
+            <Box py={8} display="flex" flexDirection="column" gap={8}>
+              <Box>
+                <Typography
+                  variant="h3"
+                  mb={2}
+                  fontWeight={700}
+                  textTransform="uppercase"
+                >
+                  The Creative Brainstorming Phase
+                </Typography>
+                <Typography variant="body1">
+                  After my initial research, I delved deeper into understanding
+                  user problems and crafting solutions. I formulated &quot;how
+                  might we&quot; statements to frame challenges for effective
+                  problem-solving. I also prioritized developing the site&apos;s
+                  information architecture to align with user needs. These
+                  exercises offered valuable insights and paved the way for
+                  further project exploration and refinement.
+                </Typography>
+              </Box>
+              <Box>
+                <img
+                  alt=""
+                  width="100%"
+                  src="/project_page_res/shiba/chart/flow.png"
+                />
+                <Typography
+                  mt={2}
+                  variant="body1"
+                  color={palette.neutral[200]}
+                  fontStyle="italic"
+                  textAlign="center"
+                  width="100%"
+                >
+                  Basic outline of the information architecture
+                </Typography>
+              </Box>
+              <Box>
+                <Grid container spacing={3}>
+                  <Grid item xs={12} sm={6} md={4}></Grid>
+                  <Grid item xs={12} sm={6} md={4}></Grid>
+                  <Grid item xs={12} sm={6} md={4}></Grid>
+                  <Grid item xs={12} sm={6} md={4}></Grid>
+                  <Grid item xs={12} sm={6} md={4}></Grid>
+                  <Grid item xs={12} sm={6} md={4}></Grid>
+                  <Grid item xs={12} sm={6} md={4}></Grid>
+                  <Grid item xs={12} sm={6} md={4}></Grid>
+                </Grid>
+              </Box>
+            </Box>
+          </Container>
+        </ScopedCssBaseline>
+      </ThemeProvider>
+      <PinScrollImages
         bottomCaption={
           <>
             (1) Early wireframes (2) Refined wireframes <br />
@@ -337,6 +770,42 @@ export default function ShibaInu() {
           <img src={url} alt="" height="100%" key={index} />
         ))}
       />
+      <ThemeProvider theme={darkTheme}>
+        <ScopedCssBaseline>
+          <Container maxWidth="md">
+            <Box py={12}>
+              <Typography
+                variant="h3"
+                mb={2}
+                fontWeight={700}
+                textTransform="uppercase"
+              >
+                prototyping, Testing and adapting
+              </Typography>
+              <Typography variant="body1">
+                Having concluded the user research phase and finalized the
+                wireframes, the next crucial step was to create a prototype to
+                test the primary user journey. This enabled me to gather
+                valuable feedback and identify any design or user flow errors
+                early on. To accomplish this, I began by developing wire flow
+                prototypes, followed by thorough preparation for user studies
+                and interviews. For further details, please refer to the
+                comprehensive document available here.
+              </Typography>
+              <Typography
+                mt={2}
+                variant="body1"
+                color={palette.neutral[200]}
+                fontStyle="italic"
+                width="100%"
+              >
+                Please note that the numbers on the card signify both priority
+                and urgency, with 0 indicating the highest urgency level.
+              </Typography>
+            </Box>
+          </Container>
+        </ScopedCssBaseline>
+      </ThemeProvider>
       <Footer />
     </ThemeProvider>
   );

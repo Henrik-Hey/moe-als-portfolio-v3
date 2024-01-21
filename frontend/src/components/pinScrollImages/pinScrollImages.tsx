@@ -14,22 +14,31 @@ const SCROLLER_PADDING = 128;
 
 interface PinScrollImagesProps {
   containerHeight: string;
+  centeredContainerHeight?: string;
   items: React.ReactNode[];
   topCaption?: React.ReactNode | string;
   bottomCaption?: React.ReactNode | string;
+  centerWidth?: number;
 }
 export const PinScrollImages = ({
   containerHeight,
+  centeredContainerHeight,
   items,
   topCaption,
   bottomCaption,
+  centerWidth,
 }: PinScrollImagesProps) => {
   const size = useWindowSize();
   const containerRef = React.useRef<HTMLDivElement>(null);
   const contentRef = React.useRef<HTMLDivElement>(null);
+  console.log(size);
 
   React.useEffect(() => {
-    if (!containerRef.current || !contentRef.current) {
+    if (
+      !containerRef.current ||
+      !contentRef.current ||
+      (!!centerWidth && centerWidth <= (size?.width || 0))
+    ) {
       return;
     }
 
@@ -56,10 +65,16 @@ export const PinScrollImages = ({
       timeline.clear();
       scrollTrigger.kill();
     };
-  }, [containerRef, contentRef, size]);
+  }, [centerWidth, containerRef, contentRef, size]);
 
+  const height =
+    !!centerWidth &&
+    centerWidth <= (size?.width || 0) &&
+    !!centeredContainerHeight
+      ? centeredContainerHeight
+      : containerHeight;
   return (
-    <Box height={containerHeight} ref={containerRef}>
+    <Box height={height} ref={containerRef}>
       <ScrollContainer>
         {topCaption && (
           <TextBlock mt={2} px={2}>
