@@ -65,10 +65,12 @@ const HeaderContainer = styled("div")`
   justify-content: center;
   align-items: center;
   gap: 24px;
+  overflow: hidden;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 `;
 
 const BackdropImage = styled("div")`
-  position: absolute;
+  position: fixed;
   width: 100%;
   height: 100vh;
   top: 0px;

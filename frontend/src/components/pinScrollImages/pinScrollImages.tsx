@@ -31,7 +31,6 @@ export const PinScrollImages = ({
   const size = useWindowSize();
   const containerRef = React.useRef<HTMLDivElement>(null);
   const contentRef = React.useRef<HTMLDivElement>(null);
-  console.log(size);
 
   React.useEffect(() => {
     if (

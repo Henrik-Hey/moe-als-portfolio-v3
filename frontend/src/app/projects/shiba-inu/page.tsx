@@ -12,12 +12,13 @@ import {
   Typography,
 } from "@mui/material";
 import { CssBaseline } from "@mui/material";
-import { Footer } from "@/components/footer/footer";
 import { ProjectHeader } from "@/components/projectHeader/projectHeader";
 import { ProjectMissionStatement } from "@/components/projectMissionStatement/projectMissionStatement";
 import { ProjectStatement } from "@/components/projectStatement/projectStatement";
 import { PinScrollImages } from "@/components/pinScrollImages/pinScrollImages";
 import { ProjectUserStory } from "@/components/projectUserStory/projectUserStory";
+import { ProjectNote } from "@/components/projectNote/projectNote";
+import { FooterDark } from "@/components/footer/footerDark";
 
 const SCROLL_BLOCK_1_IMAGE_PATHS = [
   "/project_page_res/shiba/scroll1/image1.png",
@@ -744,14 +745,83 @@ export default function ShibaInu() {
               </Box>
               <Box>
                 <Grid container spacing={3}>
-                  <Grid item xs={12} sm={6} md={4}></Grid>
-                  <Grid item xs={12} sm={6} md={4}></Grid>
-                  <Grid item xs={12} sm={6} md={4}></Grid>
-                  <Grid item xs={12} sm={6} md={4}></Grid>
-                  <Grid item xs={12} sm={6} md={4}></Grid>
-                  <Grid item xs={12} sm={6} md={4}></Grid>
-                  <Grid item xs={12} sm={6} md={4}></Grid>
-                  <Grid item xs={12} sm={6} md={4}></Grid>
+                  <Grid item xs={12} sm={6} md={4}>
+                    <ProjectNote backgroundColor={palette.darkMode[50]}>
+                      <Typography variant="body1">
+                        <b>How might we</b> integrate a diverse range of Asian
+                        cuisine options into the Shiba INU app to cater to
+                        different tastes and preferences?
+                      </Typography>
+                    </ProjectNote>
+                  </Grid>
+                  <Grid item xs={12} sm={6} md={4}>
+                    <ProjectNote backgroundColor={palette.darkMode[50]}>
+                      <Typography variant="body1">
+                        <b>How might we</b> optimize the delivery logistics of
+                        the Shiba INU app to ensure fast and reliable delivery
+                        of Asian cuisine to customers&apos; locations?
+                      </Typography>
+                    </ProjectNote>
+                  </Grid>
+                  <Grid item xs={12} sm={6} md={4}>
+                    <ProjectNote backgroundColor={palette.darkMode[50]}>
+                      <Typography variant="body1">
+                        <b>How might we</b> streamline the process of ordering
+                        Asian cuisine from various restaurants through the Shiba
+                        INU app?
+                      </Typography>
+                    </ProjectNote>
+                  </Grid>
+                  <Grid item xs={12} sm={6} md={4}>
+                    <ProjectNote backgroundColor={palette.darkMode[50]}>
+                      <Typography variant="body1">
+                        <b>How might we</b> enhance the user experience of the
+                        Shiba INU app to make it intuitive and user-friendly for
+                        busy young adults?
+                      </Typography>
+                    </ProjectNote>
+                  </Grid>
+                  <Grid item xs={12} sm={6} md={4}>
+                    <ProjectNote backgroundColor={palette.darkMode[50]}>
+                      <Typography variant="body1">
+                        <b>How might we</b> incorporate a personalized
+                        recommendation feature in the Shiba INU app to suggest
+                        Asian cuisine options based on users&apos; preferences
+                        and previous orders?
+                      </Typography>
+                    </ProjectNote>
+                  </Grid>
+                  <Grid item xs={12} sm={6} md={4}>
+                    <ProjectNote backgroundColor={palette.darkMode[50]}>
+                      <Typography variant="body1">
+                        <b>How might we</b> incorporate a personalized
+                        recommendation feature in the Shiba INU app to suggest
+                        Asian cuisine options based on users&apos; preferences
+                        and previous orders?
+                      </Typography>
+                    </ProjectNote>
+                  </Grid>
+                  <Grid item md={2} display={{ xs: "none", md: "block" }} />
+                  <Grid item xs={12} sm={6} md={4}>
+                    <ProjectNote backgroundColor={palette.darkMode[50]}>
+                      <Typography variant="body1">
+                        <b>How might we</b> integrate secure and convenient
+                        payment options into the Shiba INU app to streamline the
+                        checkout process for customers?
+                      </Typography>
+                    </ProjectNote>
+                  </Grid>
+                  <Grid item xs={12} sm={6} md={4}>
+                    <ProjectNote backgroundColor={palette.darkMode[50]}>
+                      <Typography variant="body1">
+                        <b>How might we</b> leverage technology to provide
+                        real-time order tracking and updates to users of the
+                        Shiba INU app, ensuring transparency and customer
+                        satisfaction?
+                      </Typography>
+                    </ProjectNote>
+                  </Grid>
+                  <Grid item md={2} display={{ xs: "none", md: "block" }} />
                 </Grid>
               </Box>
             </Box>
@@ -804,9 +874,498 @@ export default function ShibaInu() {
               </Typography>
             </Box>
           </Container>
+          <Container maxWidth="xl">
+            <Box>
+              <Grid container spacing={3}>
+                <Grid item xs={12} sm={6} md={3}>
+                  <Box
+                    p={3}
+                    sx={{ backgroundColor: palette.neutral[50] }}
+                    height="100%"
+                  >
+                    <Box mb={2} display="flex" justifyContent="space-between">
+                      <Typography
+                        variant="body1"
+                        color={palette.neutral[700]}
+                        fontWeight={600}
+                      >
+                        Pain Points
+                      </Typography>
+                      <Typography variant="body1" color={palette.neutral[700]}>
+                        0
+                      </Typography>
+                    </Box>
+                    <Typography variant="body1" color={palette.neutral[700]}>
+                      The account creation process lacks necessary information
+                      fields that are currently missing.
+                    </Typography>
+                  </Box>
+                </Grid>
+                <Grid item xs={12} sm={6} md={3}>
+                  <Box
+                    p={3}
+                    sx={{ backgroundColor: palette.neutral[50] }}
+                    height="100%"
+                  >
+                    <Box mb={2} display="flex" justifyContent="space-between">
+                      <Typography
+                        variant="body1"
+                        color={palette.neutral[700]}
+                        fontWeight={600}
+                      >
+                        Pain Points
+                      </Typography>
+                      <Typography variant="body1" color={palette.neutral[700]}>
+                        0
+                      </Typography>
+                    </Box>
+                    <Typography variant="body1" color={palette.neutral[700]}>
+                      The overall app lacks several accessibility options that
+                      should be included.
+                    </Typography>
+                  </Box>
+                </Grid>
+                <Grid item xs={12} sm={6} md={3}>
+                  <Box
+                    p={3}
+                    sx={{ backgroundColor: palette.neutral[50] }}
+                    height="100%"
+                  >
+                    <Box mb={2} display="flex" justifyContent="space-between">
+                      <Typography
+                        variant="body1"
+                        color={palette.neutral[700]}
+                        fontWeight={600}
+                      >
+                        Pain Points
+                      </Typography>
+                      <Typography variant="body1" color={palette.neutral[700]}>
+                        1
+                      </Typography>
+                    </Box>
+                    <Typography variant="body1" color={palette.neutral[700]}>
+                      The welcome screen following account creation seems
+                      unnecessary and could be removed.
+                    </Typography>
+                  </Box>
+                </Grid>
+                <Grid item xs={12} sm={6} md={3}>
+                  <Box
+                    p={3}
+                    sx={{ backgroundColor: palette.neutral[50] }}
+                    height="100%"
+                  >
+                    <Box mb={2} display="flex" justifyContent="space-between">
+                      <Typography
+                        variant="body1"
+                        color={palette.neutral[700]}
+                        fontWeight={600}
+                      >
+                        Pain Points
+                      </Typography>
+                      <Typography variant="body1" color={palette.neutral[700]}>
+                        2
+                      </Typography>
+                    </Box>
+                    <Typography variant="body1" color={palette.neutral[700]}>
+                      Instead of using a username, it would make more sense to
+                      have users provide their first and last names during
+                      account creation, with email used for login.
+                    </Typography>
+                  </Box>
+                </Grid>
+
+                <Grid item xs={12} sm={6} md={4}>
+                  <Box
+                    p={3}
+                    sx={{ backgroundColor: palette.neutral[100] }}
+                    height="100%"
+                  >
+                    <Box mb={2} display="flex" justifyContent="space-between">
+                      <Typography
+                        variant="body1"
+                        color={palette.neutral[700]}
+                        fontWeight={600}
+                      >
+                        Could be improved
+                      </Typography>
+                      <Typography variant="body1" color={palette.neutral[700]}>
+                        0
+                      </Typography>
+                    </Box>
+                    <Typography variant="body1" color={palette.neutral[700]}>
+                      Prioritize accessibility by exploring options to add a
+                      text size slider or enable accessibility features through
+                      the app&apos;s settings.
+                    </Typography>
+                  </Box>
+                </Grid>
+                <Grid item xs={12} sm={6} md={4}>
+                  <Box
+                    p={3}
+                    sx={{ backgroundColor: palette.neutral[100] }}
+                    height="100%"
+                  >
+                    <Box mb={2} display="flex" justifyContent="space-between">
+                      <Typography
+                        variant="body1"
+                        color={palette.neutral[700]}
+                        fontWeight={600}
+                      >
+                        Could be improved
+                      </Typography>
+                      <Typography variant="body1" color={palette.neutral[700]}>
+                        1
+                      </Typography>
+                    </Box>
+                    <Typography variant="body1" color={palette.neutral[700]}>
+                      Enhance the address book functionality by incorporating a
+                      dropdown menu for easy access to different locations.
+                    </Typography>
+                  </Box>
+                </Grid>
+                <Grid item xs={12} sm={6} md={4}>
+                  <Box
+                    p={3}
+                    sx={{ backgroundColor: palette.neutral[100] }}
+                    height="100%"
+                  >
+                    <Box mb={2} display="flex" justifyContent="space-between">
+                      <Typography
+                        variant="body1"
+                        color={palette.neutral[700]}
+                        fontWeight={600}
+                      >
+                        Could be improved
+                      </Typography>
+                      <Typography variant="body1" color={palette.neutral[700]}>
+                        2
+                      </Typography>
+                    </Box>
+                    <Typography variant="body1" color={palette.neutral[700]}>
+                      Implement a &quot;View All&quot; button for sections such
+                      as &quot;This Week&apos;s Deals&quot; to direct users to a
+                      separate page featuring additional deals.
+                    </Typography>
+                  </Box>
+                </Grid>
+
+                <Grid item xs={12} sm={6} md={3}>
+                  <Box
+                    p={3}
+                    sx={{ backgroundColor: palette.neutral[200] }}
+                    height="100%"
+                  >
+                    <Box mb={2} display="flex" justifyContent="space-between">
+                      <Typography
+                        variant="body1"
+                        color={palette.neutral[700]}
+                        fontWeight={600}
+                      >
+                        Positive Feedback
+                      </Typography>
+                    </Box>
+                    <Typography variant="body1" color={palette.neutral[700]}>
+                      The interface is thoughtfully designed with a clean layout
+                      and effective utilization of whitespace.
+                    </Typography>
+                  </Box>
+                </Grid>
+                <Grid item xs={12} sm={6} md={3}>
+                  <Box
+                    p={3}
+                    sx={{ backgroundColor: palette.neutral[200] }}
+                    height="100%"
+                  >
+                    <Box mb={2} display="flex" justifyContent="space-between">
+                      <Typography
+                        variant="body1"
+                        color={palette.neutral[700]}
+                        fontWeight={600}
+                      >
+                        Positive Feedback
+                      </Typography>
+                    </Box>
+                    <Typography variant="body1" color={palette.neutral[700]}>
+                      The app incorporates visually appealing photo elements to
+                      enhance user engagement and prevent monotony.
+                    </Typography>
+                  </Box>
+                </Grid>
+                <Grid item xs={12} sm={6} md={3}>
+                  <Box
+                    p={3}
+                    sx={{ backgroundColor: palette.neutral[200] }}
+                    height="100%"
+                  >
+                    <Box mb={2} display="flex" justifyContent="space-between">
+                      <Typography
+                        variant="body1"
+                        color={palette.neutral[700]}
+                        fontWeight={600}
+                      >
+                        Positive Feedback
+                      </Typography>
+                    </Box>
+                    <Typography variant="body1" color={palette.neutral[700]}>
+                      The typography selection is well-executed, contributing to
+                      readability and overall aesthetics.
+                    </Typography>
+                  </Box>
+                </Grid>
+                <Grid item xs={12} sm={6} md={3}>
+                  <Box
+                    p={3}
+                    sx={{ backgroundColor: palette.neutral[200] }}
+                    height="100%"
+                  >
+                    <Box mb={2} display="flex" justifyContent="space-between">
+                      <Typography
+                        variant="body1"
+                        color={palette.neutral[700]}
+                        fontWeight={600}
+                      >
+                        Positive Feedback
+                      </Typography>
+                    </Box>
+                    <Typography variant="body1" color={palette.neutral[700]}>
+                      The navigation system is intuitive and easy to understand,
+                      allowing users to seamlessly explore different sections of
+                      the app.
+                    </Typography>
+                  </Box>
+                </Grid>
+              </Grid>
+            </Box>
+          </Container>
+          <Container maxWidth="md">
+            <Box py={12}>
+              <Box mb={8}>
+                <Typography
+                  variant="h3"
+                  mb={2}
+                  fontWeight={700}
+                  textTransform="uppercase"
+                >
+                  Creating priorities
+                </Typography>
+                <Typography variant="body1">
+                  I had to analyze the collected data on pain points,
+                  improvements, and successes, converting it into themes to
+                  identify consistencies and patterns. This process allowed me
+                  to establish key priorities and address numerous design flaws
+                  well before the final phase.
+                </Typography>
+              </Box>
+              <Box
+                display="flex"
+                flexDirection={{ xs: "column", md: "row" }}
+                gap={{ xs: 12, md: 2 }}
+                mb={12}
+              >
+                <Box flex={1}>
+                  <Typography
+                    variant="body1"
+                    mb={2}
+                    fontWeight={700}
+                    textTransform="uppercase"
+                  >
+                    PRIORITY 0
+                  </Typography>
+                  <Typography variant="body1">
+                    Based on the theme that 4 out of 5 participants encountered
+                    difficulty in locating the featured section promptly, an
+                    insight emerges: we should enhance the visibility and
+                    differentiation of sections to facilitate easier navigation
+                    and improve the discoverability of the featured content.
+                  </Typography>
+                </Box>
+                <Box flex={1}>
+                  <Typography
+                    variant="body1"
+                    mb={2}
+                    fontWeight={700}
+                    textTransform="uppercase"
+                  >
+                    PRIORITY 1
+                  </Typography>
+                  <Typography variant="body1">
+                    Based on the theme that 3 out of 5 participants desired
+                    greater customization options for their food orders, an
+                    insight arises: we should incorporate additional option
+                    fields under food items to enable users to personalize their
+                    orders according to their preferences.
+                  </Typography>
+                </Box>
+                <Box flex={1}>
+                  <Typography
+                    variant="body1"
+                    mb={2}
+                    fontWeight={700}
+                    textTransform="uppercase"
+                  >
+                    PRIORITY 2
+                  </Typography>
+                  <Typography variant="body1">
+                    Based on the theme that 2 out of 5 participants expressed a
+                    desire for a &quot;quick add&quot; function for food items
+                    listed under various restaurants, an insight emerges: we
+                    should implement different shortcuts or features to
+                    streamline the ordering process and improve overall
+                    efficiency for users.
+                  </Typography>
+                </Box>
+              </Box>
+              <Box>
+                <Typography
+                  variant="h3"
+                  mb={2}
+                  fontWeight={700}
+                  textTransform="uppercase"
+                >
+                  closing NOTES:
+                </Typography>
+                <Typography variant="body1">
+                  The Shiba INU project aimed to revolutionize food delivery for
+                  Asian cuisine enthusiasts, focusing on college students and
+                  young adults. Emphasizing a unique brand identity, a
+                  user-friendly interface, and real-time decision-making
+                  solutions, the goal was to provide a stress-free and rewarding
+                  experience. Throughout the project, I empathized with target
+                  users, conducted thorough research, and addressed potential
+                  issues through user journey mapping and problem statements,
+                  developing user-centric solutions to align with expectations.
+                  <br />
+                  <br />
+                  The project spanned approximately five weeks, presenting a
+                  substantial challenge as it marked one of my initial extended
+                  design ventures that extended beyond mere design into
+                  comprehensive research. Despite the complexity, it was an
+                  enjoyable experience, and I gleaned valuable lessons from the
+                  mistakes made. Although the project didn&apos;t progress to
+                  development, I&apos;m pleased to have crafted such an engaging
+                  brand. Feel free to explore the brief preview below!
+                </Typography>
+              </Box>
+            </Box>
+          </Container>
+
+          <video autoPlay muted loop width="100%">
+            <source
+              src="/project_page_res/shiba/videos/shiba.mp4"
+              type="video/mp4"
+            />
+          </video>
+
+          <Box display="flex" flexDirection={{ xs: "column", md: "row" }}>
+            <Box
+              flex={1}
+              minHeight="100vh"
+              display="flex"
+              flexDirection="column"
+              gap={3}
+              alignItems="center"
+              justifyContent="center"
+              sx={{
+                background:
+                  "url(/project_page_res/shiba/spotlight/darkBackground.png)",
+                backgroundSize: { xs: "cover", sm: "cover", lg: "175%" },
+                backgroundPosition: { xs: "center center", lg: "left center" },
+              }}
+            >
+              <Box position="relative" height={{ xs: "50vh", lg: "70%" }}>
+                <img
+                  src="/project_page_res/shiba/spotlight/darkBehind.png"
+                  alt=""
+                  height="90%"
+                  style={{
+                    position: "absolute",
+                    transform: "translateX(-30%) translateY(5%)",
+                  }}
+                />
+                <img
+                  src="/project_page_res/shiba/spotlight/darkFront.png"
+                  alt=""
+                  height="100%"
+                  style={{
+                    transform: "translateX(30%)",
+                  }}
+                />
+              </Box>
+              <Box
+                px={6}
+                py={1}
+                sx={{
+                  background: "rgba(30, 30, 30, 0.40)",
+                }}
+              >
+                <Typography
+                  variant="body1"
+                  color={palette.neutral[200]}
+                  fontStyle="italic"
+                  textAlign="center"
+                  width="100%"
+                >
+                  Restaurant menu view
+                </Typography>
+              </Box>
+            </Box>
+            <Box
+              flex={1}
+              minHeight="100vh"
+              display="flex"
+              flexDirection="column"
+              gap={3}
+              alignItems="center"
+              justifyContent="center"
+              sx={{
+                background:
+                  "url(/project_page_res/shiba/spotlight/lightBackground.png)",
+                backgroundSize: { xs: "cover", sm: "cover", lg: "250%" },
+                backgroundPosition: { xs: "center center", lg: "85% center" },
+              }}
+            >
+              <Box position="relative" height={{ xs: "50vh", lg: "70%" }}>
+                <img
+                  src="/project_page_res/shiba/spotlight/lightBehind.png"
+                  alt=""
+                  height="90%"
+                  style={{
+                    position: "absolute",
+                    transform: "translateX(-30%) translateY(5%)",
+                  }}
+                />
+                <img
+                  src="/project_page_res/shiba/spotlight/lightFront.png"
+                  alt=""
+                  height="100%"
+                  style={{
+                    transform: "translateX(30%)",
+                  }}
+                />
+              </Box>
+              <Box
+                px={6}
+                py={1}
+                sx={{
+                  background: "rgba(30, 30, 30, 0.40)",
+                }}
+              >
+                <Typography
+                  variant="body1"
+                  color={palette.neutral[200]}
+                  fontStyle="italic"
+                  textAlign="center"
+                  width="100%"
+                >
+                  Home screens
+                </Typography>
+              </Box>
+            </Box>
+          </Box>
+          <FooterDark />
         </ScopedCssBaseline>
       </ThemeProvider>
-      <Footer />
     </ThemeProvider>
   );
 }

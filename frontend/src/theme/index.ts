@@ -9,12 +9,14 @@ export interface CustomColorPaletteOptions {
 declare module "@mui/material/styles" {
   interface Palette {
     neutral: CustomColorPaletteOptions;
+    darkMode: CustomColorPaletteOptions;
     blue: CustomColorPaletteOptions;
     green: CustomColorPaletteOptions;
   }
 
   interface PaletteOptions {
     neutral: CustomColorPaletteOptions;
+    darkMode: CustomColorPaletteOptions;
     blue: CustomColorPaletteOptions;
     green: CustomColorPaletteOptions;
   }
@@ -47,6 +49,18 @@ export const palette = {
     main: "#A1A2A4",
     600: "#4A4B4D",
     700: "#323233",
+  },
+  darkMode: {
+    50: "#383838",
+    100: "#353535",
+    200: "#333333",
+    300: "#2F2F2F",
+    400: "#2C2C2C",
+    main: "#272727",
+    600: "#252525",
+    700: "#232323",
+    800: "#1E1E1E",
+    900: "#121212",
   },
 };
 
