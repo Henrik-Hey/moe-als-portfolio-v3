@@ -1250,12 +1250,32 @@ export default function ShibaInu() {
             </Box>
           </Container>
 
-          <video autoPlay muted loop width="100%">
+          <Box
+            component="video"
+            autoPlay
+            muted
+            loop
+            width="100%"
+            display={{ xs: "none", md: "block" }}
+          >
             <source
-              src="/project_page_res/shiba/videos/shiba.mp4"
+              src={"/project_page_res/shiba/videos/shiba.mp4"}
               type="video/mp4"
             />
-          </video>
+          </Box>
+          <Box
+            component="video"
+            autoPlay
+            muted
+            loop
+            width="100%"
+            display={{ xs: "block", md: "none" }}
+          >
+            <source
+              src={"/project_page_res/shiba/videos/shiba_mobile.mp4"}
+              type="video/mp4"
+            />
+          </Box>
 
           <Box display="flex" flexDirection={{ xs: "column", md: "row" }}>
             <Box
