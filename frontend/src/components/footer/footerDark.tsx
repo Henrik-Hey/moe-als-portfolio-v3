@@ -19,6 +19,7 @@ export const FooterDark = () => {
         <Box
           py={2}
           pb={8}
+          px={2}
           display="flex"
           flexDirection="column"
           alignItems="center"

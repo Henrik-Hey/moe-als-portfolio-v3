@@ -7,7 +7,7 @@ import React from "react";
 interface ProjectHeaderProps {
   imageURL: string;
   logoString?: string;
-  logoImage?: string;
+  logoImage?: React.ReactNode;
   heading: string;
   subheading: string;
 }
@@ -30,6 +30,7 @@ export const ProjectHeader: React.FC<ProjectHeaderProps> = ({
         display="flex"
         flexDirection="column"
         gap={3}
+        p={2}
         zIndex={1}
         alignItems="center"
         maxWidth={920}
@@ -39,6 +40,7 @@ export const ProjectHeader: React.FC<ProjectHeaderProps> = ({
             {logoString}
           </Typography>
         )}
+        {logoImage}
         <Typography
           variant="h1"
           color="#f7f7f7"
@@ -47,7 +49,12 @@ export const ProjectHeader: React.FC<ProjectHeaderProps> = ({
         >
           {heading}
         </Typography>
-        <Typography variant="body1" color="#f7f7f7" fontWeight={400}>
+        <Typography
+          variant="body1"
+          color="#f7f7f7"
+          textAlign="center"
+          fontWeight={400}
+        >
           {subheading}
         </Typography>
       </Box>

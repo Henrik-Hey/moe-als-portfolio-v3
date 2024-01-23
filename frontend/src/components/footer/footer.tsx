@@ -9,6 +9,7 @@ export const Footer = () => {
     <Box
       sx={{ background: theme.palette.neutral[100], width: "100%" }}
       py={2}
+      px={2}
       display="flex"
       flexDirection="column"
       alignItems="center"
