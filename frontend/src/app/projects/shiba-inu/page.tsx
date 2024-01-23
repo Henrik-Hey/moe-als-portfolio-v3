@@ -32,8 +32,8 @@ const SCROLL_BLOCK_1_IMAGE_PATHS = [
 ];
 
 const SCROLL_BLOCK_2_IMAGE_PATHS = [
-  "/project_page_res/shiba/scroll2/hifi.png",
   "/project_page_res/shiba/scroll2/lowfi.png",
+  "/project_page_res/shiba/scroll2/hifi.png",
   "/project_page_res/shiba/scroll2/sketch.png",
   "/project_page_res/shiba/scroll2/clr.png",
 ];

@@ -180,7 +180,7 @@ export default function HashmatrixSharpStakes() {
         </Box>
       </Container>
       <PinScrollImages
-        topCaption={`
+        bottomCaption={`
           First Stage Pre-redesign screens and comments
         `}
         containerHeight="300vh"
