@@ -490,7 +490,7 @@ export default function AFC() {
             </Box>
             <Box mt={-1}>
               <PinScrollImages
-                containerBackground="url(/project_page_res/afc/backroundscroll5.png)"
+                containerBackground="url(/project_page_res/afc/backroundscroll5.png) center"
                 containerHeight="300vh"
                 items={SCROLL_BLOCK_5_IMAGE_PATHS.map((url, index) => (
                   <img src={url} alt="" height="100%" key={index} />
@@ -535,7 +535,7 @@ export default function AFC() {
             </Box>
             <Box mt={-1}>
               <PinScrollImages
-                containerBackground="url(/project_page_res/afc/backroundscroll6.png)"
+                containerBackground="url(/project_page_res/afc/backroundscroll6.png) center"
                 containerHeight="300vh"
                 items={SCROLL_BLOCK_5_IMAGE_PATHS.map((url, index) => (
                   <img src={url} alt="" height="100%" key={index} />
