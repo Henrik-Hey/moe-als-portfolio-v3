@@ -20,6 +20,7 @@ interface PinScrollImagesProps {
   bottomCaption?: React.ReactNode | string;
   centerWidth?: number;
   disablePadding?: boolean;
+  containerBackground?: string;
 }
 export const PinScrollImages = ({
   containerHeight,
@@ -29,6 +30,7 @@ export const PinScrollImages = ({
   bottomCaption,
   centerWidth,
   disablePadding,
+  containerBackground,
 }: PinScrollImagesProps) => {
   const theme = useTheme();
   const size = useWindowSize();
@@ -83,10 +85,20 @@ export const PinScrollImages = ({
       : containerHeight;
   return (
     <Box height={height} ref={containerRef}>
-      <ScrollContainer>
+      <ScrollContainer
+        sx={{
+          background: containerBackground,
+          backgroundSize: "cover",
+        }}
+      >
         {topCaption && (
           <TextBlock mt={2} px={2}>
-            <Typography variant="body1" color={captionColor} fontStyle="italic">
+            <Typography
+              component="div"
+              variant="body1"
+              color={captionColor}
+              fontStyle="italic"
+            >
               {topCaption}
             </Typography>
           </TextBlock>
@@ -100,7 +112,12 @@ export const PinScrollImages = ({
         </Box>
         {bottomCaption && (
           <TextBlock mb={2} px={2}>
-            <Typography variant="body1" color={captionColor} fontStyle="italic">
+            <Typography
+              component="div"
+              variant="body1"
+              color={captionColor}
+              fontStyle="italic"
+            >
               {bottomCaption}
             </Typography>
           </TextBlock>

@@ -70,17 +70,17 @@ export default function HashmatrixSharpStakes() {
             width="214px"
           />
         }
-        heading="Empowering businesses to elevate their products through thoughtful design."
-        subheading="A deeper look into my consulting work with HashMatrix. "
+        heading="Reimagining design systems, interfaces, and enhancing product sustainability."
+        subheading="Enabling users through accessible and intelligent design choices."
       />
       <Container maxWidth="md">
         <Box display="flex" flexDirection="column" gap={12} my={12}>
           <ProjectMissionStatement
-            typeTitle="cLIENT"
-            typeText="SharpStakes"
-            roleAndResponsibilitiesText="Consultation, Sketching, Wireframing, Visual Design, Prototyping, User Testing, Interaction Design"
-            platformsText="Web, Mobile: iOS"
-            timelineText="Q1 2023 - Ongoing "
+            typeTitle="Project TYPE"
+            typeText="Major Feature"
+            roleAndResponsibilitiesText="Sketching, User Research, Wireframing, Visual Design, Prototyping, User Testing, Interaction Design"
+            platformsText="Web, Tablet, Mobile: IOS, Android"
+            timelineText="Q2 2022 - Ongoing"
           />
           <ProjectStatement content="Improving user engagement and fostering business growth, I spearheaded the strategy, design, and testing phases of SharpStakes, a distinctive AI-powered betting solution. My goal was to create a user-friendly product that spurred expansion, drew in more users, and opened up greater referral and sponsorship prospects." />
           <Box>
