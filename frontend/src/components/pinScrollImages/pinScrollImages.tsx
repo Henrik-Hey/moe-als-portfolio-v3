@@ -48,6 +48,7 @@ export const PinScrollImages = ({
 
   React.useEffect(() => {
     if (
+      !canRender ||
       !containerRef.current ||
       !contentRef.current ||
       (!!centerWidth && centerWidth <= (size?.width || 0))
@@ -81,7 +82,7 @@ export const PinScrollImages = ({
       scrollTrigger.kill();
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [centerWidth, containerRef, contentRef, scrollPadding]);
+  }, [centerWidth, containerRef, contentRef, scrollPadding, canRender]);
 
   React.useEffect(() => {
     setTimeout(() => {
