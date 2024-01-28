@@ -19,6 +19,7 @@ import { PinScrollImages } from "@/components/pinScrollImages/pinScrollImages";
 import { ProjectUserStory } from "@/components/projectUserStory/projectUserStory";
 import { ProjectNote } from "@/components/projectNote/projectNote";
 import { FooterDark } from "@/components/footer/footerDark";
+import { ProjectsNavFooter } from "@/components/projectsNavFooter/projectsNavFooter";
 
 const SCROLL_BLOCK_1_IMAGE_PATHS = [
   "/project_page_res/shiba/scroll1/image1.png",
@@ -1289,7 +1290,7 @@ export default function ShibaInu() {
               sx={{
                 background:
                   "url(/project_page_res/shiba/spotlight/darkBackground.png)",
-                backgroundSize: { xs: "cover", sm: "cover", lg: "175%" },
+                backgroundSize: { xs: "cover", sm: "cover", xl: "175%" },
                 backgroundPosition: { xs: "center center", lg: "left center" },
               }}
             >
@@ -1383,6 +1384,7 @@ export default function ShibaInu() {
               </Box>
             </Box>
           </Box>
+          <ProjectsNavFooter projects={["hashmatrix-sharpstakes", "afc"]} />
           <FooterDark />
         </ScopedCssBaseline>
       </ThemeProvider>

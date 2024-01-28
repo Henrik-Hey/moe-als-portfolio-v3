@@ -1,7 +1,7 @@
 import { Box, styled, useTheme } from "@mui/material";
 import React from "react";
 
-const FoldedEdge = ({ color = "#252525" }: { color?: string }) => (
+const FoldedEdge = ({ color = "rgba(0,0,0,0.2)" }: { color?: string }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="21"

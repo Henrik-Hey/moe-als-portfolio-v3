@@ -1,5 +1,5 @@
 import { palette } from "@/theme";
-import { East } from "@mui/icons-material";
+import { East, LockOpenTwoTone, LockTwoTone } from "@mui/icons-material";
 import { Box, Card, Typography, useTheme } from "@mui/material";
 import React from "react";
 
@@ -10,6 +10,7 @@ interface ProjectCardProps {
   ctaText: string;
   color: string;
   onCTAClick?: () => void;
+  isLocked?: boolean;
   content?: React.ReactNode;
 }
 export const ProjectCard: React.FC<ProjectCardProps> = ({
@@ -19,6 +20,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
   ctaText,
   color,
   onCTAClick,
+  isLocked,
   content,
 }) => {
   const theme = useTheme();
@@ -27,6 +29,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
       sx={{
         background: color,
         flex: 1,
+        borderRadius: "48px",
         boxShadow: "0px 6px 12px 0px rgba(0, 0, 0, 0.10)",
         transition: "all 0.5s",
         [`&:hover`]: {
@@ -59,16 +62,22 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
             {subtext}
           </Typography>
         </Typography>
-        <Typography variant="body1" fontWeight={400}>
+        <Typography
+          variant="body1"
+          fontWeight={400}
+          color={palette.neutral[700]}
+        >
           {description}
         </Typography>
         <Box
           display="flex"
+          onClick={onCTAClick}
           alignItems="center"
           sx={{
             cursor: onCTAClick ? "pointer" : "inherit",
             [`&:hover`]: {
               textDecoration: onCTAClick ? "underline" : "none",
+              textDecorationColor: palette.primary.main,
             },
           }}
         >
@@ -81,7 +90,16 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
           >
             {ctaText}{" "}
           </Typography>
-          {onCTAClick && <East fontSize="small" color="primary" />}
+          {onCTAClick &&
+            (isLocked !== undefined ? (
+              isLocked ? (
+                <LockTwoTone color="primary" />
+              ) : (
+                <LockOpenTwoTone color="primary" />
+              )
+            ) : (
+              <East fontSize="small" color="primary" />
+            ))}
         </Box>
       </Box>
       <Box pb={50} position="relative">

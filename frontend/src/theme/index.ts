@@ -46,6 +46,7 @@ export const palette = {
     50: "#F7F7F7",
     100: "#E7E8E8",
     200: "#D0D0D1",
+    300: "#B8B9BB",
     main: "#A1A2A4",
     600: "#4A4B4D",
     700: "#323233",
@@ -112,7 +113,7 @@ export const baseTheme = createTheme({
       // large
       lg: 1200,
       // extra-large
-      xl: 1536,
+      xl: 1440,
     },
   },
   components: {
@@ -134,7 +135,8 @@ export const baseTheme = createTheme({
     MuiCard: {
       styleOverrides: {
         root: {
-          borderRadius: "48px",
+          borderRadius: "0px",
+          boxShadow: "none",
         },
       },
     },
@@ -153,6 +155,7 @@ export const baseTheme = createTheme({
         },
       },
     },
+
     MuiCssBaseline: {
       styleOverrides: `
         @font-face {

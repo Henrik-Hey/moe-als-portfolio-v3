@@ -15,6 +15,7 @@ import { ProjectMissionStatement } from "@/components/projectMissionStatement/pr
 import { ProjectStatement } from "@/components/projectStatement/projectStatement";
 import { PinScrollImages } from "@/components/pinScrollImages/pinScrollImages";
 import { FooterDark } from "@/components/footer/footerDark";
+import { ProjectsNavFooter } from "@/components/projectsNavFooter/projectsNavFooter";
 
 const SCROLL_BLOCK_1_IMAGE_PATHS = [
   "/project_page_res/hashmatrix/sharpstakes/scroll1/image1.png",
@@ -517,7 +518,12 @@ export default function HashmatrixSharpStakes() {
                 sx={{
                   background:
                     "url(/project_page_res/hashmatrix/sharpstakes/spotlight/blackBackground.png)",
-                  backgroundSize: { xs: "cover", sm: "cover", lg: "175%" },
+                  backgroundSize: {
+                    xs: "cover",
+                    sm: "cover",
+                    md: "cover",
+                    lg: "cover",
+                  },
                   backgroundPosition: {
                     xs: "center center",
                     lg: "left center",
@@ -637,6 +643,7 @@ export default function HashmatrixSharpStakes() {
               />
             </Box>
           </Box>
+          <ProjectsNavFooter projects={["shiba", "afc"]} />
           <FooterDark />
         </ScopedCssBaseline>
       </ThemeProvider>

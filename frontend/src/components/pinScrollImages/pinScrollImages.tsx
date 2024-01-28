@@ -20,6 +20,8 @@ interface PinScrollImagesProps {
   bottomCaption?: React.ReactNode | string;
   centerWidth?: number;
   disablePadding?: boolean;
+  topPadding?: number;
+  bottomPadding?: number;
   containerBackground?: string;
 }
 export const PinScrollImages = ({
@@ -30,6 +32,8 @@ export const PinScrollImages = ({
   bottomCaption,
   centerWidth,
   disablePadding,
+  topPadding,
+  bottomPadding,
   containerBackground,
 }: PinScrollImagesProps) => {
   const theme = useTheme();
@@ -103,7 +107,13 @@ export const PinScrollImages = ({
             </Typography>
           </TextBlock>
         )}
-        <Box flex={1} display="flex" p={scrollPadding / 2 / 8}>
+        <Box
+          flex={1}
+          display="flex"
+          p={scrollPadding / 2 / 8}
+          pt={topPadding}
+          pb={bottomPadding}
+        >
           <Box flex={1} position="relative">
             <ScrollContentContainer ref={contentRef}>
               {items}

@@ -77,13 +77,14 @@ const HeaderContainer = styled("div")`
 `;
 
 const BackdropImage = styled("div")`
-  position: fixed;
+  position: absolute;
   width: 100%;
   height: 100vh;
   top: 0px;
   left: 0px;
   z-index: 0;
-  background-position-y: -349px !important;
+  background-attachment: fixed;
+  // background-position-y: -349px !important;
   background-size: cover;
 
   &::after {
