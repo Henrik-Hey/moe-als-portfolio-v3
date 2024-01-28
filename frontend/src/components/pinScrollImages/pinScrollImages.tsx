@@ -38,6 +38,7 @@ export const PinScrollImages = ({
 }: PinScrollImagesProps) => {
   const theme = useTheme();
   const size = useWindowSize();
+  const [canRender, setCanRender] = React.useState(false);
   const containerRef = React.useRef<HTMLDivElement>(null);
   const contentRef = React.useRef<HTMLDivElement>(null);
   const scrollPadding = React.useMemo(
@@ -82,6 +83,12 @@ export const PinScrollImages = ({
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [centerWidth, containerRef, contentRef, scrollPadding]);
 
+  React.useEffect(() => {
+    setTimeout(() => {
+      setCanRender(true);
+    }, 300);
+  }, []);
+
   const isDark = theme.palette.mode === "dark";
   const captionColor = isDark ? palette.neutral[200] : palette.neutral[600];
   const height =
@@ -111,19 +118,21 @@ export const PinScrollImages = ({
             </Typography>
           </TextBlock>
         )}
-        <Box
-          flex={1}
-          display="flex"
-          p={scrollPadding / 2 / 8}
-          pt={topPadding}
-          pb={bottomPadding}
-        >
-          <Box flex={1} position="relative">
-            <ScrollContentContainer ref={contentRef}>
-              {items}
-            </ScrollContentContainer>
+        {canRender && (
+          <Box
+            flex={1}
+            display="flex"
+            p={scrollPadding / 2 / 8}
+            pt={topPadding}
+            pb={bottomPadding}
+          >
+            <Box flex={1} position="relative">
+              <ScrollContentContainer ref={contentRef}>
+                {items}
+              </ScrollContentContainer>
+            </Box>
           </Box>
-        </Box>
+        )}
         {bottomCaption && (
           <TextBlock mb={2} px={2}>
             <Typography
