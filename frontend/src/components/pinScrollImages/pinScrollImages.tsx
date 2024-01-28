@@ -87,6 +87,7 @@ export const PinScrollImages = ({
     !!centeredContainerHeight
       ? centeredContainerHeight
       : containerHeight;
+
   return (
     <Box height={height} ref={containerRef}>
       <ScrollContainer
