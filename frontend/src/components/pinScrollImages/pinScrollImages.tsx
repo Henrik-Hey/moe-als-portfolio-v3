@@ -58,6 +58,8 @@ export const PinScrollImages = ({
       containerRef.current.getBoundingClientRect();
     const { width: contentWidth } = contentRef.current.getBoundingClientRect();
 
+    alert(contentWidth);
+
     const timeline = gsap.timeline();
     timeline.fromTo(
       contentRef.current,
@@ -77,7 +79,8 @@ export const PinScrollImages = ({
       timeline.clear();
       scrollTrigger.kill();
     };
-  }, [centerWidth, containerRef, contentRef, scrollPadding, size]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [centerWidth, containerRef, contentRef, scrollPadding]);
 
   const isDark = theme.palette.mode === "dark";
   const captionColor = isDark ? palette.neutral[200] : palette.neutral[600];
