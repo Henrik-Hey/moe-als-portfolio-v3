@@ -1,8 +1,8 @@
+/* eslint-disable @next/next/no-img-element */
 import { Box } from "@mui/material";
 import { ProjectCard } from "../projectCard/projectCard";
 import { palette } from "@/theme";
 import React from "react";
-import Image from "next/image";
 import { ACCESS_COOKIE_KEY, getCookie } from "@/hooks";
 import { useRouter } from "next/navigation";
 
@@ -29,7 +29,7 @@ export const PresetProjectCard = ({ project }: { project: ProjectPage }) => {
           }}
           content={
             <Box display="flex" marginLeft={-10}>
-              <Image
+              <img
                 src="/screenshots/afc-product.png"
                 alt="Picture of AFC console"
                 width={1000}
@@ -52,7 +52,7 @@ export const PresetProjectCard = ({ project }: { project: ProjectPage }) => {
           }}
           content={
             <Box display="flex" marginLeft={-10}>
-              <Image
+              <img
                 src="/screenshots/hashmatrix-product.png"
                 alt="Picture of AFC console"
                 width={1000}
@@ -72,13 +72,13 @@ export const PresetProjectCard = ({ project }: { project: ProjectPage }) => {
           color={palette.warning.main}
           content={
             <Box display="flex" gap={2}>
-              <Image
+              <img
                 src="/screenshots/pawfolio-app-2.png"
                 alt="Picture of AFC console"
                 width={400}
                 height={400 / 0.48583984375}
               />
-              <Image
+              <img
                 src="/screenshots/pawfolio-app-1.png"
                 alt="Picture of AFC console"
                 width={400}
@@ -102,13 +102,13 @@ export const PresetProjectCard = ({ project }: { project: ProjectPage }) => {
           }}
           content={
             <Box display="flex" gap={2}>
-              <Image
+              <img
                 src="/screenshots/shiba-app-2.png"
                 alt="Picture of AFC console"
                 width={300}
                 height={300 / 0.48583984375}
               />
-              <Image
+              <img
                 src="/screenshots/shiba-app-1.png"
                 alt="Picture of AFC console"
                 width={300}

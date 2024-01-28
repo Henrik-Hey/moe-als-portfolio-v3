@@ -772,7 +772,7 @@ export default function Content() {
                       background:
                         "linear-gradient(0deg, #81BC01 -458.04%, #FFF 273.55%);",
                       backgroundClip: "text",
-                      "-webkit-text-fill-color": "transparent",
+                      WebkitTextFillColor: "transparent",
                     }}
                   >
                     99%
@@ -791,7 +791,7 @@ export default function Content() {
                       background:
                         "linear-gradient(1deg, #81BC01 -332.39%, #FFF 388.3%)",
                       backgroundClip: "text",
-                      "-webkit-text-fill-color": "transparent",
+                      WebkitTextFillColor: "transparent",
                     }}
                   >
                     96%
@@ -811,7 +811,7 @@ export default function Content() {
                       background:
                         "linear-gradient(1deg, #81BC01 -214.65%, #FFF 499.44%);",
                       backgroundClip: "text",
-                      "-webkit-text-fill-color": "transparent",
+                      WebkitTextFillColor: "transparent",
                     }}
                   >
                     92%
@@ -831,7 +831,7 @@ export default function Content() {
                       background:
                         "linear-gradient(0deg, #81BC01 -102.62%, #FFF 471.16%);",
                       backgroundClip: "text",
-                      "-webkit-text-fill-color": "transparent",
+                      WebkitTextFillColor: "transparent",
                     }}
                   >
                     88%

@@ -7,8 +7,6 @@ import {
   Typography,
 } from "@mui/material";
 import React from "react";
-import { ProjectCard } from "../projectCard/projectCard";
-import Image from "next/image";
 import {
   PresetProjectCard,
   ProjectPage,
