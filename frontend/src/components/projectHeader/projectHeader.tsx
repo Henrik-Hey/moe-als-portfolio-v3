@@ -1,8 +1,14 @@
-import { palette } from "@/theme";
+import { darkTheme, palette } from "@/theme";
 import { East } from "@mui/icons-material";
-import { Box, Card, Typography, useTheme } from "@mui/material";
+import {
+  Box,
+  ScopedCssBaseline,
+  ThemeProvider,
+  Typography,
+} from "@mui/material";
 import { styled } from "@mui/system";
 import React from "react";
+import { Navbar } from "..";
 
 interface ProjectHeaderProps {
   imageURL: string;
@@ -20,45 +26,52 @@ export const ProjectHeader: React.FC<ProjectHeaderProps> = ({
   subheading,
 }) => {
   return (
-    <HeaderContainer>
-      <BackdropImage
-        sx={{
-          backgroundImage: `url(${imageURL})`,
-        }}
-      />
-      <Box
-        display="flex"
-        flexDirection="column"
-        gap={3}
-        p={2}
-        zIndex={1}
-        alignItems="center"
-        maxWidth={920}
-      >
-        {logoString && (
-          <Typography variant="h1" color="#f7f7f7" fontWeight={900}>
-            {logoString}
-          </Typography>
-        )}
-        {logoImage}
-        <Typography
-          variant="h1"
-          color="#f7f7f7"
-          fontWeight={500}
-          textAlign="center"
-        >
-          {heading}
-        </Typography>
-        <Typography
-          variant="body1"
-          color="#f7f7f7"
-          textAlign="center"
-          fontWeight={400}
-        >
-          {subheading}
-        </Typography>
-      </Box>
-    </HeaderContainer>
+    <ThemeProvider theme={darkTheme}>
+      <ScopedCssBaseline>
+        <HeaderContainer>
+          <BackdropImage
+            sx={{
+              backgroundImage: `url(${imageURL})`,
+            }}
+          />
+          <Box position="absolute" top="0px" left="0px" width="100%">
+            <Navbar colorMode="dark" />
+          </Box>
+          <Box
+            display="flex"
+            flexDirection="column"
+            gap={3}
+            p={2}
+            zIndex={1}
+            alignItems="center"
+            maxWidth={920}
+          >
+            {logoString && (
+              <Typography variant="h1" color="#f7f7f7" fontWeight={900}>
+                {logoString}
+              </Typography>
+            )}
+            {logoImage}
+            <Typography
+              variant="h1"
+              color="#f7f7f7"
+              fontWeight={500}
+              textAlign="center"
+            >
+              {heading}
+            </Typography>
+            <Typography
+              variant="body1"
+              color="#f7f7f7"
+              textAlign="center"
+              fontWeight={400}
+            >
+              {subheading}
+            </Typography>
+          </Box>
+        </HeaderContainer>
+      </ScopedCssBaseline>
+    </ThemeProvider>
   );
 };
 
