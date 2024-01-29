@@ -24,26 +24,33 @@ export default function Content() {
           gap={3}
           flexDirection="column"
         >
-          <Typography variant="h1">
-            Hi, I&apos;m Moe Als, a Product Designer{" "}
-            <Typography
-              variant="h1"
-              fontSize="1em"
-              component="span"
-              fontWeight={100}
-            >
-              based in Ontario, Canada. When I&apos;m not working, I spend my
-              time being a{" "}
-              <Typewriter
-                contents={[
-                  "Home Chef.",
-                  "Professional Photographer.",
-                  "Cat Dad.",
-                  "Movie Enthusiast.",
-                ]}
-              />
+          <Box
+            sx={{
+              height: { xs: "33em", md: "unset" },
+            }}
+          >
+            <Typography variant="h1">
+              Hi, I&apos;m Moe Als, a Product Designer{" "}
+              <Typography
+                variant="h1"
+                fontSize="1em"
+                component="span"
+                fontWeight={100}
+              >
+                based in Ontario, Canada. When I&apos;m not working, I spend my
+                time being a{" "}
+                <Typewriter
+                  contents={[
+                    "Home Chef.",
+                    "Professional Photographer.",
+                    "Cat Dad.",
+                    "Movie Enthusiast.",
+                  ]}
+                />
+              </Typography>
             </Typography>
-          </Typography>
+          </Box>
+
           <Typography variant="h6" fontWeight={400}>
             Fueled by a deep passion for Human-Centered Design, I wholeheartedly
             dive into the art of blending empathy, creativity, and innovation.

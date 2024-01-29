@@ -74,8 +74,6 @@ export const PinScrollImages = ({
       const { width: itemContainerWidth } =
         itemContainerRef.current.getBoundingClientRect();
 
-      console.log({ contentWidth, itemContainerWidth });
-
       timeline = gsap.timeline();
       timeline.fromTo(
         contentRef.current,

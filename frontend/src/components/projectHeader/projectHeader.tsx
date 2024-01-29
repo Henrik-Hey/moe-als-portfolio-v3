@@ -3,6 +3,7 @@
 import { darkTheme } from "@/theme";
 import {
   Box,
+  IconButton,
   ScopedCssBaseline,
   ThemeProvider,
   Typography,
@@ -10,6 +11,7 @@ import {
 import { styled } from "@mui/system";
 import React from "react";
 import { Navbar } from "..";
+import { KeyboardArrowDown } from "@mui/icons-material";
 
 interface ProjectHeaderProps {
   imageURL: string;
@@ -70,13 +72,26 @@ export const ProjectHeader: React.FC<ProjectHeaderProps> = ({
               {subheading}
             </Typography>
           </Box>
-          {/* <Box
-            sx={{ 
-              position: 'absolute'
+          <Box
+            sx={{
+              position: "absolute",
+              bottom: "32px",
+              left: "50%",
+              transform: "translateX(-50%)",
             }}
           >
-
-          </Box> */}
+            <IconButton
+              onClick={() => {
+                window.scrollTo({
+                  left: 0,
+                  top: window.innerHeight,
+                  behavior: "smooth",
+                });
+              }}
+            >
+              <KeyboardArrowDown sx={{ color: "#f7f7f7" }} fontSize="large" />
+            </IconButton>
+          </Box>
         </HeaderContainer>
       </ScopedCssBaseline>
     </ThemeProvider>
