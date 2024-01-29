@@ -274,8 +274,10 @@ export const useDarkTheme = () => {
 };
 
 export const usePortfolioDarkTheme = () => {
+  const baseTheme = useBaseTheme();
   const darkTheme = useDarkTheme();
   return createTheme({
+    ...baseTheme,
     ...darkTheme,
     palette: {
       mode: "dark",

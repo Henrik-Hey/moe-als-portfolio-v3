@@ -248,7 +248,7 @@ const useIsOnAbout = (): boolean => {
 interface NavbarProps {
   colorMode?: "light" | "dark";
 }
-export const Navbar: React.FC<NavbarProps> = () => {
+export const Navbar: React.FC<NavbarProps> = ({ colorMode }) => {
   const { activeTheme: theme, toggleTheme } = usePortfolioTheme();
   const isOnAboutMe = useIsOnAbout();
   const projectDropDownText = useProjectFromURL();
@@ -265,12 +265,19 @@ export const Navbar: React.FC<NavbarProps> = () => {
     }
   }, [open, isMobile]);
 
-  const isDark = theme.palette.mode === "dark";
+  const isDark = colorMode
+    ? colorMode === "dark"
+    : theme.palette.mode === "dark";
   const textColor = isDark
     ? theme.palette.neutral[200]
     : theme.palette.primary.main;
   const buttonStyle = isDark
     ? {
+        fontFamily: "PP Eiko",
+        fontWeight: 900,
+        borderRadius: "8px",
+        textTransform: "none",
+        px: 6,
         color: theme.palette.neutral[700],
         background: theme.palette.neutral[100],
         "&:hover, &:active": {
@@ -409,9 +416,11 @@ export const Navbar: React.FC<NavbarProps> = () => {
               </Box>
             </Card>
           </Box>
-          <IconButton onClick={toggleTheme}>
-            {!isDark ? <WbSunnyOutlined /> : <DarkModeOutlined />}
-          </IconButton>
+          {!colorMode && (
+            <IconButton onClick={toggleTheme}>
+              {!isDark ? <WbSunnyOutlined /> : <DarkModeOutlined />}
+            </IconButton>
+          )}
           <Button
             variant="contained"
             LinkComponent={Link}
@@ -519,22 +528,24 @@ export const Navbar: React.FC<NavbarProps> = () => {
               </ButtonBase>
               <Divider />
               <Box px={4}>
-                <ButtonBase
-                  sx={{
-                    mt: 2,
-                    py: 1,
-                    borderRadius: 1,
-                    width: "100%",
-                    display: "flex",
-                    justifyContent: "space-between",
-                    alignItems: "center",
-                    color: textColor,
-                  }}
-                  onClick={toggleTheme}
-                >
-                  <Typography>Switch Theme</Typography>
-                  {!isDark ? <WbSunnyOutlined /> : <DarkModeOutlined />}
-                </ButtonBase>
+                {!colorMode && (
+                  <ButtonBase
+                    sx={{
+                      mt: 2,
+                      py: 1,
+                      borderRadius: 1,
+                      width: "100%",
+                      display: "flex",
+                      justifyContent: "space-between",
+                      alignItems: "center",
+                      color: textColor,
+                    }}
+                    onClick={toggleTheme}
+                  >
+                    <Typography>Switch Theme</Typography>
+                    {!isDark ? <WbSunnyOutlined /> : <DarkModeOutlined />}
+                  </ButtonBase>
+                )}
                 <Button
                   variant="contained"
                   LinkComponent={Link}

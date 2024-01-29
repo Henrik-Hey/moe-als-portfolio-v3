@@ -92,7 +92,7 @@ export const PinScrollImages = ({
         end: "bottom bottom",
         animation: timeline,
       });
-    }, 500);
+    }, 1000);
 
     return () => {
       timeline?.clear();
