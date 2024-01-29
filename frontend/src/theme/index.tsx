@@ -87,6 +87,7 @@ export const useBaseTheme = () => {
   const h1FontSize = isMobile ? "2em" : "3em";
   const h2FontSize = isMobile ? "1.5em" : "2.25em";
   const h3FontSize = isMobile ? "1.5em" : "2em";
+  const h6FontSize = isMobile ? "1em" : "1.25em";
   return createTheme({
     spacing,
     palette: {
@@ -122,6 +123,7 @@ export const useBaseTheme = () => {
         color: palette.neutral[700],
       },
       h6: {
+        fontSize: h6FontSize,
         color: palette.neutral[700],
       },
     },
@@ -217,6 +219,7 @@ export const useDarkTheme = () => {
   const h1FontSize = isMobile ? "2em" : "3em";
   const h2FontSize = isMobile ? "1.5em" : "2.25em";
   const h3FontSize = isMobile ? "1.5em" : "2em";
+  const h6FontSize = isMobile ? "1em" : "1.25em";
 
   return createTheme({
     ...baseTheme,
@@ -251,10 +254,10 @@ export const useDarkTheme = () => {
         fontFamily: raleway.style.fontFamily,
         lineHeight: "115%",
         fontSize: h3FontSize,
-
         color: palette.neutral[50],
       },
       h6: {
+        fontSize: h6FontSize,
         color: palette.neutral[50],
       },
     },

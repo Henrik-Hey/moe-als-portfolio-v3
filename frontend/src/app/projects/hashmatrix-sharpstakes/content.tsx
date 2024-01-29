@@ -493,14 +493,6 @@ export default function Content() {
               </FadeIn>
               <FadeIn>
                 <Box>
-                  <Typography
-                    variant="h3"
-                    mb={2}
-                    fontWeight={700}
-                    textTransform="uppercase"
-                  >
-                    user results:
-                  </Typography>
                   <Box display="flex" flexDirection="column" gap={2}>
                     <Box display="flex" gap={6} alignItems="center">
                       <Typography

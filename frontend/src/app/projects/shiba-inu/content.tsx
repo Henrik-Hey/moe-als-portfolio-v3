@@ -484,14 +484,6 @@ export default function Content() {
                         Download the app from the appropriate platform (e.g.,
                         App Store, Google Play).
                       </Typography>
-                      <Typography
-                        component="li"
-                        variant="caption"
-                        fontWeight={400}
-                      >
-                        Launch the app on the device to begin the user
-                        experience.
-                      </Typography>
                     </Box>
                     <Box flex={1} component="ul">
                       <Typography
@@ -511,13 +503,6 @@ export default function Content() {
                       >
                         Choose and complete the account creation process,
                         including verifying personal information.
-                      </Typography>
-                      <Typography
-                        component="li"
-                        variant="caption"
-                        fontWeight={400}
-                      >
-                        Confirm the email address associated with the account.
                       </Typography>
                     </Box>
                     <Box flex={1} component="ul">
@@ -543,14 +528,7 @@ export default function Content() {
                         fontWeight={400}
                         mb={2}
                       >
-                        Add desired items to the cart.
-                      </Typography>
-                      <Typography
-                        component="li"
-                        variant="caption"
-                        fontWeight={400}
-                      >
-                        Proceed to the checkout process to finalize the order.
+                        Add desired items to the cart & checkout
                       </Typography>
                     </Box>
                     <Box flex={1} component="ul">
@@ -578,13 +556,6 @@ export default function Content() {
                       >
                         Review subscription options and associated perks.
                       </Typography>
-                      <Typography
-                        component="li"
-                        variant="caption"
-                        fontWeight={400}
-                      >
-                        Proceed to make payment and provide a tip.
-                      </Typography>
                     </Box>
                     <Box flex={1} component="ul">
                       <Typography
@@ -610,13 +581,6 @@ export default function Content() {
                         mb={2}
                       >
                         Receive the order.
-                      </Typography>
-                      <Typography
-                        component="li"
-                        variant="caption"
-                        fontWeight={400}
-                      >
-                        Provide a rating or feedback.
                       </Typography>
                     </Box>
                   </Box>
