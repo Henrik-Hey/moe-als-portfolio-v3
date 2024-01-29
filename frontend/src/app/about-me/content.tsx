@@ -1,7 +1,6 @@
 "use client";
 
 import { Banner, Navbar, ProjectCard } from "@/components";
-import { baseTheme } from "@/theme";
 import {
   Accordion,
   AccordionDetails,
@@ -18,10 +17,16 @@ import { raleway } from "@/fonts";
 import Link from "next/link";
 import { ExpandMore } from "@mui/icons-material";
 import { AboutMeImageAutoScrollBlock } from "@/components/aboutMeScrollBlock/aboutMeScrollBlock";
+import { usePortfolioTheme } from "@/theme";
+import { FooterDark } from "@/components/footer/footerDark";
 
 export default function Content() {
+  const { activeTheme, theme } = usePortfolioTheme();
+
+  const isDark = theme === "dark";
+
   return (
-    <ThemeProvider theme={baseTheme}>
+    <ThemeProvider theme={activeTheme}>
       <CssBaseline />
       <Banner />
       <Navbar />
@@ -35,7 +40,11 @@ export default function Content() {
                     variant="h3"
                     fontFamily="PP Eiko"
                     fontWeight={400}
-                    color={baseTheme.palette.primary.main}
+                    color={
+                      isDark
+                        ? activeTheme.palette.neutral[100]
+                        : activeTheme.palette.primary.main
+                    }
                   >
                     A Passionate Product designer, Cat Dad, Movie Enthusiast,
                     and Home Chef.
@@ -80,7 +89,7 @@ export default function Content() {
                         },
                       }}
                       fontWeight={600}
-                      color={baseTheme.palette.secondary.main}
+                      color={activeTheme.palette.secondary.main}
                     >
                       @AFC
                     </Typography>
@@ -108,7 +117,11 @@ export default function Content() {
                     variant="h3"
                     fontFamily="PP Eiko"
                     fontWeight={400}
-                    color={baseTheme.palette.primary.main}
+                    color={
+                      isDark
+                        ? activeTheme.palette.neutral[100]
+                        : activeTheme.palette.primary.main
+                    }
                   >
                     Certifications
                   </Typography>
@@ -120,7 +133,11 @@ export default function Content() {
                         variant="h6"
                         fontFamily={raleway.style.fontFamily}
                         fontWeight={700}
-                        color={baseTheme.palette.primary.main}
+                        color={
+                          isDark
+                            ? activeTheme.palette.neutral[100]
+                            : activeTheme.palette.primary.main
+                        }
                       >
                         Certifications by Designership
                       </Typography>
@@ -145,7 +162,7 @@ export default function Content() {
                               },
                             }}
                             fontWeight={600}
-                            color={baseTheme.palette.secondary.main}
+                            color={activeTheme.palette.secondary.main}
                           >
                             Practical User Research and Strategy
                           </Typography>
@@ -166,7 +183,7 @@ export default function Content() {
                               },
                             }}
                             fontWeight={600}
-                            color={baseTheme.palette.secondary.main}
+                            color={activeTheme.palette.secondary.main}
                           >
                             The ultimate Figma masterclass
                           </Typography>
@@ -188,7 +205,11 @@ export default function Content() {
                         variant="h6"
                         fontFamily={raleway.style.fontFamily}
                         fontWeight={700}
-                        color={baseTheme.palette.primary.main}
+                        color={
+                          isDark
+                            ? activeTheme.palette.neutral[100]
+                            : activeTheme.palette.primary.main
+                        }
                       >
                         Certifications by Google through Coursera
                       </Typography>
@@ -213,7 +234,7 @@ export default function Content() {
                               },
                             }}
                             fontWeight={600}
-                            color={baseTheme.palette.secondary.main}
+                            color={activeTheme.palette.secondary.main}
                           >
                             Foundations of User Experience Design
                           </Typography>
@@ -235,7 +256,7 @@ export default function Content() {
                               },
                             }}
                             fontWeight={600}
-                            color={baseTheme.palette.secondary.main}
+                            color={activeTheme.palette.secondary.main}
                           >
                             Start the UX Design Process: Empathize, Define, and
                             Ideate
@@ -258,7 +279,7 @@ export default function Content() {
                               },
                             }}
                             fontWeight={600}
-                            color={baseTheme.palette.secondary.main}
+                            color={activeTheme.palette.secondary.main}
                           >
                             Build Wireframes and Low-Fidelity Prototypes
                           </Typography>
@@ -280,7 +301,7 @@ export default function Content() {
                               },
                             }}
                             fontWeight={600}
-                            color={baseTheme.palette.secondary.main}
+                            color={activeTheme.palette.secondary.main}
                           >
                             Conduct UX Research and Test Early Concepts
                           </Typography>
@@ -303,7 +324,7 @@ export default function Content() {
                               },
                             }}
                             fontWeight={600}
-                            color={baseTheme.palette.secondary.main}
+                            color={activeTheme.palette.secondary.main}
                           >
                             Create High-Fidelity Designs and Prototypes
                           </Typography>
@@ -325,7 +346,7 @@ export default function Content() {
                               },
                             }}
                             fontWeight={600}
-                            color={baseTheme.palette.secondary.main}
+                            color={activeTheme.palette.secondary.main}
                           >
                             Responsive Web Design in Adobe XD
                           </Typography>
@@ -347,7 +368,7 @@ export default function Content() {
                               },
                             }}
                             fontWeight={600}
-                            color={baseTheme.palette.secondary.main}
+                            color={activeTheme.palette.secondary.main}
                           >
                             Design a User Experience for Social Good & Prepare
                             for Jobs
@@ -367,7 +388,7 @@ export default function Content() {
           </Grid>
         </Box>
       </Container>
-      <Footer />
+      {isDark ? <FooterDark useSecondaryDarkColor /> : <Footer />}
     </ThemeProvider>
   );
 }

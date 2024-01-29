@@ -1,6 +1,6 @@
 "use client";
 
-import { darkTheme } from "@/theme";
+import { useDarkTheme } from "@/theme";
 import {
   Box,
   IconButton,
@@ -28,6 +28,8 @@ export const ProjectHeader: React.FC<ProjectHeaderProps> = ({
   heading,
   subheading,
 }) => {
+  const darkTheme = useDarkTheme();
+
   return (
     <ThemeProvider theme={darkTheme}>
       <ScopedCssBaseline>

@@ -6,6 +6,7 @@ import {
   Card,
   Container,
   Divider,
+  IconButton,
   Typography,
   styled,
   useMediaQuery,
@@ -15,17 +16,20 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import {
   ArrowDropDown,
+  DarkModeOutlined,
   LockOpenTwoTone,
   LockTwoTone,
+  WbSunnyOutlined,
 } from "@mui/icons-material";
 import { Twirl as Hamburger } from "hamburger-react";
 import { getCookie, ACCESS_COOKIE_KEY } from "@/hooks";
+import { usePortfolioTheme } from "@/theme";
 
 export const DarkLogo = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width="82"
-    height="66"
+    width="80"
+    height="64"
     viewBox="0 0 82 66"
     fill="none"
   >
@@ -245,7 +249,7 @@ interface NavbarProps {
   colorMode?: "light" | "dark";
 }
 export const Navbar: React.FC<NavbarProps> = () => {
-  const theme = useTheme();
+  const { activeTheme: theme, toggleTheme } = usePortfolioTheme();
   const isOnAboutMe = useIsOnAbout();
   const projectDropDownText = useProjectFromURL();
   const [open, setOpen] = React.useState(false);
@@ -405,6 +409,9 @@ export const Navbar: React.FC<NavbarProps> = () => {
               </Box>
             </Card>
           </Box>
+          <IconButton onClick={toggleTheme}>
+            {!isDark ? <WbSunnyOutlined /> : <DarkModeOutlined />}
+          </IconButton>
           <Button
             variant="contained"
             LinkComponent={Link}
@@ -511,16 +518,34 @@ export const Navbar: React.FC<NavbarProps> = () => {
                 </Box>
               </ButtonBase>
               <Divider />
-              <Button
-                variant="contained"
-                LinkComponent={Link}
-                href="/resume_2024.pdf"
-                target="_blank"
-                sx={{ ...buttonStyle, mt: 1.5 }}
-                fullWidth
-              >
-                Download Resume
-              </Button>
+              <Box px={4}>
+                <ButtonBase
+                  sx={{
+                    mt: 2,
+                    py: 1,
+                    borderRadius: 1,
+                    width: "100%",
+                    display: "flex",
+                    justifyContent: "space-between",
+                    alignItems: "center",
+                    color: textColor,
+                  }}
+                  onClick={toggleTheme}
+                >
+                  <Typography>Switch Theme</Typography>
+                  {!isDark ? <WbSunnyOutlined /> : <DarkModeOutlined />}
+                </ButtonBase>
+                <Button
+                  variant="contained"
+                  LinkComponent={Link}
+                  href="/resume_2024.pdf"
+                  target="_blank"
+                  sx={{ ...buttonStyle, mt: 2 }}
+                  fullWidth
+                >
+                  Download Resume
+                </Button>
+              </Box>
             </Box>
           </MobileNavLinkContainer>
           <NavLinkContainer>

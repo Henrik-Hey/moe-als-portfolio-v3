@@ -7,7 +7,7 @@ interface ProjectStatementProps {
 export const ProjectStatement = ({ content }: ProjectStatementProps) => {
   return (
     <Box>
-      <Typography variant="h4" fontWeight={400} fontStyle="italic">
+      <Typography variant="h2" fontWeight={400} fontStyle="italic">
         {content}
       </Typography>
     </Box>

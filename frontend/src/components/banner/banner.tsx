@@ -2,18 +2,27 @@
 
 import React from "react";
 import { Box, Typography, keyframes, styled, useTheme } from "@mui/material";
+import { usePortfolioTheme } from "@/theme";
 
 export const Banner: React.FC = () => {
-  const theme = useTheme();
+  const { activeTheme, theme } = usePortfolioTheme();
+
+  const isDark = theme === "dark";
   return (
-    <BannerContainer>
-      <Typography color={theme.palette.neutral[50]} variant="body2">
+    <BannerContainer
+      sx={{
+        background: !isDark
+          ? "linear-gradient(-45deg, #e76f51, #2a9d8f, #e76f51)"
+          : activeTheme.palette.darkMode[400],
+      }}
+    >
+      <Typography color={activeTheme.palette.neutral[50]} variant="body2">
         I&apos;m on the lookout for new exciting career opportunities.{" "}
         <Typography
           component="a"
           href="mailto:design.moexls@gmail.com"
           fontWeight={800}
-          color={theme.palette.neutral[50]}
+          color={activeTheme.palette.neutral[50]}
           variant="body2"
           sx={{
             textDecoration: "none",
@@ -39,7 +48,6 @@ const moveGradientAnimation = keyframes`
 `;
 
 const BannerContainer = styled(Box)`
-  background: linear-gradient(-45deg, #e76f51, #2a9d8f, #e76f51);
   background-size: 400%;
   animation: ${moveGradientAnimation} 15s ease infinite;
   display: flex;

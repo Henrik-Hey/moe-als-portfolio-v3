@@ -12,6 +12,7 @@ interface ProjectCardProps {
   onCTAClick?: () => void;
   isLocked?: boolean;
   content?: React.ReactNode;
+  darkMode?: boolean;
 }
 export const ProjectCard: React.FC<ProjectCardProps> = ({
   project,
@@ -22,8 +23,16 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
   onCTAClick,
   isLocked,
   content,
+  darkMode,
 }) => {
   const theme = useTheme();
+  const textColor = darkMode
+    ? theme.palette.neutral[100]
+    : theme.palette.primary.main;
+
+  const descriptionColor = darkMode
+    ? theme.palette.neutral[100]
+    : theme.palette.neutral[700];
   return (
     <Card
       sx={{
@@ -34,8 +43,10 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
         transition: "all 0.5s",
         [`&:hover`]: {
           transform: "translateY(-8px)",
+          cursor: "pointer",
         },
       }}
+      onClick={onCTAClick}
     >
       <Box
         padding={6}
@@ -48,7 +59,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
           variant="h2"
           fontFamily="PP Eiko"
           fontWeight={600}
-          color={theme.palette.primary.main}
+          color={textColor}
         >
           {project} -{" "}
           <Typography
@@ -57,27 +68,22 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
             fontFamily="PP Eiko"
             component="span"
             fontWeight={500}
-            color={theme.palette.primary.main}
+            color={textColor}
           >
             {subtext}
           </Typography>
         </Typography>
-        <Typography
-          variant="body1"
-          fontWeight={400}
-          color={palette.neutral[700]}
-        >
+        <Typography variant="body1" fontWeight={400} color={descriptionColor}>
           {description}
         </Typography>
         <Box
           display="flex"
-          onClick={onCTAClick}
           alignItems="center"
           sx={{
             cursor: onCTAClick ? "pointer" : "inherit",
             [`&:hover`]: {
               textDecoration: onCTAClick ? "underline" : "none",
-              textDecorationColor: palette.primary.main,
+              textDecorationColor: textColor,
             },
           }}
         >
@@ -86,19 +92,19 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
             fontFamily="PP Eiko"
             fontWeight={900}
             marginRight={1}
-            color={theme.palette.primary.main}
+            color={textColor}
           >
             {ctaText}{" "}
           </Typography>
           {onCTAClick &&
             (isLocked !== undefined ? (
               isLocked ? (
-                <LockTwoTone color="primary" />
+                <LockTwoTone sx={{ color: textColor }} />
               ) : (
-                <LockOpenTwoTone color="primary" />
+                <LockOpenTwoTone sx={{ color: textColor }} />
               )
             ) : (
-              <East fontSize="small" color="primary" />
+              <East fontSize="small" sx={{ color: textColor }} />
             ))}
         </Box>
       </Box>

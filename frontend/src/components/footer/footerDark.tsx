@@ -1,4 +1,4 @@
-import { darkTheme } from "@/theme";
+import { useDarkTheme } from "@/theme";
 import { Instagram, LinkedIn } from "@mui/icons-material";
 import {
   Box,
@@ -11,7 +11,13 @@ import {
 import Link from "next/link";
 import React from "react";
 
-export const FooterDark = () => {
+interface FooterDarkProps {
+  useSecondaryDarkColor?: boolean;
+}
+export const FooterDark: React.FC<FooterDarkProps> = ({
+  useSecondaryDarkColor = false,
+}) => {
+  const darkTheme = useDarkTheme();
   const theme = useTheme();
   return (
     <ThemeProvider theme={darkTheme}>
@@ -25,6 +31,11 @@ export const FooterDark = () => {
           alignItems="center"
           justifyContent="center"
           gap={2}
+          sx={{
+            background: useSecondaryDarkColor
+              ? darkTheme.palette.darkMode[400]
+              : undefined,
+          }}
         >
           <Typography
             textAlign="center"

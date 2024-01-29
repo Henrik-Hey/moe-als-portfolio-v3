@@ -1,4 +1,4 @@
-import { darkTheme, palette } from "@/theme";
+import { palette, useDarkTheme } from "@/theme";
 import {
   Box,
   Container,
@@ -19,6 +19,8 @@ interface ProjectsNavFooterProps {
 export const ProjectsNavFooter: React.FC<ProjectsNavFooterProps> = ({
   projects,
 }) => {
+  const darkTheme = useDarkTheme();
+
   return (
     <ThemeProvider theme={darkTheme}>
       <ScopedCssBaseline>

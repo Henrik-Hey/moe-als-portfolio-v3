@@ -5,7 +5,6 @@ import React from "react";
 import Content from "./content";
 import {
   Box,
-  ButtonBase,
   CssBaseline,
   Dialog,
   DialogContent,
@@ -16,13 +15,15 @@ import {
   ThemeProvider,
   Typography,
 } from "@mui/material";
-import { baseTheme } from "@/theme";
+import { useBaseTheme } from "@/theme";
 import { ArrowLeft, ArrowRightAlt } from "@mui/icons-material";
 import { ACCESS_COOKIE_KEY, getCookie, setCookie } from "@/hooks";
 import { default as NextLink } from "next/link";
 
 export const Authentication = () => {
+  const baseTheme = useBaseTheme();
   const [isAuthenticated, setIsAuthenticated] = React.useState(true);
+  const [authError, setAuthError] = React.useState(false);
   const [password, setPassword] = React.useState("");
 
   React.useEffect(() => {
@@ -109,12 +110,33 @@ export const Authentication = () => {
                 e.preventDefault();
                 if (password === "AccessPro.AFC!") {
                   setIsAuthenticated(true);
+                  setAuthError(false);
                   setCookie(ACCESS_COOKIE_KEY, "true");
+                } else {
+                  setAuthError(true);
                 }
               }}
             >
               <TextField
                 fullWidth
+                error={authError}
+                helperText={
+                  authError ? (
+                    <Typography variant="body2">
+                      The entered password is incorrect; try again or send an{" "}
+                      <Link
+                        href="mailto:design.moexls@gmail.com"
+                        fontWeight={600}
+                        color="error"
+                      >
+                        email me
+                      </Link>{" "}
+                      for access.
+                    </Typography>
+                  ) : (
+                    ""
+                  )
+                }
                 value={password}
                 onChange={(e) => {
                   setPassword(e.target.value);
@@ -124,7 +146,10 @@ export const Authentication = () => {
                   endAdornment: (
                     <InputAdornment position="end">
                       <IconButton size="small" type="submit">
-                        <ArrowRightAlt fontSize="large" />
+                        <ArrowRightAlt
+                          fontSize="large"
+                          color={authError ? "error" : undefined}
+                        />
                       </IconButton>
                     </InputAdornment>
                   ),

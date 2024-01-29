@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
 
-import { baseTheme, darkTheme, palette } from "@/theme";
+import { palette, useBaseTheme, useDarkTheme } from "@/theme";
 import {
   Box,
   Container,
@@ -59,6 +59,9 @@ const SCROLL_BLOCK_5_IMAGE_PATHS = [
 ];
 
 export default function Content() {
+  const baseTheme = useBaseTheme();
+  const darkTheme = useDarkTheme();
+
   return (
     <ThemeProvider theme={baseTheme}>
       <CssBaseline />
