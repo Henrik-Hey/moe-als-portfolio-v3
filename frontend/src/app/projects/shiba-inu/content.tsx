@@ -1256,6 +1256,8 @@ export default function Content() {
             autoPlay
             muted
             loop
+            controls={false}
+            playsInline
             width="100%"
             display={{ xs: "none", md: "block" }}
           >
@@ -1269,6 +1271,8 @@ export default function Content() {
             autoPlay
             muted
             loop
+            controls={false}
+            playsInline
             width="100%"
             display={{ xs: "block", md: "none" }}
           >
