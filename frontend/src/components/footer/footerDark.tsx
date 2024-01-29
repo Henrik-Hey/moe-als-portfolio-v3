@@ -24,7 +24,6 @@ export const FooterDark: React.FC<FooterDarkProps> = ({
       <ScopedCssBaseline>
         <Box
           py={2}
-          pb={8}
           px={2}
           display="flex"
           flexDirection="column"
@@ -37,6 +36,52 @@ export const FooterDark: React.FC<FooterDarkProps> = ({
               : undefined,
           }}
         >
+          <Box display="flex" alignItems="center" gap={1}>
+            <Typography
+              variant="body2"
+              sx={{
+                fontWeight: 600,
+              }}
+            >
+              Designed by
+            </Typography>
+            <Link href="/about-me">
+              <Box
+                component="img"
+                width="32px"
+                height="32px"
+                alt=""
+                sx={{
+                  objectFit: "cover",
+                  objectPosition: "top center",
+                  borderRadius: "50%",
+                }}
+                src="/moehen/moe.png"
+              />
+            </Link>
+            <Typography
+              variant="body2"
+              sx={{
+                fontWeight: 600,
+              }}
+            >
+              & Developed by
+            </Typography>
+            <Link href="https://www.linkedin.com/in/henrik-hey" target="_blank">
+              <Box
+                component="img"
+                width="32px"
+                height="32px"
+                alt=""
+                sx={{
+                  objectFit: "cover",
+                  objectPosition: "top center",
+                  borderRadius: "50%",
+                }}
+                src="/moehen/hen.png"
+              />
+            </Link>
+          </Box>
           <Typography
             textAlign="center"
             variant="body2"
@@ -48,7 +93,7 @@ export const FooterDark: React.FC<FooterDarkProps> = ({
             <br />{" "}
             <Link
               href="mailto:design.moexls@gmail.com"
-              style={{ color: theme.palette.neutral[700] }}
+              style={{ color: theme.palette.neutral[50] }}
             >
               design.moexls@gmail.com
             </Link>

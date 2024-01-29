@@ -16,6 +16,52 @@ export const Footer = () => {
       justifyContent="center"
       gap={2}
     >
+      <Box display="flex" alignItems="center" gap={1}>
+        <Typography
+          variant="body2"
+          sx={{
+            fontWeight: 600,
+          }}
+        >
+          Designed by
+        </Typography>
+        <Link href="/about-me">
+          <Box
+            component="img"
+            width="32px"
+            height="32px"
+            alt=""
+            sx={{
+              objectFit: "cover",
+              objectPosition: "top center",
+              borderRadius: "50%",
+            }}
+            src="/moehen/moe.png"
+          />
+        </Link>
+        <Typography
+          variant="body2"
+          sx={{
+            fontWeight: 600,
+          }}
+        >
+          & Developed by
+        </Typography>
+        <Link href="https://www.linkedin.com/in/henrik-hey" target="_blank">
+          <Box
+            component="img"
+            width="32px"
+            height="32px"
+            alt=""
+            sx={{
+              objectFit: "cover",
+              objectPosition: "top center",
+              borderRadius: "50%",
+            }}
+            src="/moehen/hen.png"
+          />
+        </Link>
+      </Box>
       <Typography
         textAlign="center"
         variant="body2"
