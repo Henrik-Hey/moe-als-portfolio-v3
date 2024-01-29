@@ -1,99 +1,108 @@
+"use client";
+
+import { usePortfolioTheme } from "@/theme";
 import { css, keyframes } from "@emotion/react";
+import { Box } from "@mui/material";
 import { styled } from "@mui/system";
 import React, { useEffect, useState } from "react";
 
 export const ImageAutoScrollBlock = () => {
+  const { theme, activeTheme } = usePortfolioTheme();
+
+  const isDark = theme === "dark";
   return (
-    <ContentContainer>
+    <ContentContainer
+      sx={{
+        "&::before, &::after": {
+          background: `linear-gradient(
+            to right,
+            ${isDark ? activeTheme.palette.darkMode[700] : "#f7f7f7"} 0%,
+            rgba(255, 255, 255, 0) 100%
+          )`,
+          content: `""`,
+          height: "100px",
+          position: "absolute",
+          width: "10vw",
+          zIndex: 2,
+        },
+      }}
+    >
       <ScrollContainer>
         <ScrollItem>
-          <img src="/companies/afc.png" height={64} />
+          <Box component="img" src="/companies/afc.png" height={64} />
         </ScrollItem>
         <ScrollItem>
-          <img src="/companies/apollo.png" height={58} />
+          <Box component="img" src="/companies/apollo.png" height={58} />
         </ScrollItem>
         <ScrollItem>
-          <img src="/companies/hashmatrix.png" height={55} />
+          <Box component="img" src="/companies/hashmatrix.png" height={55} />
         </ScrollItem>
         <ScrollItem>
-          <img src="/companies/mosaic.png" height={104} />
+          <Box component="img" src="/companies/mosaic.png" height={104} />
         </ScrollItem>
         <ScrollItem>
-          <img src="/companies/openlane.png" height={30} />
+          <Box component="img" src="/companies/openlane.png" height={30} />
         </ScrollItem>
         <ScrollItem>
-          <img src="/companies/par.png" height={92} />
+          <Box component="img" src="/companies/par.png" height={92} />
         </ScrollItem>
         <ScrollItem>
-          <img src="/companies/staples.png" height={42} />
+          <Box component="img" src="/companies/staples.png" height={42} />
         </ScrollItem>
         <ScrollItem>
-          <img src="/companies/afc.png" height={64} />
+          <Box component="img" src="/companies/afc.png" height={64} />
         </ScrollItem>
         <ScrollItem>
-          <img src="/companies/apollo.png" height={58} />
+          <Box component="img" src="/companies/apollo.png" height={58} />
         </ScrollItem>
         <ScrollItem>
-          <img src="/companies/hashmatrix.png" height={55} />
+          <Box component="img" src="/companies/hashmatrix.png" height={55} />
         </ScrollItem>
         <ScrollItem>
-          <img src="/companies/mosaic.png" height={104} />
+          <Box component="img" src="/companies/mosaic.png" height={104} />
         </ScrollItem>
         <ScrollItem>
-          <img src="/companies/openlane.png" height={30} />
+          <Box component="img" src="/companies/openlane.png" height={30} />
         </ScrollItem>
         <ScrollItem>
-          <img src="/companies/par.png" height={92} />
+          <Box component="img" src="/companies/par.png" height={92} />
         </ScrollItem>
         <ScrollItem>
-          <img src="/companies/staples.png" height={42} />
+          <Box component="img" src="/companies/staples.png" height={42} />
         </ScrollItem>
         <ScrollItem>
-          <img src="/companies/afc.png" height={64} />
+          <Box component="img" src="/companies/afc.png" height={64} />
         </ScrollItem>
         <ScrollItem>
-          <img src="/companies/apollo.png" height={58} />
+          <Box component="img" src="/companies/apollo.png" height={58} />
         </ScrollItem>
         <ScrollItem>
-          <img src="/companies/hashmatrix.png" height={55} />
+          <Box component="img" src="/companies/hashmatrix.png" height={55} />
         </ScrollItem>
         <ScrollItem>
-          <img src="/companies/mosaic.png" height={104} />
+          <Box component="img" src="/companies/mosaic.png" height={104} />
         </ScrollItem>
         <ScrollItem>
-          <img src="/companies/openlane.png" height={30} />
+          <Box component="img" src="/companies/openlane.png" height={30} />
         </ScrollItem>
         <ScrollItem>
-          <img src="/companies/par.png" height={92} />
+          <Box component="img" src="/companies/par.png" height={92} />
         </ScrollItem>
         <ScrollItem>
-          <img src="/companies/staples.png" height={42} />
+          <Box component="img" src="/companies/staples.png" height={42} />
         </ScrollItem>
       </ScrollContainer>
     </ContentContainer>
   );
 };
 
-const ContentContainer = styled("div")`
+const ContentContainer = styled(Box)`
   position: relative;
   width: 100%;
   overflow: hidden;
   z-index: 1;
   margin: 0;
   padding: 0;
-  &::before,
-  &::after {
-    background: linear-gradient(
-      to right,
-      #f7f7f7 0%,
-      rgba(255, 255, 255, 0) 100%
-    );
-    content: "";
-    height: 100px;
-    position: absolute;
-    width: 10vw;
-    z-index: 2;
-  }
   &::after {
     right: -1px;
     top: 0;
