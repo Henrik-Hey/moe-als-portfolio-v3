@@ -37,7 +37,7 @@ export const ImagePanAndZoom: React.FC = () => {
           mt={2}
           component="div"
           variant="body1"
-          color={palette.neutral.main}
+          color={palette.neutral[600]}
           fontStyle="italic"
           textAlign="center"
         >
