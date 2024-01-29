@@ -62,8 +62,8 @@ export const Authentication = () => {
               href="/"
               sx={{
                 position: "absolute",
-                top: "48px",
-                left: "48px",
+                top: { xs: "16px", md: "48px" },
+                left: { xs: 0, md: "48px" },
                 display: "flex",
                 alignItems: "center",
                 textDecoration: "none",
