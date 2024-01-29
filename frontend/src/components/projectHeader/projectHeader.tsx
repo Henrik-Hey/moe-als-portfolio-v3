@@ -108,16 +108,16 @@ const HeaderContainer = styled("div")`
   align-items: center;
   gap: 24px;
   overflow: hidden;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 `;
 
 const BackdropImage = styled("div")`
-  position: absolute;
-  width: 100%;
+  position: fixed;
+  width: 100vw;
   height: 100vh;
   top: 0px;
   left: 0px;
   z-index: 0;
-  background-attachment: fixed;
   background-size: cover;
 
   &::after {

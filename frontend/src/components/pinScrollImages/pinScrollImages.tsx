@@ -185,6 +185,7 @@ const ScrollContentContainer = styled(Box)`
   gap: 24px;
   flex-direction: row;
   overflow: visible;
+  white-space: wrap;
 `;
 
 const ScrollBoxContainer = styled(Box)`
