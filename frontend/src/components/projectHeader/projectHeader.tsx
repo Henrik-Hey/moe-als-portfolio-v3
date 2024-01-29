@@ -79,14 +79,12 @@ const HeaderContainer = styled("div")`
   width: 100%;
   height: 100vh;
   position: relative;
-  background: #000;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 24px;
   overflow: hidden;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 `;
 
 const BackdropImage = styled("div")`
@@ -97,7 +95,6 @@ const BackdropImage = styled("div")`
   left: 0px;
   z-index: 0;
   background-attachment: fixed;
-  // background-position-y: -349px !important;
   background-size: cover;
 
   &::after {
@@ -105,8 +102,8 @@ const BackdropImage = styled("div")`
     position: absolute;
     top: 0px;
     left: 0px;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     background: linear-gradient(
       0deg,
       rgba(0, 0, 0, 0.35) 0%,

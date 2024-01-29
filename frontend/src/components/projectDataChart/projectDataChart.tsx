@@ -177,7 +177,7 @@ export const ProjectDataChart: React.FC<ProjectDataChartProps> = ({
         </Box>
       </Card>
       {cardColumns && (
-        <Box display="flex" gap={2}>
+        <Box display="flex" gap={2} width="1440px">
           {cardColumns.map((column, index) => (
             <Box
               display="flex"
@@ -185,6 +185,9 @@ export const ProjectDataChart: React.FC<ProjectDataChartProps> = ({
               flexDirection="column"
               gap={3}
               key={index}
+              sx={{
+                whiteSpace: "wrap",
+              }}
             >
               {column.map(({ title, body }, cIndex) => (
                 <Card
