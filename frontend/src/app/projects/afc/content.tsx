@@ -693,7 +693,16 @@ export default function Content() {
                 }
               />
             </Box>
-            <Box component="video" autoPlay muted loop width="100%">
+            <Box
+              component="video"
+              autoPlay
+              muted
+              loop
+              controls={false}
+              playsInline
+              width="100%"
+              sx={{ pointerEvents: "none" }}
+            >
               <source
                 src={"/project_page_res/afc/videos/video2.mp4"}
                 type="video/mp4"
