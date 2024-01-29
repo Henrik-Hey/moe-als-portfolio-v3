@@ -52,6 +52,7 @@ export const Authentication = () => {
             flexDirection="column"
             alignItems="center"
             p={{ xs: 2, md: 6 }}
+            pt={{ xs: 6, md: 6 }}
             gap={3}
             position="relative"
           >

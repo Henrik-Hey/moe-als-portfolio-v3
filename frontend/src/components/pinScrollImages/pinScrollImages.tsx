@@ -145,7 +145,8 @@ const ScrollContainer = styled("div")`
   width: 100%;
   top: 0px;
   left: 0px;
-  overflow: hidden;
+  overflow: none;
+  overflow-x: auto;
   flex-direction: column;
 `;
 
@@ -158,6 +159,7 @@ const ScrollContentContainer = styled("div")`
   display: flex;
   gap: 24px;
   flex-direction: row;
+  white-space: nowrap;
 `;
 
 const TextBlock = styled(Box)`
