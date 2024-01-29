@@ -134,7 +134,7 @@ export const Authentication = () => {
           </Box>
         </DialogContent>
       </Dialog>
-      <Content />
+      {isAuthenticated && <Content />}
     </ThemeProvider>
   );
 };
