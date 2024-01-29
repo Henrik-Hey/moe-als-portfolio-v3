@@ -273,11 +273,6 @@ export const Navbar: React.FC<NavbarProps> = ({ colorMode }) => {
     : theme.palette.primary.main;
   const buttonStyle = isDark
     ? {
-        fontFamily: "PP Eiko",
-        fontWeight: 900,
-        borderRadius: "8px",
-        textTransform: "none",
-        px: 6,
         color: theme.palette.neutral[700],
         background: theme.palette.neutral[100],
         "&:hover, &:active": {
