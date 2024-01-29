@@ -54,14 +54,15 @@ export const PinScrollImages = ({
       return;
     }
 
-    const { width: containerWidth } =
-      containerRef.current.getBoundingClientRect();
-
     const timeline = gsap.timeline();
     timeline.fromTo(
       contentRef.current,
-      { xPercent: 0, x: 0 },
-      { xPercent: -100, x: Number(containerWidth) - scrollPadding }
+      { scrollTo: { x: 0 } },
+      {
+        scrollTo: {
+          x: contentRef.current.scrollWidth - contentRef.current.offsetWidth,
+        },
+      }
     );
 
     const scrollTrigger = ScrollTrigger.create({
@@ -108,7 +109,8 @@ export const PinScrollImages = ({
             </Typography>
           </TextBlock>
         )}
-        <Box
+        <ScrollBoxContainer
+          ref={contentRef}
           flex={1}
           display="flex"
           p={scrollPadding / 2 / 8}
@@ -116,11 +118,11 @@ export const PinScrollImages = ({
           pb={bottomPadding}
         >
           <Box flex={1} position="relative">
-            <ScrollContentContainer ref={contentRef}>
+            <ScrollContentContainer pr={scrollPadding / 2 / 8}>
               {items}
             </ScrollContentContainer>
           </Box>
-        </Box>
+        </ScrollBoxContainer>
         {bottomCaption && (
           <TextBlock mb={2} px={2}>
             <Typography
@@ -149,7 +151,7 @@ const ScrollContainer = styled("div")`
   flex-direction: column;
 `;
 
-const ScrollContentContainer = styled("div")`
+const ScrollContentContainer = styled(Box)`
   position: absolute;
   height: 100%;
   width: fit-content;
@@ -158,6 +160,19 @@ const ScrollContentContainer = styled("div")`
   display: flex;
   gap: 24px;
   flex-direction: row;
+  overflow: visible;
+`;
+
+const ScrollBoxContainer = styled(Box)`
+  width: 100%;
+  overflow-x: scroll;
+  pointer-events: none;
+
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+  &::-webkit-scrollbar {
+    display: none; /* Safari and Chrome */
+  }
 `;
 
 const TextBlock = styled(Box)`
