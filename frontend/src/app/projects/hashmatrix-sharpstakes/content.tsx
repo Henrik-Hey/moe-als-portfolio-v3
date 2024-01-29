@@ -431,6 +431,67 @@ export default function Content() {
                 </Box>
               </FadeIn>
               <FadeIn>
+                <Box
+                  display="flex"
+                  gap={4}
+                  flexDirection={{
+                    xs: "column",
+                    md: "row",
+                  }}
+                >
+                  <Box
+                    display="flex"
+                    gap={3}
+                    sx={{ pl: 3, borderLeft: "6px solid #0E86D3" }}
+                  >
+                    <Box display="flex" flexDirection="column" gap={2}>
+                      <Box>
+                        <Typography variant="body1" fontWeight={700}>
+                          Jaiden S.
+                        </Typography>
+                        <Typography variant="body1" fontWeight={400}>
+                          Co-Founder, Sharpstakes
+                        </Typography>
+                      </Box>
+                      <Typography variant="body1" fontWeight={400}>
+                        Moe, an A+ designer, enhances our projects with
+                        professionalism and quality. His deep understanding of
+                        business goals and thoughtful design decisions shaped
+                        our platform. Moe excels in adapting to changing
+                        requests and delivering impressive designs. New users
+                        consistently praise our improved UI/UX since Moe&apos;s
+                        involvement.
+                      </Typography>
+                    </Box>
+                  </Box>
+                  <Box
+                    display="flex"
+                    gap={3}
+                    sx={{ pl: 3, borderLeft: "6px solid #0E86D3" }}
+                  >
+                    <Box display="flex" flexDirection="column" gap={2}>
+                      <Box>
+                        <Typography variant="body1" fontWeight={700}>
+                          Shubs M.
+                        </Typography>
+                        <Typography variant="body1" fontWeight={400}>
+                          CEO, Sharpstakes
+                        </Typography>
+                      </Box>
+                      <Typography variant="body1" fontWeight={400}>
+                        In moments of uncertainty, Moe&apos;s guidance has been
+                        indispensable, offering crucial direction in
+                        decision-making. Our site&apos;s exceptional UI/UX,
+                        widely praised by users, reflects Moe&apos;s influential
+                        contributions. Beyond technical expertise, Moe&apos;s
+                        patient and collaborative approach played a vital role
+                        in fostering overall improvement.
+                      </Typography>
+                    </Box>
+                  </Box>
+                </Box>
+              </FadeIn>
+              <FadeIn>
                 <Box>
                   <Typography
                     variant="h3"
