@@ -185,14 +185,12 @@ const ScrollContentContainer = styled(Box)`
   gap: 24px;
   flex-direction: row;
   overflow: visible;
-  white-space: wrap;
 `;
 
 const ScrollBoxContainer = styled(Box)`
   width: 100%;
   overflow-x: scroll;
   pointer-events: none;
-  white-space: nowrap;
 
   -ms-overflow-style: none; /* Internet Explorer 10+ */
   scrollbar-width: none; /* Firefox */
