@@ -1259,7 +1259,7 @@ export default function Content() {
             controls={false}
             playsInline
             width="100%"
-            display={{ xs: "none", md: "block" }}
+            display={{ xs: "none", md: "block", pointerEvents: "none" }}
           >
             <source
               src={"/project_page_res/shiba/videos/shiba.mp4"}
@@ -1274,7 +1274,7 @@ export default function Content() {
             controls={false}
             playsInline
             width="100%"
-            display={{ xs: "block", md: "none" }}
+            display={{ xs: "block", md: "none", pointerEvents: "none" }}
           >
             <source
               src={"/project_page_res/shiba/videos/shiba_mobile.mp4"}

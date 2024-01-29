@@ -494,7 +494,16 @@ export default function Content() {
             </Box>
           </Container>
           <Box>
-            <Box component="video" autoPlay muted loop width="100%">
+            <Box
+              component="video"
+              autoPlay
+              muted
+              loop
+              controls={false}
+              playsInline
+              width="100%"
+              sx={{ pointerEvents: "none" }}
+            >
               <source
                 src={
                   "/project_page_res/hashmatrix/sharpstakes/videos/video1.mp4"
@@ -620,7 +629,16 @@ export default function Content() {
                 </Box>
               </Box>
             </Box>
-            <Box component="video" autoPlay muted loop width="100%">
+            <Box
+              component="video"
+              autoPlay
+              muted
+              loop
+              controls={false}
+              playsInline
+              width="100%"
+              sx={{ pointerEvents: "none" }}
+            >
               <source
                 src={
                   "/project_page_res/hashmatrix/sharpstakes/videos/video2.mp4"
