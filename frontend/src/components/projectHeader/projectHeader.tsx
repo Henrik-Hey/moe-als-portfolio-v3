@@ -1,5 +1,6 @@
-import { darkTheme, palette } from "@/theme";
-import { East } from "@mui/icons-material";
+"use client";
+
+import { darkTheme } from "@/theme";
 import {
   Box,
   ScopedCssBaseline,
@@ -69,6 +70,13 @@ export const ProjectHeader: React.FC<ProjectHeaderProps> = ({
               {subheading}
             </Typography>
           </Box>
+          {/* <Box
+            sx={{ 
+              position: 'absolute'
+            }}
+          >
+
+          </Box> */}
         </HeaderContainer>
       </ScopedCssBaseline>
     </ThemeProvider>
