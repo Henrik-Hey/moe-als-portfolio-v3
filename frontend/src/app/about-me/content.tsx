@@ -30,15 +30,15 @@ export default function Content() {
           <Grid container spacing={2}>
             <Grid item xs={12} md={7}>
               <Box display="flex" flexDirection="column" gap={3}>
-                <Box>
+                <Box sx={{ maxWidth: 800 }}>
                   <Typography
                     variant="h3"
                     fontFamily="PP Eiko"
                     fontWeight={400}
                     color={baseTheme.palette.primary.light}
                   >
-                    A Passionate Product designer, Cat Dad, Movie
-                    <br /> Enthusiast, and Home Chef.
+                    A Passionate Product designer, Cat Dad, Movie Enthusiast,
+                    and Home Chef.
                   </Typography>
                 </Box>
                 <Box>
