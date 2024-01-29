@@ -35,7 +35,7 @@ export default function Content() {
                     variant="h3"
                     fontFamily="PP Eiko"
                     fontWeight={400}
-                    color={baseTheme.palette.primary.light}
+                    color={baseTheme.palette.primary.main}
                   >
                     A Passionate Product designer, Cat Dad, Movie Enthusiast,
                     and Home Chef.
@@ -108,7 +108,7 @@ export default function Content() {
                     variant="h3"
                     fontFamily="PP Eiko"
                     fontWeight={400}
-                    color={baseTheme.palette.primary.light}
+                    color={baseTheme.palette.primary.main}
                   >
                     Certifications
                   </Typography>
@@ -120,7 +120,7 @@ export default function Content() {
                         variant="h6"
                         fontFamily={raleway.style.fontFamily}
                         fontWeight={700}
-                        color={baseTheme.palette.primary.light}
+                        color={baseTheme.palette.primary.main}
                       >
                         Certifications by Designership
                       </Typography>
@@ -188,7 +188,7 @@ export default function Content() {
                         variant="h6"
                         fontFamily={raleway.style.fontFamily}
                         fontWeight={700}
-                        color={baseTheme.palette.primary.light}
+                        color={baseTheme.palette.primary.main}
                       >
                         Certifications by Google through Coursera
                       </Typography>
