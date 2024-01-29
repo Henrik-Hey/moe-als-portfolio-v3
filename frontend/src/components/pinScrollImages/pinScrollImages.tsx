@@ -56,32 +56,49 @@ export const PinScrollImages = ({
       return;
     }
 
-    const { width: contentWidth } = contentRef.current.getBoundingClientRect();
-    const { width: itemContainerWidth } =
-      itemContainerRef.current.getBoundingClientRect();
+    let scrollTrigger: any;
+    let timeline: any;
 
-    const timeline = gsap.timeline();
-    timeline.fromTo(
-      contentRef.current,
-      { scrollTo: { x: 0 } },
-      {
-        scrollTo: {
-          x: itemContainerWidth - contentWidth,
-        },
+    setTimeout(() => {
+      if (
+        !containerRef.current ||
+        !contentRef.current ||
+        !itemContainerRef.current ||
+        (!!centerWidth && centerWidth <= (size?.width || 0))
+      ) {
+        return;
       }
-    );
 
-    const scrollTrigger = ScrollTrigger.create({
-      trigger: containerRef.current,
-      scrub: true,
-      start: "top top",
-      end: "bottom bottom",
-      animation: timeline,
-    });
+      const { width: contentWidth } =
+        contentRef.current.getBoundingClientRect();
+      const { width: itemContainerWidth } =
+        itemContainerRef.current.getBoundingClientRect();
+
+      console.log({ contentWidth, itemContainerWidth });
+
+      timeline = gsap.timeline();
+      timeline.fromTo(
+        contentRef.current,
+        { scrollTo: { x: 0 } },
+        {
+          scrollTo: {
+            x: itemContainerWidth - contentWidth,
+          },
+        }
+      );
+
+      scrollTrigger = ScrollTrigger.create({
+        trigger: containerRef.current,
+        scrub: true,
+        start: "top top",
+        end: "bottom bottom",
+        animation: timeline,
+      });
+    }, 500);
 
     return () => {
-      timeline.clear();
-      scrollTrigger.kill();
+      timeline?.clear();
+      scrollTrigger?.kill();
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [centerWidth, containerRef, itemContainerRef, contentRef, scrollPadding]);
