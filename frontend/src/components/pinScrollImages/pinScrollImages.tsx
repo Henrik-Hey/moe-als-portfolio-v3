@@ -40,6 +40,7 @@ export const PinScrollImages = ({
   const size = useWindowSize();
   const containerRef = React.useRef<HTMLDivElement>(null);
   const contentRef = React.useRef<HTMLDivElement>(null);
+  const itemContainerRef = React.useRef<HTMLDivElement>(null);
   const scrollPadding = React.useMemo(
     () => (disablePadding ? 0 : SCROLLER_PADDING),
     [disablePadding]
@@ -49,10 +50,15 @@ export const PinScrollImages = ({
     if (
       !containerRef.current ||
       !contentRef.current ||
+      !itemContainerRef.current ||
       (!!centerWidth && centerWidth <= (size?.width || 0))
     ) {
       return;
     }
+
+    const { width: contentWidth } = contentRef.current.getBoundingClientRect();
+    const { width: itemContainerWidth } =
+      itemContainerRef.current.getBoundingClientRect();
 
     const timeline = gsap.timeline();
     timeline.fromTo(
@@ -60,7 +66,7 @@ export const PinScrollImages = ({
       { scrollTo: { x: 0 } },
       {
         scrollTo: {
-          x: contentRef.current.scrollWidth - contentRef.current.offsetWidth,
+          x: itemContainerWidth - contentWidth,
         },
       }
     );
@@ -78,7 +84,7 @@ export const PinScrollImages = ({
       scrollTrigger.kill();
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [centerWidth, containerRef, contentRef, scrollPadding]);
+  }, [centerWidth, containerRef, itemContainerRef, contentRef, scrollPadding]);
 
   const isDark = theme.palette.mode === "dark";
   const captionColor = isDark ? palette.neutral[200] : palette.neutral[600];
@@ -118,7 +124,10 @@ export const PinScrollImages = ({
           pb={bottomPadding}
         >
           <Box flex={1} position="relative">
-            <ScrollContentContainer pr={scrollPadding / 2 / 8}>
+            <ScrollContentContainer
+              pr={scrollPadding / 8}
+              ref={itemContainerRef}
+            >
               {items}
             </ScrollContentContainer>
           </Box>
@@ -167,6 +176,7 @@ const ScrollBoxContainer = styled(Box)`
   width: 100%;
   overflow-x: scroll;
   pointer-events: none;
+  white-space: nowrap;
 
   -ms-overflow-style: none; /* Internet Explorer 10+ */
   scrollbar-width: none; /* Firefox */
