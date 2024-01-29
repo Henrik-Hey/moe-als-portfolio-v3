@@ -252,9 +252,9 @@ export const Navbar: React.FC<NavbarProps> = () => {
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"), { noSsr: true });
 
   React.useEffect(() => {
-    window.scrollTo(0, 0);
     document.body.style.overflowY = open ? "hidden" : "auto";
     if (open) {
+      window.scrollTo(0, 0);
       disableScroll();
     } else {
       enableScroll();
