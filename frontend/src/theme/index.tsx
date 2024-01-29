@@ -86,7 +86,7 @@ export const useBaseTheme = () => {
   const spacing = isMobile ? 6 : 8;
   const h1FontSize = isMobile ? "2em" : "3em";
   const h2FontSize = isMobile ? "1.5em" : "2.25em";
-  const h3FontSize = isMobile ? "1.25em" : "2em";
+  const h3FontSize = isMobile ? "1.5em" : "2em";
   return createTheme({
     spacing,
     palette: {
@@ -216,7 +216,7 @@ export const useDarkTheme = () => {
 
   const h1FontSize = isMobile ? "2em" : "3em";
   const h2FontSize = isMobile ? "1.5em" : "2.25em";
-  const h3FontSize = isMobile ? "1.25em" : "2em";
+  const h3FontSize = isMobile ? "1.5em" : "2em";
 
   return createTheme({
     ...baseTheme,

@@ -925,19 +925,11 @@ export default function Content() {
                         title: "USER COMMENTS",
                         body: "“The new look and feel of the interface are way better and easier to handle. It's like using an app that just clicks for me, you know? Nothing seems old-school, and I'm not scratching my head trying to figure out how things work anymore!”",
                       },
-                      {
-                        title: "BRANCH COMMENTS",
-                        body: "“This is awesome! It's a fantastic step forward, and it tackles all the feedback I've been hearing from dealers all over the place. Plus, it clears up a bunch of questions they might've had with those little subtexts. I'm pumped to see this in action!”",
-                      },
                     ],
                     [
                       {
                         title: "BRANCH COMMENTS",
                         body: "“I bet dealers will be way happier with this. It hands them a ton of power, and it could be the solution they've been needing, especially since they're always ringing up the offices for help. I see this as a move in the right direction, and with some good coaching and support, even the older folks will catch on.”",
-                      },
-                      {
-                        title: "USER COMMENTS",
-                        body: "“This is so much better now, and it's like it's catching up with what NG was doing. I really hope AFC keeps tuning in to users and keeps rolling out cool features and updates down the road.”",
                       },
                     ],
                   ]}

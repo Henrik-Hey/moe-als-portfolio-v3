@@ -10,6 +10,7 @@ export const ImageAutoScrollBlock = () => {
   const { theme, activeTheme } = usePortfolioTheme();
 
   const isDark = theme === "dark";
+  const imageRoot = isDark ? "/companiesDark" : "/companies";
   return (
     <ContentContainer
       sx={{
@@ -29,67 +30,79 @@ export const ImageAutoScrollBlock = () => {
     >
       <ScrollContainer>
         <ScrollItem>
-          <Box component="img" src="/companies/afc.png" height={64} />
+          <Box component="img" src={`${imageRoot}/afc.png`} height={64} />
         </ScrollItem>
         <ScrollItem>
-          <Box component="img" src="/companies/apollo.png" height={58} />
+          <Box component="img" src={`${imageRoot}/apollo.png`} height={58} />
         </ScrollItem>
         <ScrollItem>
-          <Box component="img" src="/companies/hashmatrix.png" height={55} />
+          <Box
+            component="img"
+            src={`${imageRoot}/hashmatrix.png`}
+            height={55}
+          />
         </ScrollItem>
         <ScrollItem>
-          <Box component="img" src="/companies/mosaic.png" height={104} />
+          <Box component="img" src={`${imageRoot}/mosaic.png`} height={104} />
         </ScrollItem>
         <ScrollItem>
-          <Box component="img" src="/companies/openlane.png" height={30} />
+          <Box component="img" src={`${imageRoot}/openlane.png`} height={30} />
         </ScrollItem>
         <ScrollItem>
-          <Box component="img" src="/companies/par.png" height={92} />
+          <Box component="img" src={`${imageRoot}/par.png`} height={92} />
         </ScrollItem>
         <ScrollItem>
-          <Box component="img" src="/companies/staples.png" height={42} />
+          <Box component="img" src={`${imageRoot}/staples.png`} height={42} />
         </ScrollItem>
         <ScrollItem>
-          <Box component="img" src="/companies/afc.png" height={64} />
+          <Box component="img" src={`${imageRoot}/afc.png`} height={64} />
         </ScrollItem>
         <ScrollItem>
-          <Box component="img" src="/companies/apollo.png" height={58} />
+          <Box component="img" src={`${imageRoot}/apollo.png`} height={58} />
         </ScrollItem>
         <ScrollItem>
-          <Box component="img" src="/companies/hashmatrix.png" height={55} />
+          <Box
+            component="img"
+            src={`${imageRoot}/hashmatrix.png`}
+            height={55}
+          />
         </ScrollItem>
         <ScrollItem>
-          <Box component="img" src="/companies/mosaic.png" height={104} />
+          <Box component="img" src={`${imageRoot}/mosaic.png`} height={104} />
         </ScrollItem>
         <ScrollItem>
-          <Box component="img" src="/companies/openlane.png" height={30} />
+          <Box component="img" src={`${imageRoot}/openlane.png`} height={30} />
         </ScrollItem>
         <ScrollItem>
-          <Box component="img" src="/companies/par.png" height={92} />
+          <Box component="img" src={`${imageRoot}/par.png`} height={92} />
         </ScrollItem>
         <ScrollItem>
-          <Box component="img" src="/companies/staples.png" height={42} />
+          <Box component="img" src={`${imageRoot}/staples.png`} height={42} />
         </ScrollItem>
         <ScrollItem>
-          <Box component="img" src="/companies/afc.png" height={64} />
+          <Box component="img" src={`${imageRoot}/afc.png`} height={64} />
         </ScrollItem>
         <ScrollItem>
-          <Box component="img" src="/companies/apollo.png" height={58} />
+          <Box component="img" src={`${imageRoot}/apollo.png`} height={58} />
         </ScrollItem>
         <ScrollItem>
-          <Box component="img" src="/companies/hashmatrix.png" height={55} />
+          <Box
+            component="img"
+            src={`${imageRoot}/hashmatrix.png`}
+            height={55}
+          />
         </ScrollItem>
         <ScrollItem>
-          <Box component="img" src="/companies/mosaic.png" height={104} />
+          <Box component="img" src={`${imageRoot}/mosaic.png`} height={104} />
         </ScrollItem>
         <ScrollItem>
-          <Box component="img" src="/companies/openlane.png" height={30} />
+          <Box component="img" src={`${imageRoot}/openlane.png`} height={30} />
         </ScrollItem>
         <ScrollItem>
-          <Box component="img" src="/companies/par.png" height={92} />
+          <Box component="img" src={`${imageRoot}/par.png`} height={92} />
         </ScrollItem>
         <ScrollItem>
-          <Box component="img" src="/companies/staples.png" height={42} />
+          <Box component="img" src={`${imageRoot}/staples.png`} height={42} />
         </ScrollItem>
       </ScrollContainer>
     </ContentContainer>

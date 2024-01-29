@@ -24,16 +24,14 @@ export const Footer = () => {
           fontWeight: 700,
         }}
       >
-        Don&apos;t hesitate to get in touch through any of my social media
-        channels. <br />
-        Alternatively, you can drop me an email at{" "}
+        Feel free to reach out for collaborations or just a friendly hello!
+        <br />{" "}
         <Link
           href="mailto:design.moexls@gmail.com"
           style={{ color: theme.palette.neutral[700] }}
         >
           design.moexls@gmail.com
         </Link>
-        . I look forward to hearing from you!
       </Typography>
       <Box display="flex">
         <IconButton

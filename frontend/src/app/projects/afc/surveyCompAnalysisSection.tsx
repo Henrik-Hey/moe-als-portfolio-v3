@@ -49,10 +49,6 @@ const SurveyChart: React.FC = () => (
       [
         {
           title: "Survey Findings",
-          body: "AFCD excels in many aspects, yet it also falls short in various areas. As technology progresses daily, we strive to keep pace, but it often feels like we are being overshadowed by our competitors.",
-        },
-        {
-          title: "Survey Findings",
           body: "We must gain a deeper understanding of user preferences and overcome the fear of implementing changes. Our hesitance to introduce significant changes for fear of alienating the older generations has been too cautious, and now it's impacting the financial health of the business.",
         },
       ],
@@ -60,10 +56,6 @@ const SurveyChart: React.FC = () => (
         {
           title: "Survey Findings",
           body: "AFC must enhance and expand its online presence, fostering dealer engagement and providing support for the adoption of new features or updates. Addressing significant interface issues and allocating additional time to comprehend dealer and branch concerns are crucial aspects. There is valuable insight to be gained by studying NextGear and their approach to these matters.",
-        },
-        {
-          title: "Survey Findings",
-          body: "AFC, in a unique position, has the chance to effectively serve two different demographics if handled correctly.",
         },
       ],
     ]}
