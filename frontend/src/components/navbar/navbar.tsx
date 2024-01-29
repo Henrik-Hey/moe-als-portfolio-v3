@@ -216,6 +216,19 @@ export const LightLogo = () => (
   </svg>
 );
 
+const preventDefault = (e: any) => {
+  e.preventDefault();
+};
+
+const disableScroll = () => {
+  document.body.addEventListener("touchmove", preventDefault, {
+    passive: false,
+  });
+};
+const enableScroll = () => {
+  document.body.removeEventListener("touchmove", preventDefault);
+};
+
 const useProjectFromURL = (): string => {
   const pathname = usePathname();
   if (pathname.includes("shiba-inu")) return "Shiba Inu";
@@ -242,6 +255,11 @@ export const Navbar: React.FC<NavbarProps> = () => {
   React.useEffect(() => {
     window.scrollTo(0, 0);
     document.body.style.overflowY = open ? "hidden" : "auto";
+    if (open) {
+      disableScroll();
+    } else {
+      enableScroll();
+    }
   }, [open, isMobile]);
 
   const isDark = theme.palette.mode === "dark";
