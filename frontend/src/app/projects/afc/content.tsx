@@ -650,7 +650,7 @@ export default function Content() {
               sx={{ pointerEvents: "none" }}
             >
               <source
-                src={"/project_page_res/afc/videos/video1.mp4"}
+                src={"/project_page_res/afc/videos/video2.mp4"}
                 type="video/mp4"
               />
             </Box>
@@ -704,7 +704,7 @@ export default function Content() {
               sx={{ pointerEvents: "none" }}
             >
               <source
-                src={"/project_page_res/afc/videos/video2.mp4"}
+                src={"/project_page_res/afc/videos/video1.mp4"}
                 type="video/mp4"
               />
             </Box>
