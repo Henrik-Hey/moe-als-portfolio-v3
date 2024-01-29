@@ -17,7 +17,7 @@ import {
   Typography,
 } from "@mui/material";
 import { baseTheme } from "@/theme";
-import { ArrowLeft, ArrowRightAlt, ChevronLeft } from "@mui/icons-material";
+import { ArrowLeft, ArrowRightAlt } from "@mui/icons-material";
 import { ACCESS_COOKIE_KEY, getCookie, setCookie } from "@/hooks";
 import { default as NextLink } from "next/link";
 
@@ -51,7 +51,7 @@ export const Authentication = () => {
             display="flex"
             flexDirection="column"
             alignItems="center"
-            p={6}
+            p={{ xs: 2, md: 6 }}
             gap={3}
             position="relative"
           >
