@@ -10,7 +10,6 @@ import {
   Typography,
   styled,
   useMediaQuery,
-  useTheme,
 } from "@mui/material";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -599,4 +598,8 @@ const NavLinkContainer = styled("div")`
   justify-content: flex-end;
   align-items: center;
   z-index: 1;
+
+  & > .hamburger-react {
+    -webkit-tap-highlight-color: transparent !important;
+  }
 `;
