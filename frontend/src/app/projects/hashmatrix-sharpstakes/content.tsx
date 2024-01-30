@@ -430,15 +430,15 @@ export default function Content() {
                   </Typography>
                 </Box>
               </FadeIn>
-              <FadeIn>
-                <Box
-                  display="flex"
-                  gap={4}
-                  flexDirection={{
-                    xs: "column",
-                    md: "row",
-                  }}
-                >
+              <Box
+                display="flex"
+                gap={{ xs: 6, md: 4 }}
+                flexDirection={{
+                  xs: "column",
+                  md: "row",
+                }}
+              >
+                <FadeIn>
                   <Box
                     display="flex"
                     gap={3}
@@ -464,6 +464,8 @@ export default function Content() {
                       </Typography>
                     </Box>
                   </Box>
+                </FadeIn>
+                <FadeIn>
                   <Box
                     display="flex"
                     gap={3}
@@ -489,91 +491,100 @@ export default function Content() {
                       </Typography>
                     </Box>
                   </Box>
-                </Box>
-              </FadeIn>
+                </FadeIn>
+              </Box>
               <FadeIn>
                 <Box>
                   <Box display="flex" flexDirection="column" gap={2}>
-                    <Box display="flex" gap={6} alignItems="center">
-                      <Typography
-                        variant="body1"
-                        sx={{
-                          fontSize: "4em",
-                          fontWeight: 800,
-                          background:
-                            "linear-gradient(1deg, #0E86D4 -358.82%, #FFF 99.25%);",
-                          backgroundClip: "text",
-                          WebkitTextFillColor: "transparent",
-                        }}
-                      >
-                        95%
-                      </Typography>
-                      <Typography variant="body1">
-                        of users interviewed reported a notable enhancement in
-                        their experience, specifically citing improvements in
-                        usability, design, and overall satisfaction with the
-                        redesigned product.
-                      </Typography>
-                    </Box>
-                    <Box display="flex" gap={6} alignItems="center">
-                      <Typography
-                        variant="body1"
-                        sx={{
-                          fontSize: "4em",
-                          fontWeight: 800,
-                          background:
-                            "linear-gradient(0deg, #0E86D4 -260.6%, #FFF 219.26%);",
-                          backgroundClip: "text",
-                          WebkitTextFillColor: "transparent",
-                        }}
-                      >
-                        91%
-                      </Typography>
-                      <Typography variant="body1">
-                        of users interviewed reported a significant increase in
-                        efficiency and task completion speed after interacting
-                        with the revamped product interface.
-                      </Typography>
-                    </Box>
-                    <Box display="flex" gap={6} alignItems="center">
-                      <Typography
-                        variant="body1"
-                        sx={{
-                          fontSize: "4em",
-                          fontWeight: 800,
-                          background:
-                            "linear-gradient(0deg, #0E86D4 -153.72%, #FFF 347.39%);",
-                          backgroundClip: "text",
-                          WebkitTextFillColor: "transparent",
-                        }}
-                      >
-                        88%
-                      </Typography>
-                      <Typography variant="body1">
-                        of users praised the redesigned interface, citing its
-                        positive influence on user engagement and overall
-                        satisfaction with the product&apos;s enhanced features.
-                      </Typography>
-                    </Box>
-                    <Box display="flex" gap={6} alignItems="center">
-                      <Typography
-                        variant="body1"
-                        sx={{
-                          fontSize: "4em",
-                          fontWeight: 800,
-                          background:
-                            "linear-gradient(2deg, #0E86D4 -40.68%, #FFF 450.39%);",
-                          backgroundClip: "text",
-                          WebkitTextFillColor: "transparent",
-                        }}
-                      >
-                        73%
-                      </Typography>
-                      <Typography variant="body1">
-                        of users expressed a strong preference for trying out
-                        the redesigned product over competing alternatives.
-                      </Typography>
-                    </Box>
+                    <FadeIn>
+                      <Box display="flex" gap={6} alignItems="center">
+                        <Typography
+                          variant="body1"
+                          sx={{
+                            fontSize: "4em",
+                            fontWeight: 800,
+                            background:
+                              "linear-gradient(1deg, #0E86D4 -358.82%, #FFF 99.25%);",
+                            backgroundClip: "text",
+                            WebkitTextFillColor: "transparent",
+                          }}
+                        >
+                          95%
+                        </Typography>
+                        <Typography variant="body1">
+                          of users interviewed reported a notable enhancement in
+                          their experience, specifically citing improvements in
+                          usability, design, and overall satisfaction with the
+                          redesigned product.
+                        </Typography>
+                      </Box>
+                    </FadeIn>
+                    <FadeIn>
+                      <Box display="flex" gap={6} alignItems="center">
+                        <Typography
+                          variant="body1"
+                          sx={{
+                            fontSize: "4em",
+                            fontWeight: 800,
+                            background:
+                              "linear-gradient(0deg, #0E86D4 -260.6%, #FFF 219.26%);",
+                            backgroundClip: "text",
+                            WebkitTextFillColor: "transparent",
+                          }}
+                        >
+                          91%
+                        </Typography>
+                        <Typography variant="body1">
+                          of users interviewed reported a significant increase
+                          in efficiency and task completion speed after
+                          interacting with the revamped product interface.
+                        </Typography>
+                      </Box>
+                    </FadeIn>
+                    <FadeIn>
+                      <Box display="flex" gap={6} alignItems="center">
+                        <Typography
+                          variant="body1"
+                          sx={{
+                            fontSize: "4em",
+                            fontWeight: 800,
+                            background:
+                              "linear-gradient(0deg, #0E86D4 -153.72%, #FFF 347.39%);",
+                            backgroundClip: "text",
+                            WebkitTextFillColor: "transparent",
+                          }}
+                        >
+                          88%
+                        </Typography>
+                        <Typography variant="body1">
+                          of users praised the redesigned interface, citing its
+                          positive influence on user engagement and overall
+                          satisfaction with the product&apos;s enhanced
+                          features.
+                        </Typography>
+                      </Box>
+                    </FadeIn>
+                    <FadeIn>
+                      <Box display="flex" gap={6} alignItems="center">
+                        <Typography
+                          variant="body1"
+                          sx={{
+                            fontSize: "4em",
+                            fontWeight: 800,
+                            background:
+                              "linear-gradient(2deg, #0E86D4 -40.68%, #FFF 450.39%);",
+                            backgroundClip: "text",
+                            WebkitTextFillColor: "transparent",
+                          }}
+                        >
+                          73%
+                        </Typography>
+                        <Typography variant="body1">
+                          of users expressed a strong preference for trying out
+                          the redesigned product over competing alternatives.
+                        </Typography>
+                      </Box>
+                    </FadeIn>
                   </Box>
                 </Box>
               </FadeIn>

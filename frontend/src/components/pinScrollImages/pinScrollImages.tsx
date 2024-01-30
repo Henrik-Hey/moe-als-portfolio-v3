@@ -6,6 +6,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import { palette } from "@/theme";
 import { useWindowSize } from "@uidotdev/usehooks";
+import FadeIn from "../fadeIn/fadeIn";
 
 gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(ScrollToPlugin);
@@ -148,16 +149,18 @@ export const PinScrollImages = ({
           </Box>
         </ScrollBoxContainer>
         {bottomCaption && (
-          <TextBlock mb={2} px={2}>
-            <Typography
-              component="div"
-              variant="body1"
-              color={captionColor}
-              fontStyle="italic"
-            >
-              {bottomCaption}
-            </Typography>
-          </TextBlock>
+          <FadeIn>
+            <TextBlock mb={2} px={2}>
+              <Typography
+                component="div"
+                variant="body1"
+                color={captionColor}
+                fontStyle="italic"
+              >
+                {bottomCaption}
+              </Typography>
+            </TextBlock>
+          </FadeIn>
         )}
       </ScrollContainer>
     </Box>

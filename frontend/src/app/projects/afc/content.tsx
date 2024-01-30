@@ -827,8 +827,8 @@ export default function Content() {
                   </Typography>
                 </Box>
               </FadeIn>
-              <FadeIn>
-                <Box display="flex" flexDirection="column" gap={2}>
+              <Box display="flex" flexDirection="column" gap={2}>
+                <FadeIn>
                   <Box display="flex" gap={6} alignItems="center">
                     <Typography
                       variant="body1"
@@ -849,6 +849,8 @@ export default function Content() {
                       systems
                     </Typography>
                   </Box>
+                </FadeIn>
+                <FadeIn>
                   <Box display="flex" gap={6} alignItems="center">
                     <Typography
                       variant="body1"
@@ -869,6 +871,8 @@ export default function Content() {
                       quality, accessibility, and intuitiveness.
                     </Typography>
                   </Box>
+                </FadeIn>
+                <FadeIn>
                   <Box display="flex" gap={6} alignItems="center">
                     <Typography
                       variant="body1"
@@ -889,6 +893,8 @@ export default function Content() {
                       accomplish during user testing.
                     </Typography>
                   </Box>
+                </FadeIn>
+                <FadeIn>
                   <Box display="flex" gap={6} alignItems="center">
                     <Typography
                       variant="body1"
@@ -909,8 +915,8 @@ export default function Content() {
                       nearly half.
                     </Typography>
                   </Box>
-                </Box>
-              </FadeIn>
+                </FadeIn>
+              </Box>
             </Box>
           </Container>
           <PinScrollImages

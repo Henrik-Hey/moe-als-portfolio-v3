@@ -553,7 +553,12 @@ export const Navbar: React.FC<NavbarProps> = ({ colorMode }) => {
               </Box>
             </Box>
           </MobileNavLinkContainer>
-          <NavLinkContainer>
+          <NavLinkContainer
+            sx={{
+              right: "-4px",
+              top: "6px",
+            }}
+          >
             <Hamburger toggled={open} toggle={setOpen} color={textColor} />
           </NavLinkContainer>
         </Box>
@@ -587,7 +592,7 @@ const MobileNavLinkContainer = styled(Card)`
   transition: all 0.75s ease-in-out;
 `;
 
-const NavLinkContainer = styled("div")`
+const NavLinkContainer = styled(Box)`
   position: absolute;
   top: 0px;
   right: -8px;
