@@ -281,7 +281,7 @@ export const Navbar: React.FC<NavbarProps> = ({ colorMode }) => {
     : {};
   const icon = isDark ? <DarkLogo /> : <LightLogo />;
   const isOnProjectPage = projectDropDownText !== "Work";
-  const mobileClipOffset = !isOnProjectPage ? "135px" : "68px";
+  const mobileClipOffset = !isOnProjectPage ? "129px" : "62px";
   return (
     <Container maxWidth="xl">
       <BannerContainer mt={3}>
@@ -444,7 +444,11 @@ export const Navbar: React.FC<NavbarProps> = ({ colorMode }) => {
               </ButtonBase>
             </Box>
             <Box position="absolute" top={24} right={16}>
-              <NavLinkContainer>
+              <NavLinkContainer
+                sx={{
+                  top: "-6px",
+                }}
+              >
                 <Hamburger toggled={open} toggle={setOpen} color={textColor} />
               </NavLinkContainer>
             </Box>
@@ -556,7 +560,6 @@ export const Navbar: React.FC<NavbarProps> = ({ colorMode }) => {
           <NavLinkContainer
             sx={{
               right: "-4px",
-              top: "6px",
             }}
           >
             <Hamburger toggled={open} toggle={setOpen} color={textColor} />

@@ -9,6 +9,7 @@ import { ImageAutoScrollBlock } from "@/components/imageAutoScrollBlock/imageAut
 import { Footer } from "@/components/footer/footer";
 import { PresetProjectCard } from "@/components/presetProjectCard/presetProjectCard";
 import { FooterDark } from "@/components/footer/footerDark";
+import FadeIn from "@/components/fadeIn/fadeIn";
 
 export default function Content() {
   const { activeTheme, theme } = usePortfolioTheme();
@@ -30,7 +31,7 @@ export default function Content() {
         >
           <Box
             sx={{
-              minHeight: { xs: "17.5em", md: "unset" },
+              minHeight: { xs: "16em", md: "unset" },
             }}
           >
             <Typography
@@ -68,52 +69,64 @@ export default function Content() {
       {/* CARD SECTION */}
       <Container maxWidth="xl">
         <Grid container spacing={6}>
-          <Grid item xs={12} md={7} display="flex">
-            <PresetProjectCard project="afc" darkMode={isDark} />
-          </Grid>
-          <Grid item xs={12} md={5} display="flex">
-            <PresetProjectCard
-              project="hashmatrix-sharpstakes"
-              darkMode={isDark}
-            />
-          </Grid>
-          <Grid item xs={12} md={5} display="flex">
-            <PresetProjectCard project="shiba" darkMode={isDark} />
-          </Grid>
-          <Grid item xs={12} md={7} display="flex">
-            <PresetProjectCard project="pawfolio" darkMode={isDark} />
-          </Grid>
+          <FadeIn>
+            <Grid item xs={12} md={7} display="flex">
+              <PresetProjectCard project="afc" darkMode={isDark} />
+            </Grid>
+          </FadeIn>
+          <FadeIn>
+            <Grid item xs={12} md={5} display="flex">
+              <PresetProjectCard
+                project="hashmatrix-sharpstakes"
+                darkMode={isDark}
+              />
+            </Grid>
+          </FadeIn>
+          <FadeIn>
+            <Grid item xs={12} md={5} display="flex">
+              <PresetProjectCard project="shiba" darkMode={isDark} />
+            </Grid>
+          </FadeIn>
+          <FadeIn>
+            <Grid item xs={12} md={7} display="flex">
+              <PresetProjectCard project="pawfolio" darkMode={isDark} />
+            </Grid>
+          </FadeIn>
         </Grid>
       </Container>
       {/* END OF CARD SECTION */}
       <Container maxWidth="lg">
-        <Box
-          width="100%"
-          textAlign={{ xs: "left", md: "center" }}
-          my={12}
-          display="flex"
-          gap={3}
-          flexDirection="column"
-        >
-          <Typography
-            variant="h1"
-            color={isDark ? activeTheme.palette.neutral[100] : undefined}
+        <FadeIn>
+          <Box
+            width="100%"
+            textAlign={{ xs: "left", md: "center" }}
+            my={12}
+            display="flex"
+            gap={3}
+            flexDirection="column"
           >
-            Some organizations and companies I&apos;ve had the pleasure of
-            working with
-          </Typography>
-          <Typography variant="h6" fontWeight={400}>
-            While the journey had its challenges, I&apos;m immensely grateful to
-            the incredible companies and organizations that placed their trust
-            in me to enhance user experiences through intelligent design
-            decisions. Here are a few noteworthy entities that welcomed my
-            expertise on the quest for a seamless user journey.
-          </Typography>
-        </Box>
+            <Typography
+              variant="h1"
+              color={isDark ? activeTheme.palette.neutral[100] : undefined}
+            >
+              Some organizations and companies I&apos;ve had the pleasure of
+              working with
+            </Typography>
+            <Typography variant="h6" fontWeight={400}>
+              While the journey had its challenges, I&apos;m immensely grateful
+              to the incredible companies and organizations that placed their
+              trust in me to enhance user experiences through intelligent design
+              decisions. Here are a few noteworthy entities that welcomed my
+              expertise on the quest for a seamless user journey.
+            </Typography>
+          </Box>
+        </FadeIn>
       </Container>
-      <Box mb={12}>
-        <ImageAutoScrollBlock />
-      </Box>
+      <FadeIn>
+        <Box mb={12}>
+          <ImageAutoScrollBlock />
+        </Box>
+      </FadeIn>
       {isDark ? <FooterDark useSecondaryDarkColor /> : <Footer />}
     </ThemeProvider>
   );

@@ -195,6 +195,7 @@ export const ProjectDataChart: React.FC<ProjectDataChartProps> = ({
                   sx={{
                     p: 3,
                     border,
+                    flex: 1,
                     whiteSpace: "wrap",
                   }}
                 >

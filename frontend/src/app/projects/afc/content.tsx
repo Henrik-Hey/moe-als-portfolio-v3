@@ -160,7 +160,7 @@ export default function Content() {
             <Box
               display="flex"
               flexDirection={{ xs: "column", md: "row" }}
-              gap={{ xs: 12, md: 2 }}
+              gap={{ xs: 2, md: 2 }}
             >
               <Box flex={1}>
                 <Typography
@@ -829,7 +829,15 @@ export default function Content() {
               </FadeIn>
               <Box display="flex" flexDirection="column" gap={2}>
                 <FadeIn>
-                  <Box display="flex" gap={6} alignItems="center">
+                  <Box
+                    display="flex"
+                    gap={{ xs: 2, md: 6 }}
+                    alignItems={{ md: "center" }}
+                    flexDirection={{
+                      xs: "column",
+                      md: "row",
+                    }}
+                  >
                     <Typography
                       variant="body1"
                       sx={{
@@ -851,7 +859,15 @@ export default function Content() {
                   </Box>
                 </FadeIn>
                 <FadeIn>
-                  <Box display="flex" gap={6} alignItems="center">
+                  <Box
+                    display="flex"
+                    gap={{ xs: 2, md: 6 }}
+                    alignItems={{ md: "center" }}
+                    flexDirection={{
+                      xs: "column",
+                      md: "row",
+                    }}
+                  >
                     <Typography
                       variant="body1"
                       sx={{
@@ -873,7 +889,15 @@ export default function Content() {
                   </Box>
                 </FadeIn>
                 <FadeIn>
-                  <Box display="flex" gap={6} alignItems="center">
+                  <Box
+                    display="flex"
+                    gap={{ xs: 2, md: 6 }}
+                    alignItems={{ md: "center" }}
+                    flexDirection={{
+                      xs: "column",
+                      md: "row",
+                    }}
+                  >
                     <Typography
                       variant="body1"
                       sx={{
@@ -895,7 +919,15 @@ export default function Content() {
                   </Box>
                 </FadeIn>
                 <FadeIn>
-                  <Box display="flex" gap={6} alignItems="center">
+                  <Box
+                    display="flex"
+                    gap={{ xs: 2, md: 6 }}
+                    alignItems={{ md: "center" }}
+                    flexDirection={{
+                      xs: "column",
+                      md: "row",
+                    }}
+                  >
                     <Typography
                       variant="body1"
                       sx={{

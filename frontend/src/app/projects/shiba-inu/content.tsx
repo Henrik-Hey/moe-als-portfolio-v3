@@ -112,7 +112,7 @@ export default function Content() {
             <Box
               display="flex"
               flexDirection={{ xs: "column", md: "row" }}
-              gap={{ xs: 12, md: 2 }}
+              gap={{ xs: 2, md: 2 }}
             >
               <Box flex={1}>
                 <Typography
@@ -376,14 +376,19 @@ export default function Content() {
                 pt={18}
                 pr={2}
               >
-                <Typography variant="h6" textAlign="center" fontWeight={600}>
+                <Typography
+                  variant="h6"
+                  textAlign="center"
+                  fontWeight={600}
+                  mt={{ xs: 4, md: 0 }}
+                >
                   Happy
                 </Typography>
                 <Typography
                   variant="h6"
                   textAlign="center"
                   fontWeight={600}
-                  mt={"-36px"}
+                  mt={{ xs: -1, md: "-36px" }}
                 >
                   Neutral
                 </Typography>
@@ -391,7 +396,7 @@ export default function Content() {
                   variant="h6"
                   textAlign="center"
                   fontWeight={600}
-                  mt={"-36px"}
+                  mt={{ xs: -1, md: "-36px" }}
                 >
                   Unhappy
                 </Typography>
@@ -399,8 +404,8 @@ export default function Content() {
                   variant="h6"
                   textAlign="center"
                   fontWeight={600}
-                  mt={0}
-                  mb={"14px"}
+                  mt={{ xs: 1, md: 0 }}
+                  mb={{ xs: 10, md: "14px" }}
                 >
                   Experience
                 </Typography>
