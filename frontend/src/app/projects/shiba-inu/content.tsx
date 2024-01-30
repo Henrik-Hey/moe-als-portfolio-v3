@@ -383,7 +383,7 @@ export default function Content() {
                   variant="h6"
                   textAlign="center"
                   fontWeight={600}
-                  mt={-4.5}
+                  mt={"-36px"}
                 >
                   Neutral
                 </Typography>
@@ -391,7 +391,7 @@ export default function Content() {
                   variant="h6"
                   textAlign="center"
                   fontWeight={600}
-                  mt={-4.5}
+                  mt={"-36px"}
                 >
                   Unhappy
                 </Typography>
@@ -399,7 +399,8 @@ export default function Content() {
                   variant="h6"
                   textAlign="center"
                   fontWeight={600}
-                  my={2.25}
+                  mt={0}
+                  mb={"14px"}
                 >
                   Experience
                 </Typography>
