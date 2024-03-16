@@ -113,13 +113,8 @@ export default function Content() {
           />
           <FadeIn>
             <Box>
-              <Typography
-                variant="h3"
-                mb={2}
-                fontWeight={700}
-                textTransform="uppercase"
-              >
-                problem
+              <Typography variant="h3" mb={2} fontWeight={700}>
+                Problem
               </Typography>
               <Typography variant="body1">
                 AFC, as a brand, is currently navigating a unique challenge.
@@ -137,13 +132,8 @@ export default function Content() {
           </FadeIn>
           <FadeIn>
             <Box>
-              <Typography
-                variant="h3"
-                mb={2}
-                fontWeight={700}
-                textTransform="uppercase"
-              >
-                redesign key drivers
+              <Typography variant="h3" mb={2} fontWeight={700}>
+                Redesign key drivers
               </Typography>
               <Typography variant="body1">
                 Insufficient attention has been given to dealers handling NAPs.
@@ -163,12 +153,7 @@ export default function Content() {
               gap={{ xs: 2, md: 2 }}
             >
               <Box flex={1}>
-                <Typography
-                  variant="body1"
-                  mb={2}
-                  fontWeight={700}
-                  textTransform="uppercase"
-                >
+                <Typography variant="body1" mb={2} fontWeight={700}>
                   Modernize and adapt
                 </Typography>
                 <Typography variant="body1">
@@ -181,13 +166,8 @@ export default function Content() {
                 </Typography>
               </Box>
               <Box flex={1}>
-                <Typography
-                  variant="body1"
-                  mb={2}
-                  fontWeight={700}
-                  textTransform="uppercase"
-                >
-                  accessibility & responsiveness
+                <Typography variant="body1" mb={2} fontWeight={700}>
+                  Accessibility & responsiveness
                 </Typography>
                 <Typography variant="body1">
                   Ensuring inclusivity and adaptability, accessibility and
@@ -200,13 +180,8 @@ export default function Content() {
                 </Typography>
               </Box>
               <Box flex={1}>
-                <Typography
-                  variant="body1"
-                  mb={2}
-                  fontWeight={700}
-                  textTransform="uppercase"
-                >
-                  simplifying the journey
+                <Typography variant="body1" mb={2} fontWeight={700}>
+                  Simplifying the journey
                 </Typography>
                 <Typography variant="body1">
                   While AFCD exhibits minor issues across the entire
@@ -238,13 +213,8 @@ export default function Content() {
           <Box>
             <FadeIn>
               <Box mb={8}>
-                <Typography
-                  variant="h3"
-                  mb={2}
-                  fontWeight={700}
-                  textTransform="uppercase"
-                >
-                  should a change be made?
+                <Typography variant="h3" mb={2} fontWeight={700}>
+                  Should a change be made?
                 </Typography>
                 <Typography variant="body1">
                   AFC has long followed a traditional approach, conducting
@@ -263,12 +233,7 @@ export default function Content() {
             <FadeIn>
               <Box display="flex" flexDirection="column" gap={6}>
                 <Box>
-                  <Typography
-                    variant="body1"
-                    textTransform="uppercase"
-                    fontWeight={700}
-                    mb={1.5}
-                  >
+                  <Typography variant="body1" fontWeight={700} mb={1.5}>
                     Why this works so well
                   </Typography>
                   <Typography variant="body1">
@@ -301,13 +266,8 @@ export default function Content() {
           <Box>
             <FadeIn>
               <Box mb={8}>
-                <Typography
-                  variant="h3"
-                  mb={2}
-                  fontWeight={700}
-                  textTransform="uppercase"
-                >
-                  finding the why behind it all
+                <Typography variant="h3" mb={2} fontWeight={700}>
+                  Finding the why behind it all
                 </Typography>
                 <Typography variant="body1">
                   Ultimately, I wanted to get a better idea on what made our
@@ -328,11 +288,7 @@ export default function Content() {
                 gap={2}
               >
                 <Box flex={1}>
-                  <Typography
-                    variant="body1"
-                    textTransform="uppercase"
-                    mb={1.5}
-                  >
+                  <Typography variant="body1" mb={1.5}>
                     Method 1: <br />
                     <b>Qualitative & quantitative data</b>
                   </Typography>
@@ -345,11 +301,7 @@ export default function Content() {
                   </Typography>
                 </Box>
                 <Box flex={1}>
-                  <Typography
-                    variant="body1"
-                    textTransform="uppercase"
-                    mb={1.5}
-                  >
+                  <Typography variant="body1" mb={1.5}>
                     Method 2: <br />
                     <b>competitive analysis</b>
                   </Typography>
@@ -395,13 +347,8 @@ export default function Content() {
         <Box display="flex" flexDirection="column" gap={12} my={12}>
           <FadeIn>
             <Box>
-              <Typography
-                variant="h3"
-                mb={2}
-                fontWeight={700}
-                textTransform="uppercase"
-              >
-                what does the data suggest?
+              <Typography variant="h3" mb={2} fontWeight={700}>
+                What does the data suggest?
               </Typography>
               <Typography variant="body1">
                 Based on insights gathered through past interviews, surveys, and
@@ -508,13 +455,8 @@ export default function Content() {
           </Box>
           <FadeIn>
             <Box>
-              <Typography
-                variant="h3"
-                mb={2}
-                fontWeight={700}
-                textTransform="uppercase"
-              >
-                users needs and business limitations
+              <Typography variant="h3" mb={2} fontWeight={700}>
+                Users needs and business limitations
               </Typography>
               <Typography variant="body1">
                 The research findings indicate that user needs are
@@ -533,13 +475,8 @@ export default function Content() {
           </FadeIn>
           <FadeIn>
             <Box>
-              <Typography
-                variant="h3"
-                mb={2}
-                fontWeight={700}
-                textTransform="uppercase"
-              >
-                outlining THE CONTENT
+              <Typography variant="h3" mb={2} fontWeight={700}>
+                Outlining the content
               </Typography>
               <Typography variant="body1">
                 I initiated discussions with stakeholders, product owners, and
@@ -561,22 +498,15 @@ export default function Content() {
           <Container maxWidth="md">
             <FadeIn>
               <Box pt={6} pb={12}>
-                <Typography
-                  variant="h3"
-                  mb={2}
-                  fontWeight={700}
-                  textTransform="uppercase"
-                >
-                  finding the why behind it all
+                <Typography variant="h3" mb={2} fontWeight={700}>
+                  Wireframes
                 </Typography>
                 <Typography variant="body1">
-                  Ultimately, I wanted to get a better idea on what made our
-                  dealers tick, were they okay with the outdated interfaces,
-                  maybe they were afraid of change and didn’t want to be
-                  presented with a new product. What could I shift around
-                  without destroying the balance that has been set for decades
-                  before I arrived. I planned two research methods and went to
-                  work.
+                  After completing the initial draft of all the content, the
+                  next step was to create a visual representation to present to
+                  the BT team and other stakeholders during the monthly demo.
+                  This visual presentation needed to include a substantial
+                  amount of information and effectively explain the process.
                 </Typography>
               </Box>
             </FadeIn>
@@ -591,12 +521,7 @@ export default function Content() {
           <Container maxWidth="md">
             <FadeIn>
               <Box my={12}>
-                <Typography
-                  variant="h3"
-                  mb={2}
-                  fontWeight={700}
-                  textTransform="uppercase"
-                >
+                <Typography variant="h3" mb={2} fontWeight={700}>
                   Creating a temporary design system
                 </Typography>
                 <Typography variant="body1">
@@ -660,12 +585,7 @@ export default function Content() {
           <Container maxWidth="md">
             <FadeIn>
               <Box my={12}>
-                <Typography
-                  variant="h3"
-                  mb={2}
-                  fontWeight={700}
-                  textTransform="uppercase"
-                >
+                <Typography variant="h3" mb={2} fontWeight={700}>
                   Putting in the hours
                 </Typography>
                 <Typography variant="body1">
@@ -797,13 +717,8 @@ export default function Content() {
             <Box py={12} display="flex" flexDirection="column" gap={12}>
               <FadeIn>
                 <Box>
-                  <Typography
-                    variant="h3"
-                    mb={2}
-                    fontWeight={700}
-                    textTransform="uppercase"
-                  >
-                    closing NOTES & Bonus data:
+                  <Typography variant="h3" mb={2} fontWeight={700}>
+                    Closing notes & bonus data:
                   </Typography>
                   <Typography variant="body1">
                     This enhanced interface bridges the gap between AFC and NG,
@@ -967,37 +882,37 @@ export default function Content() {
                 alignItems="center"
               >
                 <ProjectDataChart
-                  title="survey data "
-                  subtitle="branch personnel and user experience rating using the Updated nap flooring process."
+                  title="Survey data "
+                  subtitle="Branch personnel and user experience rating using the Updated nap flooring process."
                   caption="Average based on 12 interviews"
                   colors={[palette.neutral[300], palette.neutral[600]]}
                   data={[
                     {
-                      title: "navigability",
+                      title: "Navigability",
                       data: [7, 7],
                     },
                     {
-                      title: "modernity",
+                      title: "Modernity",
                       data: [9, 9],
                     },
                     {
-                      title: "accessibility",
+                      title: "Accessibility",
                       data: [8, 9],
                     },
                     {
-                      title: "practicality",
+                      title: "Practicality",
                       data: [8, 9],
                     },
                     {
-                      title: "content relativeness ",
+                      title: "Content relativeness ",
                       data: [9, 9],
                     },
                     {
-                      title: "RESPONSIVENESS",
+                      title: "Responsiveness",
                       data: [9, 9],
                     },
                     {
-                      title: "automatization",
+                      title: "Automatization",
                       data: [1, 1],
                     },
                     {
@@ -1008,13 +923,13 @@ export default function Content() {
                   cardColumns={[
                     [
                       {
-                        title: "USER COMMENTS",
+                        title: "User comments",
                         body: "“The new look and feel of the interface are way better and easier to handle. It's like using an app that just clicks for me, you know? Nothing seems old-school, and I'm not scratching my head trying to figure out how things work anymore!”",
                       },
                     ],
                     [
                       {
-                        title: "BRANCH COMMENTS",
+                        title: "Branch comments",
                         body: "“I bet dealers will be way happier with this. It hands them a ton of power, and it could be the solution they've been needing, especially since they're always ringing up the offices for help. I see this as a move in the right direction, and with some good coaching and support, even the older folks will catch on.”",
                       },
                     ],

@@ -65,13 +65,8 @@ export default function Content() {
           <ProjectStatement content="Crafting a distinctive product with a delightful user experience, Shiba Inu endeavors to compete with established market leaders. Centered on the needs of students and busy young adults, the app caters to those who crave exceptional Asian ethnic food but find themselves pressed for time to cook." />
           <FadeIn>
             <Box>
-              <Typography
-                variant="h3"
-                mb={2}
-                fontWeight={700}
-                textTransform="uppercase"
-              >
-                problem
+              <Typography variant="h3" mb={2} fontWeight={700}>
+                Problem
               </Typography>
               <Typography variant="body1">
                 Countless international food enterprises have made their mark,
@@ -84,13 +79,8 @@ export default function Content() {
           </FadeIn>
           <FadeIn>
             <Box>
-              <Typography
-                variant="h3"
-                mb={2}
-                fontWeight={700}
-                textTransform="uppercase"
-              >
-                design key drivers
+              <Typography variant="h3" mb={2} fontWeight={700}>
+                Design key drivers
               </Typography>
               <Typography variant="body1">
                 The challenge at hand revolves around the scarcity of food
@@ -115,13 +105,8 @@ export default function Content() {
               gap={{ xs: 2, md: 2 }}
             >
               <Box flex={1}>
-                <Typography
-                  variant="body1"
-                  mb={2}
-                  fontWeight={700}
-                  textTransform="uppercase"
-                >
-                  knowing THE RIGHT DEMOGRAPHIC
+                <Typography variant="body1" mb={2} fontWeight={700}>
+                  Knowing the right demographic
                 </Typography>
                 <Typography variant="body1">
                   Shiba Inu will be tailored for students and young adults,
@@ -132,13 +117,8 @@ export default function Content() {
                 </Typography>
               </Box>
               <Box flex={1}>
-                <Typography
-                  variant="body1"
-                  mb={2}
-                  fontWeight={700}
-                  textTransform="uppercase"
-                >
-                  LEARNING FROM THE BIG PLAYERS
+                <Typography variant="body1" mb={2} fontWeight={700}>
+                  Learning from the big players
                 </Typography>
                 <Typography variant="body1">
                   The primary objective lies in distilling crucial insights on
@@ -151,13 +131,8 @@ export default function Content() {
                 </Typography>
               </Box>
               <Box flex={1}>
-                <Typography
-                  variant="body1"
-                  mb={2}
-                  fontWeight={700}
-                  textTransform="uppercase"
-                >
-                  DESIGNING FOR ACCESSIBILITY
+                <Typography variant="body1" mb={2} fontWeight={700}>
+                  Designing for accessibility
                 </Typography>
                 <Typography variant="body1">
                   Integrating design elements that emphasize user-friendly and
@@ -185,13 +160,8 @@ export default function Content() {
         <Box display="flex" flexDirection="column" gap={12} my={12}>
           <FadeIn>
             <Box>
-              <Typography
-                variant="h3"
-                mb={2}
-                fontWeight={700}
-                textTransform="uppercase"
-              >
-                the target user
+              <Typography variant="h3" mb={2} fontWeight={700}>
+                The target user
               </Typography>
               <Typography variant="body1">
                 By considering the target user, my personal motivations for
@@ -292,13 +262,8 @@ export default function Content() {
           </Box>
           <FadeIn>
             <Box>
-              <Typography
-                variant="h3"
-                mb={2}
-                fontWeight={700}
-                textTransform="uppercase"
-              >
-                Defining the Potential Problems
+              <Typography variant="h3" mb={2} fontWeight={700}>
+                Defining the potential problems
               </Typography>
               <Typography variant="body1">
                 In this crucial phase, I focused on understanding user
@@ -699,13 +664,8 @@ export default function Content() {
             <Box py={8} display="flex" flexDirection="column" gap={8}>
               <FadeIn>
                 <Box>
-                  <Typography
-                    variant="h3"
-                    mb={2}
-                    fontWeight={700}
-                    textTransform="uppercase"
-                  >
-                    The Creative Brainstorming Phase
+                  <Typography variant="h3" mb={2} fontWeight={700}>
+                    The creative brainstorming phase
                   </Typography>
                   <Typography variant="body1">
                     After my initial research, I delved deeper into
@@ -842,13 +802,8 @@ export default function Content() {
           <Container maxWidth="md">
             <FadeIn>
               <Box py={12}>
-                <Typography
-                  variant="h3"
-                  mb={2}
-                  fontWeight={700}
-                  textTransform="uppercase"
-                >
-                  prototyping, Testing and adapting
+                <Typography variant="h3" mb={2} fontWeight={700}>
+                  Prototyping, testing and adapting
                 </Typography>
                 <Typography variant="body1">
                   Having concluded the user research phase and finalized the
@@ -889,7 +844,7 @@ export default function Content() {
                           color={palette.neutral[700]}
                           fontWeight={600}
                         >
-                          Pain Points
+                          Pain points
                         </Typography>
                         <Typography
                           variant="body1"
@@ -916,7 +871,7 @@ export default function Content() {
                           color={palette.neutral[700]}
                           fontWeight={600}
                         >
-                          Pain Points
+                          Pain points
                         </Typography>
                         <Typography
                           variant="body1"
@@ -943,7 +898,7 @@ export default function Content() {
                           color={palette.neutral[700]}
                           fontWeight={600}
                         >
-                          Pain Points
+                          Pain points
                         </Typography>
                         <Typography
                           variant="body1"
@@ -1164,12 +1119,7 @@ export default function Content() {
             <Box py={12}>
               <FadeIn>
                 <Box mb={8}>
-                  <Typography
-                    variant="h3"
-                    mb={2}
-                    fontWeight={700}
-                    textTransform="uppercase"
-                  >
+                  <Typography variant="h3" mb={2} fontWeight={700}>
                     Creating priorities
                   </Typography>
                   <Typography variant="body1">
@@ -1189,13 +1139,8 @@ export default function Content() {
                   mb={12}
                 >
                   <Box flex={1}>
-                    <Typography
-                      variant="body1"
-                      mb={2}
-                      fontWeight={700}
-                      textTransform="uppercase"
-                    >
-                      PRIORITY 0
+                    <Typography variant="body1" mb={2} fontWeight={700}>
+                      Priority 0
                     </Typography>
                     <Typography variant="body1">
                       Based on the theme that 4 out of 5 participants
@@ -1207,13 +1152,8 @@ export default function Content() {
                     </Typography>
                   </Box>
                   <Box flex={1}>
-                    <Typography
-                      variant="body1"
-                      mb={2}
-                      fontWeight={700}
-                      textTransform="uppercase"
-                    >
-                      PRIORITY 1
+                    <Typography variant="body1" mb={2} fontWeight={700}>
+                      Priority 1
                     </Typography>
                     <Typography variant="body1">
                       Based on the theme that 3 out of 5 participants desired
@@ -1224,13 +1164,8 @@ export default function Content() {
                     </Typography>
                   </Box>
                   <Box flex={1}>
-                    <Typography
-                      variant="body1"
-                      mb={2}
-                      fontWeight={700}
-                      textTransform="uppercase"
-                    >
-                      PRIORITY 2
+                    <Typography variant="body1" mb={2} fontWeight={700}>
+                      Priority 2
                     </Typography>
                     <Typography variant="body1">
                       Based on the theme that 2 out of 5 participants expressed
@@ -1245,13 +1180,8 @@ export default function Content() {
               </FadeIn>
               <FadeIn>
                 <Box>
-                  <Typography
-                    variant="h3"
-                    mb={2}
-                    fontWeight={700}
-                    textTransform="uppercase"
-                  >
-                    closing NOTES:
+                  <Typography variant="h3" mb={2} fontWeight={700}>
+                    Closing notes:
                   </Typography>
                   <Typography variant="body1">
                     The Shiba INU project aimed to revolutionize food delivery

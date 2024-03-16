@@ -26,12 +26,7 @@ export const ProjectsNavFooter: React.FC<ProjectsNavFooterProps> = ({
       <ScopedCssBaseline>
         <Container maxWidth="lg">
           <Box pt={12} pb={6}>
-            <Typography
-              variant="h3"
-              textTransform="uppercase"
-              textAlign="center"
-              fontWeight={700}
-            >
+            <Typography variant="h3" textAlign="center" fontWeight={700}>
               There&apos;s more to see :)
             </Typography>
             <Box

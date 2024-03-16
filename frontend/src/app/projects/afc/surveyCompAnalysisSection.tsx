@@ -7,37 +7,37 @@ import React from "react";
 
 const SurveyChart: React.FC = () => (
   <ProjectDataChart
-    title="SURVEY DATA"
-    subtitle="branch personnel and user experience rating using the current nap flooring process."
+    title="Survey Data"
+    subtitle="Branch personnel and user experience rating using the current nap flooring process."
     caption="Average based on 8 interviews"
     colors={["#71A501", "#517601"]}
     data={[
       {
-        title: "navigability",
+        title: "Navigability",
         data: [3, 5],
       },
       {
-        title: "modernity",
+        title: "Modernity",
         data: [2, 4],
       },
       {
-        title: "accessibility",
+        title: "Accessibility",
         data: [2, 5],
       },
       {
-        title: "practicality",
+        title: "Practicality",
         data: [3, 6],
       },
       {
-        title: "content relativeness ",
+        title: "Content relativeness ",
         data: [4, 7],
       },
       {
-        title: "RESPONSIVENESS",
+        title: "Responsiveness",
         data: [4, 6],
       },
       {
-        title: "automatization",
+        title: "Automatization",
         data: [1, 1],
       },
       {
@@ -48,13 +48,13 @@ const SurveyChart: React.FC = () => (
     cardColumns={[
       [
         {
-          title: "Survey Findings",
+          title: "Survey findings",
           body: "We must gain a deeper understanding of user preferences and overcome the fear of implementing changes. Our hesitance to introduce significant changes for fear of alienating the older generations has been too cautious, and now it's impacting the financial health of the business.",
         },
       ],
       [
         {
-          title: "Survey Findings",
+          title: "Survey findings",
           body: "AFC must enhance and expand its online presence, fostering dealer engagement and providing support for the adoption of new features or updates. Addressing significant interface issues and allocating additional time to comprehend dealer and branch concerns are crucial aspects. There is valuable insight to be gained by studying NextGear and their approach to these matters.",
         },
       ],
@@ -64,37 +64,37 @@ const SurveyChart: React.FC = () => (
 
 const CompAnalysisChart: React.FC = () => (
   <ProjectDataChart
-    title="competitive analysis "
-    subtitle="branch personnel experience rating using nextgear's alternative flooring process."
+    title="Competitive analysis "
+    subtitle="Branch personnel experience rating using nextgear's alternative flooring process."
     caption="Average based on 8 interviews"
     colors={["#72ACDA", "#255F8D"]}
     data={[
       {
-        title: "navigability",
+        title: "Navigability",
         data: [7, 9],
       },
       {
-        title: "modernity",
+        title: "Modernity",
         data: [9, 9],
       },
       {
-        title: "accessibility",
+        title: "Accessibility",
         data: [7, 8],
       },
       {
-        title: "practicality",
+        title: "Practicality",
         data: [8, 7],
       },
       {
-        title: "content relativeness ",
+        title: "Content relativeness ",
         data: [7, 7],
       },
       {
-        title: "RESPONSIVENESS",
+        title: "Responsiveness",
         data: [8, 9],
       },
       {
-        title: "automatization",
+        title: "Automatization",
         data: [1, 1],
       },
       {
@@ -105,13 +105,13 @@ const CompAnalysisChart: React.FC = () => (
     cardColumns={[
       [
         {
-          title: "competitive ANALYSIS FINDINGS",
+          title: "Competitive analysis findings",
           body: "NextGear recognizes both its strengths and weaknesses, strategically directing a significant portion of its budget toward developing projects and elements that reflect this awareness.",
         },
       ],
       [
         {
-          title: "competitive ANALYSIS FINDINGS",
+          title: "Competitive analysis findings",
           body: "NextGear outperforms AFC in nearly every aspect discussed. They demonstrate a strong understanding of accessibility, and many of their UI elements align more closely with current web standards. AFC could potentially benefit from a comprehensive brand overhaul.",
         },
       ],

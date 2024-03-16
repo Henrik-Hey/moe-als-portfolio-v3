@@ -29,42 +29,26 @@ export const ProjectMissionStatement = ({
         }}
       >
         <Box flex={1}>
-          <Typography
-            variant="body1"
-            fontWeight={700}
-            textTransform="uppercase"
-          >
+          <Typography variant="body1" fontWeight={700}>
             {typeTitle}
           </Typography>
           <Typography variant="body1">{typeText}</Typography>
         </Box>
         <Box flex={2}>
-          <Typography
-            variant="body1"
-            fontWeight={700}
-            textTransform="uppercase"
-          >
-            Role & Responsibilities
+          <Typography variant="body1" fontWeight={700}>
+            Role & responsibilities
           </Typography>
           <Typography variant="body1">{roleAndResponsibilitiesText}</Typography>
         </Box>
         <Box display="flex" flexDirection="row" flex={3} gap={8}>
           <Box flex={1}>
-            <Typography
-              variant="body1"
-              fontWeight={700}
-              textTransform="uppercase"
-            >
+            <Typography variant="body1" fontWeight={700}>
               Platforms
             </Typography>
             <Typography variant="body1">{platformsText}</Typography>
           </Box>
           <Box flex={1}>
-            <Typography
-              variant="body1"
-              fontWeight={700}
-              textTransform="uppercase"
-            >
+            <Typography variant="body1" fontWeight={700}>
               Timeline
             </Typography>
             <Typography variant="body1">{timelineText}</Typography>

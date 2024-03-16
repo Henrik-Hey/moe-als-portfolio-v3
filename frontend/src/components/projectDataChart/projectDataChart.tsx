@@ -65,18 +65,12 @@ export const ProjectDataChart: React.FC<ProjectDataChartProps> = ({
           <Typography
             variant="body1"
             color={colors[0]}
-            textTransform="uppercase"
             fontWeight={500}
             mb={1.5}
           >
             {title}
           </Typography>
-          <Typography
-            variant="body1"
-            textTransform="uppercase"
-            fontWeight={700}
-            width="520px"
-          >
+          <Typography variant="body1" fontWeight={700} width="520px">
             {subtitle}
           </Typography>
           <Typography variant="body2">{caption}</Typography>
@@ -138,7 +132,6 @@ export const ProjectDataChart: React.FC<ProjectDataChartProps> = ({
                 <Typography
                   variant="body2"
                   fontWeight={600}
-                  textTransform="uppercase"
                   width={height}
                   whiteSpace="nowrap"
                 >
@@ -202,7 +195,6 @@ export const ProjectDataChart: React.FC<ProjectDataChartProps> = ({
                   <Typography
                     variant="body1"
                     color={colors[0]}
-                    textTransform="uppercase"
                     fontWeight={500}
                     mb={1.5}
                   >

@@ -90,13 +90,8 @@ export default function Content() {
           <ProjectStatement content="Improving user engagement and fostering business growth, I spearheaded the strategy, design, and testing phases of SharpStakes, a distinctive AI-powered betting solution. My goal was to create a user-friendly product that spurred expansion, drew in more users, and opened up greater referral and sponsorship prospects." />
           <FadeIn>
             <Box>
-              <Typography
-                variant="h3"
-                mb={2}
-                fontWeight={700}
-                textTransform="uppercase"
-              >
-                problem
+              <Typography variant="h3" mb={2} fontWeight={700}>
+                Problem
               </Typography>
               <Typography variant="body1">
                 The existing SharpStakes website had significant issues
@@ -113,13 +108,8 @@ export default function Content() {
           </FadeIn>
           <FadeIn>
             <Box>
-              <Typography
-                variant="h3"
-                mb={2}
-                fontWeight={700}
-                textTransform="uppercase"
-              >
-                redesign key drivers
+              <Typography variant="h3" mb={2} fontWeight={700}>
+                Redesign key drivers
               </Typography>
               <Typography variant="body1">
                 Insufficient attention has been given to showcasing SharpStakes
@@ -137,13 +127,8 @@ export default function Content() {
               gap={{ xs: 2, md: 2 }}
             >
               <Box flex={1}>
-                <Typography
-                  variant="body1"
-                  mb={2}
-                  fontWeight={700}
-                  textTransform="uppercase"
-                >
-                  ai as a driving factor
+                <Typography variant="body1" mb={2} fontWeight={700}>
+                  AI as a driving factor
                 </Typography>
                 <Typography variant="body1">
                   The captivating realm of artificial intelligence and its
@@ -154,13 +139,8 @@ export default function Content() {
                 </Typography>
               </Box>
               <Box flex={1}>
-                <Typography
-                  variant="body1"
-                  mb={2}
-                  fontWeight={700}
-                  textTransform="uppercase"
-                >
-                  reinventing current processes
+                <Typography variant="body1" mb={2} fontWeight={700}>
+                  Reinventing current processes
                 </Typography>
                 <Typography variant="body1">
                   Several of SharpStakes&apos; existing practices, marked by
@@ -171,13 +151,8 @@ export default function Content() {
                 </Typography>
               </Box>
               <Box flex={1}>
-                <Typography
-                  variant="body1"
-                  mb={2}
-                  fontWeight={700}
-                  textTransform="uppercase"
-                >
-                  applying better design habits
+                <Typography variant="body1" mb={2} fontWeight={700}>
+                  Applying better design habits
                 </Typography>
                 <Typography variant="body1">
                   Uniform spacing, adequate white space, readable fonts,
@@ -207,12 +182,7 @@ export default function Content() {
           <Box>
             <FadeIn>
               <Box mb={8}>
-                <Typography
-                  variant="h3"
-                  mb={2}
-                  fontWeight={700}
-                  textTransform="uppercase"
-                >
+                <Typography variant="h3" mb={2} fontWeight={700}>
                   Analyzing Competitor Designs
                 </Typography>
                 <Typography variant="body1">
@@ -284,13 +254,8 @@ export default function Content() {
             <Box py={8} display="flex" flexDirection="column" gap={8}>
               <FadeIn>
                 <Box>
-                  <Typography
-                    variant="h3"
-                    mb={2}
-                    fontWeight={700}
-                    textTransform="uppercase"
-                  >
-                    Revamp, Adapt, Elevate
+                  <Typography variant="h3" mb={2} fontWeight={700}>
+                    Revamp, adapt, elevate
                   </Typography>
                   <Typography variant="body1">
                     “Utilize the data collected from the first objective and
@@ -333,13 +298,8 @@ export default function Content() {
           <Container maxWidth="md">
             <FadeIn>
               <Box py={12}>
-                <Typography
-                  variant="h3"
-                  mb={2}
-                  fontWeight={700}
-                  textTransform="uppercase"
-                >
-                  Guide Development, Craft Onboarding
+                <Typography variant="h3" mb={2} fontWeight={700}>
+                  Guide development, craft onboarding
                 </Typography>
                 <Typography variant="body1">
                   “Pass the initial screens to the development team and provide
@@ -367,13 +327,8 @@ export default function Content() {
           <Container maxWidth="md">
             <FadeIn>
               <Box py={12}>
-                <Typography
-                  variant="h3"
-                  mb={2}
-                  fontWeight={700}
-                  textTransform="uppercase"
-                >
-                  Revise, Reframe, Renew
+                <Typography variant="h3" mb={2} fontWeight={700}>
+                  Revise, reframe, renew
                 </Typography>
                 <Typography variant="body1">
                   “Refine and reconfigure components in alignment with our
@@ -411,13 +366,8 @@ export default function Content() {
             <Box py={12} display="flex" flexDirection="column" gap={12}>
               <FadeIn>
                 <Box>
-                  <Typography
-                    variant="h3"
-                    mb={2}
-                    fontWeight={700}
-                    textTransform="uppercase"
-                  >
-                    closing NOTES:
+                  <Typography variant="h3" mb={2} fontWeight={700}>
+                    Closing notes:
                   </Typography>
                   <Typography variant="body1">
                     The updated interface and design strategy enable SharpStakes
