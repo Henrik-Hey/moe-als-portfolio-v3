@@ -8,7 +8,7 @@ import React from "react";
 const SurveyChart: React.FC = () => (
   <ProjectDataChart
     title="Survey Data"
-    subtitle="Branch personnel and user experience rating using the current nap flooring process."
+    subtitle="Branch personnel and user experience rating using the current NAP flooring process."
     caption="Average based on 8 interviews"
     colors={["#71A501", "#517601"]}
     data={[

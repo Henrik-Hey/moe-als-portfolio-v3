@@ -81,11 +81,11 @@ export default function Content() {
       <Container maxWidth="md">
         <Box display="flex" flexDirection="column" gap={12} my={12}>
           <ProjectMissionStatement
-            typeTitle="Project TYPE"
-            typeText="Major Feature"
-            roleAndResponsibilitiesText="Sketching, User Research, Wireframing, Visual Design, Prototyping, User Testing, Interaction Design"
-            platformsText="Web, Tablet, Mobile: IOS, Android"
-            timelineText="Q2 2022 - Ongoing"
+            typeTitle="Client"
+            typeText="Sharpstakes"
+            roleAndResponsibilitiesText="Consultation, Sketching, Wireframing, Visual Design, Prototyping, User Testing, Interaction Design"
+            platformsText="Web, Mobile: iOS"
+            timelineText="Q1 2023 - Q1 2024"
           />
           <ProjectStatement content="Improving user engagement and fostering business growth, I spearheaded the strategy, design, and testing phases of SharpStakes, a distinctive AI-powered betting solution. My goal was to create a user-friendly product that spurred expansion, drew in more users, and opened up greater referral and sponsorship prospects." />
           <FadeIn>

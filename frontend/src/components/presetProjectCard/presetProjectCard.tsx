@@ -31,6 +31,7 @@ export const PresetProjectCard = ({
           ctaText="View Protected Project"
           isLocked={getCookie(ACCESS_COOKIE_KEY) !== "true"}
           color={darkMode ? palette.darkMode[50] : palette.green.main}
+          hoverColor={darkMode ? "#2F2F2F" : "#C6FA9E"}
           onCTAClick={() => {
             router.push("/projects/afc");
           }}
@@ -55,6 +56,7 @@ export const PresetProjectCard = ({
           description="HashMatrix specializes in helping early stage tech startups grow and succeed on a global scale through product development, brand building, and fundraising."
           ctaText="View Project"
           color={darkMode ? palette.darkMode[400] : palette.blue.main}
+          hoverColor={darkMode ? "#232323" : "#9EFAE9"}
           onCTAClick={() => {
             router.push("/projects/hashmatrix-sharpstakes");
           }}
@@ -79,6 +81,7 @@ export const PresetProjectCard = ({
           description="Pawfolio is a pet management app designed to help you stay organized, maintain your pet's health records, and keep track of crucial dates."
           ctaText="In Progress.."
           color={darkMode ? palette.darkMode[50] : palette.warning.main}
+          hoverColor={darkMode ? "#2F2F2F" : "#FCCF5A"}
           content={
             <Box display="flex" gap={2}>
               <img
@@ -107,6 +110,7 @@ export const PresetProjectCard = ({
           description="Shiba is a comprehensive food delivery platform designed for busy young adults."
           ctaText="View Case Study"
           color={darkMode ? palette.darkMode[400] : palette.lightRed.main}
+          hoverColor={darkMode ? "#232323" : "#FA9E9E"}
           onCTAClick={() => {
             router.push("/projects/shiba-inu");
           }}

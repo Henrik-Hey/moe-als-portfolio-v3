@@ -9,6 +9,7 @@ interface ProjectCardProps {
   description: string;
   ctaText: string;
   color: string;
+  hoverColor: string;
   onCTAClick?: () => void;
   isLocked?: boolean;
   content?: React.ReactNode;
@@ -20,6 +21,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
   description,
   ctaText,
   color,
+  hoverColor,
   onCTAClick,
   isLocked,
   content,
@@ -44,6 +46,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
         [`&:hover`]: {
           transform: "translateY(-8px)",
           cursor: "pointer",
+          background: hoverColor,
         },
       }}
       onClick={onCTAClick}

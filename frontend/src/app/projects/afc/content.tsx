@@ -883,7 +883,7 @@ export default function Content() {
               >
                 <ProjectDataChart
                   title="Survey data "
-                  subtitle="Branch personnel and user experience rating using the Updated nap flooring process."
+                  subtitle="Branch personnel and user experience rating using the Updated NAP flooring process."
                   caption="Average based on 12 interviews"
                   colors={[palette.neutral[300], palette.neutral[600]]}
                   data={[

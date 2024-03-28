@@ -56,8 +56,8 @@ export default function Content() {
       <Container maxWidth="md">
         <Box display="flex" flexDirection="column" gap={12} my={12}>
           <ProjectMissionStatement
-            typeTitle="case study type"
-            typeText="Bootcamp Project"
+            typeTitle="Project Type"
+            typeText="Bootcamp case study"
             roleAndResponsibilitiesText="Sketching, User Research, Wireframing, Visual Design, Prototyping, User Testing, Interaction Design, Brand Creation."
             platformsText="Mobile"
             timelineText="Q1 2022 - Q2 2022"
