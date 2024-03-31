@@ -113,9 +113,26 @@ export const PinScrollImages = ({
       : containerHeight;
 
   const handleDrag = (e: any) => {
-    contentRef.current?.scrollTo({
-      left: contentRef.current.scrollLeft - e.movementX * 2,
-    });
+    if (!contentRef.current) return;
+    // Calculate the new scroll position based on movement
+    let movementX = e.movementX;
+    const newScrollLeft = contentRef.current.scrollLeft - movementX;
+
+    // Apply inertia by gradually reducing velocity
+    const inertiaFactor = 0.9; // Adjust this value for desired inertia strength
+    const inertiaScroll = () => {
+      if (!contentRef.current) return;
+      if (Math.abs(movementX) > 0.5) {
+        // Apply inertia
+        contentRef.current.scrollTo({
+          left: contentRef.current.scrollLeft - movementX,
+        });
+        movementX *= inertiaFactor;
+        requestAnimationFrame(inertiaScroll);
+      }
+    };
+
+    inertiaScroll();
   };
 
   const handleDragMobile = (e: any) => {
@@ -124,10 +141,23 @@ export const PinScrollImages = ({
     if (previousTouchRef.current) {
       e.movementX = touch.pageX - previousTouchRef.current.pageX;
       e.movementY = touch.pageY - previousTouchRef.current.pageY;
+      let movementX = e.movementX;
 
-      contentRef.current?.scrollTo({
-        left: contentRef.current.scrollLeft - e.movementX * 2,
-      });
+      // Apply inertia
+      const inertiaFactor = 0.9; // Adjust this value for desired inertia strength
+      const inertiaScroll = () => {
+        if (!contentRef.current) return;
+        if (Math.abs(movementX) > 0.5) {
+          // Apply inertia
+          contentRef.current.scrollTo({
+            left: contentRef.current.scrollLeft - movementX,
+          });
+          movementX *= inertiaFactor;
+          requestAnimationFrame(inertiaScroll);
+        }
+      };
+
+      inertiaScroll();
     }
 
     previousTouchRef.current = touch;
