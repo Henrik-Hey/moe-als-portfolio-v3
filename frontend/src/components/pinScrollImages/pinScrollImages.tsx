@@ -42,6 +42,7 @@ export const PinScrollImages = ({
   const containerRef = React.useRef<HTMLDivElement>(null);
   const contentRef = React.useRef<HTMLDivElement>(null);
   const itemContainerRef = React.useRef<HTMLDivElement>(null);
+  const previousTouchRef = React.useRef<any>(null);
   const scrollPadding = React.useMemo(
     () => (disablePadding ? 0 : SCROLLER_PADDING),
     [disablePadding]
@@ -112,9 +113,26 @@ export const PinScrollImages = ({
       : containerHeight;
 
   const handleDrag = (e: any) => {
+    console.log("aaa", e);
+
     contentRef.current?.scrollTo({
       left: contentRef.current.scrollLeft - e.movementX,
     });
+  };
+
+  const handleDragMobile = (e: any) => {
+    const touch = e.touches[0];
+
+    if (previousTouchRef.current) {
+      e.movementX = touch.pageX - previousTouchRef.current.pageX;
+      e.movementY = touch.pageY - previousTouchRef.current.pageY;
+
+      contentRef.current?.scrollTo({
+        left: contentRef.current.scrollLeft - e.movementX,
+      });
+    }
+
+    previousTouchRef.current = touch;
   };
 
   return (
@@ -127,11 +145,21 @@ export const PinScrollImages = ({
         onMouseDown={() => {
           containerRef.current?.addEventListener("mousemove", handleDrag);
         }}
+        onTouchStart={(e) => {
+          containerRef.current?.addEventListener("touchmove", handleDragMobile);
+        }}
         onMouseLeave={() => {
           containerRef.current?.removeEventListener("mousemove", handleDrag);
         }}
         onMouseUp={() => {
           containerRef.current?.removeEventListener("mousemove", handleDrag);
+        }}
+        onTouchEnd={() => {
+          containerRef.current?.removeEventListener(
+            "touchmove",
+            handleDragMobile
+          );
+          previousTouchRef.current = null;
         }}
       >
         {topCaption && (
