@@ -113,8 +113,6 @@ export const PinScrollImages = ({
       : containerHeight;
 
   const handleDrag = (e: any) => {
-    console.log("aaa", e);
-
     contentRef.current?.scrollTo({
       left: contentRef.current.scrollLeft - e.movementX,
     });
