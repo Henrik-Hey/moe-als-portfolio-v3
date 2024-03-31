@@ -47,60 +47,60 @@ export const PinScrollImages = ({
     [disablePadding]
   );
 
-  React.useEffect(() => {
-    if (
-      !containerRef.current ||
-      !contentRef.current ||
-      !itemContainerRef.current ||
-      (!!centerWidth && centerWidth <= (size?.width || 0))
-    ) {
-      return;
-    }
+  // React.useEffect(() => {
+  //   if (
+  //     !containerRef.current ||
+  //     !contentRef.current ||
+  //     !itemContainerRef.current ||
+  //     (!!centerWidth && centerWidth <= (size?.width || 0))
+  //   ) {
+  //     return;
+  //   }
 
-    let scrollTrigger: any;
-    let timeline: any;
+  //   let scrollTrigger: any;
+  //   let timeline: any;
 
-    setTimeout(() => {
-      if (
-        !containerRef.current ||
-        !contentRef.current ||
-        !itemContainerRef.current ||
-        (!!centerWidth && centerWidth <= (size?.width || 0))
-      ) {
-        return;
-      }
+  //   setTimeout(() => {
+  //     if (
+  //       !containerRef.current ||
+  //       !contentRef.current ||
+  //       !itemContainerRef.current ||
+  //       (!!centerWidth && centerWidth <= (size?.width || 0))
+  //     ) {
+  //       return;
+  //     }
 
-      const { width: contentWidth } =
-        contentRef.current.getBoundingClientRect();
-      const { width: itemContainerWidth } =
-        itemContainerRef.current.getBoundingClientRect();
+  //     const { width: contentWidth } =
+  //       contentRef.current.getBoundingClientRect();
+  //     const { width: itemContainerWidth } =
+  //       itemContainerRef.current.getBoundingClientRect();
 
-      timeline = gsap.timeline();
-      timeline.fromTo(
-        contentRef.current,
-        { scrollTo: { x: 0 } },
-        {
-          scrollTo: {
-            x: itemContainerWidth - contentWidth,
-          },
-        }
-      );
+  //     timeline = gsap.timeline();
+  //     timeline.fromTo(
+  //       contentRef.current,
+  //       { scrollTo: { x: 0 } },
+  //       {
+  //         scrollTo: {
+  //           x: itemContainerWidth - contentWidth,
+  //         },
+  //       }
+  //     );
 
-      scrollTrigger = ScrollTrigger.create({
-        trigger: containerRef.current,
-        scrub: true,
-        start: "top top",
-        end: "bottom bottom",
-        animation: timeline,
-      });
-    }, 1000);
+  //     scrollTrigger = ScrollTrigger.create({
+  //       trigger: containerRef.current,
+  //       scrub: true,
+  //       start: "top top",
+  //       end: "bottom bottom",
+  //       animation: timeline,
+  //     });
+  //   }, 1000);
 
-    return () => {
-      timeline?.clear();
-      scrollTrigger?.kill();
-    };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [centerWidth, containerRef, itemContainerRef, contentRef, scrollPadding]);
+  //   return () => {
+  //     timeline?.clear();
+  //     scrollTrigger?.kill();
+  //   };
+  //   // eslint-disable-next-line react-hooks/exhaustive-deps
+  // }, [centerWidth, containerRef, itemContainerRef, contentRef, scrollPadding]);
 
   const isDark = theme.palette.mode === "dark";
   const captionColor = isDark ? palette.neutral[200] : palette.neutral[600];
@@ -111,12 +111,27 @@ export const PinScrollImages = ({
       ? centeredContainerHeight
       : containerHeight;
 
+  const handleDrag = (e: any) => {
+    contentRef.current?.scrollTo({
+      left: contentRef.current.scrollLeft - e.movementX,
+    });
+  };
+
   return (
-    <Box height={height} ref={containerRef}>
+    <Box height={"100vh"} ref={containerRef}>
       <ScrollContainer
         sx={{
           background: containerBackground,
           backgroundSize: "cover",
+        }}
+        onMouseDown={() => {
+          containerRef.current?.addEventListener("mousemove", handleDrag);
+        }}
+        onMouseLeave={() => {
+          containerRef.current?.removeEventListener("mousemove", handleDrag);
+        }}
+        onMouseUp={() => {
+          containerRef.current?.removeEventListener("mousemove", handleDrag);
         }}
       >
         {topCaption && (
@@ -175,6 +190,7 @@ const ScrollContainer = styled("div")`
   top: 0px;
   left: 0px;
   overflow: hidden;
+  cursor: grab;
   flex-direction: column;
 `;
 
