@@ -114,7 +114,7 @@ export const PinScrollImages = ({
 
   const handleDrag = (e: any) => {
     contentRef.current?.scrollTo({
-      left: contentRef.current.scrollLeft - e.movementX,
+      left: contentRef.current.scrollLeft - e.movementX * 2,
     });
   };
 
@@ -126,7 +126,7 @@ export const PinScrollImages = ({
       e.movementY = touch.pageY - previousTouchRef.current.pageY;
 
       contentRef.current?.scrollTo({
-        left: contentRef.current.scrollLeft - e.movementX,
+        left: contentRef.current.scrollLeft - e.movementX * 2,
       });
     }
 
