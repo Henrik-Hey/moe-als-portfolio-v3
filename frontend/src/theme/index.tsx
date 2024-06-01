@@ -84,10 +84,10 @@ export const useBaseTheme = () => {
   const isMobile = useIsMobile();
 
   const spacing = isMobile ? 6 : 8;
-  const h1FontSize = isMobile ? "2em" : "3em";
-  const h2FontSize = isMobile ? "1.5em" : "2.25em";
-  const h3FontSize = isMobile ? "1.5em" : "2em";
-  const h6FontSize = isMobile ? "1em" : "1.25em";
+  const h1FontSize = isMobile ? "32px" : "48px";
+  const h2FontSize = isMobile ? "24px" : "36px";
+  const h3FontSize = isMobile ? "24px" : "32px";
+  const h6FontSize = isMobile ? "16px" : "20px";
   return createTheme({
     spacing,
     palette: {
@@ -101,10 +101,10 @@ export const useBaseTheme = () => {
       fontFamily: [
         open_sans.style.fontFamily,
         raleway.style.fontFamily,
-        "PP Eiko",
+        raleway.style.fontFamily,
       ].join(", "),
       h1: {
-        fontFamily: "PP Eiko",
+        fontFamily: raleway.style.fontFamily,
         lineHeight: "115%",
         fontSize: h1FontSize,
         fontWeight: 500,
@@ -126,6 +126,12 @@ export const useBaseTheme = () => {
         fontSize: h6FontSize,
         color: palette.neutral[700],
       },
+      body1: {
+        fontSize: "20px",
+      },
+      body2: {
+        fontSize: "16px",
+      },
     },
     breakpoints: {
       values: {
@@ -142,6 +148,11 @@ export const useBaseTheme = () => {
       },
     },
     components: {
+      MuiTypography: {
+        defaultProps: {
+          variant: "body2",
+        },
+      },
       MuiCard: {
         styleOverrides: {
           root: {
@@ -168,45 +179,17 @@ export const useBaseTheme = () => {
       MuiButton: {
         styleOverrides: {
           root: {
-            fontFamily: "PP Eiko",
+            fontFamily: raleway.style.fontFamily,
             fontcolor: palette.neutral[50],
-            fontWeight: 900,
+            fontWeight: 700,
             textTransform: "none",
-            fontSize: "1em",
+            fontSize: "16px",
             borderRadius: "12px",
             padding: "12px 48px",
             boxShadow: "none",
             lineHeight: "100%",
           },
         },
-      },
-      MuiCssBaseline: {
-        styleOverrides: `
-          @font-face {
-            font-family: 'PP Eiko';
-            font-style: normal;
-            font-display: swap;
-            font-weight: 900;
-            src: url(/fonts/pp_eiko/PPEiko-Heavy.otf) format('opentype');
-            unicodeRange: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF;
-          }
-          @font-face {
-            font-family: 'PP Eiko';
-            font-style: normal;
-            font-display: swap;
-            font-weight: 400;
-            src: url(/fonts/pp_eiko/PPEiko-Medium.otf) format('opentype');
-            unicodeRange: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF;
-          }
-          @font-face {
-            font-family: 'PP Eiko';
-            font-style: normal;
-            font-display: swap;
-            font-weight: 100;
-            src: url(/fonts/pp_eiko/PPEiko-Thin.otf) format('opentype');
-            unicodeRange: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF;
-          }
-        `,
       },
     },
   });
@@ -216,13 +199,14 @@ export const useDarkTheme = () => {
   const baseTheme = useBaseTheme();
   const isMobile = useIsMobile();
 
-  const h1FontSize = isMobile ? "2em" : "3em";
-  const h2FontSize = isMobile ? "1.5em" : "2.25em";
-  const h3FontSize = isMobile ? "1.5em" : "2em";
-  const h6FontSize = isMobile ? "1em" : "1.25em";
-
+  const spacing = isMobile ? 6 : 8;
+  const h1FontSize = isMobile ? "32px" : "48px";
+  const h2FontSize = isMobile ? "24px" : "36px";
+  const h3FontSize = isMobile ? "24px" : "32px";
+  const h6FontSize = isMobile ? "16px" : "20px";
   return createTheme({
     ...baseTheme,
+    spacing,
     palette: {
       mode: "dark",
       ...palette,
@@ -234,10 +218,10 @@ export const useDarkTheme = () => {
       fontFamily: [
         open_sans.style.fontFamily,
         raleway.style.fontFamily,
-        "PP Eiko",
+        raleway.style.fontFamily,
       ].join(", "),
       h1: {
-        fontFamily: "PP Eiko",
+        fontFamily: raleway.style.fontFamily,
         lineHeight: "115%",
         fontWeight: 500,
         fontSize: h1FontSize,
@@ -260,8 +244,19 @@ export const useDarkTheme = () => {
         fontSize: h6FontSize,
         color: palette.neutral[50],
       },
+      body1: {
+        fontSize: "20px",
+      },
+      body2: {
+        fontSize: "16px",
+      },
     },
     components: {
+      MuiTypography: {
+        defaultProps: {
+          variant: "body2",
+        },
+      },
       MuiAccordion: {
         styleOverrides: {
           root: {
@@ -274,11 +269,11 @@ export const useDarkTheme = () => {
       MuiButton: {
         styleOverrides: {
           root: {
-            fontFamily: "PP Eiko",
+            fontFamily: raleway.style.fontFamily,
             fontcolor: palette.neutral[50],
-            fontWeight: 900,
+            fontWeight: 700,
             textTransform: "none",
-            fontSize: "1em",
+            fontSize: "16px",
             borderRadius: "12px",
             padding: "12px 48px",
             boxShadow: "none",
@@ -286,44 +281,22 @@ export const useDarkTheme = () => {
           },
         },
       },
-      MuiCssBaseline: {
-        styleOverrides: `
-          @font-face {
-            font-family: 'PP Eiko';
-            font-style: normal;
-            font-display: swap;
-            font-weight: 900;
-            src: url(/fonts/pp_eiko/PPEiko-Heavy.otf) format('opentype');
-            unicodeRange: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF;
-          }
-          @font-face {
-            font-family: 'PP Eiko';
-            font-style: normal;
-            font-display: swap;
-            font-weight: 400;
-            src: url(/fonts/pp_eiko/PPEiko-Medium.otf) format('opentype');
-            unicodeRange: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF;
-          }
-          @font-face {
-            font-family: 'PP Eiko';
-            font-style: normal;
-            font-display: swap;
-            font-weight: 100;
-            src: url(/fonts/pp_eiko/PPEiko-Thin.otf) format('opentype');
-            unicodeRange: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF;
-          }
-        `,
-      },
     },
   });
 };
 
 export const usePortfolioDarkTheme = () => {
-  const baseTheme = useBaseTheme();
   const darkTheme = useDarkTheme();
+  const isMobile = useIsMobile();
+
+  const spacing = isMobile ? 6 : 8;
+  const h1FontSize = isMobile ? "32px" : "48px";
+  const h2FontSize = isMobile ? "24px" : "36px";
+  const h3FontSize = isMobile ? "24px" : "32px";
+  const h6FontSize = isMobile ? "16px" : "20px";
   return createTheme({
-    ...baseTheme,
     ...darkTheme,
+    spacing,
     palette: {
       mode: "dark",
       ...palette,
@@ -331,7 +304,49 @@ export const usePortfolioDarkTheme = () => {
         default: "#232323",
       },
     },
+    typography: {
+      fontFamily: [
+        open_sans.style.fontFamily,
+        raleway.style.fontFamily,
+        raleway.style.fontFamily,
+      ].join(", "),
+      h1: {
+        fontFamily: raleway.style.fontFamily,
+        lineHeight: "115%",
+        fontWeight: 500,
+        fontSize: h1FontSize,
+        color: palette.primary.main,
+      },
+      h2: {
+        fontFamily: raleway.style.fontFamily,
+        lineHeight: "115%",
+        fontSize: h2FontSize,
+
+        color: palette.neutral[50],
+      },
+      h3: {
+        fontFamily: raleway.style.fontFamily,
+        lineHeight: "115%",
+        fontSize: h3FontSize,
+        color: palette.neutral[50],
+      },
+      h6: {
+        fontSize: h6FontSize,
+        color: palette.neutral[50],
+      },
+      body1: {
+        fontSize: "20px",
+      },
+      body2: {
+        fontSize: "16px",
+      },
+    },
     components: {
+      MuiTypography: {
+        defaultProps: {
+          variant: "body2",
+        },
+      },
       MuiAccordion: {
         styleOverrides: {
           root: {
@@ -344,45 +359,17 @@ export const usePortfolioDarkTheme = () => {
       MuiButton: {
         styleOverrides: {
           root: {
-            fontFamily: "PP Eiko",
+            fontFamily: raleway.style.fontFamily,
             fontcolor: palette.neutral[50],
-            fontWeight: 900,
+            fontWeight: 700,
             textTransform: "none",
-            fontSize: "1em",
+            fontSize: "16px",
             borderRadius: "12px",
             padding: "12px 48px",
             boxShadow: "none",
             lineHeight: "100%",
           },
         },
-      },
-      MuiCssBaseline: {
-        styleOverrides: `
-          @font-face {
-            font-family: 'PP Eiko';
-            font-style: normal;
-            font-display: swap;
-            font-weight: 900;
-            src: url(/fonts/pp_eiko/PPEiko-Heavy.otf) format('opentype');
-            unicodeRange: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF;
-          }
-          @font-face {
-            font-family: 'PP Eiko';
-            font-style: normal;
-            font-display: swap;
-            font-weight: 400;
-            src: url(/fonts/pp_eiko/PPEiko-Medium.otf) format('opentype');
-            unicodeRange: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF;
-          }
-          @font-face {
-            font-family: 'PP Eiko';
-            font-style: normal;
-            font-display: swap;
-            font-weight: 100;
-            src: url(/fonts/pp_eiko/PPEiko-Thin.otf) format('opentype');
-            unicodeRange: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF;
-          }
-        `,
       },
     },
   });

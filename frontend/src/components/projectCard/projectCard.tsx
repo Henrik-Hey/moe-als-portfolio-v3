@@ -1,12 +1,11 @@
-import { palette } from "@/theme";
 import { East, LockOpenTwoTone, LockTwoTone } from "@mui/icons-material";
 import { Box, Card, Typography, useTheme } from "@mui/material";
 import React from "react";
+import { raleway } from "@/fonts";
 
 interface ProjectCardProps {
   project: string;
   subtext: string;
-  description: string;
   ctaText: string;
   color: string;
   hoverColor: string;
@@ -18,7 +17,6 @@ interface ProjectCardProps {
 export const ProjectCard: React.FC<ProjectCardProps> = ({
   project,
   subtext,
-  description,
   ctaText,
   color,
   hoverColor,
@@ -32,15 +30,12 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
     ? theme.palette.neutral[100]
     : theme.palette.primary.main;
 
-  const descriptionColor = darkMode
-    ? theme.palette.neutral[100]
-    : theme.palette.neutral[700];
   return (
     <Card
       sx={{
         background: color,
         flex: 1,
-        borderRadius: "48px",
+        borderRadius: "12px",
         boxShadow: "0px 6px 12px 0px rgba(0, 0, 0, 0.10)",
         transition: "all 0.5s",
         [`&:hover`]: {
@@ -51,34 +46,20 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
       }}
       onClick={onCTAClick}
     >
-      <Box
-        padding={6}
-        paddingBottom={3}
-        display="flex"
-        gap={3}
-        flexDirection="column"
-      >
-        <Typography
-          variant="h2"
-          fontFamily="PP Eiko"
-          fontWeight={600}
-          color={textColor}
-        >
-          {project} -{" "}
+      <Box padding={6} display="flex" gap={3} flexDirection="column">
+        <Box>
           <Typography
-            variant="h2"
-            fontSize="1em"
-            fontFamily="PP Eiko"
-            component="span"
-            fontWeight={500}
+            variant="body1"
+            fontWeight={700}
             color={textColor}
+            mb={1.5}
           >
+            {project}
+          </Typography>
+          <Typography variant="h3" fontWeight={400} color={textColor}>
             {subtext}
           </Typography>
-        </Typography>
-        <Typography variant="body1" fontWeight={400} color={descriptionColor}>
-          {description}
-        </Typography>
+        </Box>
         <Box
           display="flex"
           alignItems="center"
@@ -91,11 +72,11 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
           }}
         >
           <Typography
-            variant="body1"
-            fontFamily="PP Eiko"
-            fontWeight={900}
+            variant="body2"
+            fontWeight={700}
             marginRight={1}
             color={textColor}
+            fontFamily={raleway.style.fontFamily}
           >
             {ctaText}{" "}
           </Typography>
@@ -111,15 +92,15 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
             ))}
         </Box>
       </Box>
-      <Box pb={50} position="relative">
+      <Box pb={62.5} position="relative">
         <Box
           sx={{
             position: "absolute",
             top: 32,
-            left: 96,
-            width: "100%",
+            left: 48,
+            width: "calc(100% - 96px)",
           }}
-          pb={58}
+          pb={70}
         >
           <Box
             sx={{

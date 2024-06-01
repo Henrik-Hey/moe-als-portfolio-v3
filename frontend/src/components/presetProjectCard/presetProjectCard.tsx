@@ -26,8 +26,7 @@ export const PresetProjectCard = ({
         <ProjectCard
           darkMode={darkMode}
           project="Auto Finance Dealer"
-          subtext="Reimagining design systems, interfaces, and enhancing product sustainability."
-          description="Auto Finance Dealer is a user-facing application that provides North American dealers with the tools to finance, manage both auction and non-auction vehicles, and beyond."
+          subtext="Reducing Drop Rates and Enhancing the Vehicle Flooring Process and Journey."
           ctaText="View Protected Project"
           isLocked={getCookie(ACCESS_COOKIE_KEY) !== "true"}
           color={darkMode ? palette.darkMode[50] : palette.green.main}
@@ -36,12 +35,12 @@ export const PresetProjectCard = ({
             router.push("/projects/afc");
           }}
           content={
-            <Box display="flex" marginLeft={-10}>
+            <Box display="flex" marginLeft={0}>
               <img
                 src="/screenshots/afc-product.png"
                 alt="Picture of AFC console"
-                width={1000}
-                height={1000 / 1.65114503817}
+                width={1135}
+                height={1135 / 1.65114503817}
               />
             </Box>
           }
@@ -52,8 +51,7 @@ export const PresetProjectCard = ({
         <ProjectCard
           darkMode={darkMode}
           project="HashMatrix"
-          subtext="Empowering businesses to elevate their products..."
-          description="HashMatrix specializes in helping early stage tech startups grow and succeed on a global scale through product development, brand building, and fundraising."
+          subtext="Enhancing User Engagement and Retention by Removing Dark Patterns."
           ctaText="View Project"
           color={darkMode ? palette.darkMode[400] : palette.blue.main}
           hoverColor={darkMode ? "#232323" : "#9EFAE9"}
@@ -61,12 +59,12 @@ export const PresetProjectCard = ({
             router.push("/projects/hashmatrix-sharpstakes");
           }}
           content={
-            <Box display="flex" marginLeft={-10}>
+            <Box display="flex" marginLeft={0}>
               <img
                 src="/screenshots/hashmatrix-product.png"
                 alt="Picture of AFC console"
-                width={1000}
-                height={1000 / 1.65114503817}
+                width={1135}
+                height={1135 / 1.65114503817}
               />
             </Box>
           }
@@ -77,24 +75,16 @@ export const PresetProjectCard = ({
         <ProjectCard
           darkMode={darkMode}
           project="Pawfolio"
-          subtext="Simplifying Pet Care."
-          description="Pawfolio is a pet management app designed to help you stay organized, maintain your pet's health records, and keep track of crucial dates."
+          subtext="Enhancing Pet Care with Efficient Management Tools."
           ctaText="In Progress.."
-          color={darkMode ? palette.darkMode[50] : palette.warning.main}
+          color={darkMode ? palette.darkMode[50] : "#FEF0CD"}
           hoverColor={darkMode ? "#2F2F2F" : "#FCCF5A"}
           content={
             <Box display="flex" gap={2}>
               <img
-                src="/screenshots/pawfolio-app-2.png"
+                src="/screenshots/pawfolio-app.png"
                 alt="Picture of AFC console"
-                width={400}
-                height={400 / 0.48583984375}
-              />
-              <img
-                src="/screenshots/pawfolio-app-1.png"
-                alt="Picture of AFC console"
-                width={400}
-                height={400 / 0.48583984375}
+                width="100%"
               />
             </Box>
           }
@@ -105,9 +95,8 @@ export const PresetProjectCard = ({
       return (
         <ProjectCard
           darkMode={darkMode}
-          project="SHIBA INU"
-          subtext="Creating the ultimate Asian cuisine delivery app."
-          description="Shiba is a comprehensive food delivery platform designed for busy young adults."
+          project="Shiba Inu"
+          subtext="Streamlining Food Delivery for Busy Young Adults."
           ctaText="View Case Study"
           color={darkMode ? palette.darkMode[400] : palette.lightRed.main}
           hoverColor={darkMode ? "#232323" : "#FA9E9E"}
@@ -117,16 +106,9 @@ export const PresetProjectCard = ({
           content={
             <Box display="flex" gap={2}>
               <img
-                src="/screenshots/shiba-app-2.png"
+                src="/screenshots/shiba-app.png"
                 alt="Picture of AFC console"
-                width={300}
-                height={300 / 0.48583984375}
-              />
-              <img
-                src="/screenshots/shiba-app-1.png"
-                alt="Picture of AFC console"
-                width={300}
-                height={300 / 0.48583984375}
+                width="100%"
               />
             </Box>
           }

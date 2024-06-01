@@ -8,6 +8,14 @@ export const AboutMeImageAutoScrollBlock = () => {
       <ScrollContainer>
         <ScrollItem>
           <img
+            src="/aboutme/moe-sushi.jpg"
+            height={400}
+            width={400}
+            style={{ objectFit: "cover", borderRadius: "24px" }}
+          />
+        </ScrollItem>
+        <ScrollItem>
+          <img
             src="/aboutme/moe-bday.jpg"
             height={400}
             width={400}
@@ -32,14 +40,6 @@ export const AboutMeImageAutoScrollBlock = () => {
         </ScrollItem>
         <ScrollItem>
           <img
-            src="/aboutme/moe-shep.jpg"
-            height={400}
-            width={400}
-            style={{ objectFit: "cover", borderRadius: "24px" }}
-          />
-        </ScrollItem>
-        <ScrollItem>
-          <img
             src="/aboutme/moe-smile.jpg"
             height={400}
             width={400}
@@ -56,7 +56,7 @@ export const AboutMeImageAutoScrollBlock = () => {
         </ScrollItem>
         <ScrollItem>
           <img
-            src="/aboutme/moe-steak.png"
+            src="/aboutme/moe-steak.jpg"
             height={400}
             width={400}
             style={{ objectFit: "cover", borderRadius: "24px" }}
@@ -64,7 +64,7 @@ export const AboutMeImageAutoScrollBlock = () => {
         </ScrollItem>
         <ScrollItem>
           <img
-            src="/aboutme/moe-pie.png"
+            src="/aboutme/moe-pie.jpg"
             height={400}
             width={400}
             style={{ objectFit: "cover", borderRadius: "24px" }}
@@ -80,6 +80,14 @@ export const AboutMeImageAutoScrollBlock = () => {
         </ScrollItem>
         <ScrollItem>
           <img
+            src="/aboutme/moe-sushi.jpg"
+            height={400}
+            width={400}
+            style={{ objectFit: "cover", borderRadius: "24px" }}
+          />
+        </ScrollItem>
+        <ScrollItem>
+          <img
             src="/aboutme/moe-bday.jpg"
             height={400}
             width={400}
@@ -104,14 +112,6 @@ export const AboutMeImageAutoScrollBlock = () => {
         </ScrollItem>
         <ScrollItem>
           <img
-            src="/aboutme/moe-shep.jpg"
-            height={400}
-            width={400}
-            style={{ objectFit: "cover", borderRadius: "24px" }}
-          />
-        </ScrollItem>
-        <ScrollItem>
-          <img
             src="/aboutme/moe-smile.jpg"
             height={400}
             width={400}
@@ -128,7 +128,7 @@ export const AboutMeImageAutoScrollBlock = () => {
         </ScrollItem>
         <ScrollItem>
           <img
-            src="/aboutme/moe-steak.png"
+            src="/aboutme/moe-steak.jpg"
             height={400}
             width={400}
             style={{ objectFit: "cover", borderRadius: "24px" }}
@@ -136,7 +136,7 @@ export const AboutMeImageAutoScrollBlock = () => {
         </ScrollItem>
         <ScrollItem>
           <img
-            src="/aboutme/moe-pie.png"
+            src="/aboutme/moe-pie.jpg"
             height={400}
             width={400}
             style={{ objectFit: "cover", borderRadius: "24px" }}

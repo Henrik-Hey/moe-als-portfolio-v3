@@ -20,7 +20,7 @@ export default function Content() {
       <CssBaseline />
       <Banner />
       <Navbar />
-      <Container maxWidth="lg">
+      <Container maxWidth="md">
         <Box
           width="100%"
           textAlign={{ xs: "left", md: "center" }}
@@ -29,53 +29,57 @@ export default function Content() {
           gap={3}
           flexDirection="column"
         >
-          <Box
-            sx={{
-              minHeight: { xs: "16em", md: "unset" },
-            }}
+          <Typography
+            variant="h2"
+            fontWeight={700}
+            color={
+              isDark
+                ? activeTheme.palette.neutral[100]
+                : activeTheme.palette.primary.main
+            }
           >
-            <Typography
-              variant="h1"
-              color={isDark ? activeTheme.palette.neutral[100] : undefined}
-            >
-              Hi, I&apos;m Moe Als, a Product Designer{" "}
-              <Typography
-                variant="h1"
-                fontSize="1em"
-                component="span"
-                fontWeight={100}
-                color={isDark ? activeTheme.palette.neutral[100] : undefined}
-              >
-                based in Ontario, Canada. When I&apos;m not working, I spend my
-                time being a{" "}
-                <Typewriter
-                  contents={[
-                    "Home Chef.",
-                    "Professional Photographer.",
-                    "Cat Dad.",
-                    "Movie Enthusiast.",
-                  ]}
-                />
-              </Typography>
-            </Typography>
-          </Box>
+            Hi, I&apos;m Moe!
+          </Typography>
 
-          <Typography variant="h6" fontWeight={400}>
-            Fueled by a deep passion for Human-Centered Design, I wholeheartedly
-            dive into the art of blending empathy, creativity, and innovation.
+          <Typography
+            variant="h2"
+            fontWeight={500}
+            color={
+              isDark
+                ? activeTheme.palette.neutral[100]
+                : activeTheme.palette.primary.main
+            }
+          >
+            A product designer blending empathy, creativity, and innovation
+            through human-centered design.
+          </Typography>
+
+          <Typography variant="body1" fontWeight={400}>
+            When I&apos;m not working, I spend my time{" "}
+            <span style={{ fontWeight: 600 }}>
+              being a{" "}
+              <Typewriter
+                contents={[
+                  "Home Chef.",
+                  "Professional Photographer.",
+                  "Cat Dad.",
+                  "Movie Enthusiast.",
+                ]}
+              />
+            </span>
           </Typography>
         </Box>
       </Container>
       {/* CARD SECTION */}
-      <Container maxWidth="xl">
+      <Container maxWidth="lg">
         <Grid container spacing={6}>
           <FadeIn>
-            <Grid item xs={12} md={7} display="flex">
+            <Grid item xs={12} md={6} display="flex">
               <PresetProjectCard project="afc" darkMode={isDark} />
             </Grid>
           </FadeIn>
           <FadeIn>
-            <Grid item xs={12} md={5} display="flex">
+            <Grid item xs={12} md={6} display="flex">
               <PresetProjectCard
                 project="hashmatrix-sharpstakes"
                 darkMode={isDark}
@@ -83,19 +87,19 @@ export default function Content() {
             </Grid>
           </FadeIn>
           <FadeIn>
-            <Grid item xs={12} md={5} display="flex">
+            <Grid item xs={12} md={6} display="flex">
               <PresetProjectCard project="shiba" darkMode={isDark} />
             </Grid>
           </FadeIn>
           <FadeIn>
-            <Grid item xs={12} md={7} display="flex">
+            <Grid item xs={12} md={6} display="flex">
               <PresetProjectCard project="pawfolio" darkMode={isDark} />
             </Grid>
           </FadeIn>
         </Grid>
       </Container>
       {/* END OF CARD SECTION */}
-      <Container maxWidth="lg">
+      <Container maxWidth="md">
         <FadeIn>
           <Box
             width="100%"
@@ -106,18 +110,19 @@ export default function Content() {
             flexDirection="column"
           >
             <Typography
-              variant="h1"
-              color={isDark ? activeTheme.palette.neutral[100] : undefined}
+              variant="h3"
+              fontWeight={500}
+              color={
+                isDark
+                  ? activeTheme.palette.neutral[100]
+                  : activeTheme.palette.primary.main
+              }
             >
-              Some organizations and companies I&apos;ve had the pleasure of
-              working with
+              Trusted by Leading Organizations
             </Typography>
-            <Typography variant="h6" fontWeight={400}>
-              While the journey had its challenges, I&apos;m immensely grateful
-              to the incredible companies and organizations that placed their
-              trust in me to enhance user experiences through intelligent design
-              decisions. Here are a few noteworthy entities that welcomed my
-              expertise on the quest for a seamless user journey.
+            <Typography variant="body1" fontWeight={400}>
+              Several leading organizations have successfully leveraged my
+              expertise to create seamless user journeys:
             </Typography>
           </Box>
         </FadeIn>

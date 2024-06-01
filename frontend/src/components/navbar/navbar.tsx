@@ -283,7 +283,7 @@ export const Navbar: React.FC<NavbarProps> = ({ colorMode }) => {
   const isOnProjectPage = projectDropDownText !== "Work";
   const mobileClipOffset = !isOnProjectPage ? "129px" : "62px";
   return (
-    <Container maxWidth="xl">
+    <Container maxWidth="lg">
       <BannerContainer mt={3}>
         <ButtonBase
           LinkComponent={Link}
