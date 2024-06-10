@@ -28,7 +28,7 @@ export default function Content() {
   return (
     <ThemeProvider theme={activeTheme}>
       <CssBaseline />
-      <Banner />
+
       <Navbar />
       <Container maxWidth="lg">
         <Box my={12}>
