@@ -6,7 +6,8 @@ import FadeIn from "../fadeIn/fadeIn";
 interface ProjectMissionStatementProps {
   typeTitle: string;
   typeText: string;
-  roleAndResponsibilitiesText: string;
+  collaboration: string | React.ReactNode;
+  roleAndResponsibilitiesText: string | React.ReactNode;
   platformsText: string;
   timelineText: string;
 }
@@ -16,6 +17,7 @@ export const ProjectMissionStatement = ({
   roleAndResponsibilitiesText,
   platformsText,
   timelineText,
+  collaboration,
 }: ProjectMissionStatementProps) => {
   return (
     <FadeIn>
@@ -25,33 +27,39 @@ export const ProjectMissionStatement = ({
         p={3}
         flexDirection={{ xs: "column", md: "row" }}
         sx={{
-          background: palette.warning[50],
+          background: "#FEF4CD",
         }}
       >
         <Box flex={1}>
-          <Typography variant="body1" fontWeight={700} mb={1.5}>
+          <Typography variant="body2" fontWeight={700} mb={1.5}>
             {typeTitle}
           </Typography>
-          <Typography variant="body1">{typeText}</Typography>
+          <Typography variant="body2">{typeText}</Typography>
+        </Box>
+        <Box flex={1}>
+          <Typography variant="body2" fontWeight={700} mb={1.5}>
+            Collaboration
+          </Typography>
+          <Typography variant="body2">{collaboration}</Typography>
         </Box>
         <Box flex={2}>
-          <Typography variant="body1" fontWeight={700} mb={1.5}>
+          <Typography variant="body2" fontWeight={700} mb={1.5}>
             Role & responsibilities
           </Typography>
-          <Typography variant="body1">{roleAndResponsibilitiesText}</Typography>
+          <Typography variant="body2">{roleAndResponsibilitiesText}</Typography>
         </Box>
         <Box display="flex" flexDirection="row" flex={3} gap={8}>
           <Box flex={1}>
-            <Typography variant="body1" fontWeight={700} mb={1.5}>
+            <Typography variant="body2" fontWeight={700} mb={1.5}>
               Platforms
             </Typography>
-            <Typography variant="body1">{platformsText}</Typography>
+            <Typography variant="body2">{platformsText}</Typography>
           </Box>
           <Box flex={1}>
-            <Typography variant="body1" fontWeight={700} mb={1.5}>
+            <Typography variant="body2" fontWeight={700} mb={1.5}>
               Timeline
             </Typography>
-            <Typography variant="body1">{timelineText}</Typography>
+            <Typography variant="body2">{timelineText}</Typography>
           </Box>
         </Box>
       </Box>

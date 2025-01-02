@@ -18,6 +18,7 @@ import {
   DarkModeOutlined,
   LockOpenTwoTone,
   LockTwoTone,
+  OpenInNew,
   WbSunnyOutlined,
 } from "@mui/icons-material";
 import { Twirl as Hamburger } from "hamburger-react";
@@ -295,24 +296,6 @@ export const Navbar: React.FC<NavbarProps> = ({ colorMode }) => {
         <Box display={{ xs: "none", md: "flex" }} gap={3} alignItems="center">
           <Box
             px={2}
-            component={Link}
-            href="/about-me"
-            sx={{
-              borderBottom: isOnAboutMe ? `2px solid ${textColor}` : "",
-              transform: isOnAboutMe ? "translateY(1px)" : "",
-              textDecoration: "none",
-              "&:hover": {
-                borderBottom: `2px solid ${textColor}`,
-                transform: "translateY(1px)",
-              },
-            }}
-          >
-            <Typography color={textColor} fontWeight={isOnAboutMe ? 700 : 400}>
-              About
-            </Typography>
-          </Box>
-          <Box
-            px={2}
             display="flex"
             flexDirection="row"
             alignItems="center"
@@ -410,20 +393,41 @@ export const Navbar: React.FC<NavbarProps> = ({ colorMode }) => {
               </Box>
             </Card>
           </Box>
-          {!colorMode && (
-            <IconButton onClick={toggleTheme}>
-              {!isDark ? <WbSunnyOutlined /> : <DarkModeOutlined />}
-            </IconButton>
-          )}
-          <Button
-            variant="contained"
-            LinkComponent={Link}
+          <Box
+            px={2}
+            component={Link}
+            href="/about-me"
+            sx={{
+              borderBottom: isOnAboutMe ? `2px solid ${textColor}` : "",
+              transform: isOnAboutMe ? "translateY(1px)" : "",
+              textDecoration: "none",
+              "&:hover": {
+                borderBottom: `2px solid ${textColor}`,
+                transform: "translateY(1px)",
+              },
+            }}
+          >
+            <Typography color={textColor} fontWeight={isOnAboutMe ? 700 : 400}>
+              About
+            </Typography>
+          </Box>
+          <Box
+            px={2}
+            component={Link}
             href="/resume_2024.pdf"
             target="_blank"
-            sx={{ ...buttonStyle }}
+            sx={{
+              textDecoration: "none",
+              "&:hover": {
+                borderBottom: `2px solid ${textColor}`,
+                transform: "translateY(1px)",
+              },
+            }}
           >
-            Download Resume
-          </Button>
+            <Typography color={textColor} fontWeight={400}>
+              Resume <OpenInNew sx={{ fontSize: "16px", mb: -0.4, ml: 0.2 }} />
+            </Typography>
+          </Box>
         </Box>
         <Box display={{ xs: "block", md: "none" }}>
           {/* @ts-ignore */}

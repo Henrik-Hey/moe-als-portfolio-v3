@@ -118,11 +118,12 @@ export default function Content() {
                   : activeTheme.palette.primary.main
               }
             >
-              Trusted by Leading Organizations
+              Brands I&apos;ve Collaborated With{" "}
             </Typography>
             <Typography variant="body1" fontWeight={400}>
-              Several leading organizations have successfully leveraged my
-              expertise to create seamless user journeys:
+              For over six years, I’ve partnered with these amazing
+              organizations to deliver innovative and impactful solutions to all
+              kinds of users!{" "}
             </Typography>
           </Box>
         </FadeIn>

@@ -33,12 +33,14 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
   return (
     <Card
       sx={{
-        background: color,
+        background: "#E7E8E8",
         flex: 1,
         borderRadius: "12px",
         boxShadow: "0px 6px 12px 0px rgba(0, 0, 0, 0.10)",
         transition: "all 0.5s",
+        filter: "grayscale(100%)",
         [`&:hover`]: {
+          filter: "grayscale(0%)",
           transform: "translateY(-8px)",
           cursor: "pointer",
           background: hoverColor,
@@ -92,7 +94,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
             ))}
         </Box>
       </Box>
-      <Box pb={62.5} position="relative">
+      <Box pb={50} position="relative">
         <Box
           sx={{
             position: "absolute",

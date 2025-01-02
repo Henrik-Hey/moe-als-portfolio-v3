@@ -78,36 +78,54 @@ export default function Content() {
     <>
       <ProjectHeader
         imageURL="/project_page_res/afc/backdrop.jpg"
-        logoImage={
-          <img src="/project_page_res/afc/logo.svg" alt="" width="168" />
-        }
-        heading="Reimagining design systems, interfaces, and enhancing product sustainability."
-        subheading="Enabling users through accessible and intelligent design choices."
+        logoString="Auto Finance Dealer"
+        heading="Reducing Drop Rates and Enhancing the Inventory Financing Process and Journey."
+        subheading="The previous process lacked accessibility, users demanded additional features, and there was a need to streamline operations to enable quicker vehicle flooring."
+        color="#4E732A"
+        secondaryColor={palette.green.main}
+        imageText="Development ready screens"
       />
-      <Container maxWidth="md">
-        <Box display="flex" flexDirection="column" gap={12} my={12}>
+      <Container maxWidth="xl">
+        <Box mt={12}>
           <ProjectMissionStatement
             typeTitle="Project TYPE"
-            typeText="Major Feature"
-            roleAndResponsibilitiesText="Sketching, User Research, Wireframing, Visual Design, Prototyping, User Testing, Interaction Design."
+            typeText="Redesign"
             platformsText="Web, Tablet, Mobile: IOS, Android"
             timelineText="Q2 2022 - Ongoing"
+            collaboration={
+              <>
+                Product Owners
+                <br />
+                Product Manager
+                <br />
+                Stakeholders <br />
+                Technical Directors
+                <br />
+                Development Leads
+                <br />
+                Front End Engineers
+              </>
+            }
+            roleAndResponsibilitiesText={
+              <>
+                Lead Product Designer <br />
+                <br />
+                User Research, Sketching, Wireframing, Visual Design,
+                Prototyping, User Testing, Interaction Design, Dev Handoff
+              </>
+            }
           />
+        </Box>
+      </Container>
+      <Container maxWidth="lg">
+        <Box display="flex" flexDirection="column" gap={12} my={12}>
           <ProjectStatement
             content={
               <>
-                I dedicated my efforts to improving user experience, promoting
-                effective design practices, and streamlining the user journey.
-                This involved addressing the design, strategy, and testing
-                phases of the NAP flooring process, a pivotal element within
-                AFC&apos;s dealer and business applications.
-                <br />
-                <br />
-                Specifically focusing on the outdated NAP Input, my goal is to
-                modernize and revamp various elements and processes. I aim to
-                clean up the user journey, elevate accessibility standards, and
-                create an overall enhanced experience for anyone using AFCD,
-                whether they are new or returning users.
+                Automotive Finance Dealer&apos;s inventory financing process was
+                inefficient, inaccessible and missing critical features. I
+                spearheaded the ideation, strategy, and comprehensive redesign
+                of both mobile and web interfaces.
               </>
             }
           />
@@ -117,32 +135,29 @@ export default function Content() {
                 Problem
               </Typography>
               <Typography variant="body1">
-                AFC, as a brand, is currently navigating a unique challenge.
-                While our marketing applications stay up-to-date, and a
-                committed team consistently enhances accessibility and usability
-                on autofinance.com, our business application, AFC Dealer, has
-                not received the attention it warrants. As the sole product
-                designer brought in, I encountered a user interface grappling
-                with substantial issues, especially in terms of accessibility,
-                and the design presented as outdated and uninspiring. It is
-                imperative for AFCD to harmonize with the standards established
-                by autofinance.com and actively pursue enhancements.
+                The NAP (Non-Auction Purchase) Inventory Financing Process, also
+                known as &apos;Flooring,&apos; involves an interactive form that
+                dealers complete to secure short-term financing for purchasing
+                inventory. This process had challenges with high dropout rates
+                and disorganized content, and important details were often
+                difficult to find due to ineffective color and font choices.
+                These issues led to a redesign aimed at simplifying the form and
+                improving its usability.
               </Typography>
             </Box>
           </FadeIn>
           <FadeIn>
             <Box>
               <Typography variant="h3" mb={2} fontWeight={700}>
-                Redesign key drivers
+                Project Goals
               </Typography>
               <Typography variant="body1">
-                Insufficient attention has been given to dealers handling NAPs.
-                The previous procedure lacked clarity, accessibility, and failed
-                to meet WCAG standards. The focus now is on implementing
-                data-driven modifications, incorporating user feedback, and
-                aligning with industry trends and competitor practices. This
-                serves as an initial step for AFCD&apos;s improvement, crucial
-                for establishing a foundation for upcoming features.
+                As the digital auto industry expands, AFC faces increasing
+                competition in offering services that are easy and clear to use.
+                Maintaining its market position hinges on the simplicity and
+                clarity of completing tasks. Recognizing the value of user time,
+                I focused my redesign strategy and success principles on
+                optimizing efficiency and user experience.
               </Typography>
             </Box>
           </FadeIn>
@@ -154,42 +169,31 @@ export default function Content() {
             >
               <Box flex={1}>
                 <Typography variant="body1" mb={2} fontWeight={700}>
-                  Modernize and adapt
+                  Enhancing User Flow
                 </Typography>
                 <Typography variant="body1">
-                  AFCD has successfully met the needs of traditional dealers,
-                  but it encounters issues with an outdated interface for newer
-                  users. The current strategy involves integrating contemporary
-                  web elements and modern UX trends, aiming to position AFCD as
-                  a cutting-edge application that caters to both established and
-                  emerging demographics.
+                  Streamlining process steps and organizing related information
+                  will enable users to transition smoothly from one task to
+                  another without unnecessary interruptions.
                 </Typography>
               </Box>
               <Box flex={1}>
                 <Typography variant="body1" mb={2} fontWeight={700}>
-                  Accessibility & responsiveness
+                  Addressing Accessibility Issues
                 </Typography>
                 <Typography variant="body1">
-                  Ensuring inclusivity and adaptability, accessibility and
-                  responsiveness are pivotal to our user experience. Despite
-                  challenges, my goal is to enhance both aspects by
-                  incorporating intuitive navigation, device compatibility, and
-                  adhering to accessibility standards. Embracing human design
-                  and user feedback, I aim to create a better platform for all
-                  users.
+                  Creating a design system to meet WCAG standards is critical.
+                  Elements must be clear, easy to understand, and responsive.
                 </Typography>
               </Box>
               <Box flex={1}>
                 <Typography variant="body1" mb={2} fontWeight={700}>
-                  Simplifying the journey
+                  Reducing Process Time
                 </Typography>
                 <Typography variant="body1">
-                  While AFCD exhibits minor issues across the entire
-                  application, the section dedicated to flooring NAPS stands out
-                  with glaring errors. My objective is to rectify these issues
-                  by grouping similar elements, employing proper hierarchy and
-                  white space practices, and ensuring clarity for the user at
-                  every stage of their interaction.
+                  Streamlining the flow and resolving accessibility issues will
+                  help users complete tasks faster. Implementing a failsafe
+                  system for incomplete applications is also important.
                 </Typography>
               </Box>
             </Box>
