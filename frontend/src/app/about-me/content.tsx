@@ -1,3 +1,5 @@
+/* eslint-disable @next/next/no-img-element */
+/* eslint-disable jsx-a11y/alt-text */
 "use client";
 
 import { Navbar } from "@/components";
@@ -44,17 +46,27 @@ export default function Content() {
       <Navbar />
       <Container maxWidth="lg" sx={{ minHeight: "67vh" }}>
         <Box my={12}>
-          <Box display="flex" gap={6}>
+          <Box display="flex" gap={6} pb={12}>
             <Box
               flex={1}
               sx={{
                 display: "grid",
                 gridTemplateColumns: "repeat(3, 1fr)",
-                gridTemplateRows: "repeat(3, 1fr)",
-                gap: 3,
+                gap: "12px",
               }}
             >
-              <Box></Box>
+              {Array.from({ length: 9 }).map((_, index) => (
+                <Box
+                  key={index}
+                  sx={{
+                    backgroundImage: `url(./v2/About/aboutPhoto_${
+                      index + 1
+                    }.png)`,
+                    backgroundSize: "cover",
+                    borderRadius: "12px",
+                  }}
+                />
+              ))}
             </Box>
             <Box
               flex={1}

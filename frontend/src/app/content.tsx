@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 
 import { Banner, Navbar } from "@/components";
@@ -10,6 +11,7 @@ import { Footer } from "@/components/footer/footer";
 import { PresetProjectCard } from "@/components/presetProjectCard/presetProjectCard";
 import { FooterDark } from "@/components/footer/footerDark";
 import FadeIn from "@/components/fadeIn/fadeIn";
+import { BrandTile } from "@/components/brandTile/brandTile";
 
 export default function Content() {
   const { activeTheme, theme } = usePortfolioTheme();
@@ -80,10 +82,35 @@ export default function Content() {
           </FadeIn>
           <FadeIn>
             <Grid item xs={12} md={6} display="flex">
+              <PresetProjectCard project="openlane" darkMode={isDark} />
+            </Grid>
+          </FadeIn>
+          <FadeIn>
+            <Grid item xs={12} md={6} display="flex">
+              <PresetProjectCard project="homezai" darkMode={isDark} />
+            </Grid>
+          </FadeIn>
+          <FadeIn>
+            <Grid item xs={12} md={6} display="flex">
               <PresetProjectCard
                 project="hashmatrix-sharpstakes"
                 darkMode={isDark}
               />
+            </Grid>
+          </FadeIn>
+          <FadeIn>
+            <Grid item xs={12} md={6} display="flex">
+              <PresetProjectCard project="easyaudit" darkMode={isDark} />
+            </Grid>
+          </FadeIn>
+          <FadeIn>
+            <Grid item xs={12} md={6} display="flex">
+              <PresetProjectCard project="iart" darkMode={isDark} />
+            </Grid>
+          </FadeIn>
+          <FadeIn>
+            <Grid item xs={12} md={6} display="flex">
+              <PresetProjectCard project="sohs" darkMode={isDark} />
             </Grid>
           </FadeIn>
           <FadeIn>
@@ -128,11 +155,61 @@ export default function Content() {
           </Box>
         </FadeIn>
       </Container>
-      <FadeIn>
-        <Box mb={12}>
-          <ImageAutoScrollBlock />
-        </Box>
-      </FadeIn>
+      <Container maxWidth="lg">
+        <FadeIn>
+          <Box mb={12}>
+            <Grid container spacing={3}>
+              <Grid item xs={6} md={3}>
+                <BrandTile brand=" HOMEZ" hoverColor="#CFE0FC" />
+              </Grid>
+              <Grid item xs={6} md={3}>
+                <BrandTile brand="AFC" hoverColor="#E3FCCF" />
+              </Grid>
+              <Grid item xs={6} md={3}>
+                <BrandTile brand="PAR" hoverColor="#FCD0CF" />
+              </Grid>
+              <Grid item xs={6} md={3}>
+                <BrandTile brand="HM" hoverColor="#FCF4CF" />
+              </Grid>
+
+              <Grid item xs={6} md={3}>
+                <BrandTile brand="PAGEON" hoverColor="#FCDFCF" />
+              </Grid>
+              <Grid item xs={6} md={3}>
+                <BrandTile brand="SS" hoverColor="#CFE1FC" />
+              </Grid>
+              <Grid item xs={6} md={3}>
+                <BrandTile brand=" HOMEZ" hoverColor="#CFDAFC" />
+              </Grid>
+              <Grid item xs={6} md={3}>
+                <BrandTile brand="VEITA" hoverColor="#CFE2FC" />
+              </Grid>
+
+              <Grid item xs={6} md={3}>
+                <BrandTile brand="EA" hoverColor="#CFFCE9" />
+              </Grid>
+              <Grid item xs={6} md={3}>
+                <BrandTile brand="SOHS" hoverColor="#F2CFFC" />
+              </Grid>
+              <Grid item xs={6} md={3}>
+                <BrandTile brand="SUNNY" hoverColor="#E5FCCF" />
+              </Grid>
+              <Grid item xs={6} md={3}>
+                <BrandTile brand="MOSAIC" hoverColor="#CFF7FC" />
+              </Grid>
+
+              <Grid item xs={6} md={3}></Grid>
+              <Grid item xs={6} md={3}>
+                <BrandTile brand="APOLLO" hoverColor="#DDCFFC" />
+              </Grid>
+              <Grid item xs={6} md={3}>
+                <BrandTile brand="STAPLES" hoverColor="#FCCFCF" />
+              </Grid>
+              <Grid item xs={6} md={3}></Grid>
+            </Grid>
+          </Box>
+        </FadeIn>
+      </Container>
       {isDark ? <FooterDark useSecondaryDarkColor /> : <Footer />}
     </ThemeProvider>
   );
