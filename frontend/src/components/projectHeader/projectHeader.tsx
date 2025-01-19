@@ -12,7 +12,6 @@ import {
 import { styled } from "@mui/system";
 import React from "react";
 import { Navbar } from "..";
-import { KeyboardArrowDown } from "@mui/icons-material";
 
 interface ProjectHeaderProps {
   imageURL: string;
@@ -60,7 +59,7 @@ export const ProjectHeader: React.FC<ProjectHeaderProps> = ({
                 </Typography>
               )}
               {logoImage}
-              <Typography variant="h2" fontWeight={700} textAlign="center">
+              <Typography variant="h4" fontWeight={700} textAlign="center">
                 {heading}
               </Typography>
               <Typography variant="body1" textAlign="center" fontWeight={400}>
@@ -69,13 +68,12 @@ export const ProjectHeader: React.FC<ProjectHeaderProps> = ({
             </Box>
           </Container>
           <Box
-            p={6}
             width="100%"
             sx={{
               background: secondaryColor,
             }}
           >
-            <Box pb={2}>
+            <Box pb={2} p={6}>
               <Typography variant="body2" fontWeight={400} fontSize={14}>
                 {imageText}
               </Typography>
@@ -103,6 +101,6 @@ const HeaderContainer = styled("div")`
 const BackdropImage = styled("img")`
   width: 100%;
   height: 717px;
-  object-fit: cover;
+  object-fit: contain;
   z-index: 0;
 `;

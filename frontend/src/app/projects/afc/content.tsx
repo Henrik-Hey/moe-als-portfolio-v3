@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
 
-import { palette, useDarkTheme } from "@/theme";
+import { palette } from "@/theme";
 import { Box, Container, Typography } from "@mui/material";
 import { ProjectHeader } from "@/components/projectHeader/projectHeader";
 import { ProjectMissionStatement } from "@/components/projectMissionStatement/projectMissionStatement";
@@ -12,8 +12,6 @@ import { ProjectsNavFooter } from "@/components/projectsNavFooter/projectsNavFoo
 import { Footer } from "@/components/footer/footer";
 
 export default function Content() {
-  const darkTheme = useDarkTheme();
-
   return (
     <>
       <ProjectHeader
@@ -607,7 +605,7 @@ export default function Content() {
                       height: "100%",
                       objectFit: "contain",
                     }}
-                    src="/v2/AFC/remoteWalkthrough_pieChartL.svg"
+                    src="/v2/AFC/remoteWalkthrough_pieChartC.svg"
                   />
                 </Box>
               </Box>
@@ -982,7 +980,7 @@ export default function Content() {
             style={{
               width: "100%",
             }}
-            src="/v2/AFC/processScreens_All.png"
+            src="/v2/AFC/applyingTheDesignSystem_Image.png"
           />
         </Box>
       </Container>
