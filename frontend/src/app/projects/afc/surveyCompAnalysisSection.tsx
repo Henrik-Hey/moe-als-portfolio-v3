@@ -5,9 +5,8 @@ import { ProjectDataChart } from "@/components/projectDataChart/projectDataChart
 import { Box } from "@mui/material";
 import React from "react";
 
-const SurveyChart: React.FC = () => (
+export const SurveyChart: React.FC = () => (
   <ProjectDataChart
-    title="Survey Data"
     subtitle="Branch personnel and user experience rating using the current NAP flooring process."
     caption="Average based on 8 interviews"
     colors={["#71A501", "#517601"]}
@@ -62,12 +61,12 @@ const SurveyChart: React.FC = () => (
   />
 );
 
-const CompAnalysisChart: React.FC = () => (
+export const CompAnalysisChart: React.FC = () => (
   <ProjectDataChart
-    title="Competitive analysis "
-    subtitle="Branch personnel experience rating using nextgear's alternative flooring process."
-    caption="Average based on 8 interviews"
+    subtitle="User Experience Ratings for NextGear's Non-Auction Purchase Flooring Process:"
+    caption="Average ratings from eight internal surveys, where users rated their experience on a scale of 1 to 10."
     colors={["#72ACDA", "#255F8D"]}
+    backgroundColor="#DDE2EE"
     data={[
       {
         title: "Navigability",
@@ -102,20 +101,6 @@ const CompAnalysisChart: React.FC = () => (
         data: [9, 8],
       },
     ]}
-    cardColumns={[
-      [
-        {
-          title: "Competitive analysis findings",
-          body: "NextGear recognizes both its strengths and weaknesses, strategically directing a significant portion of its budget toward developing projects and elements that reflect this awareness.",
-        },
-      ],
-      [
-        {
-          title: "Competitive analysis findings",
-          body: "NextGear outperforms AFC in nearly every aspect discussed. They demonstrate a strong understanding of accessibility, and many of their UI elements align more closely with current web standards. AFC could potentially benefit from a comprehensive brand overhaul.",
-        },
-      ],
-    ]}
   />
 );
 
@@ -123,25 +108,6 @@ export const SurveyCompAnalysisSection = () => {
   return (
     <>
       <Box display={{ xs: "block", lg: "none" }}>
-        <PinScrollImages
-          containerHeight="200vh"
-          centeredContainerHeight="100vh"
-          centerWidth={1440}
-          topPadding={0}
-          bottomPadding={0}
-          items={[
-            <Box
-              key={0}
-              minWidth="calc(100vw - 128px)"
-              width="fit-content"
-              display="flex"
-              justifyContent="center"
-              alignItems="center"
-            >
-              <SurveyChart />
-            </Box>,
-          ]}
-        />
         <PinScrollImages
           containerHeight="200vh"
           centeredContainerHeight="100vh"
@@ -168,9 +134,6 @@ export const SurveyCompAnalysisSection = () => {
         alignItems="center"
         gap={2}
       >
-        <Box>
-          <SurveyChart />
-        </Box>
         <Box>
           <CompAnalysisChart />
         </Box>

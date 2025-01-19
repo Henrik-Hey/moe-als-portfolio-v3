@@ -7,9 +7,28 @@ interface BrandTileProps {
   hoverColor: string;
 }
 
+const brandLinks: any = {
+  OPENLANE: "https://www.openlane.com/",
+  AFC: "https://www.autofinance.com/",
+  PAR: "https://www.parnorthamerica.com/",
+  HM: "https://www.hashmatrix.xyz/",
+  PAGEON: "https://app.pageon.ai/",
+  SS: "https://www.sharpstakes.ca/",
+  " HOMEZ": "https://homezai.com/",
+  VEITA: "https://www.veita.ai/",
+  EA: "https://www.easyaudit.ai/",
+  SOHS: "https://www.sohs.app/",
+  SUNNY: "https://www.sunnybrook.ca/",
+  MOSAIC: "https://www.mosaic.com/",
+  STAPLES: "https://www.staples.ca/",
+  APOLLO: "",
+};
+
 export const BrandTile: React.FC<BrandTileProps> = ({ brand, hoverColor }) => {
   return (
     <Box
+      component={"a"}
+      href={brandLinks[brand] || ""}
       display="flex"
       justifyContent="center"
       alignItems="center"

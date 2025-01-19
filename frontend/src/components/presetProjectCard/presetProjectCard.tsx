@@ -105,7 +105,7 @@ export const PresetProjectCard = ({
           content={
             <Box display="flex" gap={2}>
               <img
-                src="./v2/Home page/Projects/prodShowcase_PAWFOLIO.png"
+                src="./v2/Home page/Projects/prodShowcase_EA.png"
                 alt="Picture of AFC console"
                 width={450}
               />
@@ -145,7 +145,7 @@ export const PresetProjectCard = ({
           content={
             <Box display="flex" gap={2}>
               <img
-                src="./v2/Home page/Projects/prodShowcase_FORCEGRAPH.png"
+                src="./v2/Home page/Projects/prodShowcase_HOMEZ.png"
                 alt="Picture of AFC console"
                 width={450}
               />

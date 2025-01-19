@@ -94,7 +94,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
             ))}
         </Box>
       </Box>
-      <Box pb={50} position="relative">
+      <Box pb={70} position="relative">
         <Box
           sx={{
             position: "absolute",

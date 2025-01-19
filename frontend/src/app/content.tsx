@@ -160,7 +160,7 @@ export default function Content() {
           <Box mb={12}>
             <Grid container spacing={3}>
               <Grid item xs={6} md={3}>
-                <BrandTile brand=" HOMEZ" hoverColor="#CFE0FC" />
+                <BrandTile brand="OPENLANE" hoverColor="#CFE0FC" />
               </Grid>
               <Grid item xs={6} md={3}>
                 <BrandTile brand="AFC" hoverColor="#E3FCCF" />

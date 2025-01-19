@@ -10,6 +10,7 @@ interface ProjectMissionStatementProps {
   roleAndResponsibilitiesText: string | React.ReactNode;
   platformsText: string;
   timelineText: string;
+  backgroundColor?: string;
 }
 export const ProjectMissionStatement = ({
   typeTitle,
@@ -18,6 +19,7 @@ export const ProjectMissionStatement = ({
   platformsText,
   timelineText,
   collaboration,
+  backgroundColor = "#FEF4CD",
 }: ProjectMissionStatementProps) => {
   return (
     <FadeIn>
@@ -27,7 +29,7 @@ export const ProjectMissionStatement = ({
         p={3}
         flexDirection={{ xs: "column", md: "row" }}
         sx={{
-          background: "#FEF4CD",
+          backgroundColor,
         }}
       >
         <Box flex={1}>
@@ -42,25 +44,23 @@ export const ProjectMissionStatement = ({
           </Typography>
           <Typography variant="body2">{collaboration}</Typography>
         </Box>
-        <Box flex={2}>
+        <Box flex={1}>
+          <Typography variant="body2" fontWeight={700} mb={1.5}>
+            Platforms
+          </Typography>
+          <Typography variant="body2">{platformsText}</Typography>
+        </Box>
+        <Box flex={1}>
+          <Typography variant="body2" fontWeight={700} mb={1.5}>
+            Timeline
+          </Typography>
+          <Typography variant="body2">{timelineText}</Typography>
+        </Box>
+        <Box flex={1}>
           <Typography variant="body2" fontWeight={700} mb={1.5}>
             Role & responsibilities
           </Typography>
           <Typography variant="body2">{roleAndResponsibilitiesText}</Typography>
-        </Box>
-        <Box display="flex" flexDirection="row" flex={3} gap={8}>
-          <Box flex={1}>
-            <Typography variant="body2" fontWeight={700} mb={1.5}>
-              Platforms
-            </Typography>
-            <Typography variant="body2">{platformsText}</Typography>
-          </Box>
-          <Box flex={1}>
-            <Typography variant="body2" fontWeight={700} mb={1.5}>
-              Timeline
-            </Typography>
-            <Typography variant="body2">{timelineText}</Typography>
-          </Box>
         </Box>
       </Box>
     </FadeIn>

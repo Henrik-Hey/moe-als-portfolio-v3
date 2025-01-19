@@ -44,26 +44,26 @@ export const ProjectHeader: React.FC<ProjectHeaderProps> = ({
       </Box>
       <Container maxWidth="xl">
         <HeaderContainer>
-          <Container maxWidth="xl">
+          <Container maxWidth="md">
             <Box
               display="flex"
               flexDirection="column"
               gap={2}
-              pt={32}
-              pb={28}
+              pt={22}
+              pb={12}
               zIndex={1}
               alignItems="center"
             >
               {logoString && (
-                <Typography variant="h5" fontWeight={700} color={color}>
+                <Typography variant="body1" fontWeight={700} color={color}>
                   {logoString}
                 </Typography>
               )}
               {logoImage}
-              <Typography variant="h1" fontWeight={700} textAlign="center">
+              <Typography variant="h2" fontWeight={700} textAlign="center">
                 {heading}
               </Typography>
-              <Typography variant="h5" textAlign="center" fontWeight={400}>
+              <Typography variant="body1" textAlign="center" fontWeight={400}>
                 {subheading}
               </Typography>
             </Box>
