@@ -1,122 +1,109 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
 
-import { palette, useBaseTheme, useDarkTheme } from "@/theme";
+import { palette, useBaseTheme } from "@/theme";
 import {
   Box,
   Container,
-  ScopedCssBaseline,
+  CssBaseline,
   ThemeProvider,
   Typography,
 } from "@mui/material";
-import { CssBaseline } from "@mui/material";
 import { ProjectHeader } from "@/components/projectHeader/projectHeader";
 import { ProjectMissionStatement } from "@/components/projectMissionStatement/projectMissionStatement";
 import { ProjectStatement } from "@/components/projectStatement/projectStatement";
-import { PinScrollImages } from "@/components/pinScrollImages/pinScrollImages";
-import { FooterDark } from "@/components/footer/footerDark";
-import { ProjectsNavFooter } from "@/components/projectsNavFooter/projectsNavFooter";
 import FadeIn from "@/components/fadeIn/fadeIn";
-
-const SCROLL_BLOCK_1_IMAGE_PATHS = [
-  "/project_page_res/hashmatrix/sharpstakes/scroll1/image1.png",
-  "/project_page_res/hashmatrix/sharpstakes/scroll1/image2.gif",
-  "/project_page_res/hashmatrix/sharpstakes/scroll1/image3.png",
-  "/project_page_res/hashmatrix/sharpstakes/scroll1/image4.gif",
-  "/project_page_res/hashmatrix/sharpstakes/scroll1/image5.png",
-  "/project_page_res/hashmatrix/sharpstakes/scroll1/image6.gif",
-  "/project_page_res/hashmatrix/sharpstakes/scroll1/image7.png",
-  "/project_page_res/hashmatrix/sharpstakes/scroll1/image8.gif",
-];
-
-const SCROLL_BLOCK_2_IMAGE_PATHS = [
-  "/project_page_res/hashmatrix/sharpstakes/scroll2/image1.png",
-  "/project_page_res/hashmatrix/sharpstakes/scroll2/image2.png",
-  "/project_page_res/hashmatrix/sharpstakes/scroll2/image3.png",
-  "/project_page_res/hashmatrix/sharpstakes/scroll2/image4.png",
-];
-
-const SCROLL_BLOCK_3_IMAGE_PATHS = [
-  "/project_page_res/hashmatrix/sharpstakes/scroll3/image1.png",
-  "/project_page_res/hashmatrix/sharpstakes/scroll3/image2.png",
-  "/project_page_res/hashmatrix/sharpstakes/scroll3/image3.png",
-];
-
-const SCROLL_BLOCK_4_IMAGE_PATHS = [
-  "/project_page_res/hashmatrix/sharpstakes/scroll4/image1.png",
-  "/project_page_res/hashmatrix/sharpstakes/scroll4/image2.gif",
-  "/project_page_res/hashmatrix/sharpstakes/scroll4/image3.png",
-  "/project_page_res/hashmatrix/sharpstakes/scroll4/image4.gif",
-  "/project_page_res/hashmatrix/sharpstakes/scroll4/image5.png",
-  "/project_page_res/hashmatrix/sharpstakes/scroll4/image6.gif",
-  "/project_page_res/hashmatrix/sharpstakes/scroll4/image7.png",
-  "/project_page_res/hashmatrix/sharpstakes/scroll4/image8.gif",
-];
-
-const SCROLL_BLOCK_5_IMAGE_PATHS = [
-  "/project_page_res/hashmatrix/sharpstakes/scroll5/image1.png",
-  "/project_page_res/hashmatrix/sharpstakes/scroll5/image2.png",
-  "/project_page_res/hashmatrix/sharpstakes/scroll5/image3.png",
-];
+import { ProjectsNavFooter } from "@/components/projectsNavFooter/projectsNavFooter";
+import { Footer } from "@/components/footer/footer";
 
 export default function Content() {
   const baseTheme = useBaseTheme();
-  const darkTheme = useDarkTheme();
 
   return (
     <ThemeProvider theme={baseTheme}>
       <CssBaseline />
       <ProjectHeader
-        imageURL="/project_page_res/hashmatrix/sharpstakes/backdrop.jpg"
-        logoImage={
-          <img
-            src="/project_page_res/hashmatrix/sharpstakes/logo.png"
-            alt=""
-            width="214px"
-          />
-        }
-        heading="Reimagining design systems, interfaces, and enhancing product sustainability."
-        subheading="Enabling users through accessible and intelligent design choices."
+        imageURL="/v2/SharpStakes/header_All.png"
+        logoString="SharpStakes"
+        heading="Enhancing User Engagement and Retention by Removing Dark Patterns"
+        subheading="The previous process had several issues, including inconsistent design, dark pattern use, and accessibility problems. Users deserved a healthier product journey, prompting a need to investigate user retention and understand the high drop rates."
+        color="#0E86D3"
+        secondaryColor="#CFEAFC"
+        imageText="Development ready screens"
       />
-      <Container maxWidth="md">
-        <Box display="flex" flexDirection="column" gap={12} my={12}>
+      <Container maxWidth="xl">
+        <Box mt={6}>
           <ProjectMissionStatement
-            typeTitle="Client"
-            typeText="Sharpstakes"
-            roleAndResponsibilitiesText="Consultation, Sketching, Wireframing, Visual Design, Prototyping, User Testing, Interaction Design"
-            platformsText="Web, Mobile: iOS"
+            backgroundColor="#CFEAFC"
+            typeTitle="Project Type"
+            typeText="UX/UI Redesign"
+            platformsText="Web, Mobile, IOS"
             timelineText="Q1 2023 - Q1 2024"
+            collaboration={
+              <>
+                Directors
+                <br />
+                Dev Leads
+                <br />
+                Engineers <br />
+              </>
+            }
+            roleAndResponsibilitiesText={
+              <>
+                Lead Product Designer <br />
+                <br />
+                UX Consulting, User Research, Sketching, Wireframing, Visual
+                Design, Prototyping, User Testing, Interaction Design, Dev
+                Handoff
+              </>
+            }
           />
-          <ProjectStatement content="Improving user engagement and fostering business growth, I spearheaded the strategy, design, and testing phases of SharpStakes, a distinctive AI-powered betting solution. My goal was to create a user-friendly product that spurred expansion, drew in more users, and opened up greater referral and sponsorship prospects." />
+        </Box>
+      </Container>
+      <Container maxWidth="lg">
+        <Box display="flex" flexDirection="column" gap={12} my={12}>
+          <ProjectStatement
+            content={
+              <>
+                I led the complete redesign of SharpStakes&apos; app, boosting
+                user satisfaction, reducing drop-off rates by 34%, and
+                increasing session durations by 47%.
+                <br />
+                <br />
+                Through strategic research, innovative design, and focused
+                execution, I transformed the platform into an engaging,
+                intuitive experience that enhanced user retention and trust.
+              </>
+            }
+          />
           <FadeIn>
             <Box>
               <Typography variant="h3" mb={2} fontWeight={700}>
                 Problem
               </Typography>
               <Typography variant="body1">
-                The existing SharpStakes website had significant issues
-                impacting user trust and engagement due to inconsistencies and
-                avoidable flaws. In the competitive sports betting app market,
-                an unreliable and visually unappealing platform can discourage
-                users, especially when involving financial transactions. The
-                imperative for SharpStakes to upgrade its appearance goes beyond
-                aesthetics; it aims to instill confidence, encouraging active
-                participation and ensuring a positive, trustworthy experience
-                for users.
+                SharpStakes faced significant issues with user trust and
+                engagement due to inconsistencies and flaws. In the competitive
+                sports betting market, a reliable and visually appealing
+                platform is crucial. Upgrading the design is essential to build
+                user confidence, encourage active participation, and ensure a
+                trustworthy user experience.
               </Typography>
             </Box>
           </FadeIn>
           <FadeIn>
             <Box>
               <Typography variant="h3" mb={2} fontWeight={700}>
-                Redesign key drivers
+                Project Goals
               </Typography>
               <Typography variant="body1">
-                Insufficient attention has been given to showcasing SharpStakes
-                as a distinctive product, not widely adopted by established
-                industry leaders. Emphasizing this uniqueness through
-                user-centric design is crucial for the app&apos;s success. My
-                redesign strategy focuses on these critical aspects.
+                As the AI industry booms, SharpStakes faces tough competition
+                from other startups with substantial resources dedicated to
+                perfecting their UX/UI. Staying ahead requires smart business
+                strategies and prioritizing design decisions that offer both
+                immediate and long-term benefits. To ensure user retention and
+                positive word of mouth, I focused on the following key drivers
+                for the redesign:
               </Typography>
             </Box>
           </FadeIn>
@@ -128,622 +115,962 @@ export default function Content() {
             >
               <Box flex={1}>
                 <Typography variant="body1" mb={2} fontWeight={700}>
-                  AI as a driving factor
+                  Crafting a Design Language
                 </Typography>
                 <Typography variant="body1">
-                  The captivating realm of artificial intelligence and its
-                  immense potential have truly enthralled us. SharpStakes gains
-                  a unique edge by making this technology the cornerstone of its
-                  entire product. Leveraging this as the primary driving force
-                  will enable us to attract and retain a larger user base.
+                  Redesigning the visual elements to create a modern,
+                  attractive, and consistent brand that enhances user experience
+                  and brand perception.
                 </Typography>
               </Box>
               <Box flex={1}>
                 <Typography variant="body1" mb={2} fontWeight={700}>
-                  Reinventing current processes
+                  Streamlined Sign-Up Experience
                 </Typography>
                 <Typography variant="body1">
-                  Several of SharpStakes&apos; existing practices, marked by
-                  dark design patterns and suboptimal copywriting, adversely
-                  affect the user-product relationship. My goal is to transform
-                  and enhance these processes by leveraging contemporary design
-                  methodologies and adhering to industry standards.
+                  Simplifying the sign-up process to make it quicker and more
+                  intuitive, reducing drop-off rates and encouraging more users
+                  to complete registration.
                 </Typography>
               </Box>
               <Box flex={1}>
                 <Typography variant="body1" mb={2} fontWeight={700}>
-                  Applying better design habits
+                  Better Content Hierarchy
                 </Typography>
                 <Typography variant="body1">
-                  Uniform spacing, adequate white space, readable fonts,
-                  effective contrast ratios, proper hierarchy implementation,
-                  and consideration of reading patterns and content positioning
-                  are essential elements. Numerous enhancements can be achieved
-                  simply by adopting intelligent and accessible design
-                  practices.
+                  Simplifying the sign-up process to make it quicker and more
+                  intuitive, reducing drop-off rates and encouraging more users
+                  to complete registration.
                 </Typography>
               </Box>
             </Box>
           </FadeIn>
         </Box>
       </Container>
-      <PinScrollImages
-        bottomCaption={`
-          First Stage Pre-redesign screens and comments
-        `}
-        containerHeight="300vh"
-        items={SCROLL_BLOCK_1_IMAGE_PATHS.map((url, index) => (
-          <img src={url} alt="" height="100%" key={index} />
-        ))}
-      />
-      <Container maxWidth="md">
-        <Box display="flex" flexDirection="column" gap={12} my={12}>
-          <ProjectStatement content="Following the initial consultation and a comprehensive review of comments with the business owners at SharpStakes, we delved into the project objectives and schedule. We developed a general understanding of what the end product should entail from a business standpoint and devised strategies to align these requirements with user-friendly design principles, avoiding any misleading patterns or detrimental user experiences." />
+      <Container maxWidth="xl">
+        <Box width="100%">
+          <Box pb={2}>
+            <Typography variant="body2" fontWeight={400} fontSize={14}>
+              Consultation phase
+            </Typography>
+          </Box>
+          <img
+            alt=""
+            role="presentation"
+            style={{
+              width: "100%",
+            }}
+            src="/v2/SharpStakes/problemImage.png"
+          />
+        </Box>
+      </Container>
+      <Container maxWidth="lg">
+        <Box display="flex" flexDirection="column" gap={2} my={12}>
           <Box>
             <FadeIn>
-              <Box mb={8}>
+              <Box mb={2}>
                 <Typography variant="h3" mb={2} fontWeight={700}>
-                  Analyzing Competitor Designs
+                  Pushing for Research
                 </Typography>
                 <Typography variant="body1">
-                  “Conduct a thorough competitive analysis to examine the
-                  strategies employed by prominent industry players to enhance
-                  user experiences. Make note of the color schemes and
-                  typography choices they implement, as well as any potential
-                  dark patterns in their designs. This information will serve as
-                  valuable insights that we can apply to enhance our existing
-                  product.”
+                  Due to budget constraints, research wasn’t initially a
+                  priority for SharpStakes. However, I pushed for some dedicated
+                  hours to understand how our primary users interact with the
+                  process. I aimed to uncover what drives their behavior, what
+                  they hope to achieve, and why they lose interest after signing
+                  up. Here are the research methods I employed:
                 </Typography>
               </Box>
             </FadeIn>
-            <Box display="flex" flexDirection="column" gap={6}>
-              <FadeIn>
-                <Box>
-                  <Typography variant="body1" fontStyle="italic">
-                    <b>Competitor 1:</b> OddsJam.com
+          </Box>
+          <Box>
+            <FadeIn>
+              <Box
+                mb={6}
+                display="flex"
+                flexDirection={{ xs: "column", md: "row" }}
+                gap={2}
+              >
+                <Box flex={1}>
+                  <Typography variant="body1" mb={1.5}>
+                    Method 1: <br />
+                    <b>Competitive Analysis</b>
                   </Typography>
-                  <Typography variant="body1" fontStyle="italic">
-                    <b>Pros:</b> Strong branding, uniform components,
-                    informative arrangement, user-friendly navigation, effective
-                    utilization of white space, and a cohesive design approach
-                    that fosters a seamless and engaging user experience.
-                  </Typography>
-                  <Typography variant="body1" fontStyle="italic">
-                    <b>Cons: </b> Certain manipulative tactics are employed, and
-                    a substantial portion of the content is inaccessible due to
-                    paywalls.
-                  </Typography>
-                </Box>
-              </FadeIn>
-
-              <img
-                alt=""
-                src="/project_page_res/hashmatrix/sharpstakes/objective1/objective1.png"
-              />
-              <FadeIn>
-                <Box>
-                  <Typography variant="body1" fontStyle="italic">
-                    <b>Competitor 2:</b> bettingpros.com
-                  </Typography>
-                  <Typography variant="body1" fontStyle="italic">
-                    <b>Pros:</b>Cohesive brand identity, uniform design
-                    elements, a thriving community, mobile application
-                    availability, both premium and free user account options,
-                    player leaderboards, educational resources, exemplary
-                    layout, and clear visual hierarchy.
-                  </Typography>
-                  <Typography variant="body1" fontStyle="italic">
-                    <b>Cons: </b> A significant amount of content is behind
-                    paywalls, and the interface might feel overwhelming for
-                    newcomers to sports betting due to its information density.
+                  <Typography variant="body1">
+                    Conducted interviews with stakeholders to assess the
+                    competitive landscape and identify learning opportunities
+                    from similar sites.
                   </Typography>
                 </Box>
-              </FadeIn>
-
-              <img
-                alt=""
-                src="/project_page_res/hashmatrix/sharpstakes/objective1/objective2.png"
-              />
-            </Box>
+                <Box flex={1}>
+                  <Typography variant="body1" mb={1.5}>
+                    Method 2: <br />
+                    <b>Qualitative Research </b>
+                  </Typography>
+                  <Typography variant="body1">
+                    Collected data through A/B testing using Google Forms and
+                    conducted targeted surveys with close-ended questions at key
+                    points on the website to capture user feedback.
+                  </Typography>
+                </Box>
+              </Box>
+            </FadeIn>
+            <FadeIn>
+              <Box>
+                <Typography variant="h3" pt={6} mb={2} fontWeight={700}>
+                  Competitive Analysis
+                </Typography>
+                <Typography variant="body1">
+                  In the sports betting market, creating cohesive brands and
+                  superior user experiences is now the standard. As a newcomer,
+                  SharpStakes must analyze competitors and identify areas for
+                  improvement to meet and exceed these established expectations.
+                </Typography>
+              </Box>
+            </FadeIn>
           </Box>
         </Box>
       </Container>
-      <ThemeProvider theme={darkTheme}>
-        <ScopedCssBaseline>
-          <Container maxWidth="md">
-            <Box py={8} display="flex" flexDirection="column" gap={8}>
-              <FadeIn>
-                <Box>
-                  <Typography variant="h3" mb={2} fontWeight={700}>
-                    Revamp, adapt, elevate
-                  </Typography>
-                  <Typography variant="body1">
-                    “Utilize the data collected from the first objective and
-                    implement adjustments to the branding that maintain the
-                    current ambiance while enhancing SharpStakes&apos; overall
-                    perception, aiming for a more organized, premium, and
-                    welcoming atmosphere.”
-                  </Typography>
-                  <br />
-                  <br />
-                  <Typography variant="body1" fontStyle="italic">
-                    <b>Important note:</b> This project brought about unique
-                    challenges that ultimately became opportunities for growth.
-                    The business owners had a strong emphasis on a tight
-                    timeline, prompting me to make early compromises, such as
-                    bypassing the wireframing stage. Additionally, the existing
-                    branding and typography, set by a previous designer, were
-                    non-negotiable. Embracing these constraints, I skillfully
-                    adapted to the circumstances, turning challenges into
-                    valuable experiences.
-                  </Typography>
-                </Box>
-              </FadeIn>
+      <Container maxWidth="xl">
+        <Box
+          p={6}
+          my={12}
+          pb={0}
+          width="100%"
+          sx={{
+            background: "#E7D7F4",
+            overflow: "hidden",
+          }}
+        >
+          <Box pb={6}>
+            <Typography variant="body2" fontWeight={400} fontSize={14}>
+              Company directors praised OddsJam and hoped
+              <br /> SharpStakes&apos; redesign could align with some of
+              <br /> their successful strategies.
+            </Typography>
+          </Box>
+          <Box
+            display="flex"
+            flexDirection={{
+              xs: "column",
+              md: "row",
+            }}
+            gap={4}
+          >
+            <img
+              alt=""
+              role="presentation"
+              style={{
+                flex: 1,
+                width: "100%",
+                height: "600px",
+                objectFit: "cover",
+                objectPosition: "top",
+                marginBottom: "-10px",
+              }}
+              src="/v2/SharpStakes/compAnalysis_OddsJam_L1.png"
+            />
+            <img
+              alt=""
+              role="presentation"
+              style={{
+                flex: 1,
+                width: "100%",
+                height: "600px",
+                objectFit: "cover",
+                objectPosition: "top",
+                marginBottom: "-10px",
+              }}
+              src="/v2/SharpStakes/compAnalysis_OddsJam_C1.png"
+            />
+            <img
+              alt=""
+              role="presentation"
+              style={{
+                flex: 1,
+                width: "100%",
+                height: "600px",
+                objectFit: "cover",
+                objectPosition: "top",
+                marginBottom: "-10px",
+              }}
+              src="/v2/SharpStakes/compAnalysis_OddsJam_R1.png"
+            />
+          </Box>
+        </Box>
+      </Container>
+      <Container maxWidth="xl">
+        <Box
+          p={6}
+          pb={0}
+          width="100%"
+          sx={{
+            background: "#CEE3FD",
+            overflow: "hidden",
+          }}
+        >
+          <Box pb={6}>
+            <Typography variant="body2" fontWeight={400} fontSize={14}>
+              Company directors favor the minimal color use
+              <br /> and structured layout of BettingPros, finding it
+              <br /> highly effective.
+            </Typography>
+          </Box>
+          <Box
+            display="flex"
+            flexDirection={{
+              xs: "column",
+              md: "row",
+            }}
+          >
+            <img
+              alt=""
+              role="presentation"
+              style={{
+                flex: 1,
+                width: "100%",
+                height: "600px",
+                objectFit: "cover",
+                objectPosition: "top",
+                marginBottom: "-10px",
+              }}
+              src="/v2/SharpStakes/compAnalysis_BettingPros.png"
+            />
+          </Box>
+        </Box>
+      </Container>
+      <Container maxWidth="lg">
+        <Box display="flex" flexDirection="column" gap={12} my={12}>
+          <FadeIn>
+            <Box>
+              <Typography variant="h3" mb={2} fontWeight={700}>
+                Insights From Competitors
+              </Typography>
+              <Typography variant="body1">
+                OddsJam and BettingPros excel in branding, design, and
+                navigation, but rely heavily on paywalls and can overwhelm new
+                users with dense information. To surpass these competitors,
+                SharpStakes should maintain a user-friendly interface, ensure
+                critical content is freely accessible, and simplify the user
+                experience. This strategy will enhance user engagement and
+                satisfaction.
+              </Typography>
             </Box>
-          </Container>
-          <PinScrollImages
-            bottomCaption={<>Early components</>}
-            containerHeight="300vh"
-            items={SCROLL_BLOCK_2_IMAGE_PATHS.map((url, index) => (
-              <img src={url} alt="" height="100%" key={index} />
-            ))}
-          />
-          <PinScrollImages
-            bottomCaption={<>Early Screens and states</>}
-            containerHeight="300vh"
-            items={SCROLL_BLOCK_3_IMAGE_PATHS.map((url, index) => (
-              <img src={url} alt="" height="100%" key={index} />
-            ))}
-          />
-          <Container maxWidth="md">
-            <FadeIn>
-              <Box py={12}>
-                <Typography variant="h3" mb={2} fontWeight={700}>
-                  Guide development, craft onboarding
-                </Typography>
-                <Typography variant="body1">
-                  “Pass the initial screens to the development team and provide
-                  assistance when necessary to ensure that all coded elements
-                  meet industry-standard UX criteria. Concurrently, begin work
-                  on the second set of designs, determining the approach for the
-                  new user sign-up process, shaping the onboarding flow&apos;s
-                  user experience, and specifying the content to be included.”
-                </Typography>
-              </Box>
-            </FadeIn>
-          </Container>
-          <PinScrollImages
-            bottomCaption={
-              <>
-                Website UX & UI QA - Addressing development errors and
-                inaccuracies
-              </>
-            }
-            containerHeight="300vh"
-            items={SCROLL_BLOCK_4_IMAGE_PATHS.map((url, index) => (
-              <img src={url} alt="" height="100%" key={index} />
-            ))}
-          />
-          <Container maxWidth="md">
-            <FadeIn>
-              <Box py={12}>
-                <Typography variant="h3" mb={2} fontWeight={700}>
-                  Revise, reframe, renew
-                </Typography>
-                <Typography variant="body1">
-                  “Refine and reconfigure components in alignment with our
-                  updated business objectives. This process entails a
-                  comprehensive review of all previously crafted materials, as
-                  well as the incorporation of additional screens and states
-                  that better align with our evolved business approach.”
-                </Typography>
-                <br />
-                <br />
-                <Typography variant="body1" fontStyle="italic">
-                  <b>Important note:</b> Collaborating with start-ups has been a
-                  fantastic journey, exposing me to the exciting challenges of
-                  tight deadlines and substantial revamps—something the current
-                  project also embraces wholeheartedly! After thoroughly
-                  exploring our business objectives and engaging in extensive
-                  discussions with our fantastic partners at SharpsStakes,
-                  we&apos;ve decided to give a fresh, vibrant look to the
-                  interface and user experience of several screens we&apos;ve
-                  previously presented. It&apos;s worth noting that, while our
-                  branding stays true, this big change was all about meeting new
-                  criteria and taking our project to even greater heights.
-                </Typography>
-              </Box>
-            </FadeIn>
-          </Container>
-          <PinScrollImages
-            bottomCaption={<>Final screens and states</>}
-            containerHeight="300vh"
-            items={SCROLL_BLOCK_5_IMAGE_PATHS.map((url, index) => (
-              <img src={url} alt="" height="100%" key={index} />
-            ))}
-          />
-          <Container maxWidth="md">
-            <Box py={12} display="flex" flexDirection="column" gap={12}>
-              <FadeIn>
-                <Box>
-                  <Typography variant="h3" mb={2} fontWeight={700}>
-                    Closing notes:
-                  </Typography>
-                  <Typography variant="body1">
-                    The updated interface and design strategy enable SharpStakes
-                    to streamline development through the utilization of
-                    reusable components, adhere to accessibility guidelines, and
-                    attract a broader user base by aligning with contemporary
-                    competitors. This has resulted in a remarkable surge in user
-                    satisfaction, accompanied by hundreds of positive comments
-                    and reviews.
-                  </Typography>
-                </Box>
-              </FadeIn>
-              <Box
-                display="flex"
-                gap={{ xs: 6, md: 4 }}
-                flexDirection={{
-                  xs: "column",
-                  md: "row",
-                }}
+          </FadeIn>
+        </Box>
+      </Container>
+      <Container maxWidth="xl">
+        <Box
+          p={6}
+          my={12}
+          pb={0}
+          width="100%"
+          sx={{
+            background: "#CFEAFC",
+            overflow: "hidden",
+          }}
+        >
+          <Box pb={6}>
+            <Typography variant="body2" fontWeight={400} fontSize={14}>
+              BettingPros has over 50,000 downloads, OddsJam
+              <br /> has more than 10,000 downloads, and <br />
+              SharpStakes has over 50 downloads.
+            </Typography>
+          </Box>
+          <Box
+            display="flex"
+            flexDirection={{
+              xs: "column",
+              md: "row",
+            }}
+            gap={4}
+          >
+            <img
+              alt=""
+              role="presentation"
+              style={{
+                flex: 1,
+                width: "100%",
+                height: "600px",
+                objectFit: "cover",
+                objectPosition: "top",
+                marginBottom: "-10px",
+              }}
+              src="/v2/SharpStakes/compAnalysis_OddsJam_L2.png"
+            />
+            <img
+              alt=""
+              role="presentation"
+              style={{
+                flex: 1,
+                width: "100%",
+                height: "600px",
+                objectFit: "cover",
+                objectPosition: "top",
+                marginBottom: "-10px",
+              }}
+              src="/v2/SharpStakes/compAnalysis_OddsJam_C2.png"
+            />
+            <img
+              alt=""
+              role="presentation"
+              style={{
+                flex: 1,
+                width: "100%",
+                height: "600px",
+                objectFit: "cover",
+                objectPosition: "top",
+                marginBottom: "-10px",
+              }}
+              src="/v2/SharpStakes/compAnalysis_OddsJam_R2.png"
+            />
+          </Box>
+        </Box>
+      </Container>
+      <Container maxWidth="xl">
+        <FadeIn>
+          <Box
+            display="flex"
+            flexDirection={{ xs: "column", md: "row" }}
+            my={12}
+            alignItems="center"
+            sx={{
+              background: "#f0f0f0",
+            }}
+          >
+            <Box flex={1} p={6}>
+              <Typography
+                variant="body1"
+                mb={2}
+                fontWeight={700}
+                color="#0E86D3"
               >
-                <FadeIn>
-                  <Box
-                    display="flex"
-                    gap={3}
-                    sx={{ pl: 3, borderLeft: "6px solid #0E86D3" }}
-                  >
-                    <Box display="flex" flexDirection="column" gap={2}>
-                      <Box>
-                        <Typography variant="body1" fontWeight={700}>
-                          Jaiden S.
-                        </Typography>
-                        <Typography variant="body1" fontWeight={400}>
-                          Co-Founder, Sharpstakes
-                        </Typography>
-                      </Box>
-                      <Typography variant="body1" fontWeight={400}>
-                        Moe, an A+ designer, enhances our projects with
-                        professionalism and quality. His deep understanding of
-                        business goals and thoughtful design decisions shaped
-                        our platform. Moe excels in adapting to changing
-                        requests and delivering impressive designs. New users
-                        consistently praise our improved UI/UX since Moe&apos;s
-                        involvement.
-                      </Typography>
-                    </Box>
+                User Feedback
+              </Typography>
+              <Typography variant="h3" mb={2} fontWeight={700}>
+                Tell us about your experience using SharpStakes so far.
+              </Typography>
+              <Typography component="div" variant="body1">
+                <Box display="flex" flexDirection="column">
+                  <Box mb={2} display="flex">
+                    <Typography variant="body1" color="#0E86D3" mr={1}>
+                      &gt;
+                    </Typography>
+                    <Typography variant="body1">
+                      “It&apos;s alright, but I&apos;m not really happy with the
+                      amount of locked content and popups. It&apos;s pretty
+                      annoying because sometimes I just want to browse and see
+                      the bets without getting spammed.”
+                    </Typography>
                   </Box>
-                </FadeIn>
-                <FadeIn>
-                  <Box
-                    display="flex"
-                    gap={3}
-                    sx={{ pl: 3, borderLeft: "6px solid #0E86D3" }}
-                  >
-                    <Box display="flex" flexDirection="column" gap={2}>
-                      <Box>
-                        <Typography variant="body1" fontWeight={700}>
-                          Shubs M.
-                        </Typography>
-                        <Typography variant="body1" fontWeight={400}>
-                          CEO, Sharpstakes
-                        </Typography>
-                      </Box>
-                      <Typography variant="body1" fontWeight={400}>
-                        In moments of uncertainty, Moe&apos;s guidance has been
-                        indispensable, offering crucial direction in
-                        decision-making. Our site&apos;s exceptional UI/UX,
-                        widely praised by users, reflects Moe&apos;s influential
-                        contributions. Beyond technical expertise, Moe&apos;s
-                        patient and collaborative approach played a vital role
-                        in fostering overall improvement.
-                      </Typography>
-                    </Box>
+                  <Box mb={2} display="flex">
+                    <Typography variant="body1" color="#0E86D3" mr={1}>
+                      &gt;
+                    </Typography>
+                    <Typography variant="body1">
+                      “The colors are really distracting, and I wish there was
+                      support for dark mode. The background is super bright, and
+                      it makes everything else hard to look at.”
+                    </Typography>
                   </Box>
-                </FadeIn>
-              </Box>
-              <FadeIn>
-                <Box>
-                  <Box display="flex" flexDirection="column" gap={2}>
-                    <FadeIn>
-                      <Box
-                        display="flex"
-                        gap={{ xs: 2, md: 6 }}
-                        alignItems={{ md: "center" }}
-                        flexDirection={{
-                          xs: "column",
-                          md: "row",
-                        }}
-                      >
-                        <Typography
-                          variant="body1"
-                          sx={{
-                            fontSize: "4em",
-                            fontWeight: 800,
-                            background:
-                              "linear-gradient(1deg, #0E86D4 -358.82%, #FFF 99.25%);",
-                            backgroundClip: "text",
-                            WebkitTextFillColor: "transparent",
-                          }}
-                        >
-                          95%
-                        </Typography>
-                        <Typography variant="body1">
-                          of users interviewed reported a notable enhancement in
-                          their experience, specifically citing improvements in
-                          usability, design, and overall satisfaction with the
-                          redesigned product.
-                        </Typography>
-                      </Box>
-                    </FadeIn>
-                    <FadeIn>
-                      <Box
-                        display="flex"
-                        gap={{ xs: 2, md: 6 }}
-                        alignItems={{ md: "center" }}
-                        flexDirection={{
-                          xs: "column",
-                          md: "row",
-                        }}
-                      >
-                        <Typography
-                          variant="body1"
-                          sx={{
-                            fontSize: "4em",
-                            fontWeight: 800,
-                            background:
-                              "linear-gradient(0deg, #0E86D4 -260.6%, #FFF 219.26%);",
-                            backgroundClip: "text",
-                            WebkitTextFillColor: "transparent",
-                          }}
-                        >
-                          91%
-                        </Typography>
-                        <Typography variant="body1">
-                          of users interviewed reported a significant increase
-                          in efficiency and task completion speed after
-                          interacting with the revamped product interface.
-                        </Typography>
-                      </Box>
-                    </FadeIn>
-                    <FadeIn>
-                      <Box
-                        display="flex"
-                        gap={{ xs: 2, md: 6 }}
-                        alignItems={{ md: "center" }}
-                        flexDirection={{
-                          xs: "column",
-                          md: "row",
-                        }}
-                      >
-                        <Typography
-                          variant="body1"
-                          sx={{
-                            fontSize: "4em",
-                            fontWeight: 800,
-                            background:
-                              "linear-gradient(0deg, #0E86D4 -153.72%, #FFF 347.39%);",
-                            backgroundClip: "text",
-                            WebkitTextFillColor: "transparent",
-                          }}
-                        >
-                          88%
-                        </Typography>
-                        <Typography variant="body1">
-                          of users praised the redesigned interface, citing its
-                          positive influence on user engagement and overall
-                          satisfaction with the product&apos;s enhanced
-                          features.
-                        </Typography>
-                      </Box>
-                    </FadeIn>
-                    <FadeIn>
-                      <Box
-                        display="flex"
-                        gap={{ xs: 2, md: 6 }}
-                        alignItems={{ md: "center" }}
-                        flexDirection={{
-                          xs: "column",
-                          md: "row",
-                        }}
-                      >
-                        <Typography
-                          variant="body1"
-                          sx={{
-                            fontSize: "4em",
-                            fontWeight: 800,
-                            background:
-                              "linear-gradient(2deg, #0E86D4 -40.68%, #FFF 450.39%);",
-                            backgroundClip: "text",
-                            WebkitTextFillColor: "transparent",
-                          }}
-                        >
-                          73%
-                        </Typography>
-                        <Typography variant="body1">
-                          of users expressed a strong preference for trying out
-                          the redesigned product over competing alternatives.
-                        </Typography>
-                      </Box>
-                    </FadeIn>
+                  <Box mb={2} display="flex">
+                    <Typography variant="body1" color="#0E86D3" mr={1}>
+                      &gt;
+                    </Typography>
+                    <Typography variant="body1">
+                      “The colors are really distracting, and I wish there was
+                      support for dark mode. The background is super bright, and
+                      it makes everything else hard to look at.”
+                    </Typography>
                   </Box>
                 </Box>
-              </FadeIn>
+              </Typography>
             </Box>
-          </Container>
-          <Box>
-            <Box
-              component="video"
-              autoPlay
-              muted
-              loop
-              controls={false}
-              playsInline
-              width="100%"
-              sx={{ pointerEvents: "none" }}
-            >
-              <source
-                src={
-                  "/project_page_res/hashmatrix/sharpstakes/videos/video1.mp4"
-                }
-                type="video/mp4"
-              />
-            </Box>
-            <Box
-              display="flex"
-              flexDirection={{ xs: "column", md: "row" }}
-              mt={-1}
-            >
-              <Box
-                flex={1}
-                minHeight="100vh"
-                display="flex"
-                flexDirection="column"
-                gap={3}
-                alignItems="center"
-                justifyContent="center"
-                sx={{
-                  background:
-                    "url(/project_page_res/hashmatrix/sharpstakes/spotlight/blackBackground.png)",
-                  backgroundSize: {
-                    xs: "cover",
-                    sm: "cover",
-                    md: "cover",
-                    lg: "cover",
-                  },
-                  backgroundPosition: {
-                    xs: "center center",
-                    lg: "left center",
-                  },
+            <Box flex={1} minHeight={500} p={12} pb={0} overflow="hidden">
+              <img
+                alt=""
+                role="presentation"
+                style={{
+                  width: "100%",
+                  marginBottom: "-10px",
+                  height: "100%",
+                  objectFit: "cover",
+                  objectPosition: "top",
                 }}
-              >
-                <Box position="relative" height={{ xs: "50vh", lg: "70%" }}>
-                  <img
-                    src="/project_page_res/hashmatrix/sharpstakes/spotlight/blackBehind.png"
-                    alt=""
-                    height="90%"
-                    style={{
-                      position: "absolute",
-                      transform: "translateX(-30%) translateY(5%)",
-                    }}
-                  />
-                  <img
-                    src="/project_page_res/hashmatrix/sharpstakes/spotlight/blackFront.png"
-                    alt=""
-                    height="100%"
-                    style={{
-                      transform: "translateX(30%)",
-                    }}
-                  />
-                </Box>
-                <Box
-                  px={6}
-                  py={1}
-                  sx={{
-                    background: "rgba(30, 30, 30, 0.40)",
-                  }}
-                >
-                  <Typography
-                    variant="body1"
-                    color={palette.neutral[200]}
-                    fontStyle="italic"
-                    textAlign="center"
-                    width="100%"
-                  >
-                    Home screens (live)
-                  </Typography>
-                </Box>
-              </Box>
-              <Box
-                flex={1}
-                minHeight="100vh"
-                display="flex"
-                flexDirection="column"
-                gap={3}
-                alignItems="center"
-                justifyContent="center"
-                sx={{
-                  background:
-                    "url(/project_page_res/hashmatrix/sharpstakes/spotlight/lightBackground.png)",
-                  backgroundSize: { xs: "cover", sm: "cover", lg: "250%" },
-                  backgroundPosition: { xs: "center center", lg: "85% center" },
-                }}
-              >
-                <Box position="relative" height={{ xs: "50vh", lg: "70%" }}>
-                  <img
-                    src="/project_page_res/hashmatrix/sharpstakes/spotlight/lightBehind.png"
-                    alt=""
-                    height="90%"
-                    style={{
-                      position: "absolute",
-                      transform: "translateX(-30%) translateY(5%)",
-                    }}
-                  />
-                  <img
-                    src="/project_page_res/hashmatrix/sharpstakes/spotlight/lightFront.png"
-                    alt=""
-                    height="100%"
-                    style={{
-                      transform: "translateX(30%)",
-                    }}
-                  />
-                </Box>
-                <Box
-                  px={6}
-                  py={1}
-                  sx={{
-                    background: "rgba(30, 30, 30, 0.40)",
-                  }}
-                >
-                  <Typography
-                    variant="body1"
-                    color={palette.neutral[200]}
-                    fontStyle="italic"
-                    textAlign="center"
-                    width="100%"
-                  >
-                    Sign-up and guides (live)
-                  </Typography>
-                </Box>
-              </Box>
-            </Box>
-            <Box
-              component="video"
-              autoPlay
-              muted
-              loop
-              controls={false}
-              playsInline
-              width="100%"
-              sx={{ pointerEvents: "none" }}
-            >
-              <source
-                src={
-                  "/project_page_res/hashmatrix/sharpstakes/videos/video2.mp4"
-                }
-                type="video/mp4"
-              />
-            </Box>
-            <Box mt={-1}>
-              <PinScrollImages
-                containerHeight="300vh"
-                disablePadding
-                items={[
-                  <img
-                    src={"/project_page_res/hashmatrix/sharpstakes/stretch.png"}
-                    alt=""
-                    height="100%"
-                    key={0}
-                  />,
-                ]}
+                src="/v2/SharpStakes/userFeedback_Image.png"
               />
             </Box>
           </Box>
-          <ProjectsNavFooter projects={["shiba", "afc"]} />
-          <FooterDark />
-        </ScopedCssBaseline>
-      </ThemeProvider>
+        </FadeIn>
+        <FadeIn>
+          <Box
+            display="flex"
+            flexDirection={{ xs: "column", md: "row" }}
+            my={12}
+            alignItems="center"
+            sx={{
+              background: "#f0f0f0",
+            }}
+          >
+            <Box flex={1} p={6}>
+              <Typography
+                variant="body1"
+                mb={2}
+                fontWeight={700}
+                color="#0E86D3"
+              >
+                User Interviews
+              </Typography>
+              <Typography variant="h3" mb={2} fontWeight={700}>
+                Do you find yourself using SharpStakes on desktop or mobile more
+                often?
+              </Typography>
+              <Typography component="div" variant="body1">
+                <Box display="flex" flexDirection="column">
+                  <Box mb={2} display="flex">
+                    <Typography variant="body1" color="#0E86D3" mr={1}>
+                      &gt;
+                    </Typography>
+                    <Typography variant="body1">
+                      “I mostly use the desktop version right now. It&apos;s
+                      easier to digest all the information that way, and it
+                      doesn&apos;t feel as cramped.”
+                    </Typography>
+                  </Box>
+                  <Box mb={2} display="flex">
+                    <Typography variant="body1" color="#0E86D3" mr={1}>
+                      &gt;
+                    </Typography>
+                    <Typography variant="body1">
+                      “I almost exclusively use the desktop version.
+                      There&apos;s just too much information to manage on a
+                      smaller screen.”
+                    </Typography>
+                  </Box>
+                </Box>
+              </Typography>
+            </Box>
+            <Box flex={1} minHeight={500} p={12} overflow="hidden">
+              <img
+                alt=""
+                role="presentation"
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  objectFit: "contain",
+                }}
+                src="/v2/SharpStakes/userInterviews_PieChart.svg"
+              />
+            </Box>
+          </Box>
+        </FadeIn>
+      </Container>
+      <Container maxWidth="xl">
+        <Box display="flex" flexDirection="column">
+          <FadeIn>
+            <Box
+              display="flex"
+              flexDirection={{ xs: "column", md: "row" }}
+              gap={4}
+              alignItems="center"
+            >
+              <Box
+                flex={1}
+                p={6}
+                sx={{
+                  background: "#f0f0f0",
+                }}
+              >
+                <Typography
+                  variant="body1"
+                  mb={2}
+                  fontWeight={700}
+                  color="#0E86D3"
+                >
+                  User Interviews
+                </Typography>
+                <Typography variant="h3" mb={4} fontWeight={700}>
+                  Do you find the current experience frustrating?
+                </Typography>
+                <Box flex={1} overflow="hidden">
+                  <img
+                    alt=""
+                    role="presentation"
+                    style={{
+                      width: "100%",
+                      height: "100%",
+                      objectFit: "contain",
+                    }}
+                    src="/v2/SharpStakes/userInterviews_PieChartL.svg"
+                  />
+                </Box>
+              </Box>
+              <Box
+                flex={1}
+                p={6}
+                sx={{
+                  background: "#f0f0f0",
+                }}
+              >
+                <Typography
+                  variant="body1"
+                  mb={2}
+                  fontWeight={700}
+                  color="#0E86D3"
+                >
+                  User Interviews
+                </Typography>
+                <Typography variant="h3" mb={4} fontWeight={700}>
+                  Would you use SharpStakes over OddsJam?
+                </Typography>
+                <Box flex={1} overflow="hidden">
+                  <img
+                    alt=""
+                    role="presentation"
+                    style={{
+                      width: "100%",
+                      height: "100%",
+                      objectFit: "contain",
+                    }}
+                    src="/v2/SharpStakes/userInterviews_PieChartC.svg"
+                  />
+                </Box>
+              </Box>
+              <Box
+                flex={1}
+                p={6}
+                sx={{
+                  background: "#f0f0f0",
+                }}
+              >
+                <Typography
+                  variant="body1"
+                  mb={2}
+                  fontWeight={700}
+                  color="#0E86D3"
+                >
+                  User Interviews
+                </Typography>
+                <Typography variant="h3" mb={4} fontWeight={700}>
+                  Would you use the mobile app more if it gets better?
+                </Typography>
+                <Box flex={1} overflow="hidden">
+                  <img
+                    alt=""
+                    role="presentation"
+                    style={{
+                      width: "100%",
+                      height: "100%",
+                      objectFit: "contain",
+                    }}
+                    src="/v2/SharpStakes/userInterviews_PieChartR.svg"
+                  />
+                </Box>
+              </Box>
+            </Box>
+          </FadeIn>
+        </Box>
+      </Container>
+      <Container maxWidth="lg">
+        <Box my={12}>
+          <FadeIn>
+            <Box mb={6}>
+              <Typography variant="h3" mb={2} fontWeight={700}>
+                Summarizing Insights
+              </Typography>
+              <Typography variant="body1">
+                Despite limited research, I gained valuable insights to focus on
+                the platform&apos;s key priorities and issues. The three main
+                insights that stood out were:
+              </Typography>
+            </Box>
+          </FadeIn>
+          <FadeIn>
+            <Box
+              display="flex"
+              flexDirection={{ xs: "column", md: "row" }}
+              gap={{ xs: 2, md: 2 }}
+            >
+              <Box flex={1}>
+                <Typography variant="body1" mb={2} fontWeight={700}>
+                  Reducing Dark Pattern Usage{" "}
+                </Typography>
+                <Typography variant="body1">
+                  Identifying and minimizing dark patterns to enhance user trust
+                  and experience.
+                </Typography>
+              </Box>
+              <Box flex={1}>
+                <Typography variant="body1" mb={2} fontWeight={700}>
+                  Implementing Dark Mode{" "}
+                </Typography>
+                <Typography variant="body1">
+                  Creating a stable design system that uses dark mode
+                  exclusively to improve visual comfort.
+                </Typography>
+              </Box>
+              <Box flex={1}>
+                <Typography variant="body1" mb={2} fontWeight={700}>
+                  Enhancing Mobile Usability{" "}
+                </Typography>
+                <Typography variant="body1">
+                  Redesigning the mobile app to present information more clearly
+                  and prevent overwhelming users.
+                </Typography>
+              </Box>
+            </Box>
+          </FadeIn>
+        </Box>
+      </Container>
+      <Container maxWidth="xl">
+        <Box width="100%">
+          <img
+            alt=""
+            role="presentation"
+            style={{
+              width: "100%",
+            }}
+            src="/v2/SharpStakes/insightsImage.png"
+          />
+        </Box>
+      </Container>
+      <Container maxWidth="lg">
+        <Box display="flex" flexDirection="column" gap={12} my={12}>
+          <FadeIn>
+            <Box>
+              <Typography variant="h3" mb={2} fontWeight={700}>
+                From Insights to Action
+              </Typography>
+              <Typography variant="body1">
+                With key insights in hand, I began drafting wireframes for the
+                new layout, focusing initially on the landing page and web app.
+                Collaborating closely with the directors, I ensured all ideas
+                were vetted and refined before moving forward. This approach
+                expedited the process and helped us navigate the project&apos;s
+                tight deadlines efficiently.
+              </Typography>
+            </Box>
+          </FadeIn>
+        </Box>
+      </Container>
+      <Container maxWidth="xl">
+        <Box width="100%" mb={12}>
+          <img
+            alt=""
+            role="presentation"
+            style={{
+              width: "100%",
+            }}
+            src="/v2/SharpStakes/insightsToAction_Image1.png"
+          />
+        </Box>
+      </Container>
+      <Container maxWidth="xl">
+        <Box width="100%">
+          <img
+            alt=""
+            role="presentation"
+            style={{
+              width: "100%",
+            }}
+            src="/v2/SharpStakes/insightsToAction_Image2.png"
+          />
+        </Box>
+      </Container>
+      <Container maxWidth="lg">
+        <Box display="flex" flexDirection="column" gap={12} my={12}>
+          <FadeIn>
+            <Box>
+              <Typography variant="h3" mb={2} fontWeight={700}>
+                Establishing a Design System
+              </Typography>
+              <Typography variant="body1">
+                SharpStakes lacked a defined design system, and due to a tight
+                timeline, I couldn&apos;t create one from scratch. Instead, I
+                utilized an existing template, which provided a solid
+                foundation. This approach allowed their developers to start
+                building designs efficiently.
+              </Typography>
+            </Box>
+          </FadeIn>
+        </Box>
+      </Container>
+      <Container maxWidth="xl">
+        <Box width="100%" mb={12}>
+          <video
+            autoPlay
+            loop
+            muted
+            role="presentation"
+            style={{
+              width: "100%",
+            }}
+            src="/v2/SharpStakes/finalizingDesigns_Video.mp4"
+          />
+        </Box>
+      </Container>
+      <Container maxWidth="xl">
+        <Box
+          p={6}
+          pb={0}
+          sx={{
+            background: "#CFEAFC",
+            overflow: "hidden",
+          }}
+        >
+          <Box pb={2}>
+            <Typography variant="body2" fontWeight={400} fontSize={14}>
+              Different SharpStakes pages using a consistent
+              <br /> dark theme
+            </Typography>
+          </Box>
+          <img
+            alt=""
+            role="presentation"
+            style={{
+              width: "100%",
+            }}
+            src="/v2/SharpStakes/finalizedDesigns_Image.png"
+          />
+        </Box>
+      </Container>
+      <Container maxWidth="lg">
+        <Box display="flex" flexDirection="column" gap={12} my={12}>
+          <FadeIn>
+            <Box>
+              <Typography variant="h3" mb={2} fontWeight={700}>
+                A New Design System
+              </Typography>
+              <Typography variant="body1">
+                Implementing dark mode has given SharpStakes a more cohesive and
+                exclusive feel, unifying various products and platforms. This
+                design system update has been well-received by developers,
+                stakeholders, and users. Additionally, the update has reduced
+                development costs by providing a centralized file for accessing
+                color styles and components.
+              </Typography>
+            </Box>
+          </FadeIn>
+        </Box>
+      </Container>
+      <Container maxWidth="xl">
+        <Box width="100%" mb={12}>
+          <video
+            autoPlay
+            loop
+            muted
+            role="presentation"
+            style={{
+              width: "100%",
+            }}
+            src="/v2/SharpStakes/newDesignSystem_Image1.mp4"
+          />
+        </Box>
+      </Container>
+      <Container maxWidth="xl">
+        <Box
+          p={6}
+          mb={12}
+          sx={{
+            background: "#CFEAFC",
+            overflow: "hidden",
+          }}
+        >
+          <Box pb={2}>
+            <Typography variant="body2" fontWeight={400} fontSize={14}>
+              Mobile App Concept Screens
+            </Typography>
+          </Box>
+          <img
+            alt=""
+            role="presentation"
+            style={{
+              width: "100%",
+            }}
+            src="/v2/SharpStakes/newDesignSystem_Image1.png"
+          />
+        </Box>
+      </Container>
+      <Container maxWidth="xl">
+        <img
+          alt=""
+          role="presentation"
+          style={{
+            width: "100%",
+          }}
+          src="/v2/SharpStakes/newDesignSystem_Image2.png"
+        />
+      </Container>
+      <Container maxWidth="lg">
+        <Box display="flex" flexDirection="column" gap={12} my={12}>
+          <FadeIn>
+            <Box>
+              <Typography variant="h3" mb={2} fontWeight={700}>
+                A Consistent Experience{" "}
+              </Typography>
+              <Typography variant="body1">
+                The new SharpStakes experience is designed with responsiveness
+                in mind, ensuring no compromises when scaling down to mobile.
+                Users can access the same amount of information on mobile as
+                they would on the web. Since the update, the mobile user count
+                has been steadily increasing.
+              </Typography>
+            </Box>
+          </FadeIn>
+          <FadeIn>
+            <Box>
+              <Typography variant="h3" mb={2} fontWeight={700}>
+                Impact{" "}
+              </Typography>
+              <Typography variant="body1">
+                The updated interface and design strategy empower SharpStakes to
+                streamline development by utilizing reusable components,
+                adhering to accessibility guidelines, and eliminating dark
+                patterns. Aligning with contemporary competitors, these changes
+                attract a broader user base. This has led to a significant surge
+                in user satisfaction, evidenced by numerous positive comments
+                and reviews.
+              </Typography>
+            </Box>
+          </FadeIn>
+        </Box>
+      </Container>
+      <Container maxWidth="xl">
+        <Box
+          display="flex"
+          my={6}
+          gap={6}
+          flexDirection={{
+            xs: "column",
+            md: "row",
+          }}
+        >
+          <Box
+            flex={1}
+            sx={{
+              p: 6,
+              background: "#F0F0F0",
+            }}
+          >
+            <Typography variant="h3" mb={2} fontWeight={700}>
+              <span style={{ color: "#0E86D3" }}>+68%</span> boost in user
+              satisfaction across both mobile and web experiences.
+            </Typography>
+          </Box>
+          <Box
+            flex={1}
+            sx={{
+              p: 6,
+              background: "#F0F0F0",
+            }}
+          >
+            <Typography variant="h3" mb={2} fontWeight={700}>
+              <span style={{ color: "#0E86D3" }}>-34%</span> decrease in drop
+              rates after the sign-up process is completed.
+            </Typography>
+          </Box>
+          <Box
+            flex={1}
+            sx={{
+              p: 6,
+              background: "#F0F0F0",
+            }}
+          >
+            <Typography variant="h3" mb={2} fontWeight={700}>
+              <span style={{ color: "#0E86D3" }}>+47%</span> increase in average
+              session duration on both web and mobile platforms.
+            </Typography>
+          </Box>
+        </Box>
+      </Container>
+      <Container maxWidth="xl">
+        <FadeIn>
+          <Box
+            display="flex"
+            flexDirection={{ xs: "column", md: "row" }}
+            mt={6}
+            mb={12}
+            alignItems="center"
+            sx={{
+              background: "#f0f0f0",
+            }}
+          >
+            <Box flex={1} p={6}>
+              <Typography
+                variant="body1"
+                mb={2}
+                fontWeight={700}
+                color="#0E86D3"
+              >
+                Team Comments
+              </Typography>
+              <Typography variant="h3" mb={2} fontWeight={700}>
+                How was your experience working with Moe?
+              </Typography>
+              <Typography component="div" variant="body1">
+                <Box display="flex" flexDirection="column">
+                  <Box mb={2} display="flex">
+                    <Typography variant="body1" color="#0E86D3" mr={1}>
+                      &gt;
+                    </Typography>
+                    <Typography variant="body1">
+                      <b>Shubs, CEO:</b>
+                      <br />
+                      <br />
+                      “Moe is a great designer. He enhances our projects with
+                      professionalism and quality. His deep understanding of
+                      business goals and thoughtful design decisions shaped our
+                      platform. Moe excels in adapting to changing requests and
+                      delivering impressive designs. New users consistently
+                      praise our improved UI/UX since Moe&apos;s involvement.”
+                    </Typography>
+                  </Box>
+                  <Box mb={2} display="flex">
+                    <Typography variant="body1" color="#0E86D3" mr={1}>
+                      &gt;
+                    </Typography>
+                    <Typography variant="body1">
+                      <b>Jaiden, Co-Founder:</b>
+                      <br />
+                      <br />
+                      “In moments of uncertainty, Moe&apos;s guidance has been
+                      indispensable, offering crucial direction in
+                      decision-making. Our site&apos;s exceptional UI/UX, widely
+                      praised by users, reflects Moe&apos;s influential
+                      contributions. Beyond technical expertise, Moe&apos;s
+                      patient and collaborative approach played a vital role in
+                      fostering overall improvement.”
+                    </Typography>
+                  </Box>
+                </Box>
+              </Typography>
+            </Box>
+            <Box
+              flex={1}
+              minHeight={500}
+              p={12}
+              pb={0}
+              pr={0}
+              overflow="hidden"
+            >
+              <img
+                alt=""
+                role="presentation"
+                style={{
+                  width: "100%",
+                  marginBottom: "-10px",
+                  height: "100%",
+                  objectFit: "cover",
+                  objectPosition: "top",
+                }}
+                src="/v2/SharpStakes/teamComments_Image.png"
+              />
+            </Box>
+          </Box>
+        </FadeIn>
+      </Container>
+      <ProjectsNavFooter projects={["afc", "shiba"]} />
+      <Footer />
     </ThemeProvider>
   );
 }

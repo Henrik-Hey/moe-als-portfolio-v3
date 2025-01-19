@@ -48,10 +48,11 @@ export default function Content() {
     <ThemeProvider theme={baseTheme}>
       <CssBaseline />
       <ProjectHeader
-        imageURL="/project_page_res/shiba/backdrop.jpg"
+        imageURL="/project_page_res/shiba/backdrop-shiba.png"
         logoString="Shiba Inu"
         heading="Creating the ultimate Asian cuisine delivery app"
-        subheading="Crafting Convenience for Busy Young Adults."
+        imageText="Hi-Fidelity concept screens"
+        subheading="While numerous food delivery apps exist, few specialize in specific cuisines. Shiba Inu aims to fill this gap by providing a dedicated platform for Asian cuisine lovers."
       />
       <Container maxWidth="md">
         <Box display="flex" flexDirection="column" gap={12} my={12}>

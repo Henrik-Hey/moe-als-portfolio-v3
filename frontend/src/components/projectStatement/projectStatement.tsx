@@ -9,7 +9,7 @@ export const ProjectStatement = ({ content }: ProjectStatementProps) => {
   return (
     <FadeIn>
       <Box>
-        <Typography variant="h2" fontWeight={400} fontStyle="italic">
+        <Typography variant="h2" fontWeight={400}>
           {content}
         </Typography>
       </Box>

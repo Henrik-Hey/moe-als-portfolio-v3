@@ -13,6 +13,7 @@ interface ProjectCardProps {
   isLocked?: boolean;
   content?: React.ReactNode;
   darkMode?: boolean;
+  isDefaultHovered?: boolean;
 }
 export const ProjectCard: React.FC<ProjectCardProps> = ({
   project,
@@ -24,6 +25,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
   isLocked,
   content,
   darkMode,
+  isDefaultHovered,
 }) => {
   const theme = useTheme();
   const textColor = darkMode
@@ -33,12 +35,14 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
   return (
     <Card
       sx={{
-        background: color,
+        background: !isDefaultHovered ? "#E7E8E8" : hoverColor,
         flex: 1,
         borderRadius: "12px",
         boxShadow: "0px 6px 12px 0px rgba(0, 0, 0, 0.10)",
         transition: "all 0.5s",
+        filter: !isDefaultHovered ? "grayscale(100%)" : "grayscale(0%)",
         [`&:hover`]: {
+          filter: "grayscale(0%)",
           transform: "translateY(-8px)",
           cursor: "pointer",
           background: hoverColor,
@@ -92,7 +96,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
             ))}
         </Box>
       </Box>
-      <Box pb={62.5} position="relative">
+      <Box pb={70} position="relative">
         <Box
           sx={{
             position: "absolute",

@@ -1,8 +1,9 @@
 "use client";
 
-import { useDarkTheme } from "@/theme";
+import { useBaseTheme, useDarkTheme } from "@/theme";
 import {
   Box,
+  Container,
   IconButton,
   ScopedCssBaseline,
   ThemeProvider,
@@ -11,7 +12,6 @@ import {
 import { styled } from "@mui/system";
 import React from "react";
 import { Navbar } from "..";
-import { KeyboardArrowDown } from "@mui/icons-material";
 
 interface ProjectHeaderProps {
   imageURL: string;
@@ -19,6 +19,9 @@ interface ProjectHeaderProps {
   logoImage?: React.ReactNode;
   heading: string;
   subheading: string;
+  imageText?: string;
+  color?: string;
+  secondaryColor?: string;
 }
 
 export const ProjectHeader: React.FC<ProjectHeaderProps> = ({
@@ -27,82 +30,64 @@ export const ProjectHeader: React.FC<ProjectHeaderProps> = ({
   logoImage,
   heading,
   subheading,
+  imageText,
+  color,
+  secondaryColor,
 }) => {
-  const darkTheme = useDarkTheme();
+  const theme = useBaseTheme();
 
   return (
-    <ThemeProvider theme={darkTheme}>
-      <ScopedCssBaseline>
+    <>
+      <Box position="absolute" top="0px" left="0px" width="100%" zIndex={100}>
+        <Navbar colorMode="light" />
+      </Box>
+      <Container maxWidth="xl">
         <HeaderContainer>
-          <BackdropImage
-            sx={{
-              backgroundImage: `url(${imageURL})`,
-            }}
-          />
-          <Box position="absolute" top="0px" left="0px" width="100%">
-            <Navbar colorMode="dark" />
-          </Box>
-          <Box
-            display="flex"
-            flexDirection="column"
-            gap={3}
-            p={2}
-            zIndex={1}
-            alignItems="center"
-            maxWidth={920}
-          >
-            {logoString && (
-              <Typography variant="h1" color="#f7f7f7" fontWeight={900}>
-                {logoString}
+          <Container maxWidth="md">
+            <Box
+              display="flex"
+              flexDirection="column"
+              gap={2}
+              pt={22}
+              pb={12}
+              zIndex={1}
+              alignItems="center"
+            >
+              {logoString && (
+                <Typography variant="body1" fontWeight={700} color={color}>
+                  {logoString}
+                </Typography>
+              )}
+              {logoImage}
+              <Typography variant="h4" fontWeight={700} textAlign="center">
+                {heading}
               </Typography>
-            )}
-            {logoImage}
-            <Typography
-              variant="h1"
-              color="#f7f7f7"
-              fontWeight={500}
-              textAlign="center"
-            >
-              {heading}
-            </Typography>
-            <Typography
-              variant="body1"
-              color="#f7f7f7"
-              textAlign="center"
-              fontWeight={400}
-            >
-              {subheading}
-            </Typography>
-          </Box>
+              <Typography variant="body1" textAlign="center" fontWeight={400}>
+                {subheading}
+              </Typography>
+            </Box>
+          </Container>
           <Box
+            width="100%"
             sx={{
-              position: "absolute",
-              bottom: "32px",
-              left: "50%",
-              transform: "translateX(-50%)",
+              background: secondaryColor,
             }}
           >
-            <IconButton
-              onClick={() => {
-                window.scrollTo({
-                  left: 0,
-                  top: window.innerHeight,
-                  behavior: "smooth",
-                });
-              }}
-            >
-              <KeyboardArrowDown sx={{ color: "#f7f7f7" }} fontSize="large" />
-            </IconButton>
+            <Box pb={2} p={6}>
+              <Typography variant="body2" fontWeight={400} fontSize={14}>
+                {imageText}
+              </Typography>
+            </Box>
+            <BackdropImage src={`${imageURL}`} />
           </Box>
         </HeaderContainer>
-      </ScopedCssBaseline>
-    </ThemeProvider>
+      </Container>
+    </>
   );
 };
 
 const HeaderContainer = styled("div")`
   width: 100%;
-  height: 100vh;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -113,26 +98,9 @@ const HeaderContainer = styled("div")`
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 `;
 
-const BackdropImage = styled("div")`
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
-  top: 0px;
-  left: 0px;
+const BackdropImage = styled("img")`
+  width: 100%;
+  height: 717px;
+  object-fit: contain;
   z-index: 0;
-  background-size: cover;
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 100vw;
-    height: 100vh;
-    background: linear-gradient(
-      0deg,
-      rgba(0, 0, 0, 0.35) 0%,
-      rgba(0, 0, 0, 0.35) 100%
-    );
-  }
 `;
