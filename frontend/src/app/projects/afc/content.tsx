@@ -112,12 +112,9 @@ export default function Content() {
                   Enhancing User Flow
                 </Typography>
                 <Typography variant="body1">
-                  As the digital auto industry expands, AFC faces increasing
-                  competition in offering services that are easy and clear to
-                  use. Maintaining its market position hinges on the simplicity
-                  and clarity of completing tasks. Recognizing the value of user
-                  time, I focused my redesign strategy and success principles on
-                  optimizing efficiency and user experience.
+                  Streamlining process steps and organizing related information
+                  will enable users to transition smoothly from one task to
+                  another without unnecessary interruptions.
                 </Typography>
               </Box>
               <Box flex={1}>
