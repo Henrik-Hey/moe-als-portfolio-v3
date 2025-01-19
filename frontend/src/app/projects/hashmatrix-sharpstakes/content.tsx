@@ -863,7 +863,7 @@ export default function Content() {
             style={{
               width: "100%",
             }}
-            src="/v2/SharpStakes/finalizingDesigns_Video.mp4"
+            src="/v2/SharpStakes/newDesignSystem_Image1.mp4"
           />
         </Box>
       </Container>
