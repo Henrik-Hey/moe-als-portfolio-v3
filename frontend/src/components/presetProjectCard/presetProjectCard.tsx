@@ -19,9 +19,11 @@ export type ProjectPage =
 export const PresetProjectCard = ({
   project,
   darkMode = false,
+  isDefaultHovered = false,
 }: {
   project: ProjectPage;
   darkMode?: boolean;
+  isDefaultHovered?: boolean;
 }) => {
   const router = useRouter();
 
@@ -30,6 +32,7 @@ export const PresetProjectCard = ({
       return (
         <ProjectCard
           darkMode={darkMode}
+          isDefaultHovered={isDefaultHovered}
           project="Auto Finance Dealer"
           subtext="Reducing Drop Rates and Improving the Flooring process"
           ctaText="View Case Study"
@@ -40,9 +43,9 @@ export const PresetProjectCard = ({
             router.push("/projects/afc");
           }}
           content={
-            <Box display="flex" marginLeft={0}>
+            <Box display="flex" gap={2} justifyContent="center">
               <img
-                src="./v2/Home page/Projects/prodShowcase_AFC.png"
+                src="/v2/Home page/Projects/prodShowcase_AFC.png"
                 alt="Picture of AFC console"
                 width={450}
               />
@@ -54,6 +57,7 @@ export const PresetProjectCard = ({
       return (
         <ProjectCard
           darkMode={darkMode}
+          isDefaultHovered={isDefaultHovered}
           project="Sharpstakes"
           subtext="Boosting Engagement by Removing Dark Patterns"
           ctaText="View Case Study"
@@ -63,9 +67,9 @@ export const PresetProjectCard = ({
             router.push("/projects/hashmatrix-sharpstakes");
           }}
           content={
-            <Box display="flex" marginLeft={0}>
+            <Box display="flex" gap={2} justifyContent="center">
               <img
-                src="./v2/Home page/Projects/prodShowcase_ SS.png"
+                src="/v2/Home page/Projects/prodShowcase_ SS.png"
                 alt="Picture of AFC console"
                 width={450}
               />
@@ -77,15 +81,16 @@ export const PresetProjectCard = ({
       return (
         <ProjectCard
           darkMode={darkMode}
+          isDefaultHovered={isDefaultHovered}
           project="Pawfolio"
           subtext="Enhancing Pet Care with Efficient Management Tools"
           ctaText="In Progress.."
           color={darkMode ? palette.darkMode[50] : "#FEF0CD"}
           hoverColor={darkMode ? "#2F2F2F" : "#FCCF5A"}
           content={
-            <Box display="flex" gap={2}>
+            <Box display="flex" gap={2} justifyContent="center">
               <img
-                src="./v2/Home page/Projects/prodShowcase_PAWFOLIO.png"
+                src="/v2/Home page/Projects/prodShowcase_PAWFOLIO.png"
                 alt="Picture of AFC console"
                 width={450}
               />
@@ -97,15 +102,16 @@ export const PresetProjectCard = ({
       return (
         <ProjectCard
           darkMode={darkMode}
+          isDefaultHovered={isDefaultHovered}
           project="EasyAudit"
           subtext="Transforming Compliance with a Smarter Audit Process"
           ctaText="View Case Study"
           color={darkMode ? palette.darkMode[50] : "#FEF0CD"}
           hoverColor={darkMode ? "#2F2F2F" : "#CFFCE9"}
           content={
-            <Box display="flex" gap={2}>
+            <Box display="flex" gap={2} justifyContent="center">
               <img
-                src="./v2/Home page/Projects/prodShowcase_EA.png"
+                src="/v2/Home page/Projects/prodShowcase_EA.png"
                 alt="Picture of AFC console"
                 width={450}
               />
@@ -117,15 +123,16 @@ export const PresetProjectCard = ({
       return (
         <ProjectCard
           darkMode={darkMode}
+          isDefaultHovered={isDefaultHovered}
           project="IArt"
           subtext="Redefining Car Interfaces with Immersive Visual Solutions"
           ctaText="View Case Study"
           color={darkMode ? palette.darkMode[50] : "#FEF0CD"}
           hoverColor={darkMode ? "#2F2F2F" : "#FCDFCF"}
           content={
-            <Box display="flex" gap={2}>
+            <Box display="flex" gap={2} justifyContent="center">
               <img
-                src="./v2/Home page/Projects/prodShowcase_FORCEGRAPH.png"
+                src="/v2/Home page/Projects/prodShowcase_FORCEGRAPH.png"
                 alt="Picture of AFC console"
                 width={450}
               />
@@ -137,15 +144,16 @@ export const PresetProjectCard = ({
       return (
         <ProjectCard
           darkMode={darkMode}
+          isDefaultHovered={isDefaultHovered}
           project="Homezai"
           subtext="Simplifying Home Buying with Smarter Scheduling Tools"
           ctaText="View Case Study"
           color={darkMode ? palette.darkMode[50] : "#FEF0CD"}
           hoverColor={darkMode ? "#2F2F2F" : "#CFDAFC"}
           content={
-            <Box display="flex" gap={2}>
+            <Box display="flex" gap={2} justifyContent="center">
               <img
-                src="./v2/Home page/Projects/prodShowcase_HOMEZ.png"
+                src="/v2/Home page/Projects/prodShowcase_HOMEZ.png"
                 alt="Picture of AFC console"
                 width={450}
               />
@@ -157,15 +165,16 @@ export const PresetProjectCard = ({
       return (
         <ProjectCard
           darkMode={darkMode}
+          isDefaultHovered={isDefaultHovered}
           project="SOHS"
           subtext="Empowering Service Pros with an On-Demand Marketplace"
           ctaText="View Case Study"
           color={darkMode ? palette.darkMode[50] : "#FEF0CD"}
           hoverColor={darkMode ? "#2F2F2F" : "#F2CFFC"}
           content={
-            <Box display="flex" gap={2}>
+            <Box display="flex" gap={2} justifyContent="center">
               <img
-                src="./v2/Home page/Projects/prodShowcase_SOHS.png"
+                src="/v2/Home page/Projects/prodShowcase_SOHS.png"
                 alt="Picture of AFC console"
                 width={450}
               />
@@ -177,6 +186,7 @@ export const PresetProjectCard = ({
       return (
         <ProjectCard
           darkMode={darkMode}
+          isDefaultHovered={isDefaultHovered}
           project="Openlane & Auto Finance Dealer"
           subtext="Boosting Engagement by Linking Discovery to Financing"
           ctaText="View Case Study"
@@ -187,9 +197,9 @@ export const PresetProjectCard = ({
               : "linear-gradient(148.76deg, #E3FCCF -1.47%, #CFDAFC 103.52%)"
           }
           content={
-            <Box display="flex" gap={2}>
+            <Box display="flex" gap={2} justifyContent="center">
               <img
-                src="./v2/Home page/Projects/prodShowcase_ AFC2.png"
+                src="/v2/Home page/Projects/prodShowcase_ AFC2.png"
                 alt="Picture of AFC console"
                 width={450}
               />
@@ -202,6 +212,7 @@ export const PresetProjectCard = ({
       return (
         <ProjectCard
           darkMode={darkMode}
+          isDefaultHovered={isDefaultHovered}
           project="Shiba Inu"
           subtext="Streamlining Food Delivery for Busy Young Adults"
           ctaText="View Case Study"
@@ -211,9 +222,9 @@ export const PresetProjectCard = ({
             router.push("/projects/shiba-inu");
           }}
           content={
-            <Box display="flex" gap={2}>
+            <Box display="flex" gap={2} justifyContent="center">
               <img
-                src="./v2/Home page/Projects/prodShowcase_SHIBA.png"
+                src="/v2/Home page/Projects/prodShowcase_SHIBA.png"
                 alt="Picture of AFC console"
                 width={450}
               />

@@ -2,77 +2,14 @@
 "use client";
 
 import { palette, useDarkTheme } from "@/theme";
-import {
-  Box,
-  Container,
-  Grid,
-  ScopedCssBaseline,
-  ThemeProvider,
-  Typography,
-} from "@mui/material";
-import { CssBaseline } from "@mui/material";
+import { Box, Container, Typography } from "@mui/material";
 import { ProjectHeader } from "@/components/projectHeader/projectHeader";
 import { ProjectMissionStatement } from "@/components/projectMissionStatement/projectMissionStatement";
 import { ProjectStatement } from "@/components/projectStatement/projectStatement";
-import { PinScrollImages } from "@/components/pinScrollImages/pinScrollImages";
-import { ProjectNote } from "@/components/projectNote/projectNote";
-import { FooterDark } from "@/components/footer/footerDark";
-import { ProjectDataChart } from "@/components/projectDataChart/projectDataChart";
-import {
-  CompAnalysisChart,
-  SurveyCompAnalysisSection,
-} from "./surveyCompAnalysisSection";
-import { ImagePanAndZoom } from "./imagePanAndZoom";
-import { ProjectsNavFooter } from "@/components/projectsNavFooter/projectsNavFooter";
+import { SurveyCompAnalysisSection } from "./surveyCompAnalysisSection";
 import FadeIn from "@/components/fadeIn/fadeIn";
-
-const SCROLL_BLOCK_1_IMAGE_PATHS = [
-  "/project_page_res/afc/scroll1/image1.png",
-  "/project_page_res/afc/scroll1/image2.png",
-  "/project_page_res/afc/scroll1/image3.png",
-  "/project_page_res/afc/scroll1/image4.png",
-  "/project_page_res/afc/scroll1/image5.png",
-  "/project_page_res/afc/scroll1/image6.png",
-];
-
-const SCROLL_BLOCK_2_IMAGE_PATHS = [
-  "/project_page_res/afc/scroll2/image1.png",
-  "/project_page_res/afc/scroll2/image2.png",
-];
-
-const SCROLL_BLOCK_3_IMAGE_PATHS = [
-  "/project_page_res/afc/scroll3/image1.png",
-  "/project_page_res/afc/scroll3/image2.png",
-  "/project_page_res/afc/scroll3/image3.png",
-  "/project_page_res/afc/scroll3/image4.png",
-];
-
-const SCROLL_BLOCK_4_IMAGE_PATHS = [
-  "/project_page_res/afc/scroll4/image1.png",
-  "/project_page_res/afc/scroll4/image2.png",
-  "/project_page_res/afc/scroll4/image3.png",
-];
-
-const SCROLL_BLOCK_5_IMAGE_PATHS = [
-  "/project_page_res/afc/scroll5/image1.png",
-  "/project_page_res/afc/scroll5/image2.png",
-  "/project_page_res/afc/scroll5/image3.png",
-  "/project_page_res/afc/scroll5/image4.png",
-  "/project_page_res/afc/scroll5/image5.png",
-  "/project_page_res/afc/scroll5/image6.png",
-];
-
-const SCROLL_BLOCK_6_IMAGE_PATHS = [
-  "/project_page_res/afc/scroll6/image1.png",
-  "/project_page_res/afc/scroll6/image2.png",
-  "/project_page_res/afc/scroll6/image3.png",
-  "/project_page_res/afc/scroll6/image4.png",
-  "/project_page_res/afc/scroll6/image5.png",
-  "/project_page_res/afc/scroll6/image6.png",
-  "/project_page_res/afc/scroll6/image7.png",
-  "/project_page_res/afc/scroll6/image8.png",
-  "/project_page_res/afc/scroll6/image9.png",
-];
+import { ProjectsNavFooter } from "@/components/projectsNavFooter/projectsNavFooter";
+import { Footer } from "@/components/footer/footer";
 
 export default function Content() {
   const darkTheme = useDarkTheme();
@@ -229,7 +166,7 @@ export default function Content() {
           />
         </Box>
       </Container>
-      <Container maxWidth="md">
+      <Container maxWidth="lg">
         <Box display="flex" flexDirection="column" gap={2} my={12}>
           <Box>
             <FadeIn>
@@ -336,7 +273,7 @@ export default function Content() {
           />
         </Box>
       </Container>
-      <Container maxWidth="md">
+      <Container maxWidth="lg">
         <Box display="flex" flexDirection="column" gap={12} my={12}>
           <FadeIn>
             <Box>
@@ -354,7 +291,7 @@ export default function Content() {
         </Box>
       </Container>
       <SurveyCompAnalysisSection />
-      <Container maxWidth="md">
+      <Container maxWidth="lg">
         <Box display="flex" flexDirection="column" gap={12} my={12}>
           <FadeIn>
             <Box>
@@ -372,27 +309,998 @@ export default function Content() {
         </Box>
       </Container>
       <Container maxWidth="xl">
-        <Box
-          display="flex"
-          flexDirection={{ xs: "column", md: "row" }}
-          gap={12}
-          my={12}
-        >
+        <FadeIn>
+          <Box
+            display="flex"
+            flexDirection={{ xs: "column", md: "row" }}
+            my={12}
+            alignItems="center"
+            sx={{
+              background: "#f0f0f0",
+            }}
+          >
+            <Box flex={1} p={6}>
+              <Typography
+                variant="body1"
+                mb={2}
+                fontWeight={700}
+                color="#4E732A"
+              >
+                User Interviews
+              </Typography>
+              <Typography variant="h3" mb={2} fontWeight={700}>
+                Can you describe any challenges you face with the current
+                flooring process?
+              </Typography>
+              <Typography component="div" variant="body1">
+                <Box display="flex" flexDirection="column">
+                  <Box mb={2} display="flex">
+                    <Typography variant="body1" color="#4E732A" mr={1}>
+                      &gt;
+                    </Typography>
+                    <Typography variant="body1">
+                      “It’s just very slow, and the process can get a bit
+                      confusing at times, the steps aren’t really labelled
+                      either”
+                    </Typography>
+                  </Box>
+                  <Box mb={2} display="flex">
+                    <Typography variant="body1" color="#4E732A" mr={1}>
+                      &gt;
+                    </Typography>
+                    <Typography variant="body1">
+                      “Very outdated, looking at other apps on the market and
+                      comparing them to what we have currently is disappointing”
+                    </Typography>
+                  </Box>
+                  <Box mb={2} display="flex">
+                    <Typography variant="body1" color="#4E732A" mr={1}>
+                      &gt;
+                    </Typography>
+                    <Typography variant="body1">
+                      “I think it’s the way the process is structured? Vehicle
+                      information is broken down over 2 steps instead of just
+                      one”
+                    </Typography>
+                  </Box>
+                </Box>
+              </Typography>
+            </Box>
+            <Box flex={1} minHeight={500} p={12} pb={0} overflow="hidden">
+              <img
+                alt=""
+                role="presentation"
+                style={{
+                  width: "100%",
+                  marginBottom: "-10px",
+                  height: "100%",
+                  objectFit: "cover",
+                  objectPosition: "top",
+                }}
+                src="/v2/AFC/userInterviews_Mobile.png"
+              />
+            </Box>
+          </Box>
+        </FadeIn>
+        <FadeIn>
+          <Box
+            display="flex"
+            flexDirection={{ xs: "column", md: "row" }}
+            my={12}
+            alignItems="center"
+            sx={{
+              background: "#f0f0f0",
+            }}
+          >
+            <Box flex={1} p={6}>
+              <Typography
+                variant="body1"
+                mb={2}
+                fontWeight={700}
+                color="#4E732A"
+              >
+                User Interviews
+              </Typography>
+              <Typography variant="h3" mb={2} fontWeight={700}>
+                Which platform are you most likely to start and complete a
+                flooring process on? why?
+              </Typography>
+              <Typography component="div" variant="body1">
+                <Box display="flex" flexDirection="column">
+                  <Box mb={2} display="flex">
+                    <Typography variant="body1" color="#4E732A" mr={1}>
+                      &gt;
+                    </Typography>
+                    <Typography variant="body1">
+                      “Lots of web features are just not available on mobile, I
+                      might use it more if that were different but I’m not sure”
+                    </Typography>
+                  </Box>
+                  <Box mb={2} display="flex">
+                    <Typography variant="body1" color="#4E732A" mr={1}>
+                      &gt;
+                    </Typography>
+                    <Typography variant="body1">
+                      “I use both but I prefer using the website over the app
+                      almost always, it’s just a lot easier to manage and use”
+                    </Typography>
+                  </Box>
+                </Box>
+              </Typography>
+            </Box>
+            <Box flex={1} minHeight={500} p={12} overflow="hidden">
+              <img
+                alt=""
+                role="presentation"
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  objectFit: "contain",
+                }}
+                src="/v2/AFC/userInterviews_PieChart.svg"
+              />
+            </Box>
+          </Box>
+        </FadeIn>
+        <FadeIn>
+          <Box
+            display="flex"
+            flexDirection={{ xs: "column", md: "row" }}
+            my={12}
+            gap={12}
+            alignItems="center"
+          >
+            <Box
+              flex={1}
+              p={6}
+              sx={{
+                background: "#f0f0f0",
+              }}
+            >
+              <Typography
+                variant="body1"
+                mb={2}
+                fontWeight={700}
+                color="#4E732A"
+              >
+                Remote Walkthrough
+              </Typography>
+              <Typography variant="h3" mb={2} fontWeight={700}>
+                Flooring a non-auction
+                <br /> purchase on mobile:
+              </Typography>
+              <Box flex={1} minHeight={500} p={6} overflow="hidden">
+                <img
+                  alt=""
+                  role="presentation"
+                  style={{
+                    width: "100%",
+                    height: "100%",
+                    objectFit: "contain",
+                  }}
+                  src="/v2/AFC/remoteWalkthrough_pieChartL.svg"
+                />
+              </Box>
+            </Box>
+            <Box
+              flex={1}
+              p={6}
+              sx={{
+                background: "#f0f0f0",
+              }}
+            >
+              <Typography
+                variant="body1"
+                mb={2}
+                fontWeight={700}
+                color="#4E732A"
+              >
+                Remote Walkthrough
+              </Typography>
+              <Typography variant="h3" mb={2} fontWeight={700}>
+                Flooring a non-auction
+                <br /> purchase on web:
+              </Typography>
+              <Box flex={1} minHeight={500} p={6} overflow="hidden">
+                <img
+                  alt=""
+                  role="presentation"
+                  style={{
+                    width: "100%",
+                    height: "100%",
+                    objectFit: "contain",
+                  }}
+                  src="/v2/AFC/remoteWalkthrough_pieChartR.svg"
+                />
+              </Box>
+            </Box>
+          </Box>
+        </FadeIn>
+      </Container>
+      <Container maxWidth="lg">
+        <Box display="flex" flexDirection="column" gap={12} my={12}>
           <FadeIn>
             <Box>
               <Typography variant="h3" mb={2} fontWeight={700}>
-                Deepening User Insights
+                Narrowing User Pain Points
               </Typography>
               <Typography variant="body1">
-                Over a few weeks, I interviewed over a dozen internal and
-                external users who manage extensive inventories. This approach
-                aimed to uncover nuanced perspectives and hidden challenges that
-                surface-level data might miss.
+                The competitive analysis and qualitative data provided a solid
+                foundation, but I needed more quantitative insights to identify
+                clear patterns and inform my solutions.
               </Typography>
             </Box>
           </FadeIn>
         </Box>
       </Container>
+      <Container maxWidth="xl">
+        <Box display="flex" flexDirection="column">
+          <img
+            alt=""
+            role="presentation"
+            style={{
+              width: "100%",
+              objectFit: "contain",
+            }}
+            src="/v2/AFC/userPainPoints_barChart.svg"
+          />
+          <FadeIn>
+            <Box
+              display="flex"
+              flexDirection={{ xs: "column", md: "row" }}
+              my={12}
+              gap={4}
+              alignItems="center"
+            >
+              <Box
+                flex={1}
+                p={6}
+                sx={{
+                  background: "#f0f0f0",
+                }}
+              >
+                <Typography
+                  variant="body1"
+                  mb={2}
+                  fontWeight={700}
+                  color="#4E732A"
+                >
+                  User Interviews
+                </Typography>
+                <Typography variant="h3" mb={4} fontWeight={700}>
+                  Are you disappointed with recent enhancements?
+                </Typography>
+                <Box flex={1} overflow="hidden">
+                  <img
+                    alt=""
+                    role="presentation"
+                    style={{
+                      width: "100%",
+                      height: "100%",
+                      objectFit: "contain",
+                    }}
+                    src="/v2/AFC/remoteWalkthrough_pieChartL.svg"
+                  />
+                </Box>
+              </Box>
+              <Box
+                flex={1}
+                p={6}
+                sx={{
+                  background: "#f0f0f0",
+                }}
+              >
+                <Typography
+                  variant="body1"
+                  mb={2}
+                  fontWeight={700}
+                  color="#4E732A"
+                >
+                  User Interviews
+                </Typography>
+                <Typography variant="h3" mb={4} fontWeight={700}>
+                  If we improve the AFCD app, would you use it more?
+                </Typography>
+                <Box flex={1} overflow="hidden">
+                  <img
+                    alt=""
+                    role="presentation"
+                    style={{
+                      width: "100%",
+                      height: "100%",
+                      objectFit: "contain",
+                    }}
+                    src="/v2/AFC/remoteWalkthrough_pieChartL.svg"
+                  />
+                </Box>
+              </Box>
+              <Box
+                flex={1}
+                p={6}
+                sx={{
+                  background: "#f0f0f0",
+                }}
+              >
+                <Typography
+                  variant="body1"
+                  mb={2}
+                  fontWeight={700}
+                  color="#4E732A"
+                >
+                  User Interviews
+                </Typography>
+                <Typography variant="h3" mb={4} fontWeight={700}>
+                  Are you satisfied with the current flooring process on web?
+                </Typography>
+                <Box flex={1} overflow="hidden">
+                  <img
+                    alt=""
+                    role="presentation"
+                    style={{
+                      width: "100%",
+                      height: "100%",
+                      objectFit: "contain",
+                    }}
+                    src="/v2/AFC/remoteWalkthrough_pieChartR.svg"
+                  />
+                </Box>
+              </Box>
+            </Box>
+          </FadeIn>
+        </Box>
+      </Container>
+      <Container maxWidth="lg">
+        <Box display="flex" flexDirection="column" gap={12} my={12}>
+          <FadeIn>
+            <Box>
+              <Typography variant="h3" mb={2} fontWeight={700}>
+                Mapping the User Journey
+              </Typography>
+              <Typography variant="body1">
+                The competitive analysis and qualitative data provided a solid
+                foundation, but I needed more quantitative insights to identify
+                clear patterns and inform my solutions. I started by mapping out
+                a user journey, focusing on pain points and improvement
+                opportunities.
+              </Typography>
+            </Box>
+          </FadeIn>
+        </Box>
+      </Container>
+      <Container maxWidth="xl">
+        <img
+          alt=""
+          role="presentation"
+          style={{
+            width: "100%",
+            objectFit: "contain",
+          }}
+          src="/v2/AFC/mappingTheUserJourney_Image.png"
+        />
+      </Container>
+      <Container maxWidth="lg">
+        <Box display="flex" flexDirection="column" gap={12} my={12}>
+          <FadeIn>
+            <Box>
+              <Typography variant="h3" mb={2} fontWeight={700}>
+                Summarizing Insights
+              </Typography>
+              <Typography variant="body1">
+                With the research phase complete, it’s time to address the key
+                issues identified. Drawing from user feedback and comments, I’ve
+                pinpointed common pain points and proposed targeted solutions:
+              </Typography>
+            </Box>
+          </FadeIn>
+          <FadeIn>
+            <Box
+              display="flex"
+              flexDirection={{ xs: "column", md: "row" }}
+              gap={{ xs: 2, md: 2 }}
+            >
+              <Box flex={1}>
+                <Typography variant="body1" mb={2} fontWeight={700}>
+                  Time on Task
+                </Typography>
+                <Typography variant="body1">
+                  Users spend too much time completing tasks on both web and
+                  mobile platforms.
+                </Typography>
+              </Box>
+              <Box flex={1}>
+                <Typography variant="body1" mb={2} fontWeight={700}>
+                  Design Refresh
+                </Typography>
+                <Typography variant="body1">
+                  AFCD’s design requires updates to streamline the flow and
+                  resolve usability issues.
+                </Typography>
+              </Box>
+              <Box flex={1}>
+                <Typography variant="body1" mb={2} fontWeight={700}>
+                  Mobile and Web Experience
+                </Typography>
+                <Typography variant="body1">
+                  The current experience needs significant improvements to
+                  improve user ratings.
+                </Typography>
+              </Box>
+            </Box>
+          </FadeIn>
+        </Box>
+      </Container>
+      <Container maxWidth="xl">
+        <img
+          alt=""
+          role="presentation"
+          style={{
+            width: "100%",
+            objectFit: "contain",
+          }}
+          src="/v2/AFC/summerizingInsights_Image.png"
+        />
+      </Container>
+      <Container maxWidth="lg">
+        <Box display="flex" flexDirection="column" gap={12} my={12}>
+          <FadeIn>
+            <Box>
+              <Typography variant="h3" mb={2} fontWeight={700}>
+                Revisiting the User Flow
+              </Typography>
+              <Typography variant="body1">
+                With a solid set of data to work from, it was time to start
+                mapping out the site. I revisited the structure to group
+                information correctly and identify refinements and bottlenecks.
+                Additionally, I had to consider the legal limitations between
+                Canada and the US, as this feature was being released in both
+                regions.
+              </Typography>
+            </Box>
+          </FadeIn>
+        </Box>
+      </Container>
+      <Container maxWidth="xl">
+        <img
+          alt=""
+          role="presentation"
+          style={{
+            width: "100%",
+            objectFit: "contain",
+          }}
+          src="/v2/AFC/revisitingUserFlow_Image.png"
+        />
+      </Container>
+      <Container maxWidth="lg">
+        <Box display="flex" flexDirection="column" gap={12} my={12}>
+          <FadeIn>
+            <Box>
+              <Typography variant="h3" mb={2} fontWeight={700}>
+                Creating Wireframes from Current State{" "}
+              </Typography>
+              <Typography variant="body1">
+                With solid data and many enhancement ideas in hand, I was ready
+                to execute but faced a key limitation: our outdated codebase.
+                This had caused previous bottlenecks, so I engaged the
+                development team early during wireframing and sketching,
+                actively discussing features and ideas to ensure smooth
+                implementation.
+              </Typography>
+            </Box>
+          </FadeIn>
+        </Box>
+      </Container>
+      <Container maxWidth="xl">
+        <img
+          alt=""
+          role="presentation"
+          style={{
+            width: "100%",
+            objectFit: "contain",
+          }}
+          src="/v2/AFC/wireframesCurrentState_Image.png"
+        />
+      </Container>
+      <Container maxWidth="lg">
+        <Box display="flex" flexDirection="column" gap={12} my={12}>
+          <FadeIn>
+            <Box>
+              <Typography variant="h3" mb={2} fontWeight={700}>
+                Establishing a Design System
+              </Typography>
+              <Typography variant="body1">
+                Before diving into high-fidelity designs, I faced another
+                hurdle. The business had its limitations, and the previous
+                designer never used a design system. There was a rough color
+                palette and no consistent fonts or icon styles. Without the
+                resources to build a full design system, I created a basic style
+                guide for colors and fonts to keep the project moving forward.
+              </Typography>
+            </Box>
+          </FadeIn>
+        </Box>
+      </Container>
+      <Container maxWidth="xl">
+        <img
+          alt=""
+          role="presentation"
+          style={{
+            width: "100%",
+            objectFit: "contain",
+          }}
+          src="/v2/AFC/establishingDesignSystem_Image.png"
+        />
+      </Container>
+      <Container maxWidth="lg">
+        <Box display="flex" flexDirection="column" gap={12} my={12}>
+          <FadeIn>
+            <Box>
+              <Typography variant="h3" mb={2} fontWeight={700}>
+                Bringing it All Together
+              </Typography>
+              <Typography variant="body1">
+                After hours of research, meetings, and brainstorming sessions, I
+                had everything needed to create a user-friendly process. This
+                design addressed navigation issues and confusion in the flow,
+                receiving overwhelmingly positive feedback during closed
+                testing.
+              </Typography>
+            </Box>
+          </FadeIn>
+        </Box>
+      </Container>
+      <Container maxWidth="xl">
+        <Box
+          p={6}
+          width="100%"
+          sx={{
+            background: "#81BC01",
+          }}
+        >
+          <Box pb={6}>
+            <Typography variant="body2" fontWeight={400} fontSize={14}>
+              New (left) vs. Old (right)
+            </Typography>
+          </Box>
+          <Box
+            display="flex"
+            gap={6}
+            flexDirection={{
+              xs: "column",
+              md: "row",
+            }}
+          >
+            <Box
+              flex={1}
+              sx={{
+                position: "relative",
+              }}
+            >
+              <img
+                alt=""
+                role="presentation"
+                style={{
+                  width: "100%",
+                  objectFit: "contain",
+                }}
+                src="/v2/AFC/briningItAllTogether_FrameL.png"
+              />
+              <Box
+                sx={{
+                  top: 10,
+                  borderRadius: "8px",
+                  transform: "scale(0.95)",
+                  position: "absolute",
+                  overflow: "hidden",
+                  aspectRatio: "235 / 132",
+                }}
+              >
+                <video
+                  autoPlay
+                  loop
+                  muted
+                  role="presentation"
+                  style={{
+                    width: "100%",
+                    transform: "scale(1.5)",
+                  }}
+                >
+                  <source src="/v2/AFC/briningItAllTogether_ContentL.mp4" />
+                </video>
+              </Box>
+            </Box>
+            <Box
+              flex={1}
+              sx={{
+                position: "relative",
+              }}
+            >
+              <img
+                alt=""
+                role="presentation"
+                style={{
+                  width: "100%",
+                  objectFit: "contain",
+                }}
+                src="/v2/AFC/briningItAllTogether_FrameR.png"
+              />
+              <Box
+                sx={{
+                  top: 10,
+                  borderRadius: "8px",
+                  transform: "scale(0.95)",
+                  position: "absolute",
+                  overflow: "hidden",
+                  aspectRatio: "235 / 132",
+                }}
+              >
+                <video
+                  autoPlay
+                  loop
+                  muted
+                  role="presentation"
+                  style={{
+                    width: "100%",
+                    transform: "scale(1.5)",
+                  }}
+                >
+                  <source src="/v2/AFC/briningItAllTogether_ContentR.mp4" />
+                </video>
+              </Box>
+            </Box>
+          </Box>
+        </Box>
+      </Container>
+      <Container maxWidth="lg">
+        <Box display="flex" flexDirection="column" gap={12} my={12}>
+          <FadeIn>
+            <Box>
+              <Typography variant="h3" mb={2} fontWeight={700}>
+                Applying the Design System
+              </Typography>
+              <Typography variant="body1">
+                The new design system has enhanced the product by providing a
+                consistent framework and an accessible color palette. This
+                update simplifies development and improves the user experience.
+              </Typography>
+            </Box>
+          </FadeIn>
+        </Box>
+      </Container>
+      <Container maxWidth="xl">
+        <Box
+          p={6}
+          width="100%"
+          sx={{
+            background: palette.green.main,
+          }}
+        >
+          <Box pb={2}>
+            <Typography variant="body2" fontWeight={400} fontSize={14}>
+              New design system across different process screens
+            </Typography>
+          </Box>
+          <img
+            alt=""
+            role="presentation"
+            style={{
+              width: "100%",
+            }}
+            src="/v2/AFC/processScreens_All.png"
+          />
+        </Box>
+      </Container>
+      <Container maxWidth="lg">
+        <Box display="flex" flexDirection="column" gap={12} my={12}>
+          <FadeIn>
+            <Box>
+              <Typography variant="h3" mb={2} fontWeight={700}>
+                Enhancing Mobile Usability
+              </Typography>
+              <Typography variant="body1">
+                The redesigned mobile platform now meets user expectations and
+                accessibility standards. Users will likely prefer and use the
+                mobile version more frequently due to its improved usability and
+                accessibility.
+              </Typography>
+            </Box>
+          </FadeIn>
+        </Box>
+      </Container>
+      <Container maxWidth="xl">
+        <Box
+          p={6}
+          width="100%"
+          sx={{
+            background: palette.green.main,
+          }}
+        >
+          <Box pb={6}>
+            <Typography variant="body2" fontWeight={400} fontSize={14}>
+              New (left) vs. Old (right)
+            </Typography>
+          </Box>
+          <Box
+            display="flex"
+            gap={6}
+            px={{ xs: 6, md: 24 }}
+            flexDirection={{
+              xs: "column",
+              md: "row",
+            }}
+          >
+            <Box
+              flex={1}
+              sx={{
+                position: "relative",
+              }}
+            >
+              <img
+                alt=""
+                role="presentation"
+                style={{
+                  width: "100%",
+                  objectFit: "contain",
+                }}
+                src="/v2/AFC/mobileUsability_FrameL.png"
+              />
+              <Box
+                sx={{
+                  top: 60,
+                  borderRadius: "16px",
+                  transform: "scale(0.95)",
+                  position: "absolute",
+                  overflow: "hidden",
+                  width: "100%",
+                  height: "85%",
+                  aspectRatio: "218 / 473",
+                }}
+              >
+                <video
+                  autoPlay
+                  loop
+                  muted
+                  role="presentation"
+                  style={{
+                    position: "absolute",
+                    left: "-105%",
+                    height: "100%",
+                    transform: "scale(1.6)",
+                  }}
+                >
+                  <source src="/v2/AFC/mobileUsability_ContentL.mp4" />
+                </video>
+              </Box>
+            </Box>
+            <Box
+              flex={1}
+              sx={{
+                position: "relative",
+              }}
+            >
+              <img
+                alt=""
+                role="presentation"
+                style={{
+                  width: "100%",
+                  objectFit: "contain",
+                }}
+                src="/v2/AFC/mobileUsability_FrameR.png"
+              />
+              <Box
+                sx={{
+                  top: 60,
+                  borderRadius: "32px",
+                  transform: "scale(0.97)",
+                  position: "absolute",
+                  overflow: "hidden",
+                  width: "100%",
+                  height: "85%",
+                  aspectRatio: "218 / 473",
+                }}
+              >
+                <video
+                  autoPlay
+                  loop
+                  muted
+                  role="presentation"
+                  style={{
+                    position: "absolute",
+                    left: "-105%",
+                    height: "100%",
+                    transform: "scale(1.6)",
+                  }}
+                >
+                  <source src="/v2/AFC/mobileUsability_ContentR.mp4" />
+                </video>
+              </Box>
+            </Box>
+          </Box>
+        </Box>
+      </Container>
+      <Container maxWidth="xl">
+        <Box
+          my={12}
+          p={6}
+          width="100%"
+          sx={{
+            background: palette.green.main,
+          }}
+        >
+          <Box pb={2}>
+            <Typography variant="body2" fontWeight={400} fontSize={14}>
+              New design system across different process screens
+            </Typography>
+          </Box>
+          <img
+            alt=""
+            role="presentation"
+            style={{
+              width: "100%",
+            }}
+            src="/v2/AFC/mobileUsability_appScreenshots.png"
+          />
+        </Box>
+      </Container>
+      <Container maxWidth="lg">
+        <Box display="flex" flexDirection="column" gap={12} my={12}>
+          <FadeIn>
+            <Box>
+              <Typography variant="h3" mb={2} fontWeight={700}>
+                Impact
+              </Typography>
+              <Typography variant="body1">
+                Executing this project as AFC&apos;s sole designer was
+                challenging. Through collaboration, design-oriented thinking,
+                and thorough research, the flooring process was immensely
+                improved. This provided users with the desired functionality
+                while aligning with business needs and budget constraints. I
+                created over 200 pages and states, and added annotations for
+                developer clarity. These improvements have been released to
+                users across North America. The data below summarizes the impact
+                of these changes.
+              </Typography>
+            </Box>
+          </FadeIn>
+        </Box>
+      </Container>
+      <Container maxWidth="xl">
+        <img
+          alt=""
+          role="presentation"
+          style={{
+            width: "100%",
+            objectFit: "contain",
+          }}
+          src="/v2/AFC/impactUserExperience_BarChart.svg"
+        />
+        <Box
+          display="flex"
+          my={6}
+          gap={6}
+          flexDirection={{
+            xs: "column",
+            md: "row",
+          }}
+        >
+          <Box
+            flex={1}
+            sx={{
+              p: 6,
+              background: "#F0F0F0",
+            }}
+          >
+            <Typography variant="h3" mb={2} fontWeight={700}>
+              <span style={{ color: "#466500" }}>+124%</span> increase in visual
+              design appeal.
+            </Typography>
+          </Box>
+          <Box
+            flex={1}
+            sx={{
+              p: 6,
+              background: "#F0F0F0",
+            }}
+          >
+            <Typography variant="h3" mb={2} fontWeight={700}>
+              <span style={{ color: "#466500" }}>+167%</span> boost in user
+              ratings and reviews.
+            </Typography>
+          </Box>
+          <Box
+            flex={1}
+            sx={{
+              p: 6,
+              background: "#F0F0F0",
+            }}
+          >
+            <Typography variant="h3" mb={2} fontWeight={700}>
+              <span style={{ color: "#466500" }}>-25%</span> Decrease in average
+              session time.
+            </Typography>
+          </Box>
+        </Box>
+      </Container>
+      <Container maxWidth="xl">
+        <FadeIn>
+          <Box
+            display="flex"
+            flexDirection={{ xs: "column", md: "row" }}
+            mt={6}
+            mb={12}
+            alignItems="center"
+            sx={{
+              background: "#f0f0f0",
+            }}
+          >
+            <Box flex={1} p={6}>
+              <Typography
+                variant="body1"
+                mb={2}
+                fontWeight={700}
+                color="#4E732A"
+              >
+                User Interviews
+              </Typography>
+              <Typography variant="h3" mb={2} fontWeight={700}>
+                How do you feel about the update to the Non-Auction Flooring
+                Process?
+              </Typography>
+              <Typography component="div" variant="body1">
+                <Box display="flex" flexDirection="column">
+                  <Box mb={2} display="flex">
+                    <Typography variant="body1" color="#4E732A" mr={1}>
+                      &gt;
+                    </Typography>
+                    <Typography variant="body1">
+                      “The new look and feel of the interface are way better and
+                      easier to handle. It&apos;s like using an app that just
+                      clicks for me, you know? Nothing seems old-school, and
+                      I&apos;m not scratching my head trying to figure out how
+                      things work anymore!”
+                    </Typography>
+                  </Box>
+                  <Box mb={2} display="flex">
+                    <Typography variant="body1" color="#4E732A" mr={1}>
+                      &gt;
+                    </Typography>
+                    <Typography variant="body1">
+                      “I bet dealers will be way happier with this. It hands
+                      them a ton of power, and it could be the solution
+                      they&apos;ve been needing, especially since they&Aapos;re
+                      always ringing up the offices for help. I see this as a
+                      move in the right direction, and with some good coaching
+                      and support, even the older folks will catch on.”
+                    </Typography>
+                  </Box>
+                </Box>
+              </Typography>
+            </Box>
+            <Box
+              flex={1}
+              minHeight={500}
+              p={12}
+              pb={0}
+              pr={0}
+              overflow="hidden"
+            >
+              <img
+                alt=""
+                role="presentation"
+                style={{
+                  width: "100%",
+                  marginBottom: "-10px",
+                  height: "100%",
+                  objectFit: "cover",
+                  objectPosition: "top",
+                }}
+                src="/v2/AFC/userInterviews_ProductShot.png"
+              />
+            </Box>
+          </Box>
+        </FadeIn>
+      </Container>
+      <ProjectsNavFooter projects={["hashmatrix-sharpstakes", "shiba"]} />
+      <Footer />
     </>
   );
 }
