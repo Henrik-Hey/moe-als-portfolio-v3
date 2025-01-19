@@ -20,7 +20,7 @@ export const ProjectsNavFooter: React.FC<ProjectsNavFooterProps> = ({
             More to see :)
           </Typography>
           <Box
-            mt={6}
+            mt={12}
             display="flex"
             flexDirection={{ xs: "column", md: "row" }}
             gap={6}
