@@ -381,11 +381,9 @@ const ThemeContext = React.createContext<any>({});
 
 export const PortfolioThemeProvider = ({ children }: any) => {
   const lightTheme = useBaseTheme();
-  const darkTheme = usePortfolioDarkTheme();
   const [theme, setTheme] = React.useState<ThemeContextType>(
     getCookie("moe-als-theme-type") === "dark" ? "dark" : "light"
   );
-  const activeTheme = theme === "dark" ? darkTheme : lightTheme;
 
   const toggleTheme = React.useCallback(() => {
     setTheme(theme === "dark" ? "light" : "dark");
@@ -396,7 +394,7 @@ export const PortfolioThemeProvider = ({ children }: any) => {
     <ThemeContext.Provider
       value={{
         toggleTheme,
-        activeTheme,
+        activeTheme: lightTheme,
         theme,
       }}
     >
