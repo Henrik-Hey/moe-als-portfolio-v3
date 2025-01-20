@@ -391,7 +391,7 @@ export default function Content() {
               style={{
                 flex: 1,
                 width: "100%",
-                height: "600px",
+                height: "500px",
                 objectFit: "cover",
                 objectPosition: "top",
                 marginBottom: "-10px",
@@ -404,7 +404,7 @@ export default function Content() {
               style={{
                 flex: 1,
                 width: "100%",
-                height: "600px",
+                height: "500px",
                 objectFit: "cover",
                 objectPosition: "top",
                 marginBottom: "-10px",
@@ -417,7 +417,7 @@ export default function Content() {
               style={{
                 flex: 1,
                 width: "100%",
-                height: "600px",
+                height: "500px",
                 objectFit: "cover",
                 objectPosition: "top",
                 marginBottom: "-10px",
