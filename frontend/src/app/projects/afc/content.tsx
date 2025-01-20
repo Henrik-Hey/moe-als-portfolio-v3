@@ -574,7 +574,7 @@ export default function Content() {
                       height: "100%",
                       objectFit: "contain",
                     }}
-                    src="/v2/AFC/remoteWalkthrough_pieChartL.svg"
+                    src="/v2/AFC/userInterviews_ChartL.svg"
                   />
                 </Box>
               </Box>
@@ -605,7 +605,7 @@ export default function Content() {
                       height: "100%",
                       objectFit: "contain",
                     }}
-                    src="/v2/AFC/remoteWalkthrough_pieChartC.svg"
+                    src="/v2/AFC/userInterviews_ChartC.svg"
                   />
                 </Box>
               </Box>
@@ -636,7 +636,7 @@ export default function Content() {
                       height: "100%",
                       objectFit: "contain",
                     }}
-                    src="/v2/AFC/remoteWalkthrough_pieChartR.svg"
+                    src="/v2/AFC/userInterviews_ChartR.svg"
                   />
                 </Box>
               </Box>

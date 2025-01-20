@@ -263,7 +263,7 @@ export default function Content() {
               style={{
                 flex: 1,
                 width: "100%",
-                height: "600px",
+                height: "500px",
                 objectFit: "cover",
                 objectPosition: "top",
                 marginBottom: "-10px",
@@ -276,7 +276,7 @@ export default function Content() {
               style={{
                 flex: 1,
                 width: "100%",
-                height: "600px",
+                height: "500px",
                 objectFit: "cover",
                 objectPosition: "top",
                 marginBottom: "-10px",
@@ -289,7 +289,7 @@ export default function Content() {
               style={{
                 flex: 1,
                 width: "100%",
-                height: "600px",
+                height: "500px",
                 objectFit: "cover",
                 objectPosition: "top",
                 marginBottom: "-10px",
@@ -486,7 +486,14 @@ export default function Content() {
                 </Box>
               </Typography>
             </Box>
-            <Box flex={1} minHeight={500} p={12} pb={0} overflow="hidden">
+            <Box
+              flex={1}
+              minHeight={500}
+              p={12}
+              pb={0}
+              pr={0}
+              overflow="hidden"
+            >
               <img
                 alt=""
                 role="presentation"
