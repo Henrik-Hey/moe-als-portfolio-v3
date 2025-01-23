@@ -15,7 +15,7 @@ export default function Content() {
   return (
     <>
       <ProjectHeader
-        imageURL="/v2/AFC/headerPhoto_all.png"
+        imageURL="/v2/AFC/headerPhotoAll.png"
         logoString="Auto Finance Dealer"
         heading="Reducing Drop Rates and Enhancing the Inventory Financing Process and Journey."
         subheading="The previous process lacked accessibility, users demanded additional features, and there was a need to streamline operations to enable quicker vehicle flooring."
@@ -505,7 +505,7 @@ export default function Content() {
                     height: "100%",
                     objectFit: "contain",
                   }}
-                  src="/v2/AFC/remoteWalkthrough_pieChartR.svg"
+                  src="/v2/AFC/remoteWalkthroughPieChartR.svg"
                 />
               </Box>
             </Box>
