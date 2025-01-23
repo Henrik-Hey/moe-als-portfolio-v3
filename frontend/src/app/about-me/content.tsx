@@ -59,7 +59,7 @@ export default function Content() {
                 <Box
                   key={index}
                   sx={{
-                    backgroundImage: `url(./v2/About/aboutPhoto_${
+                    backgroundImage: `url(./v2/About/aboutPhoto${
                       index + 1
                     }.png)`,
                     backgroundSize: "cover",
