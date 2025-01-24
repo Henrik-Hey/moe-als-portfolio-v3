@@ -257,6 +257,8 @@ export default function Content() {
       <Container maxWidth="xl">
         <Box width="100%" mb={12}>
           <video
+            playsInline
+            controls={false}
             autoPlay
             loop
             muted

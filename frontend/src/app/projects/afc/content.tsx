@@ -898,6 +898,8 @@ export default function Content() {
                 }}
               >
                 <video
+                  playsInline
+                  controls={false}
                   autoPlay
                   loop
                   muted
@@ -937,6 +939,8 @@ export default function Content() {
                 }}
               >
                 <video
+                  playsInline
+                  controls={false}
                   autoPlay
                   loop
                   muted
@@ -1059,6 +1063,8 @@ export default function Content() {
                 }}
               >
                 <video
+                  playsInline
+                  controls={false}
                   autoPlay
                   loop
                   muted
@@ -1102,6 +1108,8 @@ export default function Content() {
                 }}
               >
                 <video
+                  playsInline
+                  controls={false}
                   autoPlay
                   loop
                   muted
