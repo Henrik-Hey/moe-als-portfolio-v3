@@ -488,7 +488,7 @@ export default function Content() {
             </Box>
             <Box
               flex={1}
-              minHeight={500}
+              minHeight={{ xs: 200, md: 500 }}
               p={12}
               pb={0}
               pr={0}
@@ -1054,7 +1054,7 @@ export default function Content() {
             </Box>
             <Box
               flex={1}
-              minHeight={500}
+              minHeight={{ xs: 200, md: 500 }}
               p={12}
               pb={0}
               pr={0}

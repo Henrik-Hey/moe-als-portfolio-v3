@@ -240,7 +240,6 @@ export default function Content() {
       </Container>
       <Container maxWidth="xl">
         <Box
-          p={6}
           pb={0}
           width="100%"
           sx={{
@@ -248,18 +247,20 @@ export default function Content() {
             overflow: "hidden",
           }}
         >
-          <Box pb={2}>
+          <Box pb={2} p={6}>
             <Typography variant="body2" fontWeight={400} fontSize={14}>
               Nextgear Capital was highlighted as AFC’s main
               <br /> competitor by leadership
             </Typography>
           </Box>
-          <img
+          <Box
+            component="img"
             alt=""
             role="presentation"
-            style={{
+            sx={{
+              px: 2,
               width: "100%",
-              height: "600px",
+              height: { xs: "150px", md: "600px" },
               objectFit: "cover",
               objectPosition: "top",
               marginBottom: "-10px",
@@ -361,13 +362,20 @@ export default function Content() {
                 </Box>
               </Typography>
             </Box>
-            <Box flex={1} minHeight={500} p={12} pb={0} overflow="hidden">
-              <img
+            <Box
+              flex={1}
+              minHeight={{ xs: 150, md: 500 }}
+              p={{ xs: 2, md: 12 }}
+              pb={{ xs: 2, md: 0 }}
+              overflow="hidden"
+            >
+              <Box
+                component="img"
                 alt=""
                 role="presentation"
-                style={{
+                sx={{
                   width: "100%",
-                  marginBottom: "-10px",
+                  marginBottom: "-20px",
                   height: "100%",
                   objectFit: "cover",
                   objectPosition: "top",
@@ -1272,7 +1280,7 @@ export default function Content() {
             </Box>
             <Box
               flex={1}
-              minHeight={500}
+              minHeight={{ xs: 200, md: 500 }}
               p={12}
               pb={0}
               pr={0}
@@ -1285,7 +1293,7 @@ export default function Content() {
                   width: "100%",
                   marginBottom: "-10px",
                   height: "100%",
-                  objectFit: "cover",
+                  objectFit: "contain",
                   objectPosition: "top",
                 }}
                 src="/v2/AFC/userInterviews_ProductShot.png"
