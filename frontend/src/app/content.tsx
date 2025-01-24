@@ -198,14 +198,24 @@ export default function Content() {
                 <BrandTile brand="MOSAIC" hoverColor="#CFF7FC" />
               </Grid>
 
-              <Grid item xs={6} md={3}></Grid>
+              <Grid
+                item
+                xs={6}
+                md={3}
+                sx={{ display: { xs: "none", md: "block" } }}
+              ></Grid>
               <Grid item xs={6} md={3}>
                 <BrandTile brand="APOLLO" hoverColor="#DDCFFC" />
               </Grid>
               <Grid item xs={6} md={3}>
                 <BrandTile brand="STAPLES" hoverColor="#FCCFCF" />
               </Grid>
-              <Grid item xs={6} md={3}></Grid>
+              <Grid
+                item
+                xs={6}
+                md={3}
+                sx={{ display: { xs: "none", md: "block" } }}
+              ></Grid>
             </Grid>
           </Box>
         </FadeIn>

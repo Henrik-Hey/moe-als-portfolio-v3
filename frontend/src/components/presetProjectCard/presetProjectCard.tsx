@@ -44,10 +44,11 @@ export const PresetProjectCard = ({
           }}
           content={
             <Box display="flex" gap={2} justifyContent="center">
-              <img
+              <Box
+                component="img"
                 src="/v2/Home page/Projects/prodShowcase_AFC.png"
                 alt="Picture of AFC console"
-                width={450}
+                width={{ xs: 350, md: 450 }}
               />
             </Box>
           }
@@ -68,10 +69,11 @@ export const PresetProjectCard = ({
           }}
           content={
             <Box display="flex" gap={2} justifyContent="center">
-              <img
+              <Box
+                component="img"
                 src="/v2/Home page/Projects/prodShowcase_ SS.png"
                 alt="Picture of AFC console"
-                width={450}
+                width={{ xs: 350, md: 450 }}
               />
             </Box>
           }
@@ -89,10 +91,11 @@ export const PresetProjectCard = ({
           hoverColor={darkMode ? "#2F2F2F" : "#FCCF5A"}
           content={
             <Box display="flex" gap={2} justifyContent="center">
-              <img
+              <Box
+                component="img"
                 src="/v2/Home page/Projects/prodShowcase_PAWFOLIO.png"
                 alt="Picture of AFC console"
-                width={450}
+                width={{ xs: 350, md: 450 }}
               />
             </Box>
           }
@@ -110,10 +113,11 @@ export const PresetProjectCard = ({
           hoverColor={darkMode ? "#2F2F2F" : "#CFFCE9"}
           content={
             <Box display="flex" gap={2} justifyContent="center">
-              <img
+              <Box
+                component="img"
                 src="/v2/Home page/Projects/prodShowcase_EA.png"
                 alt="Picture of AFC console"
-                width={450}
+                width={{ xs: 350, md: 450 }}
               />
             </Box>
           }
@@ -134,10 +138,11 @@ export const PresetProjectCard = ({
           }}
           content={
             <Box display="flex" gap={2} justifyContent="center">
-              <img
+              <Box
+                component="img"
                 src="/v2/Home page/Projects/prodShowcase_FORCEGRAPH.png"
                 alt="Picture of AFC console"
-                width={450}
+                width={{ xs: 350, md: 450 }}
               />
             </Box>
           }
@@ -155,10 +160,11 @@ export const PresetProjectCard = ({
           hoverColor={darkMode ? "#2F2F2F" : "#CFDAFC"}
           content={
             <Box display="flex" gap={2} justifyContent="center">
-              <img
+              <Box
+                component="img"
                 src="/v2/Home page/Projects/prodShowcase_HOMEZ.png"
                 alt="Picture of AFC console"
-                width={450}
+                width={{ xs: 350, md: 450 }}
               />
             </Box>
           }
@@ -179,10 +185,11 @@ export const PresetProjectCard = ({
           }}
           content={
             <Box display="flex" gap={2} justifyContent="center">
-              <img
+              <Box
+                component="img"
                 src="/v2/Home page/Projects/prodShowcase_SOHS.png"
                 alt="Picture of AFC console"
-                width={450}
+                width={{ xs: 350, md: 450 }}
               />
             </Box>
           }
@@ -204,10 +211,11 @@ export const PresetProjectCard = ({
           }
           content={
             <Box display="flex" gap={2} justifyContent="center">
-              <img
+              <Box
+                component="img"
                 src="/v2/Home page/Projects/prodShowcase_ AFC2.png"
                 alt="Picture of AFC console"
-                width={450}
+                width={{ xs: 350, md: 450 }}
               />
             </Box>
           }
@@ -229,10 +237,11 @@ export const PresetProjectCard = ({
           }}
           content={
             <Box display="flex" gap={2} justifyContent="center">
-              <img
+              <Box
+                component="img"
                 src="/v2/Home page/Projects/prodShowcase_SHIBA.png"
                 alt="Picture of AFC console"
-                width={450}
+                width={{ xs: 350, md: 450 }}
               />
             </Box>
           }

@@ -1,155 +1,40 @@
-import { css, keyframes } from "@emotion/react";
+import { keyframes } from "@emotion/react";
+import { Box } from "@mui/material";
 import { styled } from "@mui/system";
-import React, { useEffect, useState } from "react";
+import React from "react";
 
 export const AboutMeImageAutoScrollBlock = () => {
   return (
     <ContentContainer>
       <ScrollContainer>
-        <ScrollItem>
-          <img
-            src="/aboutme/moe-sushi.jpg"
-            height={400}
-            width={400}
-            style={{ objectFit: "cover", borderRadius: "24px" }}
-          />
-        </ScrollItem>
-        <ScrollItem>
-          <img
-            src="/aboutme/moe-bday.jpg"
-            height={400}
-            width={400}
-            style={{ objectFit: "cover", borderRadius: "24px" }}
-          />
-        </ScrollItem>
-        <ScrollItem>
-          <img
-            src="/aboutme/moe-climb.jpg"
-            height={400}
-            width={400}
-            style={{ objectFit: "cover", borderRadius: "24px" }}
-          />
-        </ScrollItem>
-        <ScrollItem>
-          <img
-            src="/aboutme/moe-cook.jpg"
-            height={400}
-            width={400}
-            style={{ objectFit: "cover", borderRadius: "24px" }}
-          />
-        </ScrollItem>
-        <ScrollItem>
-          <img
-            src="/aboutme/moe-smile.jpg"
-            height={400}
-            width={400}
-            style={{ objectFit: "cover", borderRadius: "24px" }}
-          />
-        </ScrollItem>
-        <ScrollItem>
-          <img
-            src="/aboutme/moe-cat.png"
-            height={400}
-            width={400}
-            style={{ objectFit: "cover", borderRadius: "24px" }}
-          />
-        </ScrollItem>
-        <ScrollItem>
-          <img
-            src="/aboutme/moe-steak.jpg"
-            height={400}
-            width={400}
-            style={{ objectFit: "cover", borderRadius: "24px" }}
-          />
-        </ScrollItem>
-        <ScrollItem>
-          <img
-            src="/aboutme/moe-pie.jpg"
-            height={400}
-            width={400}
-            style={{ objectFit: "cover", borderRadius: "24px" }}
-          />
-        </ScrollItem>
-        <ScrollItem>
-          <img
-            src="/aboutme/moe-pic.png"
-            height={400}
-            width={400}
-            style={{ objectFit: "cover", borderRadius: "24px" }}
-          />
-        </ScrollItem>
-        <ScrollItem>
-          <img
-            src="/aboutme/moe-sushi.jpg"
-            height={400}
-            width={400}
-            style={{ objectFit: "cover", borderRadius: "24px" }}
-          />
-        </ScrollItem>
-        <ScrollItem>
-          <img
-            src="/aboutme/moe-bday.jpg"
-            height={400}
-            width={400}
-            style={{ objectFit: "cover", borderRadius: "24px" }}
-          />
-        </ScrollItem>
-        <ScrollItem>
-          <img
-            src="/aboutme/moe-climb.jpg"
-            height={400}
-            width={400}
-            style={{ objectFit: "cover", borderRadius: "24px" }}
-          />
-        </ScrollItem>
-        <ScrollItem>
-          <img
-            src="/aboutme/moe-cook.jpg"
-            height={400}
-            width={400}
-            style={{ objectFit: "cover", borderRadius: "24px" }}
-          />
-        </ScrollItem>
-        <ScrollItem>
-          <img
-            src="/aboutme/moe-smile.jpg"
-            height={400}
-            width={400}
-            style={{ objectFit: "cover", borderRadius: "24px" }}
-          />
-        </ScrollItem>
-        <ScrollItem>
-          <img
-            src="/aboutme/moe-cat.png"
-            height={400}
-            width={400}
-            style={{ objectFit: "cover", borderRadius: "24px" }}
-          />
-        </ScrollItem>
-        <ScrollItem>
-          <img
-            src="/aboutme/moe-steak.jpg"
-            height={400}
-            width={400}
-            style={{ objectFit: "cover", borderRadius: "24px" }}
-          />
-        </ScrollItem>
-        <ScrollItem>
-          <img
-            src="/aboutme/moe-pie.jpg"
-            height={400}
-            width={400}
-            style={{ objectFit: "cover", borderRadius: "24px" }}
-          />
-        </ScrollItem>
-        <ScrollItem>
-          <img
-            src="/aboutme/moe-pic.png"
-            height={400}
-            width={400}
-            style={{ objectFit: "cover", borderRadius: "24px" }}
-          />
-        </ScrollItem>
+        {Array.from({ length: 9 }).map((_, index) => (
+          <ScrollItem key={index}>
+            <Box
+              height={400}
+              width={400}
+              sx={{
+                backgroundImage: `url(./v2/About/aboutPhoto${index + 1}.png)`,
+
+                backgroundSize: "cover",
+                borderRadius: "12px",
+              }}
+            />
+          </ScrollItem>
+        ))}
+        {Array.from({ length: 9 }).map((_, index) => (
+          <ScrollItem key={index + "-2"}>
+            <Box
+              height={400}
+              width={400}
+              sx={{
+                backgroundImage: `url(./v2/About/aboutPhoto${index + 1}.png)`,
+
+                backgroundSize: "cover",
+                borderRadius: "12px",
+              }}
+            />
+          </ScrollItem>
+        ))}
       </ScrollContainer>
     </ContentContainer>
   );

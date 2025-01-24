@@ -596,24 +596,6 @@ export const Navbar: React.FC<NavbarProps> = ({ colorMode }) => {
               </ButtonBase>
               <Divider />
               <Box px={4}>
-                {!colorMode && (
-                  <ButtonBase
-                    sx={{
-                      mt: 2,
-                      py: 1,
-                      borderRadius: 1,
-                      width: "100%",
-                      display: "flex",
-                      justifyContent: "space-between",
-                      alignItems: "center",
-                      color: textColor,
-                    }}
-                    onClick={toggleTheme}
-                  >
-                    <Typography>Switch Theme</Typography>
-                    {!isDark ? <WbSunnyOutlined /> : <DarkModeOutlined />}
-                  </ButtonBase>
-                )}
                 <Button
                   variant="contained"
                   LinkComponent={Link}

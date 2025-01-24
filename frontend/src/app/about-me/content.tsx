@@ -9,6 +9,7 @@ import { Footer } from "@/components/footer/footer";
 import Link from "next/link";
 import { usePortfolioTheme } from "@/theme";
 import { FooterDark } from "@/components/footer/footerDark";
+import { AboutMeImageAutoScrollBlock } from "@/components/aboutMeScrollBlock/aboutMeScrollBlock";
 
 const SOFTWARE = [
   "Figma",
@@ -46,11 +47,19 @@ export default function Content() {
       <Navbar />
       <Container maxWidth="lg" sx={{ minHeight: "67vh" }}>
         <Box my={12}>
-          <Box display="flex" gap={6} pb={12}>
+          <Box
+            display="flex"
+            flexDirection={{ xs: "column", md: "row" }}
+            gap={6}
+            pb={12}
+          >
+            <Box width="100%" display={{ xs: "block", md: "none" }}>
+              <AboutMeImageAutoScrollBlock />
+            </Box>
             <Box
               flex={1}
               sx={{
-                display: "grid",
+                display: { xs: "none", md: "grid" },
                 gridTemplateColumns: "repeat(3, 1fr)",
                 gap: "12px",
               }}

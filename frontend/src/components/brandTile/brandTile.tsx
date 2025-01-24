@@ -34,6 +34,7 @@ export const BrandTile: React.FC<BrandTileProps> = ({ brand, hoverColor }) => {
       alignItems="center"
       sx={{
         aspectRatio: "1",
+        p: 6,
         background: "#E7E8E8",
         flex: 1,
         borderRadius: "12px",
@@ -50,6 +51,11 @@ export const BrandTile: React.FC<BrandTileProps> = ({ brand, hoverColor }) => {
       <img
         src={`./v2/Home page/Logos/logoCollection_${brand}.svg`}
         alt=""
+        width="100%"
+        style={{
+          aspectRatio: "1",
+          objectFit: "contain",
+        }}
         role="presentation"
       />
     </Box>

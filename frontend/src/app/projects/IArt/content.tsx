@@ -661,7 +661,7 @@ export default function Content() {
             </Box>
             <Box
               flex={1}
-              minHeight={{ xs: 500, md: 0 }}
+              minHeight={{ xs: 300, md: 0 }}
               height="100%"
               width="100%"
               position="relative"
