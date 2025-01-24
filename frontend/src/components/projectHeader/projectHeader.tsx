@@ -51,7 +51,7 @@ export const ProjectHeader: React.FC<ProjectHeaderProps> = ({
               pt={22}
               pb={12}
               zIndex={1}
-              alignItems="center"
+              alignItems={{ xs: "flex-start", md: "center" }}
             >
               {logoString && (
                 <Typography variant="body1" fontWeight={700} color={color}>
@@ -59,10 +59,18 @@ export const ProjectHeader: React.FC<ProjectHeaderProps> = ({
                 </Typography>
               )}
               {logoImage}
-              <Typography variant="h4" fontWeight={700} textAlign="center">
+              <Typography
+                variant="h4"
+                fontWeight={700}
+                textAlign={{ xs: "left", md: "center" }}
+              >
                 {heading}
               </Typography>
-              <Typography variant="body1" textAlign="center" fontWeight={400}>
+              <Typography
+                variant="body1"
+                textAlign={{ xs: "left", md: "center" }}
+                fontWeight={400}
+              >
                 {subheading}
               </Typography>
             </Box>
