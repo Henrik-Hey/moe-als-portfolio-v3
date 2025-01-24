@@ -29,7 +29,7 @@ export const ProjectMissionStatement = ({
         p={3}
         flexDirection={{ xs: "column", md: "row" }}
         sx={{
-          backgroundColor,
+          background: backgroundColor,
         }}
       >
         <Box flex={1}>

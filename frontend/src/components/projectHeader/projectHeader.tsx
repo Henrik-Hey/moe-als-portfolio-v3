@@ -69,6 +69,7 @@ export const ProjectHeader: React.FC<ProjectHeaderProps> = ({
           </Container>
           <Box
             width="100%"
+            pb={4}
             sx={{
               background: secondaryColor,
             }}

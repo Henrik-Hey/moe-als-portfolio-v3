@@ -370,6 +370,42 @@ export const Navbar: React.FC<NavbarProps> = ({ colorMode }) => {
               </Box>
               <Box
                 component={Link}
+                href="/projects/sohs"
+                sx={{
+                  p: 1,
+                  minWidth: "165px",
+                  display: "flex",
+                  justifyContent: "space-between",
+                  alignItems: "center",
+                  textDecoration: "none",
+                  color: textColor,
+                  "&:hover": {
+                    borderLeft: `2px solid ${textColor}`,
+                  },
+                }}
+              >
+                <Typography>SOHS</Typography>
+              </Box>
+              <Box
+                component={Link}
+                href="/projects/IArt"
+                sx={{
+                  p: 1,
+                  minWidth: "165px",
+                  display: "flex",
+                  justifyContent: "space-between",
+                  alignItems: "center",
+                  textDecoration: "none",
+                  color: textColor,
+                  "&:hover": {
+                    borderLeft: `2px solid ${textColor}`,
+                  },
+                }}
+              >
+                <Typography>IArt</Typography>
+              </Box>
+              <Box
+                component={Link}
                 href="/projects/afc"
                 sx={{
                   p: 1,
@@ -504,6 +540,36 @@ export const Navbar: React.FC<NavbarProps> = ({ colorMode }) => {
                 }}
               >
                 <Typography>HashMatrix</Typography>
+              </ButtonBase>
+              <ButtonBase
+                component={Link}
+                href="/projects/sohs"
+                sx={{
+                  p: 1,
+                  width: "100%",
+                  display: "flex",
+                  justifyContent: "space-around",
+                  alignItems: "center",
+                  textDecoration: "none",
+                  color: textColor,
+                }}
+              >
+                <Typography>SOHS</Typography>
+              </ButtonBase>
+              <ButtonBase
+                component={Link}
+                href="/projects/IArt"
+                sx={{
+                  p: 1,
+                  width: "100%",
+                  display: "flex",
+                  justifyContent: "space-around",
+                  alignItems: "center",
+                  textDecoration: "none",
+                  color: textColor,
+                }}
+              >
+                <Typography>IArt</Typography>
               </ButtonBase>
               <ButtonBase
                 component={Link}

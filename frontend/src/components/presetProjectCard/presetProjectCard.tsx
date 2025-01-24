@@ -126,9 +126,12 @@ export const PresetProjectCard = ({
           isDefaultHovered={isDefaultHovered}
           project="IArt"
           subtext="Redefining Car Interfaces with Immersive Visual Solutions"
-          ctaText="In Progress.."
+          ctaText="View Case Study"
           color={darkMode ? palette.darkMode[50] : "#FEF0CD"}
           hoverColor={darkMode ? "#2F2F2F" : "#FCDFCF"}
+          onCTAClick={() => {
+            router.push("/projects/IArt");
+          }}
           content={
             <Box display="flex" gap={2} justifyContent="center">
               <img
@@ -168,9 +171,12 @@ export const PresetProjectCard = ({
           isDefaultHovered={isDefaultHovered}
           project="SOHS"
           subtext="Empowering Service Pros with an On-Demand Marketplace"
-          ctaText="In Progress.."
+          ctaText="View Case Study"
           color={darkMode ? palette.darkMode[50] : "#FEF0CD"}
           hoverColor={darkMode ? "#2F2F2F" : "#F2CFFC"}
+          onCTAClick={() => {
+            router.push("/projects/sohs");
+          }}
           content={
             <Box display="flex" gap={2} justifyContent="center">
               <img
