@@ -252,44 +252,44 @@ export default function Content() {
           <Box
             display="flex"
             flexDirection={{
-              xs: "column",
+              xs: "row",
               md: "row",
             }}
-            gap={4}
+            gap={{ xs: 1, md: 4 }}
           >
-            <img
+            <Box
+              component={"img"}
               alt=""
               role="presentation"
-              style={{
+              sx={{
                 flex: 1,
-                width: "100%",
-                height: "500px",
+                height: { xs: "125px", md: "500px" },
                 objectFit: "cover",
                 objectPosition: "top",
                 marginBottom: "-10px",
               }}
               src="/v2/SharpStakes/compAnalysis_OddsJam_L1.png"
             />
-            <img
+            <Box
+              component={"img"}
               alt=""
               role="presentation"
-              style={{
+              sx={{
                 flex: 1,
-                width: "100%",
-                height: "500px",
+                height: { xs: "125px", md: "500px" },
                 objectFit: "cover",
                 objectPosition: "top",
                 marginBottom: "-10px",
               }}
               src="/v2/SharpStakes/compAnalysis_OddsJam_C1.png"
             />
-            <img
+            <Box
+              component={"img"}
               alt=""
               role="presentation"
-              style={{
+              sx={{
                 flex: 1,
-                width: "100%",
-                height: "500px",
+                height: { xs: "125px", md: "500px" },
                 objectFit: "cover",
                 objectPosition: "top",
                 marginBottom: "-10px",
@@ -380,44 +380,44 @@ export default function Content() {
           <Box
             display="flex"
             flexDirection={{
-              xs: "column",
+              xs: "row",
               md: "row",
             }}
-            gap={4}
+            gap={{ xs: 1, md: 4 }}
           >
-            <img
+            <Box
+              component={"img"}
               alt=""
               role="presentation"
-              style={{
+              sx={{
                 flex: 1,
-                width: "100%",
-                height: "500px",
+                height: { xs: "125px", md: "500px" },
                 objectFit: "cover",
                 objectPosition: "top",
                 marginBottom: "-10px",
               }}
               src="/v2/SharpStakes/compAnalysis_OddsJam_L2.png"
             />
-            <img
+            <Box
+              component={"img"}
               alt=""
               role="presentation"
-              style={{
+              sx={{
                 flex: 1,
-                width: "100%",
-                height: "500px",
+                height: { xs: "125px", md: "500px" },
                 objectFit: "cover",
                 objectPosition: "top",
                 marginBottom: "-10px",
               }}
               src="/v2/SharpStakes/compAnalysis_OddsJam_C2.png"
             />
-            <img
+            <Box
+              component={"img"}
               alt=""
               role="presentation"
-              style={{
+              sx={{
                 flex: 1,
-                width: "100%",
-                height: "500px",
+                height: { xs: "125px", md: "500px" },
                 objectFit: "cover",
                 objectPosition: "top",
                 marginBottom: "-10px",
