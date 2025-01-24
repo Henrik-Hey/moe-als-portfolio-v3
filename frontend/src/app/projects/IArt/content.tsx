@@ -178,18 +178,13 @@ export default function Content() {
       </Container>
       <Container maxWidth="xl">
         <Box width="100%" mb={12}>
-          <Box pb={2}>
-            <Typography variant="body2" fontWeight={400} fontSize={14}>
-              Initial Research
-            </Typography>
-          </Box>
           <img
             alt=""
             role="presentation"
             style={{
               width: "100%",
             }}
-            src="/v2/IArt/limitResearch.png"
+            src="/v2/IArt/theProcess.png"
           />
         </Box>
       </Container>

@@ -79,7 +79,16 @@ export const ProjectHeader: React.FC<ProjectHeaderProps> = ({
                 {imageText}
               </Typography>
             </Box>
-            <BackdropImage src={`${imageURL}`} />
+            <Box
+              component="img"
+              sx={{
+                width: "100%",
+                objectFit: "contain",
+                objectPosition: "center",
+                zIndex: 0,
+              }}
+              src={`${imageURL}`}
+            />
           </Box>
         </HeaderContainer>
       </Container>
@@ -99,9 +108,8 @@ const HeaderContainer = styled("div")`
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 `;
 
-const BackdropImage = styled("img")`
+const BackdropImage = styled(Box)`
   width: 100%;
-  height: 717px;
   object-fit: contain;
   z-index: 0;
 `;
