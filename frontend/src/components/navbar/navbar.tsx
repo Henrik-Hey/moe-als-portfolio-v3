@@ -495,21 +495,36 @@ export const Navbar: React.FC<NavbarProps> = ({ colorMode }) => {
             <Box p={1} px={2}>
               <ButtonBase
                 component={Link}
-                href="/about-me"
+                href="/projects/afc"
                 sx={{
                   p: 1,
                   width: "100%",
                   display: "flex",
-                  justifyContent: "space-around",
+                  justifyContent: "space-between",
                   alignItems: "center",
                   textDecoration: "none",
                   color: textColor,
                   mb: 1,
                 }}
               >
-                <Typography>About Me</Typography>
+                <Box
+                  display="flex"
+                  sx={{
+                    justifyContent: "space-between",
+                    alignItems: "center",
+                    width: "100%",
+                  }}
+                >
+                  <Typography mr={1}>AFC</Typography>
+                  {getCookie(ACCESS_COOKIE_KEY) !== "true" ? (
+                    <LockTwoTone sx={{ color: textColor, fontSize: "16px" }} />
+                  ) : (
+                    <LockOpenTwoTone
+                      sx={{ color: textColor, fontSize: "16px" }}
+                    />
+                  )}
+                </Box>
               </ButtonBase>
-              <Divider />
               <ButtonBase
                 component={Link}
                 href="/projects/shiba-inu"
@@ -517,7 +532,7 @@ export const Navbar: React.FC<NavbarProps> = ({ colorMode }) => {
                   p: 1,
                   width: "100%",
                   display: "flex",
-                  justifyContent: "space-around",
+                  justifyContent: "space-between",
                   alignItems: "center",
                   textDecoration: "none",
                   color: textColor,
@@ -533,7 +548,7 @@ export const Navbar: React.FC<NavbarProps> = ({ colorMode }) => {
                   p: 1,
                   width: "100%",
                   display: "flex",
-                  justifyContent: "space-around",
+                  justifyContent: "space-between",
                   alignItems: "center",
                   textDecoration: "none",
                   color: textColor,
@@ -548,7 +563,7 @@ export const Navbar: React.FC<NavbarProps> = ({ colorMode }) => {
                   p: 1,
                   width: "100%",
                   display: "flex",
-                  justifyContent: "space-around",
+                  justifyContent: "space-between",
                   alignItems: "center",
                   textDecoration: "none",
                   color: textColor,
@@ -563,7 +578,7 @@ export const Navbar: React.FC<NavbarProps> = ({ colorMode }) => {
                   p: 1,
                   width: "100%",
                   display: "flex",
-                  justifyContent: "space-around",
+                  justifyContent: "space-between",
                   alignItems: "center",
                   textDecoration: "none",
                   color: textColor,
@@ -571,41 +586,57 @@ export const Navbar: React.FC<NavbarProps> = ({ colorMode }) => {
               >
                 <Typography>IArt</Typography>
               </ButtonBase>
-              <ButtonBase
-                component={Link}
-                href="/projects/afc"
-                sx={{
-                  p: 1,
-                  width: "100%",
-                  display: "flex",
-                  justifyContent: "space-around",
-                  alignItems: "center",
-                  textDecoration: "none",
-                  color: textColor,
-                  mb: 1,
-                }}
-              >
-                <Box display="flex">
-                  <Typography mr={1}>AFC</Typography>
-                  {getCookie(ACCESS_COOKIE_KEY) !== "true" ? (
-                    <LockTwoTone sx={{ color: textColor }} />
-                  ) : (
-                    <LockOpenTwoTone sx={{ color: textColor }} />
-                  )}
-                </Box>
-              </ButtonBase>
+
               <Divider />
-              <Box px={4}>
-                <Button
-                  variant="contained"
-                  LinkComponent={Link}
+              <Box mt={2}>
+                <ButtonBase
+                  component={Link}
+                  href="/about-me"
+                  sx={{
+                    p: 1,
+                    width: "100%",
+                    display: "flex",
+                    justifyContent: "space-between",
+                    alignItems: "center",
+                    textDecoration: "none",
+                    color: textColor,
+                    mb: 1,
+                  }}
+                >
+                  <Typography>About Me</Typography>
+                </ButtonBase>
+                <ButtonBase
+                  component={Link}
                   href="/resume_2024.pdf"
                   target="_blank"
-                  sx={{ ...buttonStyle, mt: 2 }}
-                  fullWidth
+                  sx={{
+                    p: 1,
+                    width: "100%",
+                    display: "flex",
+                    justifyContent: "space-between",
+                    alignItems: "center",
+                    textDecoration: "none",
+                    color: textColor,
+                    mb: 1,
+                  }}
                 >
-                  Download Resume
-                </Button>
+                  <Box
+                    display="flex"
+                    sx={{
+                      justifyContent: "space-between",
+                      alignItems: "center",
+                      width: "100%",
+                    }}
+                  >
+                    <Typography mr={1}>Download Resume</Typography>
+                    <OpenInNew
+                      sx={{
+                        fontSize: "16px",
+                        color: textColor,
+                      }}
+                    />
+                  </Box>
+                </ButtonBase>
               </Box>
             </Box>
           </MobileNavLinkContainer>
