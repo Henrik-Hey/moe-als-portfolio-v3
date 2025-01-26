@@ -56,10 +56,9 @@ export default function Content() {
           <ProjectStatement
             content={
               <>
-                Shiba Inu addresses a gap in food delivery by offering a
-                tailored, rewarding experience for users seeking Asian cuisine.
-                I refined the design to create a seamless and user-focused
-                platform that stands out from generalized delivery apps.
+                I developed the brand, product, and UX for Shiba Inu, a platform
+                that redefines food delivery by tailoring the experience to
+                Asian cuisine enthusiasts.
               </>
             }
           />

@@ -153,7 +153,7 @@ export const PresetProjectCard = ({
         <ProjectCard
           darkMode={darkMode}
           isDefaultHovered={isDefaultHovered}
-          project="Homezai"
+          project="HomezAI"
           subtext="Simplifying Home Buying with Smarter Scheduling Tools"
           ctaText="In Progress.."
           color={darkMode ? palette.darkMode[50] : "#FEF0CD"}

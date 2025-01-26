@@ -15,6 +15,7 @@ import { ProjectStatement } from "@/components/projectStatement/projectStatement
 import FadeIn from "@/components/fadeIn/fadeIn";
 import { ProjectsNavFooter } from "@/components/projectsNavFooter/projectsNavFooter";
 import { Footer } from "@/components/footer/footer";
+import { TeamCommentsCard } from "@/components/teamCommentsCard/teamCommentsCard";
 
 export default function Content() {
   const baseTheme = useBaseTheme();
@@ -244,7 +245,7 @@ export default function Content() {
         >
           <Box pb={6}>
             <Typography variant="body2" fontWeight={400} fontSize={14}>
-              Company directors praised OddsJam and hoped
+              Company directors praised <b>OddsJam</b> and hoped
               <br /> SharpStakes&apos; redesign could align with some of
               <br /> their successful strategies.
             </Typography>
@@ -312,7 +313,7 @@ export default function Content() {
           <Box pb={6}>
             <Typography variant="body2" fontWeight={400} fontSize={14}>
               Company directors favor the minimal color use
-              <br /> and structured layout of BettingPros, finding it
+              <br /> and structured layout of <b>BettingPros</b>, finding it
               <br /> highly effective.
             </Typography>
           </Box>
@@ -427,6 +428,24 @@ export default function Content() {
           </Box>
         </Box>
       </Container>
+      <Container maxWidth="lg">
+        <Box display="flex" flexDirection="column" gap={12} my={12}>
+          <FadeIn>
+            <Box>
+              <Typography variant="h3" mb={2} fontWeight={700}>
+                Quantitative Research
+              </Typography>
+              <Typography variant="body1">
+                To further explore user pain points, I conducted A/B testing to
+                let users select their preferred design styles, aligning their
+                preferences with business goals. Additionally, I created various
+                surveys and implemented multiple feedback channels to gather
+                user insights on the site.
+              </Typography>
+            </Box>
+          </FadeIn>
+        </Box>
+      </Container>
       <Container maxWidth="xl">
         <FadeIn>
           <Box
@@ -478,9 +497,9 @@ export default function Content() {
                       &gt;
                     </Typography>
                     <Typography variant="body1">
-                      “The colors are really distracting, and I wish there was
-                      support for dark mode. The background is super bright, and
-                      it makes everything else hard to look at.”
+                      “The app is really confusing and a bit limited at times.
+                      The guides are too lengthy, and the learning curve
+                      isn&apos;t friendly to new users at all.”
                     </Typography>
                   </Box>
                 </Box>
@@ -803,6 +822,37 @@ export default function Content() {
         </Box>
       </Container>
       <Container maxWidth="xl">
+        <Box width="100%">
+          <img
+            alt=""
+            role="presentation"
+            style={{
+              width: "100%",
+            }}
+            src="/v2/SharpStakes/designSystem_Image.png"
+          />
+        </Box>
+      </Container>
+      <Container maxWidth="lg">
+        <Box display="flex" flexDirection="column" gap={12} my={12}>
+          <FadeIn>
+            <Box>
+              <Typography variant="h3" mb={2} fontWeight={700}>
+                Finalizing Designs
+              </Typography>
+              <Typography variant="body1">
+                The updated interface and design strategy empower SharpStakes to
+                streamline development by utilizing reusable components,
+                adhering to accessibility guidelines, and attracting a broader
+                user base by aligning with contemporary competitors. This has
+                led to a significant surge in user satisfaction, evidenced by
+                numerous positive reviews.
+              </Typography>
+            </Box>
+          </FadeIn>
+        </Box>
+      </Container>
+      <Container maxWidth="xl">
         <Box width="100%" mb={12}>
           <video
             playsInline
@@ -994,92 +1044,22 @@ export default function Content() {
           </Box>
         </Box>
       </Container>
-      <Container maxWidth="xl">
-        <FadeIn>
-          <Box
-            display="flex"
-            flexDirection={{ xs: "column", md: "row" }}
-            mt={6}
-            mb={12}
-            alignItems="center"
-            sx={{
-              background: "#f0f0f0",
-            }}
-          >
-            <Box flex={1} p={6}>
-              <Typography
-                variant="body1"
-                mb={2}
-                fontWeight={700}
-                color="#0E86D3"
-              >
-                Team Comments
-              </Typography>
-              <Typography variant="h3" mb={2} fontWeight={700}>
-                How was your experience working with Moe?
-              </Typography>
-              <Typography component="div" variant="body1">
-                <Box display="flex" flexDirection="column">
-                  <Box mb={2} display="flex">
-                    <Typography variant="body1" color="#0E86D3" mr={1}>
-                      &gt;
-                    </Typography>
-                    <Typography variant="body1">
-                      <b>Shubs, CEO:</b>
-                      <br />
-                      <br />
-                      “Moe is a great designer. He enhances our projects with
-                      professionalism and quality. His deep understanding of
-                      business goals and thoughtful design decisions shaped our
-                      platform. Moe excels in adapting to changing requests and
-                      delivering impressive designs. New users consistently
-                      praise our improved UI/UX since Moe&apos;s involvement.”
-                    </Typography>
-                  </Box>
-                  <Box mb={2} display="flex">
-                    <Typography variant="body1" color="#0E86D3" mr={1}>
-                      &gt;
-                    </Typography>
-                    <Typography variant="body1">
-                      <b>Jaiden, Co-Founder:</b>
-                      <br />
-                      <br />
-                      “In moments of uncertainty, Moe&apos;s guidance has been
-                      indispensable, offering crucial direction in
-                      decision-making. Our site&apos;s exceptional UI/UX, widely
-                      praised by users, reflects Moe&apos;s influential
-                      contributions. Beyond technical expertise, Moe&apos;s
-                      patient and collaborative approach played a vital role in
-                      fostering overall improvement.”
-                    </Typography>
-                  </Box>
-                </Box>
-              </Typography>
-            </Box>
-            <Box
-              flex={1}
-              minHeight={{ xs: 200, md: 500 }}
-              p={12}
-              pb={0}
-              pr={0}
-              overflow="hidden"
-            >
-              <img
-                alt=""
-                role="presentation"
-                style={{
-                  width: "100%",
-                  marginBottom: "-10px",
-                  height: "100%",
-                  objectFit: "cover",
-                  objectPosition: "top",
-                }}
-                src="/v2/SharpStakes/teamComments_Image.png"
-              />
-            </Box>
-          </Box>
-        </FadeIn>
-      </Container>
+      <TeamCommentsCard
+        color="#0E86D3"
+        imageURL="/v2/SharpStakes/teamComments_Image.png"
+        comments={[
+          {
+            name: "Shubs, CEO",
+            comment:
+              "Moe is a great designer. He enhances our projects with professionalism and quality. His deep understanding of business goals and thoughtful design decisions shaped our platform. Moe excels in adapting to changing requests and delivering impressive designs. New users consistently praise our improved UI/UX since Moe's involvement.",
+          },
+          {
+            name: "Jaiden, Co-Founder",
+            comment:
+              "In moments of uncertainty, Moe's guidance has been indispensable, offering crucial direction in decision-making. Our site's exceptional UI/UX, widely praised by users, reflects Moe's influential contributions. Beyond technical expertise, Moe's patient and collaborative approach played a vital role in fostering overall improvement.",
+          },
+        ]}
+      />
       <ProjectsNavFooter projects={["afc", "shiba"]} />
       <Footer />
     </ThemeProvider>

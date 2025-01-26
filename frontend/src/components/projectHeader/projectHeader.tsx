@@ -88,10 +88,10 @@ export const ProjectHeader: React.FC<ProjectHeaderProps> = ({
               </Typography>
             </Box>
             <Box
-              mx={2}
+              mx={6}
               component="img"
               sx={{
-                width: "calc(100% - 32px)",
+                width: "calc(100% - 96px)",
                 objectFit: "contain",
                 objectPosition: "center",
                 zIndex: 0,

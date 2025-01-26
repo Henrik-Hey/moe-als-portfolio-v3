@@ -235,8 +235,10 @@ const enableScroll = () => {
 const useProjectFromURL = (): string => {
   const pathname = usePathname();
   if (pathname.includes("shiba-inu")) return "Shiba Inu";
-  if (pathname.includes("hashmatrix-sharpstakes")) return "HashMatrix";
+  if (pathname.includes("hashmatrix-sharpstakes")) return "SharpStakes";
   if (pathname.includes("afc")) return "AFC";
+  if (pathname.includes("sohs")) return "SOHS";
+  if (pathname.includes("IArt")) return "IArt";
   return "Work";
 };
 
@@ -366,7 +368,7 @@ export const Navbar: React.FC<NavbarProps> = ({ colorMode }) => {
                   },
                 }}
               >
-                <Typography>HashMatrix</Typography>
+                <Typography>SharpStakes</Typography>
               </Box>
               <Box
                 component={Link}
@@ -554,7 +556,7 @@ export const Navbar: React.FC<NavbarProps> = ({ colorMode }) => {
                   color: textColor,
                 }}
               >
-                <Typography>HashMatrix</Typography>
+                <Typography>SharpStakes</Typography>
               </ButtonBase>
               <ButtonBase
                 component={Link}

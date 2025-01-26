@@ -15,6 +15,7 @@ import { ProjectStatement } from "@/components/projectStatement/projectStatement
 import FadeIn from "@/components/fadeIn/fadeIn";
 import { ProjectsNavFooter } from "@/components/projectsNavFooter/projectsNavFooter";
 import { Footer } from "@/components/footer/footer";
+import { TeamCommentsCard } from "@/components/teamCommentsCard/teamCommentsCard";
 
 export default function Content() {
   const baseTheme = useBaseTheme();
@@ -330,13 +331,10 @@ export default function Content() {
                 Impact
               </Typography>
               <Typography variant="body1">
-                The updated interface and design strategy empower SharpStakes to
-                streamline development by utilizing reusable components,
-                adhering to accessibility guidelines, and eliminating dark
-                patterns. Aligning with contemporary competitors, these changes
-                attract a broader user base. This has led to a significant surge
-                in user satisfaction, evidenced by numerous positive comments
-                and reviews.
+                With a streamlined interface and enhanced functionality, the
+                platform saw a notable increase in signups, task efficiency, and
+                stakeholder alignment, laying a strong foundation for future
+                growth.
               </Typography>
             </Box>
           </FadeIn>
@@ -390,91 +388,34 @@ export default function Content() {
           </Box>
         </Box>
       </Container>
-      <Container maxWidth="xl">
-        <FadeIn>
-          <Box
-            display="flex"
-            flexDirection={{ xs: "column", md: "row" }}
-            mt={6}
-            mb={12}
-            alignItems="center"
-            position="relative"
-            overflow="hidden"
-            sx={{
-              background: "#f0f0f0",
-            }}
-          >
-            <Box flex={1} p={6}>
-              <Typography
-                variant="body1"
-                mb={2}
-                fontWeight={700}
-                color="#752F88"
-              >
-                Team Comments
-              </Typography>
-              <Typography variant="h3" mb={2} fontWeight={700}>
-                How was your experience working with Moe?
-              </Typography>
-              <Typography component="div" variant="body1">
-                <Box display="flex" flexDirection="column">
-                  <Box mb={2} display="flex">
-                    <Typography variant="body1" color="#752F88" mr={1}>
-                      &gt;
-                    </Typography>
-                    <Typography variant="body1">
-                      <b>Henrik, Lead developer:</b>
-                      <br />
-                      <br />
-                      “Moe did an excellent job with this redesign. The entire
-                      experience feels significantly more consistent, and
-                      incorporating pre-made libraries has streamlined the
-                      development process. I’m excited to build the web app in
-                      the future using these established guidelines!”
-                    </Typography>
-                  </Box>
-                  <Box mb={2} display="flex">
-                    <Typography variant="body1" color="#752F88" mr={1}>
-                      &gt;
-                    </Typography>
-                    <Typography variant="body1">
-                      <b>Seif, CEO:</b>
-                      <br />
-                      <br />
-                      “Moe truly delivered with these new designs. The app feels
-                      more polished than ever, and our users are noticeably
-                      happier with the improved experience.”
-                    </Typography>
-                  </Box>
-                </Box>
-              </Typography>
-            </Box>
-            <Box
-              flex={1}
-              minHeight={{ xs: 300, md: 0 }}
-              height="100%"
-              width="100%"
-              position="relative"
-            >
-              <Box
-                component="img"
-                alt=""
-                role="presentation"
-                sx={{
-                  position: "absolute",
-                  width: "100%",
-                  top: { xs: "150px", md: "-50px" },
-                  transform: "scale(2) ",
-                  marginBottom: "-10px",
-                  objectFit: "cover",
-                  objectPosition: "top",
-                }}
-                src="/v2/SOHS/teamComments.png"
-              />
-            </Box>
-          </Box>
-        </FadeIn>
-      </Container>
+      <TeamCommentsCard
+        imageURL="/v2/SOHS/teamComments.png"
+        color="#752F88"
+        imageProps={{
+          sx: {
+            position: { xs: "relative", md: "absolute" },
+            width: "100%",
+            minHeight: { xs: "350px", md: "unset" },
+            top: { xs: "150px", md: "200px" },
+            transform: "scale(2) ",
+            marginBottom: "-10px",
+            objectFit: "cover",
+            objectPosition: "top",
+          },
+        }}
+        comments={[
+          {
+            name: "Henrik, Lead developer",
+            comment:
+              "Moe did an excellent job with this redesign. The entire experience feels significantly more consistent, and incorporating pre-made libraries has streamlined the development process. I’m excited to build the web app in the future using these established guidelines!",
+          },
+          {
+            name: "Seif, CEO",
+            comment:
+              "Moe truly delivered with these new designs. The app feels more polished than ever, and our users are noticeably happier with the improved experience.",
+          },
+        ]}
+      />
       <ProjectsNavFooter projects={["afc", "hashmatrix-sharpstakes"]} />
       <Footer />
     </ThemeProvider>

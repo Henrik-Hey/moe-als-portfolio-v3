@@ -15,6 +15,7 @@ import { ProjectStatement } from "@/components/projectStatement/projectStatement
 import FadeIn from "@/components/fadeIn/fadeIn";
 import { ProjectsNavFooter } from "@/components/projectsNavFooter/projectsNavFooter";
 import { Footer } from "@/components/footer/footer";
+import { TeamCommentsCard } from "@/components/teamCommentsCard/teamCommentsCard";
 
 export default function Content() {
   const baseTheme = useBaseTheme();
@@ -64,10 +65,10 @@ export default function Content() {
           <ProjectStatement
             content={
               <>
-                The project aimed to break away from traditional text-based AI
-                interactions by introducing a visually immersive chat
-                experience. I led the ideation, branding, and experience design
-                for this project, pushing the boundaries of how users interact
+                I led the ideation, branding, and experience design for a
+                project that redefined AI chat interactions. By introducing a
+                visually immersive experience, the platform breaks away from
+                traditional text-based models, transforming how users engage
                 with AI.
               </>
             }
@@ -133,6 +134,21 @@ export default function Content() {
                   functionality.
                 </Typography>
               </Box>
+            </Box>
+          </FadeIn>
+          <FadeIn>
+            <Box>
+              <Typography variant="h3" mb={2} fontWeight={700}>
+                Brainstorming & Research
+              </Typography>
+              <Typography variant="body1">
+                With tight timelines and limited funding, this project was
+                largely conceptual, leaving little room for testing. My focus
+                was on solving key problems while meeting the requirements
+                outlined by stakeholders and developers. The challenge was to
+                design a solution that aligned with their criteria despite the
+                lack of certainty.
+              </Typography>
             </Box>
           </FadeIn>
         </Box>
@@ -206,7 +222,7 @@ export default function Content() {
             <FadeIn>
               <Box mb={2}>
                 <Typography variant="h3" mb={2} fontWeight={700}>
-                  Building out the app
+                  Building Out the App
                 </Typography>
                 <Typography variant="body1">
                   With the concepts approved and requirements defined by
@@ -343,6 +359,11 @@ export default function Content() {
             overflow: "hidden",
           }}
         >
+          <Box pb={2}>
+            <Typography variant="body2" fontWeight={400} fontSize={14}>
+              Stakeholder Showcase by Lead Developer
+            </Typography>
+          </Box>
           <video
             playsInline
             controls={false}
@@ -403,7 +424,7 @@ export default function Content() {
           <FadeIn>
             <Box>
               <Typography variant="h3" mb={2} fontWeight={700}>
-                Working with limited resources
+                Working with Limited Resources
               </Typography>
               <Typography variant="body1">
                 Due to shifting priorities and our adjusted approach, we didn’t
@@ -585,105 +606,28 @@ export default function Content() {
           </Box>
         </Box>
       </Container>
-      <Container maxWidth="xl">
-        <FadeIn>
-          <Box
-            display="flex"
-            flexDirection={{ xs: "column", md: "row" }}
-            mt={6}
-            mb={12}
-            alignItems="center"
-            position="relative"
-            overflow="hidden"
-            sx={{
-              background: "#f0f0f0",
-            }}
-          >
-            <Box flex={1} p={6}>
-              <Typography
-                variant="body1"
-                mb={2}
-                fontWeight={700}
-                color="#6D61E6"
-              >
-                Team Comments
-              </Typography>
-              <Typography variant="h3" mb={2} fontWeight={700}>
-                How was your experience working with Moe?
-              </Typography>
-              <Typography component="div" variant="body1">
-                <Box display="flex" flexDirection="column">
-                  <Box mb={2} display="flex">
-                    <Typography variant="body1" color="#6D61E6" mr={1}>
-                      &gt;
-                    </Typography>
-                    <Typography variant="body1">
-                      <b>Yunfei, CEO:</b>
-                      <br />
-                      <br />
-                      “I’m thrilled to have Moe on our team. He consistently
-                      delivers accessible and visually impressive products, and
-                      I look forward to collaborating with him on future
-                      projects.”
-                    </Typography>
-                  </Box>
-                  <Box mb={2} display="flex">
-                    <Typography variant="body1" color="#6D61E6" mr={1}>
-                      &gt;
-                    </Typography>
-                    <Typography variant="body1">
-                      <b>Winni, Product designer:</b>
-                      <br />
-                      <br />
-                      “Moe is a pleasure to work with—highly creative and
-                      resourceful in any situation. Throughout this project and
-                      our previous presentation tool, he demonstrated
-                      exceptional attention to detail.”
-                    </Typography>
-                  </Box>
-                  <Box mb={2} display="flex">
-                    <Typography variant="body1" color="#6D61E6" mr={1}>
-                      &gt;
-                    </Typography>
-                    <Typography variant="body1">
-                      <b>Henrik, Front-end Engineer:</b>
-                      <br />
-                      <br />
-                      “Moe is a breeze to work with, consistently delivering
-                      well-annotated designs that are easy to develop. The
-                      Forcegraph project was no exception to his high
-                      standards.”
-                    </Typography>
-                  </Box>
-                </Box>
-              </Typography>
-            </Box>
-            <Box
-              flex={1}
-              minHeight={{ xs: 300, md: 0 }}
-              height="100%"
-              width="100%"
-              position="relative"
-            >
-              <Box
-                component="img"
-                alt=""
-                role="presentation"
-                sx={{
-                  position: "absolute",
-                  width: "100%",
-                  top: { xs: "-50px", md: "-250px" },
-                  transform: "scale(0.85) ",
-                  marginBottom: "-10px",
-                  objectFit: "cover",
-                  objectPosition: "top",
-                }}
-                src="/v2/IArt/teamComments.png"
-              />
-            </Box>
-          </Box>
-        </FadeIn>
-      </Container>
+      <TeamCommentsCard
+        color="#6D61E6"
+        imageURL="/v2/IArt/teamComments.png"
+        imagePaddingRight={{ xs: 0, md: 8 }}
+        comments={[
+          {
+            name: "Yunfei, CEO",
+            comment:
+              "I’m thrilled to have Moe on our team. He consistently delivers accessible and visually impressive products, and I look forward to collaborating with him on future projects.",
+          },
+          {
+            name: "Winni, Product designer",
+            comment:
+              "Moe is a pleasure to work with—highly creative and resourceful in any situation. Throughout this project and our previous presentation tool, he demonstrated exceptional attention to detail.",
+          },
+          {
+            name: "Henrik, Front-end Engineer",
+            comment:
+              "Moe is a breeze to work with, consistently delivering well-annotated designs that are easy to develop. The Forcegraph project was no exception to his high standards.",
+          },
+        ]}
+      />
       <ProjectsNavFooter projects={["afc", "hashmatrix-sharpstakes"]} />
       <Footer />
     </ThemeProvider>
