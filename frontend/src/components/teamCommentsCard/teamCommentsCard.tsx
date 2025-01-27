@@ -35,50 +35,50 @@ export const TeamCommentsCard: React.FC<TeamCommentsCardProps> = ({
             overflow: "hidden",
           }}
         >
-          <Box flex={1} p={6}>
-            <Typography variant="body1" mb={2} fontWeight={700} color={color}>
-              Team Comments
-            </Typography>
-            <Typography variant="h3" mb={3} fontWeight={700}>
-              How was your experience
-              <br /> working with Moe?
-            </Typography>
-            <Typography component="div" variant="body1">
-              <Box display="flex" flexDirection="column" gap={1}>
-                {comments.map((comment, index) => (
-                  <Box key={index} mb={2} display="flex">
-                    <Typography
-                      variant="h5"
-                      color={color}
-                      fontWeight={700}
-                      mr={1}
-                    >
-                      &gt;
-                    </Typography>
-                    <Typography variant="body1">
-                      <Box
-                        component="span"
+          <Box flex={1}>
+            <Box p={6}>
+              <Typography variant="body1" mb={2} fontWeight={700} color={color}>
+                Team Comments
+              </Typography>
+              <Typography variant="h3" mb={3} fontWeight={700}>
+                How was your experience
+                <br /> working with Moe?
+              </Typography>
+              <Typography component="div" variant="body1">
+                <Box display="flex" flexDirection="column" gap={1}>
+                  {comments.map((comment, index) => (
+                    <Box key={index} mb={2} display="flex">
+                      <Typography
+                        variant="h5"
+                        color={color}
                         fontWeight={700}
-                        display="block"
-                        mb={2}
+                        mr={1}
                       >
-                        {comment.name}:
-                      </Box>
-                      “{comment.comment}”
-                    </Typography>
-                  </Box>
-                ))}
-              </Box>
-            </Typography>
+                        &gt;
+                      </Typography>
+                      <Typography variant="body1">
+                        <Box
+                          component="span"
+                          fontWeight={700}
+                          display="block"
+                          mb={2}
+                        >
+                          {comment.name}:
+                        </Box>
+                        “{comment.comment}”
+                      </Typography>
+                    </Box>
+                  ))}
+                </Box>
+              </Typography>
+            </Box>
           </Box>
           <Box
             flex={1}
-            minHeight={{ xs: 200, md: 500 }}
             pb={0}
             pr={imagePaddingRight || 0}
-            overflow="hidden"
+            minHeight={{ xs: 200, md: 500 }}
             position="relative"
-            mb={-12}
           >
             <Box
               component="img"
@@ -87,7 +87,7 @@ export const TeamCommentsCard: React.FC<TeamCommentsCardProps> = ({
               sx={{
                 width: "100%",
                 height: "100%",
-                marginBottom: "-10px",
+                marginBottom: "-60px",
                 objectFit: "cover",
                 objectPosition: "top",
               }}

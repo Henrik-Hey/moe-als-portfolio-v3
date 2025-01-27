@@ -158,6 +158,9 @@ export const PresetProjectCard = ({
           ctaText="In Progress.."
           color={darkMode ? palette.darkMode[50] : "#FEF0CD"}
           hoverColor={darkMode ? "#2F2F2F" : "#CFDAFC"}
+          onCTAClick={() => {
+            router.push("/projects/homezai");
+          }}
           content={
             <Box display="flex" gap={2} justifyContent="center">
               <Box

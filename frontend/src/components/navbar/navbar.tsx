@@ -239,6 +239,7 @@ const useProjectFromURL = (): string => {
   if (pathname.includes("afc")) return "AFC";
   if (pathname.includes("sohs")) return "SOHS";
   if (pathname.includes("IArt")) return "IArt";
+  if (pathname.includes("homezai")) return "HomezAI";
   return "Work";
 };
 
@@ -369,6 +370,24 @@ export const Navbar: React.FC<NavbarProps> = ({ colorMode }) => {
                 }}
               >
                 <Typography>SharpStakes</Typography>
+              </Box>
+              <Box
+                component={Link}
+                href="/projects/homezai"
+                sx={{
+                  p: 1,
+                  minWidth: "165px",
+                  display: "flex",
+                  justifyContent: "space-between",
+                  alignItems: "center",
+                  textDecoration: "none",
+                  color: textColor,
+                  "&:hover": {
+                    borderLeft: `2px solid ${textColor}`,
+                  },
+                }}
+              >
+                <Typography>HomezAI</Typography>
               </Box>
               <Box
                 component={Link}
@@ -557,6 +576,21 @@ export const Navbar: React.FC<NavbarProps> = ({ colorMode }) => {
                 }}
               >
                 <Typography>SharpStakes</Typography>
+              </ButtonBase>
+              <ButtonBase
+                component={Link}
+                href="/projects/homezai"
+                sx={{
+                  p: 1,
+                  width: "100%",
+                  display: "flex",
+                  justifyContent: "space-between",
+                  alignItems: "center",
+                  textDecoration: "none",
+                  color: textColor,
+                }}
+              >
+                <Typography>HomezAI</Typography>
               </ButtonBase>
               <ButtonBase
                 component={Link}
