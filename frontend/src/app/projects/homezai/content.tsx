@@ -649,14 +649,14 @@ export default function Content() {
       <TeamCommentsCard
         color="#1E4DDB"
         imageURL="/v2/HomezAI/img22.png"
-        imagePaddingRight={{ xs: 0, md: 8 }}
+        imagePaddingRight={{ xs: 2, md: 8 }}
         imageProps={{
           sx: {
             position: { xs: "relative", md: "absolute" },
             width: "100%",
             maxHeight: { xs: 600, md: "unset" },
             transform: {
-              xs: "scale(2) translateY(20%)",
+              xs: "scale(1.5) translateY(20%)",
               md: "translateY(-10%)",
             },
             objectFit: "cover",
