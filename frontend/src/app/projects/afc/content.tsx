@@ -28,7 +28,7 @@ export default function Content() {
           <ProjectMissionStatement
             backgroundColor={palette.green.main}
             typeTitle="Project Type"
-            typeText="Redesign"
+            typeText="UX/UI Redesign"
             platformsText="Web, Tablet, Mobile: IOS, Android"
             timelineText="Q2 2022 - Ongoing"
             collaboration={
@@ -76,11 +76,14 @@ export default function Content() {
                 Problem
               </Typography>
               <Typography variant="body1">
-                I redesigned AFCD’s flooring process, driving a significant
-                boost in user satisfaction and reducing session times by 25%. By
-                streamlining workflows and modernizing the interface, I
-                delivered a faster, more intuitive experience that transformed
-                how users interact with the platform.
+                The NAP (Non-Auction Purchase) Inventory Financing Process, also
+                known as &apos;Flooring,&apos; involves an interactive form that
+                dealers complete to secure short-term financing for purchasing
+                inventory. This process had challenges with high dropout rates
+                and disorganized content, and important details were often
+                difficult to find due to ineffective color and font choices.
+                These issues led to a redesign aimed at simplifying the form and
+                improving its usability.
               </Typography>
             </Box>
           </FadeIn>
@@ -211,7 +214,7 @@ export default function Content() {
                 <Box flex={1}>
                   <Typography variant="body1" mb={1.5}>
                     Method 3: <br />
-                    <b>Qualitative Research </b>
+                    <b>Quantitative Research </b>
                   </Typography>
                   <Typography variant="body1">
                     Executed A/B tests and gathered data via surveys with
@@ -286,7 +289,19 @@ export default function Content() {
           </FadeIn>
         </Box>
       </Container>
-      <SurveyCompAnalysisSection />
+      <Container maxWidth="xl">
+        <Box pb={0} width="100%">
+          <Box
+            component="img"
+            alt=""
+            role="presentation"
+            sx={{
+              width: "100%",
+            }}
+            src="/v2/AFC/nextGear_barChart.svg"
+          />
+        </Box>
+      </Container>
       <Container maxWidth="lg">
         <Box display="flex" flexDirection="column" gap={12} my={12}>
           <FadeIn>
