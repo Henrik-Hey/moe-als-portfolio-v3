@@ -250,7 +250,7 @@ export default function Content() {
       </Container>
       <Container maxWidth="xl">
         <Box width="100%">
-          <Box pb={2} mb={12}>
+          <Box pb={2}>
             <Typography variant="body2" fontWeight={400} fontSize={14}>
               MOSCOW
             </Typography>
