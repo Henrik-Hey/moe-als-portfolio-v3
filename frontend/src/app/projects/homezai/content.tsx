@@ -387,9 +387,7 @@ export default function Content() {
         <Box width="100%" mb={12}>
           <video
             playsInline
-            controls={false}
-            autoPlay
-            loop
+            controls
             muted
             role="presentation"
             style={{
@@ -579,9 +577,7 @@ export default function Content() {
         <Box width="100%">
           <video
             playsInline
-            controls={false}
-            autoPlay
-            loop
+            controls
             muted
             role="presentation"
             style={{
