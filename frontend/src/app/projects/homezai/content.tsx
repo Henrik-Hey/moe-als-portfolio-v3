@@ -38,7 +38,7 @@ export default function Content() {
             backgroundColor="#CFDAFC"
             typeTitle="Project Type"
             typeText="Product Design"
-            platformsText="Web, Vehicle Console"
+            platformsText="Web, Mobile"
             timelineText="Q1 2024 - Ongoing"
             collaboration={
               <>

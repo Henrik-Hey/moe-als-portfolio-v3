@@ -108,9 +108,12 @@ export const PresetProjectCard = ({
           isDefaultHovered={isDefaultHovered}
           project="EasyAudit"
           subtext="Transforming Compliance with a Smarter Audit Process"
-          ctaText="In Progress.."
+          ctaText="View Case Study"
           color={darkMode ? palette.darkMode[50] : "#FEF0CD"}
           hoverColor={darkMode ? "#2F2F2F" : "#CFFCE9"}
+          onCTAClick={() => {
+            router.push("/projects/easyaudit");
+          }}
           content={
             <Box display="flex" gap={2} justifyContent="center">
               <Box
@@ -155,7 +158,7 @@ export const PresetProjectCard = ({
           isDefaultHovered={isDefaultHovered}
           project="HomezAI"
           subtext="Simplifying Home Buying with Smarter Scheduling Tools"
-          ctaText="In Progress.."
+          ctaText="View Case Study"
           color={darkMode ? palette.darkMode[50] : "#FEF0CD"}
           hoverColor={darkMode ? "#2F2F2F" : "#CFDAFC"}
           onCTAClick={() => {
