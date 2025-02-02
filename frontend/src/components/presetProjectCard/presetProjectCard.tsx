@@ -208,13 +208,16 @@ export const PresetProjectCard = ({
           isDefaultHovered={isDefaultHovered}
           project="Openlane & Auto Finance Dealer"
           subtext="Boosting Engagement by Linking Discovery to Financing"
-          ctaText="In Progress.."
+          ctaText="View Case Study"
           color={darkMode ? palette.darkMode[50] : "#FEF0CD"}
           hoverColor={
             darkMode
               ? "#2F2F2F"
               : "linear-gradient(148.76deg, #E3FCCF -1.47%, #CFDAFC 103.52%)"
           }
+          onCTAClick={() => {
+            router.push("/projects/openlane");
+          }}
           content={
             <Box display="flex" gap={2} justifyContent="center">
               <Box

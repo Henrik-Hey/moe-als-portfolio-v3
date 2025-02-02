@@ -241,6 +241,7 @@ const useProjectFromURL = (): string => {
   if (pathname.includes("IArt")) return "IArt";
   if (pathname.includes("homezai")) return "HomezAI";
   if (pathname.includes("easyaudit")) return "EasyAudit";
+  if (pathname.includes("openlane")) return "Openlane";
   return "Work";
 };
 
@@ -467,6 +468,29 @@ export const Navbar: React.FC<NavbarProps> = ({ colorMode }) => {
                   <LockOpenTwoTone sx={{ color: textColor }} />
                 )}
               </Box>
+              <Box
+                component={Link}
+                href="/projects/openlane"
+                sx={{
+                  p: 1,
+                  minWidth: "165px",
+                  display: "flex",
+                  justifyContent: "space-between",
+                  alignItems: "center",
+                  textDecoration: "none",
+                  color: textColor,
+                  "&:hover": {
+                    borderLeft: `2px solid ${textColor}`,
+                  },
+                }}
+              >
+                <Typography>Openlane</Typography>
+                {getCookie(ACCESS_COOKIE_KEY) !== "true" ? (
+                  <LockTwoTone sx={{ color: textColor }} />
+                ) : (
+                  <LockOpenTwoTone sx={{ color: textColor }} />
+                )}
+              </Box>
             </Card>
           </Box>
           <Box
@@ -556,6 +580,38 @@ export const Navbar: React.FC<NavbarProps> = ({ colorMode }) => {
                   }}
                 >
                   <Typography mr={1}>AFC</Typography>
+                  {getCookie(ACCESS_COOKIE_KEY) !== "true" ? (
+                    <LockTwoTone sx={{ color: textColor, fontSize: "16px" }} />
+                  ) : (
+                    <LockOpenTwoTone
+                      sx={{ color: textColor, fontSize: "16px" }}
+                    />
+                  )}
+                </Box>
+              </ButtonBase>
+              <ButtonBase
+                component={Link}
+                href="/projects/openlane"
+                sx={{
+                  p: 1,
+                  width: "100%",
+                  display: "flex",
+                  justifyContent: "space-between",
+                  alignItems: "center",
+                  textDecoration: "none",
+                  color: textColor,
+                  mb: 1,
+                }}
+              >
+                <Box
+                  display="flex"
+                  sx={{
+                    justifyContent: "space-between",
+                    alignItems: "center",
+                    width: "100%",
+                  }}
+                >
+                  <Typography mr={1}>Openlane</Typography>
                   {getCookie(ACCESS_COOKIE_KEY) !== "true" ? (
                     <LockTwoTone sx={{ color: textColor, fontSize: "16px" }} />
                   ) : (
