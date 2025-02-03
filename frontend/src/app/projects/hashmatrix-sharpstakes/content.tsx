@@ -235,7 +235,7 @@ export default function Content() {
       <Container maxWidth="xl">
         <Box
           p={6}
-          my={12}
+          mb={6}
           pb={0}
           width="100%"
           sx={{
