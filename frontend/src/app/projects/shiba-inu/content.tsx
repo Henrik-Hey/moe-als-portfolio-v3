@@ -473,7 +473,7 @@ export default function Content() {
         <Box
           p={6}
           pb={0}
-          mb={12}
+          mb={6}
           sx={{
             background: "#FBD0D2",
             overflow: "hidden",

@@ -28,7 +28,7 @@ export const TeamCommentsCard: React.FC<TeamCommentsCardProps> = ({
           display="flex"
           flexDirection={{ xs: "column", md: "row" }}
           mt={6}
-          mb={12}
+          mb={6}
           alignItems="center"
           sx={{
             background: "#f0f0f0",

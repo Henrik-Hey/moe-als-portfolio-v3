@@ -759,7 +759,8 @@ export default function Content() {
           <Box
             display="flex"
             flexDirection={{ xs: "column", md: "row" }}
-            my={12}
+            mt={12}
+            mb={6}
             alignItems="center"
             sx={{
               background: "#f0f0f0",

@@ -15,12 +15,12 @@ export const ProjectsNavFooter: React.FC<ProjectsNavFooterProps> = ({
   return (
     <Box sx={{ background: "#E7E8E8" }}>
       <Container maxWidth="xl">
-        <Box pt={12} pb={6}>
+        <Box pt={6}>
           <Typography variant="h3" textAlign="center" fontWeight={700}>
             More to see :)
           </Typography>
           <Box
-            mt={12}
+            mt={6}
             display="flex"
             flexDirection={{ xs: "column", md: "row" }}
             gap={6}

@@ -67,10 +67,10 @@ export default function Content() {
           <ProjectStatement
             content={
               <>
-                I led the design, branding, and UX for HomezAi, a platform built
-                to streamline realtor and broker scheduling for clients and
-                investors. The project reimagines real estate coordination with
-                a focus on efficiency.
+                I led the design and UX for EasyAudit, crafting an intuitive
+                interface to simplify compliance processes. This project focuses
+                on efficiency and usability to support businesses in achieving
+                their compliance goals.
               </>
             }
           />
@@ -80,10 +80,11 @@ export default function Content() {
                 Project Goals
               </Typography>
               <Typography variant="body1">
-                I led the design and UX for EasyAudit, crafting an intuitive
-                interface to simplify compliance processes. This project focuses
-                on efficiency and usability to support businesses in achieving
-                their compliance goals.
+                The objective was to create a compliance platform from the
+                ground up, blending brand identity, seamless user experience,
+                and adherence to regulatory standards. The design needed to
+                balance scalability, user-centricity, and clarity while meeting
+                business needs and compliance requirements.
               </Typography>
             </Box>
           </FadeIn>
