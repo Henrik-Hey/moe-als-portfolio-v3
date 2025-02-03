@@ -1,3 +1,4 @@
+import { Authentication } from "./authentication";
 import Content from "./content";
 import { Metadata } from "next";
 
@@ -6,5 +7,5 @@ export const metadata: Metadata = {
 };
 
 export default function Openlane() {
-  return <Content />;
+  return <Authentication />;
 }

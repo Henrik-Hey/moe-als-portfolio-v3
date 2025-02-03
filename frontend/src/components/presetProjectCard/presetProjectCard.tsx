@@ -120,6 +120,10 @@ export const PresetProjectCard = ({
                 component="img"
                 src="/v2/Home page/Projects/prodShowcase_EA.png"
                 alt="Picture of AFC console"
+                sx={{
+                  transform: "scale(2.45) translate(-44px, 0px)",
+                  transformOrigin: "top left",
+                }}
                 width={{ xs: 350, md: 450 }}
               />
             </Box>
@@ -143,8 +147,12 @@ export const PresetProjectCard = ({
             <Box display="flex" gap={2} justifyContent="center">
               <Box
                 component="img"
-                src="/v2/Home page/Projects/prodShowcase_FORCEGRAPH.png"
+                src="/v2/Home page/Projects/prodShowcase_FG.png"
                 alt="Picture of AFC console"
+                sx={{
+                  transform: "scale(2.45) translate(-44px, 0px)",
+                  transformOrigin: "top left",
+                }}
                 width={{ xs: 350, md: 450 }}
               />
             </Box>
@@ -209,6 +217,7 @@ export const PresetProjectCard = ({
           project="Openlane & Auto Finance Dealer"
           subtext="Boosting Engagement by Linking Discovery to Financing"
           ctaText="View Case Study"
+          isLocked={getCookie(ACCESS_COOKIE_KEY) !== "true"}
           color={darkMode ? palette.darkMode[50] : "#FEF0CD"}
           hoverColor={
             darkMode
@@ -222,8 +231,12 @@ export const PresetProjectCard = ({
             <Box display="flex" gap={2} justifyContent="center">
               <Box
                 component="img"
-                src="/v2/Home page/Projects/prodShowcase_ AFC2.png"
+                src="/v2/Home page/Projects/prodShowcase_AFC2.png"
                 alt="Picture of AFC console"
+                sx={{
+                  transform: "scale(2.45) translate(-44px, 0px)",
+                  transformOrigin: "top left",
+                }}
                 width={{ xs: 350, md: 450 }}
               />
             </Box>
