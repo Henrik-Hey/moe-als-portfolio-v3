@@ -1,12 +1,10 @@
 import React from "react";
 import {
   Box,
-  Button,
   ButtonBase,
   Card,
   Container,
   Divider,
-  IconButton,
   Typography,
   styled,
   useMediaQuery,
@@ -15,11 +13,9 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import {
   ArrowDropDown,
-  DarkModeOutlined,
   LockOpenTwoTone,
   LockTwoTone,
   OpenInNew,
-  WbSunnyOutlined,
 } from "@mui/icons-material";
 import { Twirl as Hamburger } from "hamburger-react";
 import {
@@ -30,6 +26,7 @@ import {
   EA_ACCESS_COOKIE,
 } from "@/hooks";
 import { usePortfolioTheme } from "@/theme";
+import { keyframes } from "@emotion/react";
 
 export const DarkLogo = () => (
   <svg
@@ -299,7 +296,15 @@ export const Navbar: React.FC<NavbarProps> = ({ colorMode }) => {
       <BannerContainer mt={3}>
         <ButtonBase
           LinkComponent={Link}
-          sx={{ borderRadius: 2, p: 1, mx: -1, my: -1 }}
+          sx={{
+            borderRadius: 2,
+            p: 1,
+            mx: -1,
+            my: -1,
+            "&:hover": {
+              animation: `${shakeAnimation} 0.82s cubic-bezier(.36,.07,.19,.97) both`,
+            },
+          }}
           href="/"
         >
           {icon}
@@ -869,4 +874,12 @@ const NavLinkContainer = styled(Box)`
   & > .hamburger-react {
     -webkit-tap-highlight-color: transparent !important;
   }
+`;
+
+const shakeAnimation = keyframes`
+  0% { transform: translateX(0); }
+  25% { transform: translateX(10px); }
+  50% { transform: translateX(-10px); }
+  75% { transform: translateX(10px); }
+  100% { transform: translateX(0); }
 `;
