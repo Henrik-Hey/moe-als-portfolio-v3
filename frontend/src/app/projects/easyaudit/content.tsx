@@ -32,14 +32,14 @@ export default function Content() {
         secondaryColor="#CFFCE9"
         imageText="Document Management Concept Screen"
       />
-      <Container maxWidth="xl">
+      <Container maxWidth="lg">
         <Box mt={6}>
           <ProjectMissionStatement
             backgroundColor="#CFFCE9"
             typeTitle="Project Type"
             typeText="Product Design"
             platformsText="Web, Mobile"
-            timelineText="Q3 2024 - Ongoing"
+            timelineText="Q2 2024 - Ongoing"
             collaboration={
               <>
                 Directors
@@ -74,58 +74,60 @@ export default function Content() {
               </>
             }
           />
-          <FadeIn>
-            <Box>
-              <Typography variant="h3" mb={2} fontWeight={700}>
-                Project Goals
-              </Typography>
-              <Typography variant="body1">
-                The objective was to create a compliance platform from the
-                ground up, blending brand identity, seamless user experience,
-                and adherence to regulatory standards. The design needed to
-                balance scalability, user-centricity, and clarity while meeting
-                business needs and compliance requirements.
-              </Typography>
-            </Box>
-          </FadeIn>
-          <FadeIn>
-            <Box
-              display="flex"
-              flexDirection={{
-                xs: "column",
-                md: "row",
-              }}
-              gap={{ xs: 2, md: 2 }}
-            >
-              <Box flex={1}>
-                <Typography variant="body1" mb={2} fontWeight={700}>
-                  Establishing Brand & Flow
+          <Box display="flex" flexDirection="column" gap={6}>
+            <FadeIn>
+              <Box>
+                <Typography variant="h3" mb={2} fontWeight={700}>
+                  Project Goals
                 </Typography>
                 <Typography variant="body1">
-                  Define the brand identity and foundational workflows to align
-                  design and functionality with user needs.
+                  The objective was to create a compliance platform from the
+                  ground up, blending brand identity, seamless user experience,
+                  and adherence to regulatory standards. The design needed to
+                  balance scalability, user-centricity, and clarity while
+                  meeting business needs and compliance requirements.
                 </Typography>
               </Box>
-              <Box flex={1}>
-                <Typography variant="body1" mb={2} fontWeight={700}>
-                  Scalability & User-Centered Design
-                </Typography>
-                <Typography variant="body1">
-                  Design for scale, and ensure the experience is prioritizing
-                  the user each step of the way.
-                </Typography>
+            </FadeIn>
+            <FadeIn>
+              <Box
+                display="flex"
+                flexDirection={{
+                  xs: "column",
+                  md: "row",
+                }}
+                gap={{ xs: 2, md: 2 }}
+              >
+                <Box flex={1}>
+                  <Typography variant="body1" mb={2} fontWeight={700}>
+                    Establishing Brand & Flow
+                  </Typography>
+                  <Typography variant="body1">
+                    Define the brand identity and foundational workflows to
+                    align design and functionality with user needs.
+                  </Typography>
+                </Box>
+                <Box flex={1}>
+                  <Typography variant="body1" mb={2} fontWeight={700}>
+                    Scalability & User-Centered Design
+                  </Typography>
+                  <Typography variant="body1">
+                    Design for scale, and ensure the experience is prioritizing
+                    the user each step of the way.
+                  </Typography>
+                </Box>
+                <Box flex={1}>
+                  <Typography variant="body1" mb={2} fontWeight={700}>
+                    Compliance & Clarity
+                  </Typography>
+                  <Typography variant="body1">
+                    Meet regulatory standards while delivering a clear,
+                    trustworthy platform.
+                  </Typography>
+                </Box>
               </Box>
-              <Box flex={1}>
-                <Typography variant="body1" mb={2} fontWeight={700}>
-                  Compliance & Clarity
-                </Typography>
-                <Typography variant="body1">
-                  Meet regulatory standards while delivering a clear,
-                  trustworthy platform.
-                </Typography>
-              </Box>
-            </Box>
-          </FadeIn>
+            </FadeIn>
+          </Box>
           <FadeIn>
             <Box>
               <Typography variant="h3" mb={2} fontWeight={700}>
@@ -506,7 +508,7 @@ export default function Content() {
         </Box>
       </Container>
       <Container maxWidth="lg">
-        <Box display="flex" flexDirection="column" gap={2} mt={12}>
+        <Box display="flex" flexDirection="column" gap={2} my={12}>
           <Box>
             <FadeIn>
               <Box mb={2}>
@@ -535,7 +537,7 @@ export default function Content() {
             style={{
               width: "100%",
             }}
-            src="/v2/EasyAudit/img17.svg"
+            src="/v2/EasyAudit/img17.png"
           />
         </Box>
       </Container>

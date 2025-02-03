@@ -17,7 +17,7 @@ import {
 } from "@mui/material";
 import { useBaseTheme } from "@/theme";
 import { ArrowLeft, ArrowRightAlt } from "@mui/icons-material";
-import { ACCESS_COOKIE_KEY, getCookie, setCookie } from "@/hooks";
+import { getCookie, HOMEZ_ACCESS_COOKIE, setCookie } from "@/hooks";
 import { default as NextLink } from "next/link";
 
 export const Authentication = () => {
@@ -27,7 +27,7 @@ export const Authentication = () => {
   const [password, setPassword] = React.useState("");
 
   React.useEffect(() => {
-    const accessKey = getCookie(ACCESS_COOKIE_KEY);
+    const accessKey = getCookie(HOMEZ_ACCESS_COOKIE);
     if (accessKey != "true") {
       setIsAuthenticated(false);
     }
@@ -108,10 +108,10 @@ export const Authentication = () => {
               component="form"
               onSubmit={(e) => {
                 e.preventDefault();
-                if (password === "AFCPro1_ACCESS!") {
+                if (password === "HOMEZAI_ProACCESS!") {
                   setIsAuthenticated(true);
                   setAuthError(false);
-                  setCookie(ACCESS_COOKIE_KEY, "true");
+                  setCookie(HOMEZ_ACCESS_COOKIE, "true");
                 } else {
                   setAuthError(true);
                 }

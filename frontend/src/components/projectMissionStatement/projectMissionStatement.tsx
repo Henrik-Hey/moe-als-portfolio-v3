@@ -56,7 +56,7 @@ export const ProjectMissionStatement = ({
           </Typography>
           <Typography variant="body2">{timelineText}</Typography>
         </Box>
-        <Box flex={1}>
+        <Box flex={2}>
           <Typography variant="body2" fontWeight={700} mb={1.5}>
             Role & responsibilities
           </Typography>

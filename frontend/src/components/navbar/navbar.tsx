@@ -22,7 +22,13 @@ import {
   WbSunnyOutlined,
 } from "@mui/icons-material";
 import { Twirl as Hamburger } from "hamburger-react";
-import { getCookie, ACCESS_COOKIE_KEY } from "@/hooks";
+import {
+  getCookie,
+  ACCESS_COOKIE_KEY,
+  AFC2_ACCESS_COOKIE_KEY,
+  HOMEZ_ACCESS_COOKIE,
+  EA_ACCESS_COOKIE,
+} from "@/hooks";
 import { usePortfolioTheme } from "@/theme";
 
 export const DarkLogo = () => (
@@ -339,114 +345,6 @@ export const Navbar: React.FC<NavbarProps> = ({ colorMode }) => {
             >
               <Box
                 component={Link}
-                href="/projects/shiba-inu"
-                sx={{
-                  p: 1,
-                  minWidth: "165px",
-                  display: "flex",
-                  justifyContent: "space-between",
-                  alignItems: "center",
-                  textDecoration: "none",
-                  color: textColor,
-                  "&:hover": {
-                    borderLeft: `2px solid ${textColor}`,
-                  },
-                }}
-              >
-                <Typography>Shiba Inu</Typography>
-              </Box>
-              <Box
-                component={Link}
-                href="/projects/hashmatrix-sharpstakes"
-                sx={{
-                  p: 1,
-                  minWidth: "165px",
-                  display: "flex",
-                  justifyContent: "space-between",
-                  alignItems: "center",
-                  textDecoration: "none",
-                  color: textColor,
-                  "&:hover": {
-                    borderLeft: `2px solid ${textColor}`,
-                  },
-                }}
-              >
-                <Typography>SharpStakes</Typography>
-              </Box>
-              <Box
-                component={Link}
-                href="/projects/homezai"
-                sx={{
-                  p: 1,
-                  minWidth: "165px",
-                  display: "flex",
-                  justifyContent: "space-between",
-                  alignItems: "center",
-                  textDecoration: "none",
-                  color: textColor,
-                  "&:hover": {
-                    borderLeft: `2px solid ${textColor}`,
-                  },
-                }}
-              >
-                <Typography>HomezAI</Typography>
-              </Box>
-              <Box
-                component={Link}
-                href="/projects/easyaudit"
-                sx={{
-                  p: 1,
-                  minWidth: "165px",
-                  display: "flex",
-                  justifyContent: "space-between",
-                  alignItems: "center",
-                  textDecoration: "none",
-                  color: textColor,
-                  "&:hover": {
-                    borderLeft: `2px solid ${textColor}`,
-                  },
-                }}
-              >
-                <Typography>EasyAudit</Typography>
-              </Box>
-              <Box
-                component={Link}
-                href="/projects/sohs"
-                sx={{
-                  p: 1,
-                  minWidth: "165px",
-                  display: "flex",
-                  justifyContent: "space-between",
-                  alignItems: "center",
-                  textDecoration: "none",
-                  color: textColor,
-                  "&:hover": {
-                    borderLeft: `2px solid ${textColor}`,
-                  },
-                }}
-              >
-                <Typography>SOHS</Typography>
-              </Box>
-              <Box
-                component={Link}
-                href="/projects/IArt"
-                sx={{
-                  p: 1,
-                  minWidth: "165px",
-                  display: "flex",
-                  justifyContent: "space-between",
-                  alignItems: "center",
-                  textDecoration: "none",
-                  color: textColor,
-                  "&:hover": {
-                    borderLeft: `2px solid ${textColor}`,
-                  },
-                }}
-              >
-                <Typography>IArt</Typography>
-              </Box>
-              <Box
-                component={Link}
                 href="/projects/afc"
                 sx={{
                   p: 1,
@@ -485,11 +383,129 @@ export const Navbar: React.FC<NavbarProps> = ({ colorMode }) => {
                 }}
               >
                 <Typography>Openlane</Typography>
-                {getCookie(ACCESS_COOKIE_KEY) !== "true" ? (
+                {getCookie(AFC2_ACCESS_COOKIE_KEY) !== "true" ? (
                   <LockTwoTone sx={{ color: textColor }} />
                 ) : (
                   <LockOpenTwoTone sx={{ color: textColor }} />
                 )}
+              </Box>
+              <Box
+                component={Link}
+                href="/projects/homezai"
+                sx={{
+                  p: 1,
+                  minWidth: "165px",
+                  display: "flex",
+                  justifyContent: "space-between",
+                  alignItems: "center",
+                  textDecoration: "none",
+                  color: textColor,
+                  "&:hover": {
+                    borderLeft: `2px solid ${textColor}`,
+                  },
+                }}
+              >
+                <Typography>HomezAI</Typography>
+                {getCookie(HOMEZ_ACCESS_COOKIE) !== "true" ? (
+                  <LockTwoTone sx={{ color: textColor }} />
+                ) : (
+                  <LockOpenTwoTone sx={{ color: textColor }} />
+                )}
+              </Box>
+              <Box
+                component={Link}
+                href="/projects/easyaudit"
+                sx={{
+                  p: 1,
+                  minWidth: "165px",
+                  display: "flex",
+                  justifyContent: "space-between",
+                  alignItems: "center",
+                  textDecoration: "none",
+                  color: textColor,
+                  "&:hover": {
+                    borderLeft: `2px solid ${textColor}`,
+                  },
+                }}
+              >
+                <Typography>EasyAudit</Typography>
+                {getCookie(EA_ACCESS_COOKIE) !== "true" ? (
+                  <LockTwoTone sx={{ color: textColor }} />
+                ) : (
+                  <LockOpenTwoTone sx={{ color: textColor }} />
+                )}
+              </Box>
+              <Box
+                component={Link}
+                href="/projects/IArt"
+                sx={{
+                  p: 1,
+                  minWidth: "165px",
+                  display: "flex",
+                  justifyContent: "space-between",
+                  alignItems: "center",
+                  textDecoration: "none",
+                  color: textColor,
+                  "&:hover": {
+                    borderLeft: `2px solid ${textColor}`,
+                  },
+                }}
+              >
+                <Typography>IArt</Typography>
+              </Box>
+              <Box
+                component={Link}
+                href="/projects/sohs"
+                sx={{
+                  p: 1,
+                  minWidth: "165px",
+                  display: "flex",
+                  justifyContent: "space-between",
+                  alignItems: "center",
+                  textDecoration: "none",
+                  color: textColor,
+                  "&:hover": {
+                    borderLeft: `2px solid ${textColor}`,
+                  },
+                }}
+              >
+                <Typography>SOHS</Typography>
+              </Box>
+              <Box
+                component={Link}
+                href="/projects/hashmatrix-sharpstakes"
+                sx={{
+                  p: 1,
+                  minWidth: "165px",
+                  display: "flex",
+                  justifyContent: "space-between",
+                  alignItems: "center",
+                  textDecoration: "none",
+                  color: textColor,
+                  "&:hover": {
+                    borderLeft: `2px solid ${textColor}`,
+                  },
+                }}
+              >
+                <Typography>SharpStakes</Typography>
+              </Box>
+              <Box
+                component={Link}
+                href="/projects/shiba-inu"
+                sx={{
+                  p: 1,
+                  minWidth: "165px",
+                  display: "flex",
+                  justifyContent: "space-between",
+                  alignItems: "center",
+                  textDecoration: "none",
+                  color: textColor,
+                  "&:hover": {
+                    borderLeft: `2px solid ${textColor}`,
+                  },
+                }}
+              >
+                <Typography>Shiba Inu</Typography>
               </Box>
             </Card>
           </Box>
@@ -612,7 +628,71 @@ export const Navbar: React.FC<NavbarProps> = ({ colorMode }) => {
                   }}
                 >
                   <Typography mr={1}>Openlane</Typography>
-                  {getCookie(ACCESS_COOKIE_KEY) !== "true" ? (
+                  {getCookie(AFC2_ACCESS_COOKIE_KEY) !== "true" ? (
+                    <LockTwoTone sx={{ color: textColor, fontSize: "16px" }} />
+                  ) : (
+                    <LockOpenTwoTone
+                      sx={{ color: textColor, fontSize: "16px" }}
+                    />
+                  )}
+                </Box>
+              </ButtonBase>
+              <ButtonBase
+                component={Link}
+                href="/projects/homezai"
+                sx={{
+                  p: 1,
+                  width: "100%",
+                  display: "flex",
+                  justifyContent: "space-between",
+                  alignItems: "center",
+                  textDecoration: "none",
+                  color: textColor,
+                  mb: 1,
+                }}
+              >
+                <Box
+                  display="flex"
+                  sx={{
+                    justifyContent: "space-between",
+                    alignItems: "center",
+                    width: "100%",
+                  }}
+                >
+                  <Typography mr={1}>HomezAI</Typography>
+                  {getCookie(HOMEZ_ACCESS_COOKIE) !== "true" ? (
+                    <LockTwoTone sx={{ color: textColor, fontSize: "16px" }} />
+                  ) : (
+                    <LockOpenTwoTone
+                      sx={{ color: textColor, fontSize: "16px" }}
+                    />
+                  )}
+                </Box>
+              </ButtonBase>
+              <ButtonBase
+                component={Link}
+                href="/projects/easyaudit"
+                sx={{
+                  p: 1,
+                  width: "100%",
+                  display: "flex",
+                  justifyContent: "space-between",
+                  alignItems: "center",
+                  textDecoration: "none",
+                  color: textColor,
+                  mb: 1,
+                }}
+              >
+                <Box
+                  display="flex"
+                  sx={{
+                    justifyContent: "space-between",
+                    alignItems: "center",
+                    width: "100%",
+                  }}
+                >
+                  <Typography mr={1}>EasyAudit</Typography>
+                  {getCookie(EA_ACCESS_COOKIE) !== "true" ? (
                     <LockTwoTone sx={{ color: textColor, fontSize: "16px" }} />
                   ) : (
                     <LockOpenTwoTone
@@ -651,36 +731,6 @@ export const Navbar: React.FC<NavbarProps> = ({ colorMode }) => {
                 }}
               >
                 <Typography>SharpStakes</Typography>
-              </ButtonBase>
-              <ButtonBase
-                component={Link}
-                href="/projects/homezai"
-                sx={{
-                  p: 1,
-                  width: "100%",
-                  display: "flex",
-                  justifyContent: "space-between",
-                  alignItems: "center",
-                  textDecoration: "none",
-                  color: textColor,
-                }}
-              >
-                <Typography>HomezAI</Typography>
-              </ButtonBase>
-              <ButtonBase
-                component={Link}
-                href="/projects/easyaudit"
-                sx={{
-                  p: 1,
-                  width: "100%",
-                  display: "flex",
-                  justifyContent: "space-between",
-                  alignItems: "center",
-                  textDecoration: "none",
-                  color: textColor,
-                }}
-              >
-                <Typography>EasyAudit</Typography>
               </ButtonBase>
               <ButtonBase
                 component={Link}

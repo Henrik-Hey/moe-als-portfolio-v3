@@ -23,14 +23,14 @@ export default function Content() {
         secondaryColor={palette.green.main}
         imageText="Development ready screens"
       />
-      <Container maxWidth="xl">
+      <Container maxWidth="lg">
         <Box mt={6}>
           <ProjectMissionStatement
             backgroundColor={palette.green.main}
             typeTitle="Project Type"
             typeText="UX/UI Redesign"
             platformsText="Web, Tablet, Mobile: IOS, Android"
-            timelineText="Q2 2022 - Ongoing"
+            timelineText="Q2 2022 - Q1 2023"
             collaboration={
               <>
                 Product Owners

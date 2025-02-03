@@ -7,7 +7,7 @@ export const Footer = () => {
   const theme = useTheme();
   return (
     <Box
-      sx={{ background: theme.palette.neutral[100] }}
+      sx={{ background: "#F0F0F0" }}
       py={2}
       px={2}
       display="flex"

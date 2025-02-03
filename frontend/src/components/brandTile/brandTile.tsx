@@ -11,7 +11,7 @@ const brandLinks: any = {
   OPENLANE: "https://www.openlane.com/",
   AFC: "https://www.autofinance.com/",
   PAR: "https://www.parnorthamerica.com/",
-  HM: "https://www.hashmatrix.xyz/",
+  HM: "https://www.hashtensor.xyz/",
   PAGEON: "https://app.pageon.ai/",
   SS: "https://www.sharpstakes.ca/",
   " HOMEZ": "https://homezai.com/",
@@ -34,7 +34,7 @@ export const BrandTile: React.FC<BrandTileProps> = ({ brand, hoverColor }) => {
       alignItems="center"
       sx={{
         aspectRatio: "1",
-        p: 6,
+        p: 8,
         background: "#E7E8E8",
         flex: 1,
         borderRadius: "12px",

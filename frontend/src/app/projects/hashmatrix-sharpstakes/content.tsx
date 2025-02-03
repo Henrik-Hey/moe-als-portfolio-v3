@@ -32,7 +32,7 @@ export default function Content() {
         secondaryColor="#CFEAFC"
         imageText="Development ready screens"
       />
-      <Container maxWidth="xl">
+      <Container maxWidth="lg">
         <Box mt={6}>
           <ProjectMissionStatement
             backgroundColor="#CFEAFC"
@@ -139,9 +139,9 @@ export default function Content() {
                   Better Content Hierarchy
                 </Typography>
                 <Typography variant="body1">
-                  Simplifying the sign-up process to make it quicker and more
-                  intuitive, reducing drop-off rates and encouraging more users
-                  to complete registration.
+                  Organizing content in a clear, logical manner to help users
+                  find information easily and quickly, improving overall
+                  navigation and user satisfaction.
                 </Typography>
               </Box>
             </Box>
@@ -780,7 +780,7 @@ export default function Content() {
         </Box>
       </Container>
       <Container maxWidth="xl">
-        <Box width="100%" mb={12}>
+        <Box width="100%" mb={6}>
           <img
             alt=""
             role="presentation"
@@ -853,7 +853,7 @@ export default function Content() {
         </Box>
       </Container>
       <Container maxWidth="xl">
-        <Box width="100%" mb={12}>
+        <Box width="100%" mb={6}>
           <video
             playsInline
             controls={false}
@@ -913,7 +913,7 @@ export default function Content() {
         </Box>
       </Container>
       <Container maxWidth="xl">
-        <Box width="100%" mb={12}>
+        <Box width="100%" mb={6}>
           <video
             playsInline
             controls={false}
@@ -931,7 +931,7 @@ export default function Content() {
       <Container maxWidth="xl">
         <Box
           p={6}
-          mb={12}
+          mb={6}
           sx={{
             background: "#CFEAFC",
             overflow: "hidden",

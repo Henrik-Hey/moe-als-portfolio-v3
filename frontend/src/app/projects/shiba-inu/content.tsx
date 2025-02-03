@@ -31,7 +31,7 @@ export default function Content() {
         secondaryColor="#FBD0D2"
         imageText="Hi-Fidelity concept screens"
       />
-      <Container maxWidth="xl">
+      <Container maxWidth="lg">
         <Box mt={6}>
           <ProjectMissionStatement
             backgroundColor="#FBD0D2"
@@ -220,7 +220,7 @@ export default function Content() {
         </Box>
       </Container>
       <Container maxWidth="xl">
-        <Box width="100%" mb={12}>
+        <Box width="100%" mb={6}>
           <img
             alt=""
             role="presentation"
@@ -232,7 +232,7 @@ export default function Content() {
         </Box>
       </Container>
       <Container maxWidth="xl">
-        <Box width="100%" mb={12}>
+        <Box width="100%">
           <img
             alt=""
             role="presentation"
@@ -292,7 +292,7 @@ export default function Content() {
         </Box>
       </Container>
       <Container maxWidth="xl">
-        <Box width="100%" mb={12}>
+        <Box width="100%" mb={6}>
           <img
             alt=""
             role="presentation"
@@ -335,7 +335,7 @@ export default function Content() {
         </Box>
       </Container>
       <Container maxWidth="xl">
-        <Box width="100%" mb={12}>
+        <Box width="100%" mb={6}>
           <img
             alt=""
             role="presentation"
@@ -364,7 +364,7 @@ export default function Content() {
         </Box>
       </Container>
       <Container maxWidth="xl">
-        <Box width="100%" mb={12}>
+        <Box width="100%" mb={6}>
           <img
             alt=""
             role="presentation"
@@ -393,7 +393,7 @@ export default function Content() {
         </Box>
       </Container>
       <Container maxWidth="xl">
-        <Box width="100%" mb={12}>
+        <Box width="100%" mb={6}>
           <img
             alt=""
             role="presentation"
@@ -405,7 +405,7 @@ export default function Content() {
         </Box>
       </Container>
       <Container maxWidth="xl">
-        <Box width="100%" mb={12}>
+        <Box width="100%" mb={6}>
           <img
             alt=""
             role="presentation"
@@ -434,7 +434,7 @@ export default function Content() {
         </Box>
       </Container>
       <Container maxWidth="xl">
-        <Box width="100%" mb={12}>
+        <Box width="100%" mb={6}>
           <video
             playsInline
             controls={false}
@@ -453,7 +453,7 @@ export default function Content() {
         <Box
           p={6}
           pb={0}
-          mb={12}
+          mb={6}
           sx={{
             background: "#FBD0D2",
             overflow: "hidden",

@@ -27,3 +27,6 @@ export const getCookie = (cname: string) => {
 };
 
 export const ACCESS_COOKIE_KEY = "afc_access_cookie";
+export const AFC2_ACCESS_COOKIE_KEY = "afc2_access_cookie";
+export const HOMEZ_ACCESS_COOKIE = "homez_access_cookie";
+export const EA_ACCESS_COOKIE = "ea_access_cookie";

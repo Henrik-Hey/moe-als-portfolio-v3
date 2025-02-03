@@ -32,7 +32,7 @@ export default function Content() {
         secondaryColor="#F2CFFC"
         imageText="Hi-Fidelity concept screens"
       />
-      <Container maxWidth="xl">
+      <Container maxWidth="lg">
         <Box mt={6}>
           <ProjectMissionStatement
             backgroundColor="#F2CFFC"
@@ -239,7 +239,7 @@ export default function Content() {
         </Box>
       </Container>
       <Container maxWidth="xl">
-        <Box width="100%" mb={12}>
+        <Box width="100%" mb={6}>
           <Box pb={2}>
             <Typography variant="body2" fontWeight={400} fontSize={14}>
               Pre-design Screens
@@ -256,7 +256,7 @@ export default function Content() {
         </Box>
       </Container>
       <Container maxWidth="xl">
-        <Box width="100%" mb={12}>
+        <Box width="100%" mb={6}>
           <video
             playsInline
             controls={false}
@@ -272,7 +272,7 @@ export default function Content() {
         </Box>
       </Container>
       <Container maxWidth="xl">
-        <Box width="100%" mb={12}>
+        <Box width="100%" mb={6}>
           <img
             alt=""
             role="presentation"
@@ -284,7 +284,7 @@ export default function Content() {
         </Box>
       </Container>
       <Container maxWidth="xl">
-        <Box width="100%" mb={12}>
+        <Box width="100%" mb={6}>
           <img
             alt=""
             role="presentation"
@@ -296,7 +296,7 @@ export default function Content() {
         </Box>
       </Container>
       <Container maxWidth="xl">
-        <Box width="100%" mb={12}>
+        <Box width="100%" mb={6}>
           <img
             alt=""
             role="presentation"

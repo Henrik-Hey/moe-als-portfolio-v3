@@ -1,4 +1,4 @@
-import Content from "./content";
+import { Authentication } from "./authentication";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -6,5 +6,5 @@ export const metadata: Metadata = {
 };
 
 export default function HomezAI() {
-  return <Content />;
+  return <Authentication />;
 }

@@ -16,6 +16,7 @@ import FadeIn from "@/components/fadeIn/fadeIn";
 import { ProjectsNavFooter } from "@/components/projectsNavFooter/projectsNavFooter";
 import { Footer } from "@/components/footer/footer";
 import { TeamCommentsCard } from "@/components/teamCommentsCard/teamCommentsCard";
+import Link from "next/link";
 
 export default function Content() {
   const baseTheme = useBaseTheme();
@@ -32,14 +33,14 @@ export default function Content() {
         secondaryColor="#CFDAFC"
         imageText="Latest concept screen"
       />
-      <Container maxWidth="xl">
+      <Container maxWidth="lg">
         <Box mt={6}>
           <ProjectMissionStatement
             backgroundColor="#CFDAFC"
             typeTitle="Project Type"
             typeText="Product Design"
             platformsText="Web, Mobile"
-            timelineText="Q1 2024 - Ongoing"
+            timelineText="Q3 2024 - Ongoing"
             collaboration={
               <>
                 Directors
@@ -67,7 +68,7 @@ export default function Content() {
           <ProjectStatement
             content={
               <>
-                I led the design, branding, and UX for HomezAi, a platform built
+                I led the design, branding, and UX for HomezAI, a platform built
                 to streamline realtor and broker scheduling for clients and
                 investors. The project reimagines real estate coordination with
                 a focus on efficiency.
@@ -147,11 +148,32 @@ export default function Content() {
                 Research & Discovery
               </Typography>
               <Typography variant="body1">
-                To align user needs with business goals, I conducted in-depth
-                research, including user personas, journey mapping, and a MoSCoW
-                analysis. Collaborative discussions with stakeholders and
-                development teams ensured the design accounted for both
-                technical constraints and backend/frontend feasibility.
+                To align user needs with business goals, I conducted in-depth{" "}
+                <a
+                  href="https://www.figma.com/board/4xnW9HE2YeF9lAl2yQ2tz7/HomezAI--Research?node-id=10-1172&t=GYLuES4r5sBHSrDw-1&fuid=755186265588674562"
+                  style={{
+                    color: "inherit",
+                    textDecoration: "underline",
+                  }}
+                  target="_blank"
+                >
+                  research
+                </a>
+                , including user personas, journey mapping, and a MoSCoW
+                analysis.{" "}
+                <a
+                  href="https://docs.google.com/document/d/1pVw48BxmYp_v4hl9NqNffUtGKhLdfM6P99gmoWX-Ho0/edit?usp=sharing"
+                  style={{
+                    color: "inherit",
+                    textDecoration: "underline",
+                  }}
+                  target="_blank"
+                >
+                  Collaborative discussions
+                </a>{" "}
+                with stakeholders and development teams ensured the design
+                accounted for both technical constraints and backend/frontend
+                feasibility.
               </Typography>
             </Box>
           </FadeIn>
@@ -190,26 +212,11 @@ export default function Content() {
               </Box>
             </Box>
           </FadeIn>
-          <FadeIn>
-            <Box>
-              <Typography variant="h3" mb={2} fontWeight={700}>
-                Brainstorming & Research
-              </Typography>
-              <Typography variant="body1">
-                With tight timelines and limited funding, this project was
-                largely conceptual, leaving little room for testing. My focus
-                was on solving key problems while meeting the requirements
-                outlined by stakeholders and developers. The challenge was to
-                design a solution that aligned with their criteria despite the
-                lack of certainty.
-              </Typography>
-            </Box>
-          </FadeIn>
         </Box>
       </Container>
       <Container maxWidth="xl">
         <Box width="100%">
-          <Box pb={2} mb={12}>
+          <Box pb={2}>
             <Typography variant="body2" fontWeight={400} fontSize={14}>
               Personas and user journey mapping
             </Typography>
@@ -225,7 +232,7 @@ export default function Content() {
         </Box>
       </Container>
       <Container maxWidth="xl">
-        <Box width="100%" mb={12}>
+        <Box width="100%" mb={6}>
           <img
             alt=""
             role="presentation"
@@ -237,7 +244,7 @@ export default function Content() {
         </Box>
       </Container>
       <Container maxWidth="xl">
-        <Box width="100%" mb={12}>
+        <Box width="100%" mb={6}>
           <img
             alt=""
             role="presentation"
@@ -284,7 +291,7 @@ export default function Content() {
         </Box>
       </Container>
       <Container maxWidth="xl">
-        <Box width="100%" mb={12}>
+        <Box width="100%" mb={6}>
           <Box pb={2}>
             <Typography variant="body2" fontWeight={400} fontSize={14}>
               <b>Stage 1: MVP Wireframes</b>
@@ -304,7 +311,7 @@ export default function Content() {
         </Box>
       </Container>
       <Container maxWidth="xl">
-        <Box width="100%" mb={12}>
+        <Box width="100%" mb={6}>
           <Box pb={2}>
             <Typography variant="body2" fontWeight={400} fontSize={14}>
               <b>Stage 2: Expanded Flow</b>
@@ -324,7 +331,7 @@ export default function Content() {
         </Box>
       </Container>
       <Container maxWidth="xl">
-        <Box width="100%" mb={12}>
+        <Box width="100%" mb={6}>
           <Box pb={2}>
             <Typography variant="body2" fontWeight={400} fontSize={14}>
               <b>Stage 3: MVP Wireframes</b>
@@ -344,7 +351,7 @@ export default function Content() {
         </Box>
       </Container>
       <Container maxWidth="xl">
-        <Box width="100%" mb={12}>
+        <Box width="100%" mb={6}>
           <Box pb={2}>
             <Typography variant="body2" fontWeight={400} fontSize={14}>
               <b>Stage 4: Full Product Experience</b>
@@ -364,7 +371,7 @@ export default function Content() {
         </Box>
       </Container>
       <Container maxWidth="xl">
-        <Box width="100%" mb={12}>
+        <Box width="100%" mb={6}>
           <Box pb={2}>
             <Typography variant="body2" fontWeight={400} fontSize={14}>
               <b>Stage 5: Feedback & Future Features</b>
@@ -384,7 +391,7 @@ export default function Content() {
         </Box>
       </Container>
       <Container maxWidth="xl">
-        <Box width="100%" mb={12}>
+        <Box width="100%" mb={6}>
           <video
             playsInline
             controls
@@ -398,7 +405,7 @@ export default function Content() {
         </Box>
       </Container>
       <Container maxWidth="xl">
-        <Box width="100%" mb={12}>
+        <Box width="100%" mb={6}>
           <Box pb={2}>
             <Typography variant="body2" fontWeight={400} fontSize={14}>
               <b>Stage 6: Landing Page Wireframes</b>
@@ -436,7 +443,7 @@ export default function Content() {
         </Box>
       </Container>
       <Container maxWidth="xl">
-        <Box width="100%" mb={12}>
+        <Box width="100%" mb={6}>
           <Box pb={2}>
             <Typography variant="body2" fontWeight={400} fontSize={14}>
               Concept work
@@ -453,7 +460,7 @@ export default function Content() {
         </Box>
       </Container>
       <Container maxWidth="xl">
-        <Box width="100%" mb={12}>
+        <Box width="100%" mb={6}>
           <Box pb={2}>
             <Typography variant="body2" fontWeight={400} fontSize={14}>
               Additional explorations
@@ -502,7 +509,7 @@ export default function Content() {
         </Box>
       </Container>
       <Container maxWidth="xl">
-        <Box width="100%" mb={12}>
+        <Box width="100%" mb={6}>
           <img
             alt=""
             role="presentation"
@@ -533,7 +540,7 @@ export default function Content() {
         </Box>
       </Container>
       <Container maxWidth="xl">
-        <Box width="100%" mb={12}>
+        <Box width="100%" mb={6}>
           <Box pb={2}>
             <Typography variant="body2" fontWeight={400} fontSize={14}>
               VI Theming work
@@ -550,7 +557,7 @@ export default function Content() {
         </Box>
       </Container>
       <Container maxWidth="xl">
-        <Box width="100%" mb={12}>
+        <Box width="100%" mb={6}>
           <img
             alt=""
             role="presentation"
@@ -562,7 +569,7 @@ export default function Content() {
         </Box>
       </Container>
       <Container maxWidth="xl">
-        <Box width="100%" mb={12}>
+        <Box width="100%" mb={6}>
           <img
             alt=""
             role="presentation"
@@ -603,7 +610,7 @@ export default function Content() {
         </FadeIn>
       </Container>
       <Container maxWidth="xl">
-        <Box width="100%" mb={12}>
+        <Box width="100%" mb={6}>
           <video
             playsInline
             controls={false}
@@ -619,7 +626,7 @@ export default function Content() {
         </Box>
       </Container>
       <Container maxWidth="xl">
-        <Box width="100%" mb={12}>
+        <Box width="100%" mb={6}>
           <img
             alt=""
             role="presentation"
@@ -631,7 +638,7 @@ export default function Content() {
         </Box>
       </Container>
       <Container maxWidth="xl">
-        <Box width="100%" mb={12}>
+        <Box width="100%" mb={6}>
           <img
             alt=""
             role="presentation"
@@ -641,6 +648,22 @@ export default function Content() {
             src="/v2/HomezAI/img21.png"
           />
         </Box>
+      </Container>
+      <Container maxWidth="lg">
+        <FadeIn>
+          <Box my={12}>
+            <Typography variant="h3" mb={2} fontWeight={700}>
+              Securing the Future of HomezAI
+            </Typography>
+            <Typography variant="body1">
+              Designs were showcased to investors and briefly tested on the live
+              app, generating enough interest to secure funding. As HomezAI
+              evolves, I look forward to highlighting its impact and sharing
+              success stories from our users. Thank you for reading through
+              this!
+            </Typography>
+          </Box>
+        </FadeIn>
       </Container>
       <TeamCommentsCard
         color="#1E4DDB"

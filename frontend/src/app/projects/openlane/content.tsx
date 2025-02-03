@@ -32,7 +32,7 @@ export default function Content() {
         secondaryColor="linear-gradient(180deg, #E3FCCF 0%, #CFDAFC 100%)"
         imageText="Development ready screens"
       />
-      <Container maxWidth="xl">
+      <Container maxWidth="lg">
         <Box mt={6}>
           <ProjectMissionStatement
             backgroundColor="#CFDAFC"
@@ -99,7 +99,7 @@ export default function Content() {
         </Box>
       </Container>
       <Container maxWidth="xl">
-        <Box width="100%" mb={12}>
+        <Box width="100%" mb={6}>
           <Box pb={2}>
             <Typography variant="body2" fontWeight={400} fontSize={14}>
               5W1H
@@ -254,7 +254,7 @@ export default function Content() {
         </Box>
       </Container>
       <Container maxWidth="xl">
-        <Box width="100%" mb={12}>
+        <Box width="100%" mb={6}>
           <img
             alt=""
             role="presentation"
@@ -266,7 +266,7 @@ export default function Content() {
         </Box>
       </Container>
       <Container maxWidth="xl">
-        <Box width="100%" mb={12}>
+        <Box width="100%" mb={6}>
           <Box pb={2}>
             <Typography variant="body2" fontWeight={400} fontSize={14}>
               Gen Inspo
@@ -301,7 +301,7 @@ export default function Content() {
         </Box>
       </Container>
       <Container maxWidth="xl">
-        <Box width="100%" mb={12}>
+        <Box width="100%" mb={6}>
           <Box pb={2}>
             <Typography variant="body2" fontWeight={400} fontSize={14}>
               Brainstorming
@@ -379,7 +379,7 @@ export default function Content() {
         </FadeIn>
       </Container>
       <Container maxWidth="xl">
-        <Box width="100%" mb={12}>
+        <Box width="100%" mb={6}>
           <Box pb={2}>
             <Typography variant="body2" fontWeight={400} fontSize={14}>
               First Round of Designs
@@ -593,7 +593,7 @@ export default function Content() {
         </Box>
       </Container>
       <Container maxWidth="xl">
-        <Box width="100%" mb={12}>
+        <Box width="100%" mb={6}>
           <Box pb={2}>
             <Typography variant="body2" fontWeight={400} fontSize={14}>
               Second round of designs & Additional conversion points
@@ -615,7 +615,7 @@ export default function Content() {
             Device Mockups
           </Typography>
         </Box>
-        <Box width="100%" mb={12}>
+        <Box width="100%" mb={6}>
           <img
             alt=""
             role="presentation"

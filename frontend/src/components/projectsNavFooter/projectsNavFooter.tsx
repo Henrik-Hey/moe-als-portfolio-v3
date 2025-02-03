@@ -13,7 +13,7 @@ export const ProjectsNavFooter: React.FC<ProjectsNavFooterProps> = ({
   projects,
 }) => {
   return (
-    <Box sx={{ background: "#E7E8E8" }}>
+    <Box sx={{ background: "#F0F0F0" }}>
       <Container maxWidth="xl">
         <Box pt={6}>
           <Typography variant="h3" textAlign="center" fontWeight={700}>

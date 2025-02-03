@@ -32,7 +32,7 @@ export default function Content() {
         secondaryColor="linear-gradient(90deg, #D1CFFC 0%, #E1CFFC 100%)"
         imageText="Latest concept screen"
       />
-      <Container maxWidth="xl">
+      <Container maxWidth="lg">
         <Box mt={6}>
           <ProjectMissionStatement
             backgroundColor="linear-gradient(90deg, #D1CFFC 0%, #E1CFFC 100%)"
@@ -193,7 +193,7 @@ export default function Content() {
         </Box>
       </Container>
       <Container maxWidth="xl">
-        <Box width="100%" mb={12}>
+        <Box width="100%" mb={6}>
           <img
             alt=""
             role="presentation"
@@ -236,7 +236,7 @@ export default function Content() {
         </Box>
       </Container>
       <Container maxWidth="xl">
-        <Box width="100%" mb={12}>
+        <Box width="100%" mb={6}>
           <Box pb={2}>
             <Typography variant="body2" fontWeight={400} fontSize={14}>
               Initial Concepts
@@ -253,7 +253,7 @@ export default function Content() {
         </Box>
       </Container>
       <Container maxWidth="xl">
-        <Box width="100%" mb={12}>
+        <Box width="100%" mb={6}>
           <Box pb={2}>
             <Typography variant="body2" fontWeight={400} fontSize={14}>
               VI Theming work
@@ -306,7 +306,7 @@ export default function Content() {
         </Box>
       </Container>
       <Container maxWidth="xl">
-        <Box width="100%" mb={12}>
+        <Box width="100%" mb={6}>
           <Box pb={2}>
             <Typography variant="body2" fontWeight={400} fontSize={14}>
               Refined
@@ -350,20 +350,20 @@ export default function Content() {
         </Box>
       </Container>
       <Container maxWidth="xl">
+        <Box pb={2}>
+          <Typography variant="body2" fontWeight={400} fontSize={14}>
+            Stakeholder Showcase by Lead Developer
+          </Typography>
+        </Box>
         <Box
           width="100%"
-          mb={12}
+          mb={6}
           sx={{
             aspectRatio: "572 / 370",
             position: "relative",
             overflow: "hidden",
           }}
         >
-          <Box pb={2}>
-            <Typography variant="body2" fontWeight={400} fontSize={14}>
-              Stakeholder Showcase by Lead Developer
-            </Typography>
-          </Box>
           <video
             playsInline
             controls={false}
@@ -438,7 +438,7 @@ export default function Content() {
         </Box>
       </Container>
       <Container maxWidth="xl">
-        <Box width="100%" mb={12}>
+        <Box width="100%" mb={6}>
           <Box pb={2}>
             <Typography variant="body2" fontWeight={400} fontSize={14}>
               Solution Research
@@ -476,7 +476,7 @@ export default function Content() {
         </Box>
       </Container>
       <Container maxWidth="xl">
-        <Box width="100%" mb={12}>
+        <Box width="100%" mb={6}>
           <Box pb={2}>
             <Typography variant="body2" fontWeight={400} fontSize={14}>
               Vehicle Console Interaction Mockups
@@ -523,7 +523,7 @@ export default function Content() {
         </Box>
       </Container>
       <Container maxWidth="xl">
-        <Box width="100%" mb={12}>
+        <Box width="100%" mb={6}>
           <Box pb={2}>
             <Typography variant="body2" fontWeight={400} fontSize={14}>
               Closed-beta Product (beta) - Desktop only until full funding is

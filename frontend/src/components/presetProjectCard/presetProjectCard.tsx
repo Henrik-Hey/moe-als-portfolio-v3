@@ -3,7 +3,7 @@ import { Box } from "@mui/material";
 import { ProjectCard } from "../projectCard/projectCard";
 import { palette } from "@/theme";
 import React from "react";
-import { ACCESS_COOKIE_KEY, getCookie } from "@/hooks";
+import { ACCESS_COOKIE_KEY, AFC2_ACCESS_COOKIE_KEY, getCookie } from "@/hooks";
 import { useRouter } from "next/navigation";
 
 export type ProjectPage =
@@ -217,7 +217,7 @@ export const PresetProjectCard = ({
           project="Openlane & Auto Finance Dealer"
           subtext="Boosting Engagement by Linking Discovery to Financing"
           ctaText="View Case Study"
-          isLocked={getCookie(ACCESS_COOKIE_KEY) !== "true"}
+          isLocked={getCookie(AFC2_ACCESS_COOKIE_KEY) !== "true"}
           color={darkMode ? palette.darkMode[50] : "#FEF0CD"}
           hoverColor={
             darkMode

@@ -169,7 +169,7 @@ export default function Content() {
                 <BrandTile brand="PAR" hoverColor="#FCD0CF" />
               </Grid>
               <Grid item xs={6} md={3}>
-                <BrandTile brand="HM" hoverColor="#FCF4CF" />
+                <BrandTile brand="HM" hoverColor="#CFE1FC" />
               </Grid>
 
               <Grid item xs={6} md={3}>
