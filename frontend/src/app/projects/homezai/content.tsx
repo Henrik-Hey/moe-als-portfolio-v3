@@ -33,7 +33,7 @@ export default function Content() {
         secondaryColor="#CFDAFC"
         imageText="Latest concept screen"
       />
-      <Container maxWidth="lg">
+      <Container maxWidth="xl">
         <Box mt={6}>
           <ProjectMissionStatement
             backgroundColor="#CFDAFC"

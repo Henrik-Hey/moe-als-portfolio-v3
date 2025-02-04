@@ -32,7 +32,7 @@ export default function Content() {
         secondaryColor="#CFFCE9"
         imageText="Document Management Concept Screen"
       />
-      <Container maxWidth="lg">
+      <Container maxWidth="xl">
         <Box mt={6}>
           <ProjectMissionStatement
             backgroundColor="#CFFCE9"

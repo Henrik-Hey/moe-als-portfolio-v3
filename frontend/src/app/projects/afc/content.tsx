@@ -23,7 +23,7 @@ export default function Content() {
         secondaryColor={palette.green.main}
         imageText="Development ready screens"
       />
-      <Container maxWidth="lg">
+      <Container maxWidth="xl">
         <Box mt={6}>
           <ProjectMissionStatement
             backgroundColor={palette.green.main}

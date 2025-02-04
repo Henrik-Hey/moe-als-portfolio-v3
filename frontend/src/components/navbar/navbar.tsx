@@ -257,7 +257,7 @@ interface NavbarProps {
   colorMode?: "light" | "dark";
 }
 export const Navbar: React.FC<NavbarProps> = ({ colorMode }) => {
-  const { activeTheme: theme, toggleTheme } = usePortfolioTheme();
+  const { activeTheme: theme } = usePortfolioTheme();
   const isOnAboutMe = useIsOnAbout();
   const projectDropDownText = useProjectFromURL();
   const [open, setOpen] = React.useState(false);
@@ -279,15 +279,6 @@ export const Navbar: React.FC<NavbarProps> = ({ colorMode }) => {
   const textColor = isDark
     ? theme.palette.neutral[200]
     : theme.palette.primary.main;
-  const buttonStyle = isDark
-    ? {
-        color: theme.palette.neutral[700],
-        background: theme.palette.neutral[100],
-        "&:hover, &:active": {
-          background: theme.palette.neutral[300],
-        },
-      }
-    : {};
   const icon = isDark ? <DarkLogo /> : <LightLogo />;
   const isOnProjectPage = projectDropDownText !== "Work";
   const mobileClipOffset = !isOnProjectPage ? "129px" : "62px";

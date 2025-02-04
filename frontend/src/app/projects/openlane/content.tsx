@@ -32,7 +32,7 @@ export default function Content() {
         secondaryColor="linear-gradient(180deg, #E3FCCF 0%, #CFDAFC 100%)"
         imageText="Development ready screens"
       />
-      <Container maxWidth="lg">
+      <Container maxWidth="xl">
         <Box mt={6}>
           <ProjectMissionStatement
             backgroundColor="#CFDAFC"

@@ -3,7 +3,13 @@ import { Box } from "@mui/material";
 import { ProjectCard } from "../projectCard/projectCard";
 import { palette } from "@/theme";
 import React from "react";
-import { ACCESS_COOKIE_KEY, AFC2_ACCESS_COOKIE_KEY, getCookie } from "@/hooks";
+import {
+  ACCESS_COOKIE_KEY,
+  AFC2_ACCESS_COOKIE_KEY,
+  EA_ACCESS_COOKIE,
+  getCookie,
+  HOMEZ_ACCESS_COOKIE,
+} from "@/hooks";
 import { useRouter } from "next/navigation";
 
 export type ProjectPage =
@@ -109,6 +115,7 @@ export const PresetProjectCard = ({
           project="EasyAudit"
           subtext="Transforming Compliance with a Smarter Audit Process"
           ctaText="View Case Study"
+          isLocked={getCookie(EA_ACCESS_COOKIE) !== "true"}
           color={darkMode ? palette.darkMode[50] : "#FEF0CD"}
           hoverColor={darkMode ? "#2F2F2F" : "#CFFCE9"}
           onCTAClick={() => {
@@ -167,6 +174,7 @@ export const PresetProjectCard = ({
           project="HomezAI"
           subtext="Simplifying Home Buying with Smarter Scheduling Tools"
           ctaText="View Case Study"
+          isLocked={getCookie(HOMEZ_ACCESS_COOKIE) !== "true"}
           color={darkMode ? palette.darkMode[50] : "#FEF0CD"}
           hoverColor={darkMode ? "#2F2F2F" : "#CFDAFC"}
           onCTAClick={() => {
