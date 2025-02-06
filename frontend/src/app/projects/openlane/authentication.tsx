@@ -129,7 +129,7 @@ export const Authentication = () => {
                         fontWeight={600}
                         color="error"
                       >
-                        email me
+                        email to me
                       </Link>{" "}
                       for access.
                     </Typography>
