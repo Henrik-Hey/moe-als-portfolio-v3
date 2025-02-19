@@ -108,7 +108,7 @@ export const Authentication = () => {
               component="form"
               onSubmit={(e) => {
                 e.preventDefault();
-                if (password === "HOMEZAI_ProACCESS!") {
+                if (password === "Project_Access!2511") {
                   setIsAuthenticated(true);
                   setAuthError(false);
                   setCookie(HOMEZ_ACCESS_COOKIE, "true");

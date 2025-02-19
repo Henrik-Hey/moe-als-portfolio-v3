@@ -108,7 +108,7 @@ export const Authentication = () => {
               component="form"
               onSubmit={(e) => {
                 e.preventDefault();
-                if (password === "OLPro_ACCESS!") {
+                if (password === "Project_Access!2511") {
                   setIsAuthenticated(true);
                   setAuthError(false);
                   setCookie(AFC2_ACCESS_COOKIE_KEY, "true");
