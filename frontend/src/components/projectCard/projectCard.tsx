@@ -14,6 +14,7 @@ interface ProjectCardProps {
   content?: React.ReactNode;
   darkMode?: boolean;
   isDefaultHovered?: boolean;
+  passwordRequiredColor?: string;
 }
 export const ProjectCard: React.FC<ProjectCardProps> = ({
   project,
@@ -26,6 +27,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
   content,
   darkMode,
   isDefaultHovered,
+  passwordRequiredColor,
 }) => {
   const theme = useTheme();
   const textColor = darkMode
@@ -46,20 +48,45 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
           transform: "translateY(-8px)",
           cursor: "pointer",
           background: hoverColor,
+          ".password-required": {
+            background: passwordRequiredColor,
+          },
         },
       }}
       onClick={onCTAClick}
     >
       <Box padding={6} display="flex" gap={3} flexDirection="column">
         <Box>
-          <Typography
-            variant="body1"
-            fontWeight={700}
-            color={textColor}
-            mb={1.5}
-          >
-            {project}
-          </Typography>
+          <Box display="flex" justifyContent="space-between" gap={1}>
+            <Box maxWidth={isLocked !== undefined ? "65%" : "100%"}>
+              <Typography
+                variant="body1"
+                fontWeight={700}
+                color={textColor}
+                mb={1.5}
+              >
+                {project}
+              </Typography>
+            </Box>
+            <Box>
+              {isLocked !== undefined && (
+                <Box
+                  className="password-required"
+                  sx={{
+                    mt: 0.5,
+                    px: 1.5,
+                    py: 0.5,
+                    borderRadius: 40,
+                    background: !isDefaultHovered
+                      ? "#DCDCDC"
+                      : passwordRequiredColor,
+                  }}
+                >
+                  <Typography fontSize={12}>Password Required</Typography>
+                </Box>
+              )}
+            </Box>
+          </Box>
           <Typography variant="h3" fontWeight={400} color={textColor}>
             {subtext}
           </Typography>

@@ -40,11 +40,12 @@ export const PresetProjectCard = ({
           darkMode={darkMode}
           isDefaultHovered={isDefaultHovered}
           project="Auto Finance Dealer"
-          subtext="Reducing Drop Rates and Improving the Flooring process"
-          ctaText="View Case Study"
+          subtext="Optimizing Home Buying with AI-Powered Scheduling"
+          ctaText="View Project"
           isLocked={getCookie(ACCESS_COOKIE_KEY) !== "true"}
           color={darkMode ? palette.darkMode[50] : palette.green.main}
           hoverColor={darkMode ? "#2F2F2F" : "#C6FA9E"}
+          passwordRequiredColor="#CFDAFC"
           onCTAClick={() => {
             router.push("/projects/afc");
           }}
@@ -66,8 +67,8 @@ export const PresetProjectCard = ({
           darkMode={darkMode}
           isDefaultHovered={isDefaultHovered}
           project="Sharpstakes"
-          subtext="Boosting Engagement by Removing Dark Patterns"
-          ctaText="View Case Study"
+          subtext="Designing AI-Powered Betting Solutions That Work for Users"
+          ctaText="View Project"
           color={darkMode ? palette.darkMode[400] : palette.blue.main}
           hoverColor={darkMode ? "#232323" : "#9EFAE9"}
           onCTAClick={() => {
@@ -113,11 +114,12 @@ export const PresetProjectCard = ({
           darkMode={darkMode}
           isDefaultHovered={isDefaultHovered}
           project="EasyAudit"
-          subtext="Transforming Compliance with a Smarter Audit Process"
-          ctaText="View Case Study"
+          subtext="Revolutionizing Compliance with AI-Driven Automation"
+          ctaText="View Project"
           isLocked={getCookie(EA_ACCESS_COOKIE) !== "true"}
           color={darkMode ? palette.darkMode[50] : "#FEF0CD"}
           hoverColor={darkMode ? "#2F2F2F" : "#CFFCE9"}
+          passwordRequiredColor="#FCDFCF"
           onCTAClick={() => {
             router.push("/projects/easyaudit");
           }}
@@ -143,8 +145,8 @@ export const PresetProjectCard = ({
           darkMode={darkMode}
           isDefaultHovered={isDefaultHovered}
           project="IArt"
-          subtext="Redefining Car Interfaces with Immersive Visual Solutions"
-          ctaText="View Case Study"
+          subtext="Redefining In-Car Interfaces with Adaptive AI Visuals"
+          ctaText="View Project"
           color={darkMode ? palette.darkMode[50] : "#FEF0CD"}
           hoverColor={darkMode ? "#2F2F2F" : "#FCDFCF"}
           onCTAClick={() => {
@@ -172,11 +174,12 @@ export const PresetProjectCard = ({
           darkMode={darkMode}
           isDefaultHovered={isDefaultHovered}
           project="HomezAI"
-          subtext="Simplifying Home Buying with Smarter Scheduling Tools"
-          ctaText="View Case Study"
+          subtext="Optimizing Home Buying with AI-Powered Scheduling"
+          ctaText="View Project"
           isLocked={getCookie(HOMEZ_ACCESS_COOKIE) !== "true"}
           color={darkMode ? palette.darkMode[50] : "#FEF0CD"}
           hoverColor={darkMode ? "#2F2F2F" : "#CFDAFC"}
+          passwordRequiredColor="#FCDFCF"
           onCTAClick={() => {
             router.push("/projects/homezai");
           }}
@@ -199,7 +202,7 @@ export const PresetProjectCard = ({
           isDefaultHovered={isDefaultHovered}
           project="SOHS"
           subtext="Empowering Service Pros with an On-Demand Marketplace"
-          ctaText="View Case Study"
+          ctaText="View Project"
           color={darkMode ? palette.darkMode[50] : "#FEF0CD"}
           hoverColor={darkMode ? "#2F2F2F" : "#F2CFFC"}
           onCTAClick={() => {
@@ -224,9 +227,10 @@ export const PresetProjectCard = ({
           isDefaultHovered={isDefaultHovered}
           project="Openlane & Auto Finance Dealer"
           subtext="Boosting Engagement by Linking Discovery to Financing"
-          ctaText="View Case Study"
+          ctaText="View Project"
           isLocked={getCookie(AFC2_ACCESS_COOKIE_KEY) !== "true"}
           color={darkMode ? palette.darkMode[50] : "#FEF0CD"}
+          passwordRequiredColor="#CFDAFC"
           hoverColor={
             darkMode
               ? "#2F2F2F"
@@ -259,7 +263,7 @@ export const PresetProjectCard = ({
           isDefaultHovered={isDefaultHovered}
           project="Shiba Inu"
           subtext="Streamlining Food Delivery for Busy Young Adults"
-          ctaText="View Case Study"
+          ctaText="View Project"
           color={darkMode ? palette.darkMode[400] : palette.lightRed.main}
           hoverColor={darkMode ? "#232323" : "#FA9E9E"}
           onCTAClick={() => {
