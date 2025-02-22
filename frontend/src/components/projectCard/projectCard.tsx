@@ -45,11 +45,13 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
         filter: !isDefaultHovered ? "grayscale(100%)" : "grayscale(0%)",
         [`&:hover`]: {
           filter: "grayscale(0%)",
-          transform: "translateY(-8px)",
           cursor: "pointer",
           background: hoverColor,
           ".password-required": {
             background: passwordRequiredColor,
+          },
+          ".project-card-content": {
+            transform: "scale(1.075)",
           },
         },
       }}
@@ -77,6 +79,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
                     px: 1.5,
                     py: 0.5,
                     borderRadius: 40,
+                    transition: "all 0.5s",
                     background: !isDefaultHovered
                       ? "#DCDCDC"
                       : passwordRequiredColor,
@@ -134,10 +137,13 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
           pb={70}
         >
           <Box
+            className="project-card-content"
             sx={{
               position: "absolute",
               width: "100%",
               height: "100%",
+              transform: "scale(1)",
+              transition: "all 0.5s",
             }}
           >
             {content}

@@ -24,7 +24,7 @@ export default function Content() {
     <ThemeProvider theme={baseTheme}>
       <CssBaseline />
       <ProjectHeader
-        imageURL="/v2/IArt/headerImage.png"
+        imageURL="/v3/IArt/img1.png"
         logoString="IArt"
         heading="Redefining Car Interfaces with Immersive Visual Solutions."
         subheading="While many AI tools and LLMs focus on text-based interactions, IArt goes further by enabling users to generate and explore information visually."
@@ -65,11 +65,13 @@ export default function Content() {
           <ProjectStatement
             content={
               <>
-                I led the ideation, branding, and experience design for a
-                project that redefined AI chat interactions. By introducing a
-                visually immersive experience, the platform breaks away from
-                traditional text-based models, transforming how users engage
-                with AI.
+                I led the ideation, branding, and UX design for IArt’s
+                ForceGraph, a platform redefining AI-driven interactions.
+                <br />
+                <br />
+                Unlike traditional text-based AI, IArt introduces a visually
+                immersive experience, enabling users to engage with AI through
+                adaptive visuals rather than static prompts.
               </>
             }
           />
@@ -166,7 +168,7 @@ export default function Content() {
             style={{
               width: "100%",
             }}
-            src="/v2/IArt/brainstorming.png"
+            src="/v3/IArt/img2.png"
           />
         </Box>
       </Container>
@@ -179,29 +181,16 @@ export default function Content() {
                   Starting the Process
                 </Typography>
                 <Typography variant="body1">
-                  With my limited knowledge and initial questions, I began by
-                  focusing on the product&apos;s foundation—colors, typography,
-                  and overall feel. I gathered inspiration, documented ideas,
-                  and developed concepts to align stakeholders on a shared
-                  vision. (It&apos;s worth noting that this was my second
-                  project with iArt, so I wasn’t starting entirely from
-                  scratch.)
+                  I started by researching visual trends and gathering
+                  references to define the right aesthetic for IArt. From this,
+                  I built a cohesive style guide, focusing on scalability and
+                  usability. By refining colors, typography, and branding early
+                  on, I established a strong design foundation that would ensure
+                  consistency across the platform.
                 </Typography>
               </Box>
             </FadeIn>
           </Box>
-        </Box>
-      </Container>
-      <Container maxWidth="xl">
-        <Box width="100%" mb={6}>
-          <img
-            alt=""
-            role="presentation"
-            style={{
-              width: "100%",
-            }}
-            src="/v2/IArt/theProcess.png"
-          />
         </Box>
       </Container>
       <Container maxWidth="xl">
@@ -212,7 +201,7 @@ export default function Content() {
             style={{
               width: "100%",
             }}
-            src="/v2/IArt/styleGuide.svg"
+            src="/v3/IArt/img3.svg"
           />
         </Box>
       </Container>
@@ -236,7 +225,7 @@ export default function Content() {
         </Box>
       </Container>
       <Container maxWidth="xl">
-        <Box width="100%" mb={6}>
+        <Box width="100%">
           <Box pb={2}>
             <Typography variant="body2" fontWeight={400} fontSize={14}>
               Initial Concepts
@@ -248,42 +237,7 @@ export default function Content() {
             style={{
               width: "100%",
             }}
-            src="/v2/IArt/building_InitialConcepts.png"
-          />
-        </Box>
-      </Container>
-      <Container maxWidth="xl">
-        <Box width="100%" mb={6}>
-          <Box pb={2}>
-            <Typography variant="body2" fontWeight={400} fontSize={14}>
-              VI Theming work
-            </Typography>
-          </Box>
-          <img
-            alt=""
-            role="presentation"
-            style={{
-              width: "100%",
-              marginBottom: "12px",
-            }}
-            src="/v2/IArt/building_ThemingWork1.png"
-          />
-          <img
-            alt=""
-            role="presentation"
-            style={{
-              width: "100%",
-              marginBottom: "12px",
-            }}
-            src="/v2/IArt/building_ThemingWork2.png"
-          />
-          <img
-            alt=""
-            role="presentation"
-            style={{
-              width: "100%",
-            }}
-            src="/v2/IArt/building_ThemingWork3.png"
+            src="/v3/IArt/img4.png"
           />
         </Box>
       </Container>
@@ -306,10 +260,10 @@ export default function Content() {
         </Box>
       </Container>
       <Container maxWidth="xl">
-        <Box width="100%" mb={6}>
+        <Box width="100%">
           <Box pb={2}>
             <Typography variant="body2" fontWeight={400} fontSize={14}>
-              Refined
+              V2 Themes
             </Typography>
           </Box>
           <img
@@ -319,15 +273,7 @@ export default function Content() {
               width: "100%",
               marginBottom: "12px",
             }}
-            src="/v2/IArt/additionalFeedback1.png"
-          />
-          <img
-            alt=""
-            role="presentation"
-            style={{
-              width: "100%",
-            }}
-            src="/v2/IArt/additionalFeedback2.png"
+            src="/v3/IArt/img5.png"
           />
         </Box>
       </Container>
@@ -340,9 +286,11 @@ export default function Content() {
                   Finishing the Scoped Product
                 </Typography>
                 <Typography variant="body1">
-                  At this stage, we had a functional product ready for users,
-                  with most of the components and functionality in place, while
-                  the themes were still being finalized.
+                  At this stage, the core product was functional, with most
+                  components and features in place while final refinements were
+                  still in progress. This version was presented to stakeholders
+                  to showcase the interactive experience and ensure alignment
+                  before finalizing the themes.
                 </Typography>
               </Box>
             </FadeIn>
@@ -399,7 +347,7 @@ export default function Content() {
             style={{
               width: "100%",
             }}
-            src="/v2/IArt/scopedProductHIFI.png"
+            src="/v3/IArt/img7.png"
           />
         </Box>
       </Container>
@@ -408,30 +356,21 @@ export default function Content() {
           <FadeIn>
             <Box>
               <Typography variant="h3" mb={2} fontWeight={700}>
-                Addressing a Change in Priorities..
+                Adapting to New Priorities & Constraints
               </Typography>
               <Typography variant="body1">
-                During this process, we had multiple investor meetings and
-                showcased the app at various Startup events to secure funding.
-                At one point, a major car manufacturer showed interest, seeing
-                the potential for integrating the app into vehicle center
-                consoles. This request would expand on the initial app,
-                requiring a rebuild of components and updates to accessibility
-                standards to meet the new criteria
-              </Typography>
-            </Box>
-          </FadeIn>
-          <FadeIn>
-            <Box>
-              <Typography variant="h3" mb={2} fontWeight={700}>
-                Working with Limited Resources
-              </Typography>
-              <Typography variant="body1">
-                Due to shifting priorities and our adjusted approach, we didn’t
-                have the time to build components from scratch again. Instead,
-                it became crucial to leverage pre-existing libraries and code
-                generators. I conducted the initial research to guide us through
-                this process.
+                As we showcased the app to investors and startups, a major car
+                manufacturer expressed interest in integrating it into vehicle
+                center consoles. This introduced new technical and accessibility
+                requirements, requiring a rebuild of components to meet
+                automotive UI standards.
+                <br />
+                <br />
+                At the same time, shifting priorities meant we couldn&apos;t
+                afford to build everything from scratch again. To maintain
+                momentum, I researched pre-built libraries and code generators,
+                selecting tools that balanced speed, flexibility, and
+                accessibility without compromising quality.
               </Typography>
             </Box>
           </FadeIn>
@@ -450,7 +389,7 @@ export default function Content() {
             style={{
               width: "100%",
             }}
-            src="/v2/IArt/limitedResearch.png"
+            src="/v3/IArt/img8.png"
           />
         </Box>
       </Container>
@@ -463,12 +402,11 @@ export default function Content() {
                   Moving Forward
                 </Typography>
                 <Typography variant="body1">
-                  With the research complete and some downtime while the team
-                  evaluated the best decisions, I took the initiative to create
-                  an additional set of designs for a standard car console. These
-                  designs retained the core concept of ‘ForceGraph’ but
-                  incorporated updated accessibility rules to ensure they could
-                  be safely used while driving.
+                  With the project direction shifting, I took the initiative to
+                  redefine ForceGraph for a new context—designing an interface
+                  optimized for in-car use. This adaptation retained the core
+                  experience while integrating updated accessibility standards
+                  for safer interaction while driving.
                 </Typography>
               </Box>
             </FadeIn>
@@ -479,55 +417,7 @@ export default function Content() {
         <Box width="100%" mb={6}>
           <Box pb={2}>
             <Typography variant="body2" fontWeight={400} fontSize={14}>
-              Vehicle Console Interaction Mockups
-            </Typography>
-          </Box>
-          <img
-            alt=""
-            role="presentation"
-            style={{
-              width: "100%",
-              marginBottom: "12px",
-            }}
-            src="/v2/IArt/movingForward.png"
-          />
-          <img
-            alt=""
-            role="presentation"
-            style={{
-              width: "100%",
-            }}
-            src="/v2/IArt/movingForward2.png"
-          />
-        </Box>
-      </Container>
-      <Container maxWidth="lg">
-        <Box display="flex" flexDirection="column" gap={2} my={12}>
-          <Box>
-            <FadeIn>
-              <Box mb={2}>
-                <Typography variant="h3" mb={2} fontWeight={700}>
-                  Crossing the Finish Line
-                </Typography>
-                <Typography variant="body1">
-                  The updated designs were approved, solidifying investor
-                  confidence and giving us the green light to proceed. This
-                  allowed the business to invest heavily in automation tools,
-                  prebuilt libraries, and other resources I had briefly
-                  researched, streamlining development and driving the project
-                  forward.
-                </Typography>
-              </Box>
-            </FadeIn>
-          </Box>
-        </Box>
-      </Container>
-      <Container maxWidth="xl">
-        <Box width="100%" mb={6}>
-          <Box pb={2}>
-            <Typography variant="body2" fontWeight={400} fontSize={14}>
-              Closed-beta Product (beta) - Desktop only until full funding is
-              approved
+              Closed-beta Product Showcase
             </Typography>
           </Box>
           <video
@@ -540,7 +430,54 @@ export default function Content() {
             style={{
               width: "100%",
             }}
-            src="/v2/IArt/visualChat.mp4"
+            src="/v3/IArt/vid9.mp4"
+          />
+        </Box>
+      </Container>
+      <Container maxWidth="lg">
+        <Box display="flex" flexDirection="column" gap={2} my={12}>
+          <Box>
+            <FadeIn>
+              <Box mb={2}>
+                <Typography variant="h3" mb={2} fontWeight={700}>
+                  Bridging the Gap to the Final Product
+                </Typography>
+                <Typography variant="body1">
+                  Before introducing the final product demo, we needed to adapt
+                  the design approach. While the previous mock-ups established a
+                  strong foundation, the development team leveraged prebuilt
+                  libraries and automation tools from my research to accelerate
+                  the build.
+                  <br />
+                  <br />
+                  This shift allowed them to focus on functionality and
+                  scalability, resulting in a refined product that differs
+                  visually but remains aligned with the original design
+                  principles.
+                </Typography>
+              </Box>
+            </FadeIn>
+          </Box>
+        </Box>
+      </Container>
+      <Container maxWidth="xl">
+        <Box width="100%" mb={6}>
+          <Box pb={2}>
+            <Typography variant="body2" fontWeight={400} fontSize={14}>
+              Closed-beta Product Showcase
+            </Typography>
+          </Box>
+          <video
+            playsInline
+            controls={false}
+            autoPlay
+            loop
+            muted
+            role="presentation"
+            style={{
+              width: "100%",
+            }}
+            src="/v3/IArt/vid10.mp4"
           />
         </Box>
       </Container>
