@@ -40,7 +40,7 @@ export default function Content() {
                 : activeTheme.palette.primary.main
             }
           >
-            Hi, I&apos;m Moe!
+            Hi, I&apos;m Moe 👋
           </Typography>
 
           <Typography
