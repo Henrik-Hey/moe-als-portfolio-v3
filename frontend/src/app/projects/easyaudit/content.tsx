@@ -24,10 +24,10 @@ export default function Content() {
     <ThemeProvider theme={baseTheme}>
       <CssBaseline />
       <ProjectHeader
-        imageURL="/v2/EasyAudit/img1.png"
+        imageURL="/v3/EasyAudit/img1.png"
         logoString="EasyAudit"
-        heading="Transforming Compliance with a Smarter Audit Process."
-        subheading="EasyAudit offers an AI-powered platform that automates the compliance process, helping businesses achieve SOC 2 certification more efficiently."
+        heading="Revolutionizing Compliance with AI-Driven Automation"
+        subheading="EasyAudit is an AI-driven compliance platform that streamlines risk assessment, control generation, and audit management, helping businesses achieve certifications faster."
         color=" #067949"
         secondaryColor="#CFFCE9"
         imageText="Document Management Concept Screen"
@@ -151,7 +151,7 @@ export default function Content() {
             style={{
               width: "100%",
             }}
-            src="/v2/EasyAudit/img2.svg"
+            src="/v3/EasyAudit/img2.svg"
           />
         </Box>
       </Container>
@@ -182,19 +182,24 @@ export default function Content() {
             style={{
               width: "100%",
             }}
-            src="/v2/EasyAudit/img3.png"
+            src="/v3/EasyAudit/img3.png"
           />
         </Box>
       </Container>
       <Container maxWidth="xl">
         <Box width="100%" mb={12}>
+          <Box pb={2}>
+            <Typography variant="body2" fontWeight={400} fontSize={14}>
+              Questionnaire Flow
+            </Typography>
+          </Box>
           <img
             alt=""
             role="presentation"
             style={{
               width: "100%",
             }}
-            src="/v2/EasyAudit/img4.png"
+            src="/v3/EasyAudit/img4.png"
           />
         </Box>
       </Container>
@@ -204,13 +209,14 @@ export default function Content() {
             <FadeIn>
               <Box mb={2}>
                 <Typography variant="h3" mb={2} fontWeight={700}>
-                  Creating the Questionnaire
+                  Structuring the Compliance Questionnaire
                 </Typography>
                 <Typography variant="body1">
-                  With the foundation in place, I worked with directors and
-                  product owners to define the data we need to collect while
-                  collaborating with developers to assess flexibility and
-                  funding constraints for framework implementation.
+                  To automate compliance, we needed a structured way to collect
+                  data. I worked with directors to define key inputs and
+                  collaborated with developers to ensure flexibility. This led
+                  to an adaptive, AI-driven questionnaire that streamlines data
+                  collection.
                 </Typography>
               </Box>
             </FadeIn>
@@ -221,7 +227,7 @@ export default function Content() {
         <Box width="100%" mb={12}>
           <Box pb={2}>
             <Typography variant="body2" fontWeight={400} fontSize={14}>
-              V1 Questionnaire
+              HI FI Questionnaire Concepts
             </Typography>
           </Box>
           <img
@@ -230,24 +236,7 @@ export default function Content() {
             style={{
               width: "100%",
             }}
-            src="/v2/EasyAudit/img5.svg"
-          />
-        </Box>
-      </Container>
-      <Container maxWidth="xl">
-        <Box width="100%" mb={12}>
-          <Box pb={2}>
-            <Typography variant="body2" fontWeight={400} fontSize={14}>
-              V2 Questionnaire - After stakeholder comments and new requirements
-            </Typography>
-          </Box>
-          <img
-            alt=""
-            role="presentation"
-            style={{
-              width: "100%",
-            }}
-            src="/v2/EasyAudit/img6.svg"
+            src="/v3/EasyAudit/img5.svg"
           />
         </Box>
       </Container>
@@ -260,10 +249,11 @@ export default function Content() {
                   Creating the Experience Proposal
                 </Typography>
                 <Typography variant="body1">
-                  With the questionnaire approved for the MVP, my next task was
-                  aligning on the full product experience with stakeholders.
-                  Time and budget constraints meant skipping wireframes and
-                  jumping straight into high-fidelity designs.
+                  With the questionnaire approved, I moved directly into
+                  high-fidelity designs, aligning the product experience with
+                  stakeholders. Given time and budget constraints, I streamlined
+                  the process by skipping wireframes and focusing on refining
+                  core interactions.
                 </Typography>
               </Box>
             </FadeIn>
@@ -274,7 +264,7 @@ export default function Content() {
         <Box width="100%" mb={12}>
           <Box pb={2}>
             <Typography variant="body2" fontWeight={400} fontSize={14}>
-              Required Proposal Pages (Requested by owners)
+              Phase 2 screens
             </Typography>
           </Box>
           <img
@@ -283,25 +273,7 @@ export default function Content() {
             style={{
               width: "100%",
             }}
-            src="/v2/EasyAudit/img7.svg"
-          />
-        </Box>
-      </Container>
-      <Container maxWidth="xl">
-        <Box width="100%">
-          <Box pb={2}>
-            <Typography variant="body2" fontWeight={400} fontSize={14}>
-              V3 Questionnaire - Some adjustments and flows were changed after
-              the proposal to align better with investor requests
-            </Typography>
-          </Box>
-          <img
-            alt=""
-            role="presentation"
-            style={{
-              width: "100%",
-            }}
-            src="/v2/EasyAudit/img8.svg"
+            src="/v3/EasyAudit/img6.svg"
           />
         </Box>
       </Container>
@@ -311,13 +283,14 @@ export default function Content() {
             <FadeIn>
               <Box mb={2}>
                 <Typography variant="h3" mb={2} fontWeight={700}>
-                  Refining Designs for Investors
+                  Investor-Backed Growth: Scaling EasyAudit with New
+                  Capabilities
                 </Typography>
                 <Typography variant="body1">
-                  After extensive design work and collaboration, we aligned on a
-                  clear direction for the product showcase. With refined
-                  business requirements, I streamlined flows and polished
-                  designs to prepare for investor demos.
+                  Investor approval propelled a major expansion of EasyAudit’s
+                  design system, introducing new components, refining workflows,
+                  and enhancing automation. This phase advanced the platform
+                  beyond its MVP, aligning it with long-term business goals.
                 </Typography>
               </Box>
             </FadeIn>
@@ -328,7 +301,7 @@ export default function Content() {
         <Box width="100%" mb={12}>
           <Box pb={2}>
             <Typography variant="body2" fontWeight={400} fontSize={14}>
-              Dev ready showcase flow (web)
+              Phase 3 Dev ready screens
             </Typography>
           </Box>
           <img
@@ -337,173 +310,51 @@ export default function Content() {
             style={{
               width: "100%",
             }}
-            src="/v2/EasyAudit/img9.svg"
+            src="/v3/EasyAudit/img7.svg"
+          />
+        </Box>
+      </Container>
+      <Container maxWidth="xl">
+        <Box width="100%" mb={6}>
+          <Box pb={2}>
+            <Typography variant="body2" fontWeight={400} fontSize={14}>
+              Phase 3 HIFI walkthrough & prototypes
+            </Typography>
+          </Box>
+          <video
+            src="/v3/EasyAudit/vid8.mp4"
+            controls={false}
+            autoPlay
+            loop
+            muted
+            playsInline
+            style={{
+              width: "100%",
+            }}
+          />
+        </Box>
+      </Container>
+      <Container maxWidth="xl">
+        <Box width="100%" mb={6}>
+          <img
+            alt=""
+            role="presentation"
+            style={{
+              width: "100%",
+            }}
+            src="/v3/EasyAudit/img9.png"
           />
         </Box>
       </Container>
       <Container maxWidth="xl">
         <Box width="100%" mb={12}>
-          <Box pb={2}>
-            <Typography variant="body2" fontWeight={400} fontSize={14}>
-              Dev ready showcase flow (Mobile)
-            </Typography>
-          </Box>
           <img
             alt=""
             role="presentation"
             style={{
               width: "100%",
             }}
-            src="/v2/EasyAudit/img10.svg"
-          />
-        </Box>
-      </Container>
-      <Container maxWidth="xl">
-        <Box width="100%" mb={12}>
-          <Box pb={2}>
-            <Typography variant="body2" fontWeight={400} fontSize={14}>
-              HI-FI Showcase mockups
-            </Typography>
-          </Box>
-          <img
-            alt=""
-            role="presentation"
-            style={{
-              width: "100%",
-            }}
-            src="/v2/EasyAudit/img11.png"
-          />
-        </Box>
-      </Container>
-      <Container maxWidth="xl">
-        <Box width="100%">
-          <img
-            alt=""
-            role="presentation"
-            style={{
-              width: "100%",
-            }}
-            src="/v2/EasyAudit/img12.png"
-          />
-        </Box>
-      </Container>
-      <Container maxWidth="lg">
-        <FadeIn>
-          <Box mt={12} mb={4}>
-            <Typography variant="h3" mb={2} fontWeight={700}>
-              Shifting Focus
-            </Typography>
-            <Typography variant="body1">
-              With the product in good standing, I shifted my focus to creating
-              a landing page that conveyed EasyAudit’s value. This would be used
-              for any investor meetings, online and In-person promotions. It was
-              a key piece to helping people understand EasyAudit’s value. Here’s
-              what was required:
-            </Typography>
-          </Box>
-        </FadeIn>
-        <FadeIn>
-          <Box
-            display="flex"
-            mb={12}
-            flexDirection={{
-              xs: "column",
-              md: "row",
-            }}
-            gap={{ xs: 2, md: 2 }}
-          >
-            <Box flex={1}>
-              <Typography variant="body1" mb={2} fontWeight={700}>
-                Must Use Provided Copy
-              </Typography>
-              <Typography variant="body1">
-                The owners and marketing team supplied the copy, optimized for
-                SEO. This meant working within structured content constraints.
-              </Typography>
-            </Box>
-            <Box flex={1}>
-              <Typography variant="body1" mb={2} fontWeight={700}>
-                Must Be Webflow-Transferable
-              </Typography>
-              <Typography variant="body1">
-                To ensure seamless integration with Webflow, the design followed
-                strict guidelines, requiring expertise in Autolayout for proper
-                handoff.
-              </Typography>
-            </Box>
-            <Box flex={1}>
-              <Typography variant="body1" mb={2} fontWeight={700}>
-                Must Include Specific Screenshots
-              </Typography>
-              <Typography variant="body1">
-                The marketing team required specific screenshots to be used,
-                ensuring consistency and alignment with brand messaging.
-              </Typography>
-            </Box>
-          </Box>
-        </FadeIn>
-      </Container>
-      <Container maxWidth="xl">
-        <Box width="100%" mb={12}>
-          <Box pb={2}>
-            <Typography variant="body2" fontWeight={400} fontSize={14}>
-              V1: No wireframing, Inspo, and approach was specified by marketing
-            </Typography>
-          </Box>
-          <img
-            alt=""
-            role="presentation"
-            style={{
-              width: "100%",
-            }}
-            src="/v2/EasyAudit/img13.svg"
-          />
-        </Box>
-      </Container>
-      <Container maxWidth="xl">
-        <Box width="100%" mb={12}>
-          <Box pb={2}>
-            <Typography variant="body2" fontWeight={400} fontSize={14}>
-              V2 - A few rounds of feedback later, some content was cut out and
-              design contrast was updated to be easier on the eyes
-            </Typography>
-          </Box>
-          <img
-            alt=""
-            role="presentation"
-            style={{
-              width: "100%",
-            }}
-            src="/v2/EasyAudit/img14.svg"
-          />
-        </Box>
-      </Container>
-      <Container maxWidth="xl">
-        <Box width="100%" mb={12}>
-          <Box pb={2}>
-            <Typography variant="body2" fontWeight={400} fontSize={14}>
-              HI-FI Showcase mockups
-            </Typography>
-          </Box>
-          <img
-            alt=""
-            role="presentation"
-            style={{
-              width: "100%",
-            }}
-            src="/v2/EasyAudit/img15.png"
-          />
-        </Box>
-      </Container>
-      <Container maxWidth="xl">
-        <Box width="100%">
-          <img
-            alt=""
-            role="presentation"
-            style={{
-              width: "100%",
-            }}
-            src="/v2/EasyAudit/img16.png"
+            src="/v3/EasyAudit/img10.png"
           />
         </Box>
       </Container>
@@ -516,41 +367,23 @@ export default function Content() {
                   Funding Approval & Next Steps
                 </Typography>
                 <Typography variant="body1">
-                  The hard work and hours paid off, we had some serious interest
-                  generating and the owners decided to invest more into this
-                  project. We started looking at competitiors, and we started
-                  adding some new ideas to the board. I am currently working on
-                  V3 and I look forward to highlighting its impact and sharing
-                  success stories from our users in the near future. Thank you
-                  for reading through this!
+                  The strategic design decisions and hands-on execution paid
+                  off, securing strong investor interest and unlocking further
+                  funding. With this backing, I expanded EasyAudit’s
+                  capabilities—introducing key features, refining workflows, and
+                  scaling automation to align with long-term business
+                  objectives.
+                  <br />
+                  <br />
+                  Now, as I push towards V4, the focus shifts to deepening
+                  automation, optimizing usability, and aligning the product
+                  with upcoming investor milestones. This next phase will drive
+                  even greater impact, scalability, and efficiency in compliance
+                  management.
                 </Typography>
               </Box>
             </FadeIn>
           </Box>
-        </Box>
-      </Container>
-      <Container maxWidth="xl">
-        <Box width="100%" mb={12}>
-          <img
-            alt=""
-            role="presentation"
-            style={{
-              width: "100%",
-            }}
-            src="/v2/EasyAudit/img17.png"
-          />
-        </Box>
-      </Container>
-      <Container maxWidth="xl">
-        <Box width="100%" mb={12}>
-          <img
-            alt=""
-            role="presentation"
-            style={{
-              width: "100%",
-            }}
-            src="/v2/EasyAudit/img18.png"
-          />
         </Box>
       </Container>
       <TeamCommentsCard

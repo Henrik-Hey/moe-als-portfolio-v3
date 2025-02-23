@@ -25,9 +25,9 @@ export default function Content() {
     <ThemeProvider theme={baseTheme}>
       <CssBaseline />
       <ProjectHeader
-        imageURL="/v2/HomezAI/img1.png"
+        imageURL="/v3/HomezAI/img1.png"
         logoString="HomezAI"
-        heading="A Smarter Way to View Homes"
+        heading="Optimizing Home Buying with AI-Powered Scheduling"
         subheading="HomezAI lets buyers schedule property viewings without brokers, saving time and eliminating hassle, so they can focus on finding their perfect home."
         color=" #2555E6"
         secondaryColor="#CFDAFC"
@@ -68,10 +68,10 @@ export default function Content() {
           <ProjectStatement
             content={
               <>
-                I led the design, branding, and UX for HomezAI, a platform built
-                to streamline realtor and broker scheduling for clients and
-                investors. The project reimagines real estate coordination with
-                a focus on efficiency.
+                I led the design, branding, and UX for HomezAI, an AI-powered
+                platform that automates real estate scheduling, reducing delays
+                and manual coordination so buyers can book property viewings
+                faster.
               </>
             }
           />
@@ -81,11 +81,16 @@ export default function Content() {
                 Problem & Approach
               </Typography>
               <Typography variant="body1">
-                HomezAI set out to transform real estate coordination by
-                automating scheduling and communication between users and
-                brokers. The goal was to create an AI-powered platform that
-                saves users time, reduces manual effort, and redefines the
-                property viewing experience.
+                Scheduling property viewings is slow and inefficient. Buyers and
+                brokers waste time on back-and-forth emails, availability
+                conflicts, and missed appointments, often losing out on listings
+                before a viewing is even scheduled.
+                <br />
+                <br />
+                HomezAI hopes to eliminate these delays with AI-driven
+                automation, instantly finding available slots, booking viewings,
+                and handling confirmations. This solution focuses on three key
+                areas:
               </Typography>
             </Box>
           </FadeIn>
@@ -95,15 +100,29 @@ export default function Content() {
               flexDirection={{ xs: "column", md: "row" }}
               gap={{ xs: 2, md: 2 }}
             >
-              <Box display="flex" flexDirection="column" gap={{ xs: 2, md: 2 }}>
+              <Box
+                display="flex"
+                flexDirection={{
+                  xs: "column",
+                  md: "row",
+                }}
+                gap={{ xs: 2, md: 2 }}
+              >
                 <Box flex={1}>
                   <Typography variant="body1" mb={2} fontWeight={700}>
-                    Streamlined Scheduling
+                    AI-Powered Scheduling
                   </Typography>
                   <Typography variant="body1">
-                    The AI manages all broker communication, including
-                    availability and confirmation, ensuring users can focus on
-                    finding the right property without logistical distractions.
+                    Automates availability tracking and broker coordination,
+                    reducing manual effort.
+                  </Typography>
+                </Box>
+                <Box flex={1}>
+                  <Typography variant="body1" mb={2} fontWeight={700}>
+                    Reminders & Follow-Ups{" "}
+                  </Typography>
+                  <Typography variant="body1">
+                    AI confirms, reschedules, and prevents missed appointments.
                   </Typography>
                 </Box>
                 <Box flex={1}>
@@ -111,32 +130,8 @@ export default function Content() {
                     Integrated Tools
                   </Typography>
                   <Typography variant="body1">
-                    With integrations like Calendly, Google Maps, and personal
-                    calendars, Homezai ensures accurate scheduling, real-time
-                    updates, and effortless navigation for all parties involved.
-                  </Typography>
-                </Box>
-              </Box>
-              <Box display="flex" flexDirection="column" gap={{ xs: 2, md: 2 }}>
-                <Box flex={1}>
-                  <Typography variant="body1" mb={2} fontWeight={700}>
-                    Simplified User Input
-                  </Typography>
-                  <Typography variant="body1">
-                    Users simply share their preferences or specific listings,
-                    while the AI seamlessly handles the rest, creating a smooth
-                    and stress-free process.
-                  </Typography>
-                </Box>
-                <Box flex={1}>
-                  <Typography variant="body1" mb={2} fontWeight={700}>
-                    Cost and Time Savings
-                  </Typography>
-                  <Typography variant="body1">
-                    By automating traditionally resource-heavy processes,
-                    Homezai delivers a scalable solution that saves users time
-                    and provides businesses with a cost-effective approach to
-                    real estate coordination.
+                    Syncs with Google Maps, calendars, and listing platforms for
+                    real-time updates.
                   </Typography>
                 </Box>
               </Box>
@@ -148,32 +143,10 @@ export default function Content() {
                 Research & Discovery
               </Typography>
               <Typography variant="body1">
-                To align user needs with business goals, I conducted in-depth{" "}
-                <a
-                  href="https://www.figma.com/board/4xnW9HE2YeF9lAl2yQ2tz7/HomezAI--Research?node-id=10-1172&t=GYLuES4r5sBHSrDw-1&fuid=755186265588674562"
-                  style={{
-                    color: "inherit",
-                    textDecoration: "underline",
-                  }}
-                  target="_blank"
-                >
-                  research
-                </a>
-                , including user personas, journey mapping, and a MoSCoW
-                analysis.{" "}
-                <a
-                  href="https://docs.google.com/document/d/1pVw48BxmYp_v4hl9NqNffUtGKhLdfM6P99gmoWX-Ho0/edit?usp=sharing"
-                  style={{
-                    color: "inherit",
-                    textDecoration: "underline",
-                  }}
-                  target="_blank"
-                >
-                  Collaborative discussions
-                </a>{" "}
-                with stakeholders and development teams ensured the design
-                accounted for both technical constraints and backend/frontend
-                feasibility.
+                To ensure AI automation effectively solved scheduling
+                inefficiencies, I led research focusing on user behavior and
+                technical feasibility. The insights gained from this will help
+                shape HomezAI’s scheduling system.
               </Typography>
             </Box>
           </FadeIn>
@@ -181,33 +154,24 @@ export default function Content() {
             <Box
               display="flex"
               flexDirection={{ xs: "column", md: "row" }}
-              gap={{ xs: 2, md: 2 }}
+              gap={{ xs: 2, md: 4 }}
             >
               <Box flex={1}>
                 <Typography variant="body1" mb={2} fontWeight={700}>
-                  User Personas & Journey Mapping
+                  User Research
                 </Typography>
                 <Typography variant="body1">
-                  Identified pain points, motivations, and interactions to
-                  design for key user needs.
+                  Analyzed buyer and broker workflows to identify high-friction
+                  areas in scheduling.
                 </Typography>
               </Box>
               <Box flex={1}>
                 <Typography variant="body1" mb={2} fontWeight={700}>
-                  Technical Exploration
+                  Technical Feasibility
                 </Typography>
                 <Typography variant="body1">
-                  Assessed backend and frontend limitations while exploring APIs
-                  like Google Maps and Calendly.
-                </Typography>
-              </Box>
-              <Box flex={1}>
-                <Typography variant="body1" mb={2} fontWeight={700}>
-                  MoSCoW Prioritization
-                </Typography>
-                <Typography variant="body1">
-                  Used the framework to establish a clear timeline, and ideate
-                  possible features and solutions.
+                  Assessed API integrations (Google Maps, listing platforms,
+                  calendars) to define automation capabilities.
                 </Typography>
               </Box>
             </Box>
@@ -216,18 +180,13 @@ export default function Content() {
       </Container>
       <Container maxWidth="xl">
         <Box width="100%">
-          <Box pb={2}>
-            <Typography variant="body2" fontWeight={400} fontSize={14}>
-              Personas and user journey mapping
-            </Typography>
-          </Box>
           <img
             alt=""
             role="presentation"
             style={{
               width: "100%",
             }}
-            src="/v2/HomezAI/img2.png"
+            src="/v3/HomezAI/img2.png"
           />
         </Box>
       </Container>
@@ -239,36 +198,7 @@ export default function Content() {
             style={{
               width: "100%",
             }}
-            src="/v2/HomezAI/img3.png"
-          />
-        </Box>
-      </Container>
-      <Container maxWidth="xl">
-        <Box width="100%" mb={6}>
-          <img
-            alt=""
-            role="presentation"
-            style={{
-              width: "100%",
-            }}
-            src="/v2/HomezAI/img4.png"
-          />
-        </Box>
-      </Container>
-      <Container maxWidth="xl">
-        <Box width="100%">
-          <Box pb={2}>
-            <Typography variant="body2" fontWeight={400} fontSize={14}>
-              MOSCOW
-            </Typography>
-          </Box>
-          <img
-            alt=""
-            role="presentation"
-            style={{
-              width: "100%",
-            }}
-            src="/v2/HomezAI/img5.png"
+            src="/v3/HomezAI/img3.png"
           />
         </Box>
       </Container>
@@ -278,12 +208,12 @@ export default function Content() {
             <FadeIn>
               <Box mb={2}>
                 <Typography variant="h3" mb={2} fontWeight={700}>
-                  Wireframes: From MVP to Final Product
+                  Wireframes: MVP and Beyond
                 </Typography>
                 <Typography variant="body1">
-                  The wireframe process for HomezAI followed a structured,
-                  iterative approach, evolving through multiple stages to create
-                  a seamless, mobile-first platform.
+                  The wireframes for HomezAI evolved through iterative
+                  refinements based on user testing and stakeholder input,
+                  ensuring an intuitive and efficient home-viewing experience.
                 </Typography>
               </Box>
             </FadeIn>
@@ -294,10 +224,10 @@ export default function Content() {
         <Box width="100%" mb={6}>
           <Box pb={2}>
             <Typography variant="body2" fontWeight={400} fontSize={14}>
-              <b>Stage 1: MVP Wireframes</b>
+              <b>MVP Wireframes</b>
               <br />
-              Laying the foundation with the essential screens focused on core
-              functionality
+              Initial wireframes streamlined scheduling interactions, shaped by
+              stakeholder feedback.
             </Typography>
           </Box>
           <img
@@ -306,7 +236,7 @@ export default function Content() {
             style={{
               width: "100%",
             }}
-            src="/v2/HomezAI/img6.png"
+            src="/v3/HomezAI/img4.png"
           />
         </Box>
       </Container>
@@ -314,10 +244,10 @@ export default function Content() {
         <Box width="100%" mb={6}>
           <Box pb={2}>
             <Typography variant="body2" fontWeight={400} fontSize={14}>
-              <b>Stage 2: Expanded Flow</b>
+              <b>Conversation UX Refinements</b>
               <br />
-              Conceptualizing the full user journey and ideating future
-              features.
+              Refined AI chatbot interactions to improve user guidance,
+              balancing structured inputs with free-text flexibility.
             </Typography>
           </Box>
           <img
@@ -326,7 +256,7 @@ export default function Content() {
             style={{
               width: "100%",
             }}
-            src="/v2/HomezAI/img7.png"
+            src="/v3/HomezAI/img5.png"
           />
         </Box>
       </Container>
@@ -334,92 +264,22 @@ export default function Content() {
         <Box width="100%" mb={6}>
           <Box pb={2}>
             <Typography variant="body2" fontWeight={400} fontSize={14}>
-              <b>Stage 3: MVP Wireframes</b>
-              <br />
-              Incorporating stakeholder feedback to refine usability and
-              clarity.
+              <b>Scope & Advanced Functionality Check-In</b>
+              <br />I used Loom often to provide regular async check-ins, this
+              ensured design-to-dev & stakeholder alignment.
             </Typography>
           </Box>
-          <img
-            alt=""
-            role="presentation"
-            style={{
-              width: "100%",
-            }}
-            src="/v2/HomezAI/img8.png"
-          />
-        </Box>
-      </Container>
-      <Container maxWidth="xl">
-        <Box width="100%" mb={6}>
-          <Box pb={2}>
-            <Typography variant="body2" fontWeight={400} fontSize={14}>
-              <b>Stage 4: Full Product Experience</b>
-              <br />
-              Delivering a complete design that balances user needs with
-              technical feasibility.
-            </Typography>
-          </Box>
-          <img
-            alt=""
-            role="presentation"
-            style={{
-              width: "100%",
-            }}
-            src="/v2/HomezAI/img9.png"
-          />
-        </Box>
-      </Container>
-      <Container maxWidth="xl">
-        <Box width="100%" mb={6}>
-          <Box pb={2}>
-            <Typography variant="body2" fontWeight={400} fontSize={14}>
-              <b>Stage 5: Feedback & Future Features</b>
-              <br />
-              Identifying opportunities for improvement and long-term
-              enhancements.
-            </Typography>
-          </Box>
-          <img
-            alt=""
-            role="presentation"
-            style={{
-              width: "100%",
-            }}
-            src="/v2/HomezAI/img10.png"
-          />
-        </Box>
-      </Container>
-      <Container maxWidth="xl">
-        <Box width="100%" mb={6}>
           <video
             playsInline
-            controls
+            controls={false}
+            autoPlay
+            loop
             muted
             role="presentation"
             style={{
               width: "100%",
             }}
-            src="/v2/HomezAI/video11.mp4"
-          />
-        </Box>
-      </Container>
-      <Container maxWidth="xl">
-        <Box width="100%" mb={6}>
-          <Box pb={2}>
-            <Typography variant="body2" fontWeight={400} fontSize={14}>
-              <b>Stage 6: Landing Page Wireframes</b>
-              <br />
-              Pitching a concept for a landing page built using Figma & Webflow.
-            </Typography>
-          </Box>
-          <img
-            alt=""
-            role="presentation"
-            style={{
-              width: "100%",
-            }}
-            src="/v2/HomezAI/img12.png"
+            src="/v3/HomezAI/vid6.mp4"
           />
         </Box>
       </Container>
@@ -432,10 +292,10 @@ export default function Content() {
                   Defining HomezAI’s Identity
                 </Typography>
                 <Typography variant="body1">
-                  To establish HomezAI as a modern and reliable platform, I
-                  crafted a clean visual identity, balancing innovation and
-                  trust. the brand was meant to connect with both tech-savvy
-                  users and traditional stakeholders.
+                  HomezAI’s visual identity balances innovation and trust,
+                  designed to resonate with both tech-savvy users and
+                  traditional stakeholders. The goal was to create a brand that
+                  feels modern, intelligent, and reliable.
                 </Typography>
               </Box>
             </FadeIn>
@@ -446,7 +306,7 @@ export default function Content() {
         <Box width="100%" mb={6}>
           <Box pb={2}>
             <Typography variant="body2" fontWeight={400} fontSize={14}>
-              Concept work
+              HI FI Logo Concepts{" "}
             </Typography>
           </Box>
           <img
@@ -455,24 +315,7 @@ export default function Content() {
             style={{
               width: "100%",
             }}
-            src="/v2/HomezAI/img13.svg"
-          />
-        </Box>
-      </Container>
-      <Container maxWidth="xl">
-        <Box width="100%" mb={6}>
-          <Box pb={2}>
-            <Typography variant="body2" fontWeight={400} fontSize={14}>
-              Additional explorations
-            </Typography>
-          </Box>
-          <img
-            alt=""
-            role="presentation"
-            style={{
-              width: "100%",
-            }}
-            src="/v2/HomezAI/img14.svg"
+            src="/v3/HomezAI/img7.svg"
           />
         </Box>
       </Container>
@@ -484,7 +327,7 @@ export default function Content() {
             style={{
               width: "100%",
             }}
-            src="/v2/HomezAI/img15.svg"
+            src="/v3/HomezAI/img8.svg"
           />
         </Box>
       </Container>
@@ -494,14 +337,14 @@ export default function Content() {
             <FadeIn>
               <Box mb={2}>
                 <Typography variant="h3" mb={2} fontWeight={700}>
-                  Simplifying Future Development
+                  Streamlining Development with Material Design
                 </Typography>
                 <Typography variant="body1">
-                  Collaborating with developers and project leads, I proposed
-                  using Material Design to streamline component creation. This
-                  pragmatic choice eliminated the need for a custom design
-                  system at this stage, ensuring efficiency and consistency
-                  across the platform.
+                  To ensure a scalable and efficient design system, I introduced
+                  Material Design to reduce design debt and development time.
+                  Leveraging a pre-established library allowed the team to focus
+                  on core features without reinventing components, keeping the
+                  experience cohesive while accelerating the build process.
                 </Typography>
               </Box>
             </FadeIn>
@@ -516,7 +359,7 @@ export default function Content() {
             style={{
               width: "100%",
             }}
-            src="/v2/HomezAI/img16.png"
+            src="/v3/HomezAI/img9.png"
           />
         </Box>
       </Container>
@@ -543,7 +386,9 @@ export default function Content() {
         <Box width="100%" mb={6}>
           <Box pb={2}>
             <Typography variant="body2" fontWeight={400} fontSize={14}>
-              VI Theming work
+              <b>Sign-in flow & reset screens</b>
+              <br />A standard onboarding flow leveraging Material Design
+              components and HomezAI branding for a seamless experience.{" "}
             </Typography>
           </Box>
           <img
@@ -552,36 +397,57 @@ export default function Content() {
             style={{
               width: "100%",
             }}
-            src="/v2/HomezAI/img17.png"
+            src="/v3/HomezAI/img10.png"
           />
         </Box>
       </Container>
       <Container maxWidth="xl">
         <Box width="100%" mb={6}>
+          <Box pb={2}>
+            <Typography variant="body2" fontWeight={400} fontSize={14}>
+              <b>Manual Schedule flow</b>
+              <br /> This flow is designed for users who prefer manual
+              scheduling without AI assistance.
+            </Typography>
+          </Box>
           <img
             alt=""
             role="presentation"
             style={{
               width: "100%",
             }}
-            src="/v2/HomezAI/img18.png"
+            src="/v3/HomezAI/img11.png"
           />
         </Box>
       </Container>
       <Container maxWidth="xl">
         <Box width="100%" mb={6}>
+          <Box pb={2}>
+            <Typography variant="body2" fontWeight={400} fontSize={14}>
+              <b>Booking Management</b>
+              <br /> This flow is for users who want a centralized space for
+              managing, editing, and canceling scheduled bookings.
+            </Typography>
+          </Box>
           <img
             alt=""
             role="presentation"
             style={{
               width: "100%",
             }}
-            src="/v2/HomezAI/img19.png"
+            src="/v3/HomezAI/img12.png"
           />
         </Box>
       </Container>
       <Container maxWidth="xl">
         <Box width="100%">
+          <Box pb={2}>
+            <Typography variant="body2" fontWeight={400} fontSize={14}>
+              <b>Design Check-In</b>
+              <br /> I continued to use Loom to keep stakeholders aligned,
+              explaining design decisions and iteration updates asynchronously.
+            </Typography>
+          </Box>
           <video
             playsInline
             controls
@@ -621,7 +487,7 @@ export default function Content() {
             style={{
               width: "100%",
             }}
-            src="/v2/HomezAI/video21.mp4"
+            src="/v3/HomezAI/vid14.mp4"
           />
         </Box>
       </Container>
@@ -633,7 +499,7 @@ export default function Content() {
             style={{
               width: "100%",
             }}
-            src="/v2/HomezAI/img20.png"
+            src="/v3/HomezAI/img15.png"
           />
         </Box>
       </Container>
@@ -645,7 +511,7 @@ export default function Content() {
             style={{
               width: "100%",
             }}
-            src="/v2/HomezAI/img21.png"
+            src="/v3/HomezAI/img16.png"
           />
         </Box>
       </Container>
@@ -656,11 +522,11 @@ export default function Content() {
               Securing the Future of HomezAI
             </Typography>
             <Typography variant="body1">
-              Designs were showcased to investors and briefly tested on the live
-              app, generating enough interest to secure funding. As HomezAI
-              evolves, I look forward to highlighting its impact and sharing
-              success stories from our users. Thank you for reading through
-              this!
+              To validate HomezAI’s impact, we showcased designs to investors
+              and tested them on the live app, generating strong interest and
+              securing funding. As the platform evolves, I look forward to
+              measuring its success and sharing real user stories. Thank you for
+              reading along!
             </Typography>
           </Box>
         </FadeIn>
