@@ -17,6 +17,8 @@ import { ProjectsNavFooter } from "@/components/projectsNavFooter/projectsNavFoo
 import { Footer } from "@/components/footer/footer";
 import { TeamCommentsCard } from "@/components/teamCommentsCard/teamCommentsCard";
 
+// remove this
+
 export default function Content() {
   const baseTheme = useBaseTheme();
 
