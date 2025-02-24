@@ -24,10 +24,10 @@ export default function Content() {
     <ThemeProvider theme={baseTheme}>
       <CssBaseline />
       <ProjectHeader
-        imageURL="/v2/Openlane/img1.png"
+        imageURL="/v3/Openlane/img1.png"
         logoString="Openlane"
         heading="Boosting Engagement by Linking Discovery to Financing"
-        subheading="The old approach felt flat. We saw a chance to elevate brand awareness and enhance brand awareness with a sharper, more strategic promotional push."
+        subheading="The existing financing flow lacked visibility and engagement. We aimed to create a seamless connection between vehicle discovery and financing to improve conversions and user retention."
         color=" #0061FF"
         secondaryColor="linear-gradient(180deg, #E3FCCF 0%, #CFDAFC 100%)"
         imageText="Development ready screens"
@@ -81,28 +81,79 @@ export default function Content() {
               </>
             }
           />
+        </Box>
+      </Container>
+      <Container maxWidth="xl">
+        <Box width="100%" mb={12} sx={{ background: "#E5F7D4" }}>
+          <Box pb={2} pt={6} px={6}>
+            <Typography variant="body2" fontWeight={400} fontSize={14}>
+              Original Design
+            </Typography>
+          </Box>
+          <img
+            alt=""
+            role="presentation"
+            style={{
+              width: "100%",
+            }}
+            src="/v3/Openlane/img2.png"
+          />
+        </Box>
+      </Container>
+      <Container maxWidth="lg">
+        <FadeIn>
+          <Box my={12}>
+            <Typography variant="h3" mb={2} fontWeight={700}>
+              Problem
+            </Typography>
+            <Typography variant="body1">
+              AFC dealers completed transactions and left the platform, missing
+              opportunities to engage with Openlane’s marketplace. This resulted
+              in missed opportunities for Openlane to showcase relevant
+              inventory, reducing potential revenue and retention.
+              <br />
+              <br />
+              To uncover root causes and missed opportunities, I broke the
+              problem down using the 5W1H framework.
+            </Typography>
+          </Box>
+        </FadeIn>
+      </Container>
+
+      <Container maxWidth="xl">
+        <Box width="100%">
+          <img
+            alt=""
+            role="presentation"
+            style={{
+              width: "100%",
+            }}
+            src="/v3/Openlane/img3.png"
+          />
+        </Box>
+      </Container>
+      <Container maxWidth="lg">
+        <Box display="flex" flexDirection="column" gap={2} my={12}>
           <FadeIn>
             <Box>
               <Typography variant="h3" mb={2} fontWeight={700}>
-                Problem
+                Clarifying the Scope & Business Alignment
               </Typography>
               <Typography variant="body1">
-                AFC dealers often exit the platform after completing
-                transactions, resulting in missed opportunities to introduce
-                them to Openlane’s marketplace. The challenge was to seamlessly
-                integrate relevant vehicle recommendations at the right moment,
-                encouraging continued engagement and increasing marketplace
-                traffic.
+                With the problem clearly defined, I worked cross-functionally to
+                align scope—clarifying whether this was a content overhaul or a
+                visual refresh while ensuring legal compliance and business
+                goals were met.
               </Typography>
             </Box>
           </FadeIn>
         </Box>
       </Container>
       <Container maxWidth="xl">
-        <Box width="100%" mb={6}>
+        <Box width="100%">
           <Box pb={2}>
             <Typography variant="body2" fontWeight={400} fontSize={14}>
-              5W1H
+              Copy review
             </Typography>
           </Box>
           <img
@@ -111,19 +162,7 @@ export default function Content() {
             style={{
               width: "100%",
             }}
-            src="/v2/Openlane/img2.png"
-          />
-        </Box>
-      </Container>
-      <Container maxWidth="xl">
-        <Box width="100%">
-          <img
-            alt=""
-            role="presentation"
-            style={{
-              width: "100%",
-            }}
-            src="/v2/Openlane/img3.png"
+            src="/v3/Openlane/img4.png"
           />
         </Box>
       </Container>
@@ -133,167 +172,14 @@ export default function Content() {
             <FadeIn>
               <Box mb={2}>
                 <Typography variant="h3" mb={2} fontWeight={700}>
-                  Project Goals
+                  Researching Cross-Selling Insights
                 </Typography>
                 <Typography variant="body1">
-                  This project focused on refining the recommendation feature
-                  and updating the payment interface for better usability.
-                </Typography>
-              </Box>
-            </FadeIn>
-          </Box>
-          <Box
-            display="flex"
-            flexDirection={{
-              xs: "column",
-              md: "row",
-            }}
-            gap={2}
-          >
-            <Box flex={1}>
-              <FadeIn>
-                <Box>
-                  <Typography variant="body1" mb={2} fontWeight={700}>
-                    Interface Overhaul
-                  </Typography>
-                  <Typography variant="body1">
-                    Refining the interface to align with recent feature updates
-                    and design improvements.
-                  </Typography>
-                </Box>
-              </FadeIn>
-            </Box>
-            <Box flex={1}>
-              <FadeIn>
-                <Box>
-                  <Typography variant="body1" mb={2} fontWeight={700}>
-                    Optimizing the Recommendation Carousel
-                  </Typography>
-                  <Typography variant="body1">
-                    Strategically placing recommendations to drive engagement
-                    without disrupting user flow.
-                  </Typography>
-                </Box>
-              </FadeIn>
-            </Box>
-          </Box>
-        </Box>
-      </Container>
-      <Container maxWidth="xl">
-        <Box
-          width="100%"
-          sx={{
-            backgroundColor: "#E5F7D4",
-            p: 6,
-          }}
-        >
-          <Box>
-            <Typography variant="body2" mb={2} fontWeight={400}>
-              Previous Design
-            </Typography>
-          </Box>
-          <img
-            alt=""
-            role="presentation"
-            style={{
-              width: "100%",
-            }}
-            src="/v2/Openlane/img4.png"
-          />
-        </Box>
-      </Container>
-      <Container maxWidth="lg">
-        <Box display="flex" flexDirection="column" gap={2} my={12}>
-          <Box>
-            <FadeIn>
-              <Box mb={2}>
-                <Typography variant="h3" mb={2} fontWeight={700}>
-                  Understanding the Business Need
-                </Typography>
-                <Typography variant="body1">
-                  Before diving in, I worked to clarify the scope—was this a
-                  full content overhaul or just a visual refresh? I collaborated
-                  with stakeholders and legal teams, aligning on necessary
-                  changes and ensuring all legal updates were approved before
-                  moving forward.
-                </Typography>
-              </Box>
-            </FadeIn>
-          </Box>
-        </Box>
-      </Container>
-      <Container maxWidth="xl">
-        <Box width="100%">
-          <img
-            alt=""
-            role="presentation"
-            style={{
-              width: "100%",
-            }}
-            src="/v2/Openlane/img5.png"
-          />
-        </Box>
-      </Container>
-      <Container maxWidth="lg">
-        <Box display="flex" flexDirection="column" gap={2} my={12}>
-          <Box>
-            <FadeIn>
-              <Box mb={2}>
-                <Typography variant="h3" mb={2} fontWeight={700}>
-                  Approval & Next steps
-                </Typography>
-                <Typography variant="body1">
-                  After reviewing feedback from stakeholders and refining the
-                  copy, I mapped out the next steps. Conversations with design
-                  peers led me to explore B2B cross-selling strategies to
-                  strengthen our approach.
-                </Typography>
-              </Box>
-            </FadeIn>
-          </Box>
-        </Box>
-      </Container>
-      <Container maxWidth="xl">
-        <Box width="100%" mb={6}>
-          <img
-            alt=""
-            role="presentation"
-            style={{
-              width: "100%",
-            }}
-            src="/v2/Openlane/img6.png"
-          />
-        </Box>
-      </Container>
-      <Container maxWidth="xl">
-        <Box width="100%" mb={6}>
-          <Box pb={2}>
-            <Typography variant="body2" fontWeight={400} fontSize={14}>
-              Gen Inspo
-            </Typography>
-          </Box>
-          <img
-            alt=""
-            role="presentation"
-            style={{
-              width: "100%",
-            }}
-            src="/v2/Openlane/img7.png"
-          />
-        </Box>
-      </Container>
-      <Container maxWidth="lg">
-        <Box display="flex" flexDirection="column" gap={2} my={12}>
-          <Box>
-            <FadeIn>
-              <Box mb={2}>
-                <Typography variant="h3" mb={2} fontWeight={700}>
-                  Expanding My Research
-                </Typography>
-                <Typography variant="body1">
-                  Diving deeper into cross-selling, I reviewed past promotional
-                  strategies, asked key questions, and explored new scenarios to
-                  sharpen our approach.
+                  I analyzed how leading B2B platforms drive cross-selling,
+                  applying key strategies to enhance our recommendation model.
+                  These insights informed how we seamlessly integrated vehicle
+                  recommendations, ensuring relevance without disrupting
+                  transactions.
                 </Typography>
               </Box>
             </FadeIn>
@@ -304,7 +190,7 @@ export default function Content() {
         <Box width="100%" mb={6}>
           <Box pb={2}>
             <Typography variant="body2" fontWeight={400} fontSize={14}>
-              Brainstorming
+              Research summary
             </Typography>
           </Box>
           <img
@@ -313,19 +199,24 @@ export default function Content() {
             style={{
               width: "100%",
             }}
-            src="/v2/Openlane/img8.png"
+            src="/v3/Openlane/img5.png"
           />
         </Box>
       </Container>
       <Container maxWidth="xl">
-        <Box width="100%">
+        <Box width="100%" mb={6}>
+          <Box pb={2}>
+            <Typography variant="body2" fontWeight={400} fontSize={14}>
+              Mood boarding
+            </Typography>
+          </Box>
           <img
             alt=""
             role="presentation"
             style={{
               width: "100%",
             }}
-            src="/v2/Openlane/img9.png"
+            src="/v3/Openlane/img6.png"
           />
         </Box>
       </Container>
@@ -335,15 +226,18 @@ export default function Content() {
             <FadeIn>
               <Box mb={2}>
                 <Typography variant="h3" mb={2} fontWeight={700}>
-                  Starting the Design Process
+                  Designing the Payment Confirmation Screen
                 </Typography>
                 <Typography variant="body1">
-                  With content and approach finalized after many discussions
-                  with the business, I focused on presenting it effectively.
-                  Given time constraints, I skipped low-fidelity concepts and
-                  went straight to high-fidelity designs, leveraging existing
-                  AFC components and styles to maintain consistency and
-                  efficiency.
+                  With research complete, I explored layout variations to
+                  enhance clarity and usability. Wireframes helped define the
+                  best structure for key details while integrating vehicle
+                  recommendations without disrupting the flow.
+                  <br />
+                  <br />
+                  Wireframes helped define key information hierarchy. Once
+                  validated, I translated them into high-fidelity designs using
+                  AFC’s UI components for consistency.
                 </Typography>
               </Box>
             </FadeIn>
@@ -351,38 +245,10 @@ export default function Content() {
         </Box>
       </Container>
       <Container maxWidth="xl">
-        <Box width="100%">
-          <img
-            alt=""
-            role="presentation"
-            style={{
-              width: "100%",
-            }}
-            src="/v2/Openlane/img10.svg"
-          />
-        </Box>
-      </Container>
-
-      <Container maxWidth="lg">
-        <FadeIn>
-          <Box my={12}>
-            <Typography variant="h3" mb={2} fontWeight={700}>
-              Narrowing Down Directions
-            </Typography>
-            <Typography variant="body1">
-              I explored multiple layouts to optimize the payment confirmation
-              experience, ensuring clarity and usability. After aligning with
-              business goals and user needs, I moved on to refining carousel
-              cards and defining interactions for developers.
-            </Typography>
-          </Box>
-        </FadeIn>
-      </Container>
-      <Container maxWidth="xl">
         <Box width="100%" mb={6}>
           <Box pb={2}>
             <Typography variant="body2" fontWeight={400} fontSize={14}>
-              First Round of Designs
+              Wireframes
             </Typography>
           </Box>
           <img
@@ -391,7 +257,7 @@ export default function Content() {
             style={{
               width: "100%",
             }}
-            src="/v2/Openlane/img11.svg"
+            src="/v3/Openlane/img7.png"
           />
         </Box>
       </Container>
@@ -399,7 +265,7 @@ export default function Content() {
         <Box width="100%">
           <Box pb={2}>
             <Typography variant="body2" fontWeight={400} fontSize={14}>
-              Alt Screens
+              Dev ready screens
             </Typography>
           </Box>
           <img
@@ -408,24 +274,23 @@ export default function Content() {
             style={{
               width: "100%",
             }}
-            src="/v2/Openlane/img12.svg"
+            src="/v3/Openlane/img8.svg"
           />
         </Box>
       </Container>
       <Container maxWidth="lg">
-        <Box display="flex" flexDirection="column" gap={2} mt={12}>
+        <Box display="flex" flexDirection="column" gap={2} my={12}>
           <Box>
             <FadeIn>
-              <Box>
+              <Box mb={2}>
                 <Typography variant="h3" mb={2} fontWeight={700}>
-                  Validating the Approach
+                  Testing the Live Designs
                 </Typography>
                 <Typography variant="body1">
-                  After presenting the update across AFC & Openlane, I gathered
-                  feedback from various teams and stakeholders. Some proposed
-                  major changes that didn’t align with user needs, so we decided
-                  to conduct a pilot test to collect real user data and ensure
-                  the best direction before proceeding.
+                  After deploying the updated design to a test group, I analyzed
+                  pilot test data to evaluate engagement and usability.
+                  Stakeholders raised concerns about layout effectiveness, and
+                  the results guided discussions on potential refinements.
                 </Typography>
               </Box>
             </FadeIn>
@@ -450,7 +315,7 @@ export default function Content() {
                 fontWeight={700}
                 color="#1F74FE"
               >
-                User Pilot [1 month]
+                User Pilot over 1 month
               </Typography>
               <Typography variant="h3" mb={2} fontWeight={700}>
                 Across 709 dealerships, here are the most used resolutions
@@ -490,7 +355,7 @@ export default function Content() {
                   height: "100%",
                   objectFit: "contain",
                 }}
-                src="/v2/Openlane/img13.svg"
+                src="/v3/Openlane/img9.svg"
               />
             </Box>
           </Box>
@@ -510,17 +375,19 @@ export default function Content() {
                 background: "#f0f0f0",
               }}
             >
-              <Typography
-                variant="body1"
-                mb={2}
-                fontWeight={700}
-                color="#1F74FE"
-              >
-                User Pilot [1 month]
-              </Typography>
               <Typography variant="h3" mb={2} fontWeight={700}>
-                Conversion rate over 1 month
+                Evaluating dealer
+                <br /> engagement over 1st pilot
               </Typography>
+              <Box mb={2} display="flex">
+                <Typography variant="body1" color="#1F74FE" mr={1}>
+                  &gt;
+                </Typography>
+                <Typography variant="body1">
+                  Low engagement rates indicated friction in the signup process,
+                  reinforcing the need for a more seamless experience.
+                </Typography>
+              </Box>
               <Box flex={1} minHeight={500} p={6} overflow="hidden">
                 <img
                   alt=""
@@ -530,7 +397,7 @@ export default function Content() {
                     height: "100%",
                     objectFit: "contain",
                   }}
-                  src="/v2/Openlane/img14.svg"
+                  src="/v3/Openlane/img10.svg"
                 />
               </Box>
             </Box>
@@ -541,17 +408,20 @@ export default function Content() {
                 background: "#f0f0f0",
               }}
             >
-              <Typography
-                variant="body1"
-                mb={2}
-                fontWeight={700}
-                color="#1F74FE"
-              >
-                User Pilot [1 month]
-              </Typography>
               <Typography variant="h3" mb={2} fontWeight={700}>
-                User Impressions
+                Evaluating dealer reactions
+                <br /> over 1st pilot
               </Typography>
+              <Box mb={2} display="flex">
+                <Typography variant="body1" color="#1F74FE" mr={1}>
+                  &gt;
+                </Typography>
+                <Typography variant="body1">
+                  With 52% positive feedback, sentiment was largely neutral or
+                  favorable. Negative responses highlighted concerns with layout
+                  usability.
+                </Typography>
+              </Box>
               <Box flex={1} minHeight={500} p={6} overflow="hidden">
                 <img
                   alt=""
@@ -561,7 +431,7 @@ export default function Content() {
                     height: "100%",
                     objectFit: "contain",
                   }}
-                  src="/v2/Openlane/img15.svg"
+                  src="/v3/Openlane/img11.svg"
                 />
               </Box>
             </Box>
@@ -574,18 +444,22 @@ export default function Content() {
             <FadeIn>
               <Box>
                 <Typography variant="h3" mb={2} fontWeight={700}>
-                  Addressing Feedback & Demand
+                  Balancing Business Needs & User Experience
                 </Typography>
                 <Typography variant="body1">
-                  Testing went as expected, but the business anticipated a
-                  higher conversion rate. Frustrations surfaced, especially
-                  around my hesitation to move the carousel to the top, which I
-                  felt was too intrusive. So, what next?
+                  Testing confirmed the design&apos;s usability, but the
+                  business expected higher conversion rates. A key point of
+                  contention was the carousel placement—stakeholders pushed for
+                  a more prominent position, while I identified potential UX
+                  risks with an intrusive layout.
                   <br />
-                  <br />I regrouped with the creative team, explored alternative
-                  solutions, and refined the designs to align with business
-                  needs. This update delivered exactly what was requested,
-                  without sacrificing the user experience entirely.
+                  <br />
+                  To balance business goals with user needs, I led a structured
+                  design iteration—collaborating with the creative team to
+                  evaluate alternative placements that preserved engagement
+                  without disrupting usability. The final design satisfied
+                  stakeholders while maintaining a seamless payment confirmation
+                  experience, proving that conversion goals and UX can coexist.
                 </Typography>
               </Box>
             </FadeIn>
@@ -596,7 +470,8 @@ export default function Content() {
         <Box width="100%" mb={6}>
           <Box pb={2}>
             <Typography variant="body2" fontWeight={400} fontSize={14}>
-              Second round of designs & Additional conversion points
+              Revised designs using a more streamlined card formation, and
+              additional conversion opportunities
             </Typography>
           </Box>
           <img
@@ -605,7 +480,7 @@ export default function Content() {
             style={{
               width: "100%",
             }}
-            src="/v2/Openlane/img16.svg"
+            src="/v3/Openlane/img12.svg"
           />
         </Box>
       </Container>
@@ -622,7 +497,7 @@ export default function Content() {
             style={{
               width: "100%",
             }}
-            src="/v2/Openlane/img17.png"
+            src="/v3/Openlane/img13.png"
           />
         </Box>
       </Container>
@@ -634,7 +509,7 @@ export default function Content() {
             style={{
               width: "100%",
             }}
-            src="/v2/Openlane/img18.png"
+            src="/v3/Openlane/img14.png"
           />
         </Box>
       </Container>
@@ -644,15 +519,14 @@ export default function Content() {
             <FadeIn>
               <Box>
                 <Typography variant="h3" mb={2} fontWeight={700}>
-                  Final Impressions & Impact
+                  Final Results: Validating the Design & Driving Engagement
                 </Typography>
                 <Typography variant="body1">
-                  The user pilot provided key insights into engagement and
-                  conversion behaviors. Click-through rates increased, and while
-                  signups improved, the data suggested further refinements could
-                  drive even stronger results. User sentiment remained mostly
-                  positive, confirming the design was effective without being
-                  overly intrusive.
+                  The pilot study confirmed the effectiveness of the redesign,
+                  with higher click-through rates, increased signups, and
+                  positive sentiment from users. However, feedback also
+                  highlighted friction in the signup process and concerns around
+                  mobile usability, informing future improvements.
                 </Typography>
               </Box>
             </FadeIn>
@@ -660,6 +534,67 @@ export default function Content() {
         </Box>
       </Container>
       <Container maxWidth="xl">
+        <FadeIn>
+          <Box
+            display="flex"
+            flexDirection={{ xs: "column", md: "row" }}
+            my={12}
+            alignItems="center"
+            sx={{
+              background: "#f0f0f0",
+            }}
+          >
+            <Box flex={1} p={6}>
+              <Typography
+                variant="body1"
+                mb={2}
+                fontWeight={700}
+                color="#1F74FE"
+              >
+                Pilot Test Results Over 3 Months
+              </Typography>
+              <Typography variant="h3" mb={2} fontWeight={700}>
+                Across 2345 dealerships, here are the dealer usage patterns
+              </Typography>
+              <Typography component="div" variant="body1">
+                <Box display="flex" flexDirection="column">
+                  <Box mb={2} display="flex">
+                    <Typography variant="body1" color="#1F74FE" mr={1}>
+                      &gt;
+                    </Typography>
+                    <Typography variant="body1">
+                      Desktop Dominates Transactions: 90% of users completed
+                      transactions on desktop, reinforcing its importance as the
+                      primary design focus.
+                    </Typography>
+                  </Box>
+                  <Box mb={2} display="flex">
+                    <Typography variant="body1" color="#1F74FE" mr={1}>
+                      &gt;
+                    </Typography>
+                    <Typography variant="body1">
+                      Minimal Mobile Usage (7%): While adoption remains low,
+                      non-scroll alternatives received positive feedback,
+                      suggesting opportunities for future mobile optimizations.
+                    </Typography>
+                  </Box>
+                </Box>
+              </Typography>
+            </Box>
+            <Box flex={1} minHeight={500} p={12} overflow="hidden">
+              <img
+                alt=""
+                role="presentation"
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  objectFit: "contain",
+                }}
+                src="/v3/Openlane/img15.svg"
+              />
+            </Box>
+          </Box>
+        </FadeIn>
         <FadeIn>
           <Box
             display="flex"
@@ -675,17 +610,29 @@ export default function Content() {
                 background: "#f0f0f0",
               }}
             >
-              <Typography
-                variant="body1"
-                mb={2}
-                fontWeight={700}
-                color="#1F74FE"
-              >
-                User Pilot [3 months]
-              </Typography>
               <Typography variant="h3" mb={2} fontWeight={700}>
-                Conversion rate
+                Evaluating dealer
+                <br /> engagement over 2nd pilot
               </Typography>
+              <Box mb={2} display="flex">
+                <Typography variant="body1" color="#1F74FE" mr={1}>
+                  &gt;
+                </Typography>
+                <Typography variant="body1">
+                  Increased Click-Through Rates (21%): More users engaged with
+                  recommendations, signaling improved visibility.
+                </Typography>
+              </Box>
+              <Box mb={2} display="flex">
+                <Typography variant="body1" color="#1F74FE" mr={1}>
+                  &gt;
+                </Typography>
+                <Typography variant="body1">
+                  Signup Drop-Off (6.3%): While more users clicked, friction in
+                  the signup process led to fewer conversions—indicating the
+                  need for further streamlining.
+                </Typography>
+              </Box>
               <Box flex={1} minHeight={500} p={6} overflow="hidden">
                 <img
                   alt=""
@@ -695,7 +642,7 @@ export default function Content() {
                     height: "100%",
                     objectFit: "contain",
                   }}
-                  src="/v2/Openlane/img19.svg"
+                  src="/v3/Openlane/img16.svg"
                 />
               </Box>
             </Box>
@@ -706,17 +653,30 @@ export default function Content() {
                 background: "#f0f0f0",
               }}
             >
-              <Typography
-                variant="body1"
-                mb={2}
-                fontWeight={700}
-                color="#1F74FE"
-              >
-                User Pilot [3 month]
-              </Typography>
               <Typography variant="h3" mb={2} fontWeight={700}>
-                User Impressions
+                Evaluating dealer reactions
+                <br /> over 2nd pilot
               </Typography>
+              <Box mb={2} display="flex">
+                <Typography variant="body1" color="#1F74FE" mr={1}>
+                  &gt;
+                </Typography>
+                <Typography variant="body1">
+                  60% Positive Sentiment: Majority of dealers found the new
+                  design intuitive, with improved discoverability of inventory
+                  recommendations.
+                </Typography>
+              </Box>
+              <Box mb={2} display="flex">
+                <Typography variant="body1" color="#1F74FE" mr={1}>
+                  &gt;
+                </Typography>
+                <Typography variant="body1">
+                  7% Negative Sentiment: Some users found layout changes
+                  intrusive, highlighting the need for more adaptable user
+                  controls for a smoother experience.
+                </Typography>
+              </Box>
               <Box flex={1} minHeight={500} p={6} overflow="hidden">
                 <img
                   alt=""
@@ -726,7 +686,7 @@ export default function Content() {
                     height: "100%",
                     objectFit: "contain",
                   }}
-                  src="/v2/Openlane/img20.svg"
+                  src="/v3/Openlane/img18.svg"
                 />
               </Box>
             </Box>
@@ -742,12 +702,13 @@ export default function Content() {
                   Impact
                 </Typography>
                 <Typography variant="body1">
-                  The updated experience led to higher visibility and
-                  interaction, aligning business goals with user behavior. The
-                  structured approach—iterative design, testing, and stakeholder
-                  collaboration—proved valuable in optimizing conversions while
-                  maintaining a seamless experience. These findings will guide
-                  future enhancements and further opportunities for growth.
+                  The redesigned experience improved engagement and visibility,
+                  ensuring business objectives aligned with user behavior. By
+                  applying an iterative, research-driven approach, I helped
+                  refine recommendation placement within the payment
+                  confirmation screen, balancing conversion goals with
+                  usability. These insights directly informed future design
+                  iterations, positioning the product for continued growth.
                 </Typography>
               </Box>
             </FadeIn>
