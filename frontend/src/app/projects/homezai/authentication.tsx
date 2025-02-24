@@ -99,7 +99,17 @@ export const Authentication = () => {
                 This content is protected.
               </Typography>
               <Typography variant="body1" fontWeight={400} textAlign="center">
-                To view, please enter the password.
+                You can request access{" "}
+                <Link
+                  href="mailto:design.moexls@gmail.com"
+                  fontWeight={600}
+                  sx={{
+                    color: "#4A4B4D",
+                  }}
+                >
+                  via email
+                </Link>{" "}
+                or enter the password below.{" "}
               </Typography>
             </Box>
             <Box
