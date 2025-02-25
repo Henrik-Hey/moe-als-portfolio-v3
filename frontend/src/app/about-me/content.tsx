@@ -119,7 +119,7 @@ export default function Content() {
                   while collaborating on impactful projects with{" "}
                   <Typography
                     component={Link}
-                    href="https://www.hashmatrix.xyz/"
+                    href="https://hashtensor.xyz/"
                     target="_blank"
                     sx={{
                       textDecoration: "none",
@@ -131,7 +131,7 @@ export default function Content() {
                     variant="body2"
                     color={activeTheme.palette.primary.main}
                   >
-                    Hashmatrix
+                    Hashtensor
                   </Typography>
                   . With over six years of experience in design, I’ve worked
                   across brand identity, web design, and comprehensive
