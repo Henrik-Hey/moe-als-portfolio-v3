@@ -26,7 +26,7 @@ export default function Content() {
       <ProjectHeader
         imageURL="/v3/IArt/img1.png"
         logoString="IArt"
-        heading="Redefining Car Interfaces with Immersive Visual Solutions."
+        heading="Redefining In-Car Interfaces with Adaptive AI Visuals"
         subheading="While many AI tools and LLMs focus on text-based interactions, IArt goes further by enabling users to generate and explore information visually."
         color=" #6B65F2"
         secondaryColor="linear-gradient(90deg, #D1CFFC 0%, #E1CFFC 100%)"
@@ -93,10 +93,9 @@ export default function Content() {
                 Project Goals
               </Typography>
               <Typography variant="body1">
-                The app needed to meet key stakeholder expectations while moving
-                beyond simply integrating GPT. The focus was on enhancing and
-                expanding functionality to deliver a polished and scalable
-                solution.
+                The goal was to move beyond basic GPT integration and create an adaptive, 
+                scalable AI interface that met both stakeholder expectations and real user needs. 
+                The focus was on three key areas:
               </Typography>
             </Box>
           </FadeIn>
@@ -111,9 +110,7 @@ export default function Content() {
                   Experience Personalization{" "}
                 </Typography>
                 <Typography variant="body1">
-                  Allow users to customize their experience with options like
-                  colors and fonts, establishing a strong visual standard and
-                  user control.
+                  Allow users to customize their interface with flexible layouts, color schemes, and font choices.
                 </Typography>
               </Box>
               <Box flex={1}>
@@ -121,9 +118,7 @@ export default function Content() {
                   Responsiveness and Scalability
                 </Typography>
                 <Typography variant="body1">
-                  Ensure the app works across various screen sizes, with a
-                  desktop-first approach and components built for future
-                  flexibility.
+                  Ensure seamless performance across different screen sizes with a desktop-first approach and modular components.
                 </Typography>
               </Box>
               <Box flex={1}>
@@ -131,9 +126,7 @@ export default function Content() {
                   Ease of development
                 </Typography>
                 <Typography variant="body1">
-                  Simplify development by using design systems and icon
-                  libraries, enabling quick implementation without sacrificing
-                  functionality.
+                  Use design systems and pre-built libraries to streamline development and accelerate implementation.
                 </Typography>
               </Box>
             </Box>
@@ -144,12 +137,9 @@ export default function Content() {
                 Brainstorming & Research
               </Typography>
               <Typography variant="body1">
-                With tight timelines and limited funding, this project was
-                largely conceptual, leaving little room for testing. My focus
-                was on solving key problems while meeting the requirements
-                outlined by stakeholders and developers. The challenge was to
-                design a solution that aligned with their criteria despite the
-                lack of certainty.
+                With tight timelines and limited funding, this project was largely conceptual, 
+                leaving little room for testing. I focused on solving key usability challenges while aligning with stakeholder and developer constraints. 
+                My approach balanced scalability, feasibility, and intuitive AI-driven interaction design.
               </Typography>
             </Box>
           </FadeIn>
@@ -214,10 +204,9 @@ export default function Content() {
                   Building Out the App
                 </Typography>
                 <Typography variant="body1">
-                  With the concepts approved and requirements defined by
-                  stakeholders and developers, I began designing the interface.
-                  I started with a basic layout, then focused on theming to
-                  incorporate key elements of user customization.
+                  With the core branding established, I began designing the interface—starting with a basic layout before 
+                  integrating theming and user customization. The goal was to create a flexible system that adapts to different 
+                  user preferences while maintaining a cohesive experience.
                 </Typography>
               </Box>
             </FadeIn>
@@ -228,7 +217,7 @@ export default function Content() {
         <Box width="100%">
           <Box pb={2}>
             <Typography variant="body2" fontWeight={400} fontSize={14}>
-              Initial Concepts
+              VI Themes
             </Typography>
           </Box>
           <img
@@ -250,9 +239,9 @@ export default function Content() {
                   Addressing Additional Feedback
                 </Typography>
                 <Typography variant="body1">
-                  Building on the initial themes, I refined and expanded them,
-                  creating component sets to clearly communicate the designs to
-                  developers and stakeholders.
+                  I refined and expanded the initial themes based on stakeholder and developer feedback, 
+                  creating component sets to improve clarity and consistency. These refinements ensured the design system was 
+                  well-documented and easy to implement.
                 </Typography>
               </Box>
             </FadeIn>
@@ -417,7 +406,7 @@ export default function Content() {
         <Box width="100%" mb={6}>
           <Box pb={2}>
             <Typography variant="body2" fontWeight={400} fontSize={14}>
-              Closed-beta Product Showcase
+              Figma Prototype for Investor preview
             </Typography>
           </Box>
           <video
@@ -464,7 +453,7 @@ export default function Content() {
         <Box width="100%" mb={6}>
           <Box pb={2}>
             <Typography variant="body2" fontWeight={400} fontSize={14}>
-              Closed-beta Product Showcase
+              Closed-beta product showcase
             </Typography>
           </Box>
           <video
@@ -502,10 +491,8 @@ export default function Content() {
               Conclusion
             </Typography>
             <Typography variant="body1" mb={2}>
-              This project was a challenging and exciting journey, from the
-              initial ForceGraph concept to the unexpected pivot brought by an
-              automotive investor. Adapting to shifting priorities made this one
-              of the most rewarding projects I’ve worked on.
+              This project evolved from ForceGraph’s original vision into a new direction, driven by investor interest. 
+              Adapting to shifting priorities made this one of the most dynamic and rewarding projects I’ve led.
             </Typography>
           </Box>
           <Box
@@ -519,10 +506,8 @@ export default function Content() {
               Lessons
             </Typography>
             <Typography variant="body1" mb={2}>
-              This project taught me the value of leveraging frameworks,
-              libraries, and automation tools to streamline workflows. Moving
-              forward, I’ll continue incorporating these strategies to optimize
-              future projects.
+              This experience reinforced the value of leveraging frameworks and automation to speed up 
+              development while maintaining design quality—an approach I’ll continue refining.
             </Typography>
           </Box>
           <Box
@@ -536,9 +521,8 @@ export default function Content() {
               Future Steps
             </Typography>
             <Typography variant="body1" mb={2}>
-              The focus now is on refining the experience, user testing, and
-              iterating on designs. With an expected completion in Q4 2025,
-              there’s time to enhance the product and ensure its success.
+              Next, we’ll refine, test, and iterate toward a Q4 2025 launch. However, as a startup, 
+              flexibility is key—the product may need to pivot again based on user feedback, market shifts, or investor needs. 
             </Typography>
           </Box>
         </Box>
