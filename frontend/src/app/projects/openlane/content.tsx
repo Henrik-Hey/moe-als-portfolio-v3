@@ -70,12 +70,14 @@ export default function Content() {
           <ProjectStatement
             content={
               <>
-                I led the UX and design for Openlane’s recommendation system, boosting engagement by 13% and 
-                driving marketplace traffic by surfacing relevant inventory at key decision points.
+                I led the UX and design for Openlane’s recommendation system,
+                boosting engagement by 13% and driving marketplace traffic by
+                surfacing relevant inventory at key decision points.
                 <br />
                 <br />
-                Research and iteration led to optimized discovery flows, personalized recommendations, 
-                and higher conversion rates for AFC dealers.
+                Research and iteration led to optimized discovery flows,
+                personalized recommendations, and higher conversion rates for
+                AFC dealers.
               </>
             }
           />
@@ -124,14 +126,15 @@ export default function Content() {
             <Typography variant="body2" fontWeight={400} fontSize={14}>
               Breaking Down the Problem with the 5W1H Framework
             </Typography>
-          <img
-            alt=""
-            role="presentation"
-            style={{
-              width: "100%",
-            }}
-            src="/v3/Openlane/img3.png"
-          />
+            <img
+              alt=""
+              role="presentation"
+              style={{
+                width: "100%",
+              }}
+              src="/v3/Openlane/img3.png"
+            />
+          </Box>
         </Box>
       </Container>
       <Container maxWidth="lg">
@@ -329,8 +332,8 @@ export default function Content() {
                       &gt;
                     </Typography>
                     <Typography variant="body1">
-                      Desktop Leads Conversions: 93% of dealers transacted on desktop, 
-                      reinforcing it as the priority platform.
+                      Desktop Leads Conversions: 93% of dealers transacted on
+                      desktop, reinforcing it as the priority platform.
                     </Typography>
                   </Box>
                   <Box mb={2} display="flex">
@@ -338,8 +341,9 @@ export default function Content() {
                       &gt;
                     </Typography>
                     <Typography variant="body1">
-                      Mobile Usability Issue: Dealers found scroll-based carousels intrusive. 
-                      Future iterations should explore less disruptive engagement methods.
+                      Mobile Usability Issue: Dealers found scroll-based
+                      carousels intrusive. Future iterations should explore less
+                      disruptive engagement methods.
                     </Typography>
                   </Box>
                 </Box>
