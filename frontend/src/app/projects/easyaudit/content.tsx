@@ -30,7 +30,7 @@ export default function Content() {
         subheading="EasyAudit is an AI-driven compliance platform that streamlines risk assessment, control generation, and audit management, helping businesses achieve certifications faster."
         color=" #067949"
         secondaryColor="#CFFCE9"
-        imageText="Document Management Concept Screen"
+        imageText="Monitoring Concept Screen"
       />
       <Container maxWidth="xl">
         <Box mt={6}>
@@ -67,10 +67,8 @@ export default function Content() {
           <ProjectStatement
             content={
               <>
-                I led the design and UX for EasyAudit, crafting an intuitive
-                interface to simplify compliance processes. This project focuses
-                on efficiency and usability to support businesses in achieving
-                their compliance goals.
+                I led the UX and design for EasyAudit, creating an intuitive interface that simplifies compliance workflows. 
+                The focus was on efficiency, usability, and clarity—helping businesses easily meet regulatory requirements.
               </>
             }
           />
@@ -78,14 +76,15 @@ export default function Content() {
             <FadeIn>
               <Box>
                 <Typography variant="h3" mb={2} fontWeight={700}>
-                  Project Goals
+                  Problem & Approach
                 </Typography>
                 <Typography variant="body1">
-                  The objective was to create a compliance platform from the
-                  ground up, blending brand identity, seamless user experience,
-                  and adherence to regulatory standards. The design needed to
-                  balance scalability, user-centricity, and clarity while
-                  meeting business needs and compliance requirements.
+                  Compliance processes are often complex, time-consuming, and prone to errors. Businesses struggle with manual audits, 
+                  regulatory tracking, and fragmented compliance tasks—leading to inefficiencies and increased risk.
+                  <br />
+                  <br />
+                  EasyAudit streamlines these workflows with AI-driven automation, control generation, task tracking, 
+                  and simplified certification processes, all under one platform.
                 </Typography>
               </Box>
             </FadeIn>
@@ -100,29 +99,26 @@ export default function Content() {
               >
                 <Box flex={1}>
                   <Typography variant="body1" mb={2} fontWeight={700}>
-                    Establishing Brand & Flow
+                    Establishing Brand Appearance & Flow
                   </Typography>
                   <Typography variant="body1">
-                    Define the brand identity and foundational workflows to
-                    align design and functionality with user needs.
+                    Define a cohesive visual identity and structured workflows to ensure clarity and trust.
                   </Typography>
                 </Box>
                 <Box flex={1}>
                   <Typography variant="body1" mb={2} fontWeight={700}>
-                    Scalability & User-Centered Design
+                    Creating Scalable & User-Centered Designs
                   </Typography>
                   <Typography variant="body1">
-                    Design for scale, and ensure the experience is prioritizing
-                    the user each step of the way.
+                    Design for scale, and ensure the experience is prioritizing the user each step of the way.
                   </Typography>
                 </Box>
                 <Box flex={1}>
                   <Typography variant="body1" mb={2} fontWeight={700}>
-                    Compliance & Clarity
+                    Ensuring Compliance & Ethical Standards
                   </Typography>
                   <Typography variant="body1">
-                    Meet regulatory standards while delivering a clear,
-                    trustworthy platform.
+                    Integrate accessibility best practices and transparency to align with regulatory requirements.
                   </Typography>
                 </Box>
               </Box>
@@ -164,10 +160,9 @@ export default function Content() {
                   Defining the Scope
                 </Typography>
                 <Typography variant="body1">
-                  Building EasyAudit meant balancing automation, compliance, and
-                  user experience from day one. The goal was to create a
-                  seamless, scalable platform that simplifies SOC2 compliance
-                  while maintaining clarity and regulatory trust.
+                  Building EasyAudit meant balancing automation, compliance, and user experience from day one. 
+                  The goal was to reduce manual effort, streamline SOC2 compliance, 
+                  and create a scalable system that businesses could trust.
                 </Typography>
               </Box>
             </FadeIn>
@@ -227,7 +222,7 @@ export default function Content() {
         <Box width="100%" mb={12}>
           <Box pb={2}>
             <Typography variant="body2" fontWeight={400} fontSize={14}>
-              HI FI Questionnaire Concepts
+              HI-FI Questionnaire Concepts
             </Typography>
           </Box>
           <img
@@ -301,7 +296,7 @@ export default function Content() {
         <Box width="100%" mb={12}>
           <Box pb={2}>
             <Typography variant="body2" fontWeight={400} fontSize={14}>
-              Phase 3 Dev ready screens
+              Phase 3 Dev-ready screens
             </Typography>
           </Box>
           <img
@@ -318,7 +313,7 @@ export default function Content() {
         <Box width="100%" mb={6}>
           <Box pb={2}>
             <Typography variant="body2" fontWeight={400} fontSize={14}>
-              Phase 3 HIFI walkthrough & prototypes
+              Phase 3 HI-FI walkthrough & prototypes
             </Typography>
           </Box>
           <video
