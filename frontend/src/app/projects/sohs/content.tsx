@@ -65,14 +65,8 @@ export default function Content() {
           <ProjectStatement
             content={
               <>
-                I spearheaded the redesign of SOHS&apos;s mobile app, achieving
-                a boost in user and stakeholder satisfaction, a 12% increase in
-                signups and referrals, and reducing average task time by 2.5
-                minutes.
-                <br />
-                <br />
-                My work established a strong foundation for the app’s visual
-                appeal and consistency, significantly enhancing user engagement.
+               I Led the redesign of SOHS’s mobile app, improving usability and visual consistency. 
+               Streamlined workflows, increasing signups and referrals by 12% while cutting task time by 2.5 minutes.
               </>
             }
           />
@@ -82,9 +76,8 @@ export default function Content() {
                 Problem
               </Typography>
               <Typography variant="body1">
-                SOHS struggled with inconsistent design, making the app feel
-                unpolished and harming its reputation. This lack of cohesion
-                discouraged user trust and engagement, limiting its potential.
+                SOHS suffered from inconsistent design, making the app feel unpolished and reducing user trust. 
+                This directly impacted engagement and retention, limiting its market potential.
               </Typography>
             </Box>
           </FadeIn>
@@ -94,9 +87,8 @@ export default function Content() {
                 Project Goals
               </Typography>
               <Typography variant="body1">
-                The app needed a visual overhaul to align with modern standards
-                while adhering to a limited budget. My focus was to maximize
-                impact in a short timeframe by addressing these key objectives:
+                The redesign aimed to modernize SOHS while working within strict budget constraints. 
+                My focus was to maximize impact efficiently through three key initiatives:
               </Typography>
             </Box>
           </FadeIn>
@@ -108,12 +100,10 @@ export default function Content() {
             >
               <Box flex={1}>
                 <Typography variant="body1" mb={2} fontWeight={700}>
-                  Addressing Accessibility Issues
+                  Improving Accessibility
                 </Typography>
                 <Typography variant="body1">
-                  Ensuring the app meets modern accessibility standards by
-                  updating branding colors to align with WCAG guidelines and
-                  making fonts legible and accessible using best practices.
+                  I updated branding and typography to meet WCAG standards, ensuring better readability and usability.
                 </Typography>
               </Box>
               <Box flex={1}>
@@ -121,19 +111,16 @@ export default function Content() {
                   Refining Visual Design
                 </Typography>
                 <Typography variant="body1">
-                  Fixing design errors and applying visual design principles and
-                  usability heuristics to elevate the overall experience, clean
-                  up inconsistencies, and strengthen the brand’s appeal.
+                  I fixed inconsistencies, applied usability heuristics, and strengthened the brand’s visual identity.
                 </Typography>
               </Box>
               <Box flex={1}>
                 <Typography variant="body1" mb={2} fontWeight={700}>
-                  Leveraging Design Systems
+                  Introducing a Design System
                 </Typography>
                 <Typography variant="body1">
-                  Although outside the immediate budget, the foundation for a
-                  design system or library was recommended to support
-                  componentization, consistency, and easier development.
+                  While outside the immediate budget, I introduced scalable components to improve consistency 
+                  and speed up future development.
                 </Typography>
               </Box>
             </Box>
@@ -163,14 +150,12 @@ export default function Content() {
             <FadeIn>
               <Box mb={2}>
                 <Typography variant="h3" mb={2} fontWeight={700}>
-                  Cleaning up the Brand
+                  Refining the Brand for a Cohesive Experience
                 </Typography>
                 <Typography variant="body1">
-                  The first step of the redesign was to review the existing
-                  materials and refine them. I optimized the color palette by
-                  introducing new shades of gray, updated the logo to feel more
-                  modern and vibrant, and simplified the typography for better
-                  readability and a cleaner user experience.
+                  Before tackling UX improvements, I addressed the inconsistent branding that made the app 
+                  feel disjointed and unpolished. A stronger visual foundation was needed to enhance user trust 
+                  and create a more seamless experience.
                 </Typography>
               </Box>
             </FadeIn>
@@ -198,10 +183,9 @@ export default function Content() {
                   Prioritizing Key Flows for the Redesign
                 </Typography>
                 <Typography variant="body1">
-                  With a limited budget for research, I focused on identifying
-                  and implementing high-impact changes that could be achieved in
-                  the shortest time. These ideas were outlined in my
-                  consultation but needed further refinement and presentation.
+                  With a limited research budget, I focused on high-impact flows that could be improved quickly. 
+                  These included service browsing, booking, account management, and user verification—areas critical 
+                  to reducing friction and improving engagement.
                 </Typography>
               </Box>
             </FadeIn>
@@ -229,11 +213,9 @@ export default function Content() {
                   Designing for Scale
                 </Typography>
                 <Typography variant="body1">
-                  Using the limited information available, I focused on breaking
-                  down existing flows and refining the current screens. The goal
-                  was to design for scale by optimizing the visuals without
-                  introducing significant new functionality or content, ensuring
-                  the app could grow while maintaining its core structure.
+                  I optimized existing flows to support future growth without adding unnecessary complexity. 
+                  By refining layouts and visual structures, I ensured the app could scale efficiently 
+                  while maintaining usability and consistency.
                 </Typography>
               </Box>
             </FadeIn>
@@ -244,7 +226,7 @@ export default function Content() {
         <Box width="100%" mb={6}>
           <Box pb={2}>
             <Typography variant="body2" fontWeight={400} fontSize={14}>
-              Pre-design Screens
+              Initial screens
             </Typography>
           </Box>
           <img
@@ -314,29 +296,12 @@ export default function Content() {
           <FadeIn>
             <Box>
               <Typography variant="h3" mb={2} fontWeight={700}>
-                An Elevated Experience
+                Impact and Closing Notes
               </Typography>
               <Typography variant="body1">
-                The revamped SOHS experience is built with scalability at its
-                core, serving as a foundation for the future web app. The
-                redesigned interface ensures users can easily consume and
-                understand information by adhering to proper design principles
-                and heuristics. Following the consultation and design phase, I
-                recommended adopting Material Design for future development and
-                componentization, though this is still pending approval.
-              </Typography>
-            </Box>
-          </FadeIn>
-          <FadeIn>
-            <Box>
-              <Typography variant="h3" mb={2} fontWeight={700}>
-                Impact
-              </Typography>
-              <Typography variant="body1">
-                With a streamlined interface and enhanced functionality, the
-                platform saw a notable increase in signups, task efficiency, and
-                stakeholder alignment, laying a strong foundation for future
-                growth.
+                I redesigned SOHS with scalability and clarity at its core, ensuring a more intuitive user experience. 
+                The updated interface improves usability by following strong design principles and heuristics, 
+                setting the foundation for future expansion.
               </Typography>
             </Box>
           </FadeIn>
