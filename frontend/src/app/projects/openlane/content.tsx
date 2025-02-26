@@ -126,15 +126,15 @@ export default function Content() {
             <Typography variant="body2" fontWeight={400} fontSize={14}>
               Breaking Down the Problem with the 5W1H Framework
             </Typography>
-            <img
-              alt=""
-              role="presentation"
-              style={{
-                width: "100%",
-              }}
-              src="/v3/Openlane/img3.png"
-            />
           </Box>
+          <img
+            alt=""
+            role="presentation"
+            style={{
+              width: "100%",
+            }}
+            src="/v3/Openlane/img3.png"
+          />
         </Box>
       </Container>
       <Container maxWidth="lg">
