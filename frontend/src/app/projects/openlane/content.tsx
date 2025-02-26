@@ -70,14 +70,12 @@ export default function Content() {
           <ProjectStatement
             content={
               <>
-                I led the UX and design for OpenLane’s vehicle recommendation
-                feature, boosting engagement by 13% and increasing marketplace
-                traffic by surfacing relevant inventory at key moments.
+                I led the UX and design for Openlane’s recommendation system, boosting engagement by 13% and 
+                driving marketplace traffic by surfacing relevant inventory at key decision points.
                 <br />
                 <br />
-                Through research and iteration, we streamlined discovery and
-                improved conversion rates while keeping the experience seamless
-                for AFC dealers.
+                Research and iteration led to optimized discovery flows, personalized recommendations, 
+                and higher conversion rates for AFC dealers.
               </>
             }
           />
@@ -122,6 +120,10 @@ export default function Content() {
 
       <Container maxWidth="xl">
         <Box width="100%">
+          <Box pb={2}>
+            <Typography variant="body2" fontWeight={400} fontSize={14}>
+              Breaking Down the Problem with the 5W1H Framework
+            </Typography>
           <img
             alt=""
             role="presentation"
@@ -229,7 +231,7 @@ export default function Content() {
                   Designing the Payment Confirmation Screen
                 </Typography>
                 <Typography variant="body1">
-                  With research complete, I explored layout variations to
+                  With the research complete, I explored layout variations to
                   enhance clarity and usability. Wireframes helped define the
                   best structure for key details while integrating vehicle
                   recommendations without disrupting the flow.
@@ -265,7 +267,7 @@ export default function Content() {
         <Box width="100%">
           <Box pb={2}>
             <Typography variant="body2" fontWeight={400} fontSize={14}>
-              Dev ready screens
+              Dev-ready screens
             </Typography>
           </Box>
           <img
@@ -289,7 +291,7 @@ export default function Content() {
                 <Typography variant="body1">
                   After deploying the updated design to a test group, I analyzed
                   pilot test data to evaluate engagement and usability.
-                  Stakeholders raised concerns about layout effectiveness, and
+                  Stakeholders raised concerns about layout effectiveness and
                   the results guided discussions on potential refinements.
                 </Typography>
               </Box>
@@ -315,7 +317,7 @@ export default function Content() {
                 fontWeight={700}
                 color="#1F74FE"
               >
-                User Pilot over 1 month
+                Pilot Test Results Over 1 Month
               </Typography>
               <Typography variant="h3" mb={2} fontWeight={700}>
                 Across 709 dealerships, here are the most used resolutions
@@ -327,9 +329,8 @@ export default function Content() {
                       &gt;
                     </Typography>
                     <Typography variant="body1">
-                      Insight 1: Most conversions come from desktop, not mobile
-                      or tablet. Promotional efforts and resources should
-                      prioritize desktop experiences.
+                      Desktop Leads Conversions: 93% of dealers transacted on desktop, 
+                      reinforcing it as the priority platform.
                     </Typography>
                   </Box>
                   <Box mb={2} display="flex">
@@ -337,10 +338,8 @@ export default function Content() {
                       &gt;
                     </Typography>
                     <Typography variant="body1">
-                      Insight 2: A scroll-based carousel on mobile may be too
-                      intrusive. Alternative methods to increase brand awareness
-                      should be explored without complicating the user
-                      experience.
+                      Mobile Usability Issue: Dealers found scroll-based carousels intrusive. 
+                      Future iterations should explore less disruptive engagement methods.
                     </Typography>
                   </Box>
                 </Box>
