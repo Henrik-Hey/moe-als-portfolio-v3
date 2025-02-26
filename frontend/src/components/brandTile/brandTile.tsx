@@ -11,7 +11,7 @@ const brandLinks: any = {
   OPENLANE: "https://www.openlane.com/",
   AFC: "https://www.autofinance.com/",
   PAR: "https://www.parnorthamerica.com/",
-  HM: "https://www.hashtensor.xyz/",
+  HM: "https://hashtensor.xyz/",
   PAGEON: "https://app.pageon.ai/",
   SS: "https://www.sharpstakes.ca/",
   " HOMEZ": "https://homezai.com/",
@@ -29,6 +29,7 @@ export const BrandTile: React.FC<BrandTileProps> = ({ brand, hoverColor }) => {
     <Box
       component={"a"}
       href={brandLinks[brand] || ""}
+      target="_blank"
       display="flex"
       justifyContent="center"
       alignItems="center"

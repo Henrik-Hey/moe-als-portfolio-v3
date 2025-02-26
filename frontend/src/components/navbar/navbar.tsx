@@ -11,12 +11,7 @@ import {
 } from "@mui/material";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import {
-  ArrowDropDown,
-  LockOpenTwoTone,
-  LockTwoTone,
-  OpenInNew,
-} from "@mui/icons-material";
+import { ArrowDropDown, LockOpen, Lock, OpenInNew } from "@mui/icons-material";
 import { Twirl as Hamburger } from "hamburger-react";
 import {
   getCookie,
@@ -357,9 +352,9 @@ export const Navbar: React.FC<NavbarProps> = ({ colorMode }) => {
               >
                 <Typography>AFC</Typography>
                 {getCookie(ACCESS_COOKIE_KEY) !== "true" ? (
-                  <LockTwoTone sx={{ color: textColor }} />
+                  <Lock sx={{ color: textColor }} />
                 ) : (
-                  <LockOpenTwoTone sx={{ color: textColor }} />
+                  <LockOpen sx={{ color: textColor }} />
                 )}
               </Box>
               <Box
@@ -380,9 +375,9 @@ export const Navbar: React.FC<NavbarProps> = ({ colorMode }) => {
               >
                 <Typography>Openlane</Typography>
                 {getCookie(AFC2_ACCESS_COOKIE_KEY) !== "true" ? (
-                  <LockTwoTone sx={{ color: textColor }} />
+                  <Lock sx={{ color: textColor }} />
                 ) : (
-                  <LockOpenTwoTone sx={{ color: textColor }} />
+                  <LockOpen sx={{ color: textColor }} />
                 )}
               </Box>
               <Box
@@ -403,9 +398,9 @@ export const Navbar: React.FC<NavbarProps> = ({ colorMode }) => {
               >
                 <Typography>HomezAI</Typography>
                 {getCookie(HOMEZ_ACCESS_COOKIE) !== "true" ? (
-                  <LockTwoTone sx={{ color: textColor }} />
+                  <Lock sx={{ color: textColor }} />
                 ) : (
-                  <LockOpenTwoTone sx={{ color: textColor }} />
+                  <LockOpen sx={{ color: textColor }} />
                 )}
               </Box>
               <Box
@@ -426,9 +421,9 @@ export const Navbar: React.FC<NavbarProps> = ({ colorMode }) => {
               >
                 <Typography>EasyAudit</Typography>
                 {getCookie(EA_ACCESS_COOKIE) !== "true" ? (
-                  <LockTwoTone sx={{ color: textColor }} />
+                  <Lock sx={{ color: textColor }} />
                 ) : (
-                  <LockOpenTwoTone sx={{ color: textColor }} />
+                  <LockOpen sx={{ color: textColor }} />
                 )}
               </Box>
               <Box
@@ -526,7 +521,7 @@ export const Navbar: React.FC<NavbarProps> = ({ colorMode }) => {
           <Box
             px={2}
             component={Link}
-            href="/resume_2024.pdf"
+            href="/MoeAls_SeniorProductDesigner.pdf"
             target="_blank"
             sx={{
               textDecoration: "none",
@@ -593,11 +588,9 @@ export const Navbar: React.FC<NavbarProps> = ({ colorMode }) => {
                 >
                   <Typography mr={1}>AFC</Typography>
                   {getCookie(ACCESS_COOKIE_KEY) !== "true" ? (
-                    <LockTwoTone sx={{ color: textColor, fontSize: "16px" }} />
+                    <Lock sx={{ color: textColor, fontSize: "16px" }} />
                   ) : (
-                    <LockOpenTwoTone
-                      sx={{ color: textColor, fontSize: "16px" }}
-                    />
+                    <LockOpen sx={{ color: textColor, fontSize: "16px" }} />
                   )}
                 </Box>
               </ButtonBase>
@@ -625,11 +618,9 @@ export const Navbar: React.FC<NavbarProps> = ({ colorMode }) => {
                 >
                   <Typography mr={1}>Openlane</Typography>
                   {getCookie(AFC2_ACCESS_COOKIE_KEY) !== "true" ? (
-                    <LockTwoTone sx={{ color: textColor, fontSize: "16px" }} />
+                    <Lock sx={{ color: textColor, fontSize: "16px" }} />
                   ) : (
-                    <LockOpenTwoTone
-                      sx={{ color: textColor, fontSize: "16px" }}
-                    />
+                    <LockOpen sx={{ color: textColor, fontSize: "16px" }} />
                   )}
                 </Box>
               </ButtonBase>
@@ -657,11 +648,9 @@ export const Navbar: React.FC<NavbarProps> = ({ colorMode }) => {
                 >
                   <Typography mr={1}>HomezAI</Typography>
                   {getCookie(HOMEZ_ACCESS_COOKIE) !== "true" ? (
-                    <LockTwoTone sx={{ color: textColor, fontSize: "16px" }} />
+                    <Lock sx={{ color: textColor, fontSize: "16px" }} />
                   ) : (
-                    <LockOpenTwoTone
-                      sx={{ color: textColor, fontSize: "16px" }}
-                    />
+                    <LockOpen sx={{ color: textColor, fontSize: "16px" }} />
                   )}
                 </Box>
               </ButtonBase>
@@ -689,11 +678,9 @@ export const Navbar: React.FC<NavbarProps> = ({ colorMode }) => {
                 >
                   <Typography mr={1}>EasyAudit</Typography>
                   {getCookie(EA_ACCESS_COOKIE) !== "true" ? (
-                    <LockTwoTone sx={{ color: textColor, fontSize: "16px" }} />
+                    <Lock sx={{ color: textColor, fontSize: "16px" }} />
                   ) : (
-                    <LockOpenTwoTone
-                      sx={{ color: textColor, fontSize: "16px" }}
-                    />
+                    <LockOpen sx={{ color: textColor, fontSize: "16px" }} />
                   )}
                 </Box>
               </ButtonBase>
@@ -779,7 +766,7 @@ export const Navbar: React.FC<NavbarProps> = ({ colorMode }) => {
                 </ButtonBase>
                 <ButtonBase
                   component={Link}
-                  href="/resume_2024.pdf"
+                  href="/MoeAls_SeniorProductDesigner.pdf"
                   target="_blank"
                   sx={{
                     p: 1,

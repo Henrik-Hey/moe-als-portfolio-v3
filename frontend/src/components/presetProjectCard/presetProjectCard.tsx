@@ -40,7 +40,7 @@ export const PresetProjectCard = ({
           darkMode={darkMode}
           isDefaultHovered={isDefaultHovered}
           project="Auto Finance Dealer"
-          subtext="Optimizing Home Buying with AI-Powered Scheduling"
+          subtext="Reducing Drop Rates and Improving the Flooring process"
           ctaText="View Project"
           isLocked={getCookie(ACCESS_COOKIE_KEY) !== "true"}
           color={darkMode ? palette.darkMode[50] : palette.green.main}
@@ -225,7 +225,7 @@ export const PresetProjectCard = ({
         <ProjectCard
           darkMode={darkMode}
           isDefaultHovered={isDefaultHovered}
-          project="Openlane & Auto Finance Dealer"
+          project="Openlane & AFC"
           subtext="Boosting Engagement by Linking Discovery to Financing"
           ctaText="View Project"
           isLocked={getCookie(AFC2_ACCESS_COOKIE_KEY) !== "true"}

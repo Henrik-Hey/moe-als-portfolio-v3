@@ -240,7 +240,7 @@ export default function Content() {
           />
         </Box>
       </Container>
-      <Container maxWidth="xl">
+      {/* <Container maxWidth="xl">
         <Box width="100%" mb={6}>
           <Box pb={2}>
             <Typography variant="body2" fontWeight={400} fontSize={14}>
@@ -259,7 +259,7 @@ export default function Content() {
             src="/v3/HomezAI/img5.png"
           />
         </Box>
-      </Container>
+      </Container> */}
       <Container maxWidth="xl">
         <Box width="100%" mb={6}>
           <Box pb={2}>
@@ -271,7 +271,7 @@ export default function Content() {
           </Box>
           <video
             playsInline
-            controls={false}
+            controls
             autoPlay
             loop
             muted
@@ -355,7 +355,8 @@ export default function Content() {
         <Box width="100%" mb={6}>
           <Box pb={2}>
             <Typography variant="body2" fontWeight={400} fontSize={14}>
-              Standardizing UI components minimized technical debt and sped up implementation{" "}
+              Standardizing UI components minimized technical debt and sped up
+              implementation{" "}
             </Typography>
           </Box>
           <img
@@ -377,10 +378,12 @@ export default function Content() {
                   Building the App
                 </Typography>
                 <Typography variant="body1">
-                 With the groundwork in place, I transitioned from research and wireframes to full-scale design. 
-                  Over the following months, I refined flows, collaborated with stakeholders, 
-                  and ensured each feature aligned with user needs and business objectives. 
-                  Every iteration focused on usability, efficiency, and AI-driven automation to streamline scheduling.
+                  With the groundwork in place, I transitioned from research and
+                  wireframes to full-scale design. Over the following months, I
+                  refined flows, collaborated with stakeholders, and ensured
+                  each feature aligned with user needs and business objectives.
+                  Every iteration focused on usability, efficiency, and
+                  AI-driven automation to streamline scheduling.
                 </Typography>
               </Box>
             </FadeIn>
@@ -472,9 +475,10 @@ export default function Content() {
               Polished Designs
             </Typography>
             <Typography variant="body1">
-              As HomezAI evolved, I curated high-fidelity designs for investor showcases, aiming to generate interest 
-              and secure funding. Working closely with stakeholders, I selected key previews that best highlighted 
-              the platform’s value and potential.
+              As HomezAI evolved, I curated high-fidelity designs for investor
+              showcases, aiming to generate interest and secure funding. Working
+              closely with stakeholders, I selected key previews that best
+              highlighted the platform’s value and potential.
             </Typography>
           </Box>
         </FadeIn>

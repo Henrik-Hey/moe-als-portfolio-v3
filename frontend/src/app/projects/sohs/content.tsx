@@ -65,8 +65,9 @@ export default function Content() {
           <ProjectStatement
             content={
               <>
-               I Led the redesign of SOHS’s mobile app, improving usability and visual consistency. 
-               Streamlined workflows, increasing signups and referrals by 12% while cutting task time by 2.5 minutes.
+                I Led the redesign of SOHS’s mobile app, improving usability and
+                visual consistency. Streamlined workflows, increasing signups
+                and referrals by 12% while cutting task time by 2.5 minutes.
               </>
             }
           />
@@ -76,8 +77,9 @@ export default function Content() {
                 Problem
               </Typography>
               <Typography variant="body1">
-                SOHS suffered from inconsistent design, making the app feel unpolished and reducing user trust. 
-                This directly impacted engagement and retention, limiting its market potential.
+                SOHS suffered from inconsistent design, making the app feel
+                unpolished and reducing user trust. This directly impacted
+                engagement and retention, limiting its market potential.
               </Typography>
             </Box>
           </FadeIn>
@@ -87,8 +89,9 @@ export default function Content() {
                 Project Goals
               </Typography>
               <Typography variant="body1">
-                The redesign aimed to modernize SOHS while working within strict budget constraints. 
-                My focus was to maximize impact efficiently through three key initiatives:
+                The redesign aimed to modernize SOHS while working within strict
+                budget constraints. My focus was to maximize impact efficiently
+                through three key initiatives:
               </Typography>
             </Box>
           </FadeIn>
@@ -103,7 +106,8 @@ export default function Content() {
                   Improving Accessibility
                 </Typography>
                 <Typography variant="body1">
-                  I updated branding and typography to meet WCAG standards, ensuring better readability and usability.
+                  I updated branding and typography to meet WCAG standards,
+                  ensuring better readability and usability.
                 </Typography>
               </Box>
               <Box flex={1}>
@@ -111,7 +115,8 @@ export default function Content() {
                   Refining Visual Design
                 </Typography>
                 <Typography variant="body1">
-                  I fixed inconsistencies, applied usability heuristics, and strengthened the brand’s visual identity.
+                  I fixed inconsistencies, applied usability heuristics, and
+                  strengthened the brand’s visual identity.
                 </Typography>
               </Box>
               <Box flex={1}>
@@ -119,8 +124,9 @@ export default function Content() {
                   Introducing a Design System
                 </Typography>
                 <Typography variant="body1">
-                  While outside the immediate budget, I introduced scalable components to improve consistency 
-                  and speed up future development.
+                  While outside the immediate budget, I introduced scalable
+                  components to improve consistency and speed up future
+                  development.
                 </Typography>
               </Box>
             </Box>
@@ -148,15 +154,50 @@ export default function Content() {
         <Box display="flex" flexDirection="column" gap={2} my={12}>
           <Box>
             <FadeIn>
-              <Box mb={2}>
+              <Box mb={8}>
                 <Typography variant="h3" mb={2} fontWeight={700}>
                   Refining the Brand for a Cohesive Experience
                 </Typography>
                 <Typography variant="body1">
-                  Before tackling UX improvements, I addressed the inconsistent branding that made the app 
-                  feel disjointed and unpolished. A stronger visual foundation was needed to enhance user trust 
+                  Before tackling UX improvements, I addressed the inconsistent
+                  branding that made the app feel disjointed and unpolished. A
+                  stronger visual foundation was needed to enhance user trust
                   and create a more seamless experience.
                 </Typography>
+              </Box>
+            </FadeIn>
+            <FadeIn>
+              <Box
+                display="flex"
+                flexDirection={{ xs: "column", md: "row" }}
+                gap={{ xs: 2, md: 2 }}
+              >
+                <Box flex={1}>
+                  <Typography variant="body1" mb={2} fontWeight={700}>
+                    Refined the color palette
+                  </Typography>
+                  <Typography variant="body1">
+                    Introduced a modern, neutral scheme for better contrast and
+                    accessibility.
+                  </Typography>
+                </Box>
+                <Box flex={1}>
+                  <Typography variant="body1" mb={2} fontWeight={700}>
+                    Updated the logo
+                  </Typography>
+                  <Typography variant="body1">
+                    Simplified and modernized for stronger brand recognition.
+                  </Typography>
+                </Box>
+                <Box flex={1}>
+                  <Typography variant="body1" mb={2} fontWeight={700}>
+                    Standardized typography
+                  </Typography>
+                  <Typography variant="body1">
+                    Improved readability and ensured consistency across all
+                    screens.
+                  </Typography>
+                </Box>
               </Box>
             </FadeIn>
           </Box>
@@ -183,9 +224,11 @@ export default function Content() {
                   Prioritizing Key Flows for the Redesign
                 </Typography>
                 <Typography variant="body1">
-                  With a limited research budget, I focused on high-impact flows that could be improved quickly. 
-                  These included service browsing, booking, account management, and user verification—areas critical 
-                  to reducing friction and improving engagement.
+                  With a limited research budget, I focused on high-impact flows
+                  that could be improved quickly. These included service
+                  browsing, booking, account management, and user
+                  verification—areas critical to reducing friction and improving
+                  engagement.
                 </Typography>
               </Box>
             </FadeIn>
@@ -213,9 +256,10 @@ export default function Content() {
                   Designing for Scale
                 </Typography>
                 <Typography variant="body1">
-                  I optimized existing flows to support future growth without adding unnecessary complexity. 
-                  By refining layouts and visual structures, I ensured the app could scale efficiently 
-                  while maintaining usability and consistency.
+                  I optimized existing flows to support future growth without
+                  adding unnecessary complexity. By refining layouts and visual
+                  structures, I ensured the app could scale efficiently while
+                  maintaining usability and consistency.
                 </Typography>
               </Box>
             </FadeIn>
@@ -299,9 +343,10 @@ export default function Content() {
                 Impact and Closing Notes
               </Typography>
               <Typography variant="body1">
-                I redesigned SOHS with scalability and clarity at its core, ensuring a more intuitive user experience. 
-                The updated interface improves usability by following strong design principles and heuristics, 
-                setting the foundation for future expansion.
+                I redesigned SOHS with scalability and clarity at its core,
+                ensuring a more intuitive user experience. The updated interface
+                improves usability by following strong design principles and
+                heuristics, setting the foundation for future expansion.
               </Typography>
             </Box>
           </FadeIn>

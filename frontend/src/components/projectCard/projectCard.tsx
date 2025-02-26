@@ -1,4 +1,10 @@
-import { East, LockOpenTwoTone, LockTwoTone } from "@mui/icons-material";
+import {
+  East,
+  Lock,
+  LockOpen,
+  LockOpenTwoTone,
+  LockTwoTone,
+} from "@mui/icons-material";
 import { Box, Card, Typography, useTheme } from "@mui/material";
 import React from "react";
 import { raleway } from "@/fonts";
@@ -117,9 +123,9 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
           {onCTAClick &&
             (isLocked !== undefined ? (
               isLocked ? (
-                <LockTwoTone sx={{ color: textColor }} />
+                <Lock sx={{ color: textColor, fontSize: "16px" }} />
               ) : (
-                <LockOpenTwoTone sx={{ color: textColor }} />
+                <LockOpen sx={{ color: textColor, fontSize: "16px" }} />
               )
             ) : (
               <East fontSize="small" sx={{ color: textColor }} />

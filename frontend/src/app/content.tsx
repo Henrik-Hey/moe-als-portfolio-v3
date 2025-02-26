@@ -77,12 +77,17 @@ export default function Content() {
         <Grid container spacing={6}>
           <FadeIn>
             <Grid item xs={12} md={6} display="flex">
-              <PresetProjectCard project="afc" darkMode={isDark} />
+              <PresetProjectCard project="sohs" darkMode={isDark} />
             </Grid>
           </FadeIn>
           <FadeIn>
             <Grid item xs={12} md={6} display="flex">
-              <PresetProjectCard project="openlane" darkMode={isDark} />
+              <PresetProjectCard project="iart" darkMode={isDark} />
+            </Grid>
+          </FadeIn>
+          <FadeIn>
+            <Grid item xs={12} md={6} display="flex">
+              <PresetProjectCard project="easyaudit" darkMode={isDark} />
             </Grid>
           </FadeIn>
           <FadeIn>
@@ -100,17 +105,12 @@ export default function Content() {
           </FadeIn>
           <FadeIn>
             <Grid item xs={12} md={6} display="flex">
-              <PresetProjectCard project="easyaudit" darkMode={isDark} />
+              <PresetProjectCard project="openlane" darkMode={isDark} />
             </Grid>
           </FadeIn>
           <FadeIn>
             <Grid item xs={12} md={6} display="flex">
-              <PresetProjectCard project="iart" darkMode={isDark} />
-            </Grid>
-          </FadeIn>
-          <FadeIn>
-            <Grid item xs={12} md={6} display="flex">
-              <PresetProjectCard project="sohs" darkMode={isDark} />
+              <PresetProjectCard project="afc" darkMode={isDark} />
             </Grid>
           </FadeIn>
           <FadeIn>
