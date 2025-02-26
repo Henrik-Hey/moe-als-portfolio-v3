@@ -353,6 +353,11 @@ export default function Content() {
       </Container>
       <Container maxWidth="xl">
         <Box width="100%" mb={6}>
+          <Box pb={2}>
+            <Typography variant="body2" fontWeight={400} fontSize={14}>
+              Standardizing UI components minimized technical debt and sped up implementation{" "}
+            </Typography>
+          </Box>
           <img
             alt=""
             role="presentation"
@@ -372,10 +377,10 @@ export default function Content() {
                   Building the App
                 </Typography>
                 <Typography variant="body1">
-                  With all the groundwork established, I spent the following
-                  months designing solutions that aligned with user needs and
-                  business objectives, collaborating closely with stakeholders,
-                  owners, and development teams at every step.
+                 With the groundwork in place, I transitioned from research and wireframes to full-scale design. 
+                  Over the following months, I refined flows, collaborated with stakeholders, 
+                  and ensured each feature aligned with user needs and business objectives. 
+                  Every iteration focused on usability, efficiency, and AI-driven automation to streamline scheduling.
                 </Typography>
               </Box>
             </FadeIn>
@@ -426,7 +431,7 @@ export default function Content() {
             <Typography variant="body2" fontWeight={400} fontSize={14}>
               <b>Booking Management</b>
               <br /> This flow is for users who want a centralized space for
-              managing, editing, and canceling scheduled bookings.
+              managing, editing, and cancelling scheduled bookings.
             </Typography>
           </Box>
           <img
@@ -467,10 +472,9 @@ export default function Content() {
               Polished Designs
             </Typography>
             <Typography variant="body1">
-              As the product evolved, I prepared designs for investor showcases
-              to gauge interest and secure funding. Collaborating with
-              stakeholders, we carefully selected previews to align with our
-              goals.
+              As HomezAI evolved, I curated high-fidelity designs for investor showcases, aiming to generate interest 
+              and secure funding. Working closely with stakeholders, I selected key previews that best highlighted 
+              the platform’s value and potential.
             </Typography>
           </Box>
         </FadeIn>
