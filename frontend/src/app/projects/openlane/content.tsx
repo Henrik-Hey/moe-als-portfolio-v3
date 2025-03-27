@@ -234,22 +234,15 @@ export default function Content() {
                   Designing the Payment Confirmation Screen
                 </Typography>
                 <Typography variant="body1">
-                  With the research complete, I explored layout variations to
-                  enhance clarity and usability. Wireframes helped define the
-                  best structure for key details while integrating vehicle
-                  recommendations without disrupting the flow.
-                  <br />
-                  <br />
-                  Wireframes helped define key information hierarchy. Once
-                  validated, I translated them into high-fidelity designs using
-                  AFC’s UI components for consistency.
+                  With research complete, I worked on updating the structure and
+                  components across the mobile and web layouts.
                 </Typography>
               </Box>
             </FadeIn>
           </Box>
         </Box>
       </Container>
-      <Container maxWidth="xl">
+      {/* <Container maxWidth="xl">
         <Box width="100%" mb={6}>
           <Box pb={2}>
             <Typography variant="body2" fontWeight={400} fontSize={14}>
@@ -265,7 +258,7 @@ export default function Content() {
             src="/v3/Openlane/img7.png"
           />
         </Box>
-      </Container>
+      </Container> */}
       <Container maxWidth="xl">
         <Box width="100%">
           <Box pb={2}>
