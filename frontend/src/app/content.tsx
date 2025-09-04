@@ -87,6 +87,16 @@ export default function Content() {
           </FadeIn>
           <FadeIn>
             <Grid item xs={12} md={6} display="flex">
+              <PresetProjectCard project="openlane" darkMode={isDark} />
+            </Grid>
+          </FadeIn>
+          <FadeIn>
+            <Grid item xs={12} md={6} display="flex">
+              <PresetProjectCard project="afc" darkMode={isDark} />
+            </Grid>
+          </FadeIn>
+          <FadeIn>
+            <Grid item xs={12} md={6} display="flex">
               <PresetProjectCard project="easyaudit" darkMode={isDark} />
             </Grid>
           </FadeIn>
@@ -101,16 +111,6 @@ export default function Content() {
                 project="hashmatrix-sharpstakes"
                 darkMode={isDark}
               />
-            </Grid>
-          </FadeIn>
-          <FadeIn>
-            <Grid item xs={12} md={6} display="flex">
-              <PresetProjectCard project="openlane" darkMode={isDark} />
-            </Grid>
-          </FadeIn>
-          <FadeIn>
-            <Grid item xs={12} md={6} display="flex">
-              <PresetProjectCard project="afc" darkMode={isDark} />
             </Grid>
           </FadeIn>
           <FadeIn>
